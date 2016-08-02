@@ -5,5 +5,15 @@ package com.neu.sentencesimplification.stanfordcorenlp;
  */
 public interface PartsOfSpeech {
 
+    /**
+     * Returns the index of the PartsOfSpeech in the sentence.
+     * @return the index of the word in the sentence.
+     */
+    int getIndex();
 
+    /**
+     * Returns the word
+     * @return the word for this PartsOfSpeech.
+     */
+    String getWord();
 }
