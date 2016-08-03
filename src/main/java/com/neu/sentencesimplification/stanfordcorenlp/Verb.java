@@ -5,11 +5,11 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 /**
- * Noun: Represents a Noun and its properties.
+ * Verb: Represents a Verb and its properties.
  */
 @EqualsAndHashCode
 @ToString(exclude = {"mQuestionText", "mSentenceText", "mDependency"})
-public class Noun implements PartsOfSpeech {
+public class Verb implements PartsOfSpeech {
 
     private final int mIndex;
     private final String mWord;
@@ -17,7 +17,7 @@ public class Noun implements PartsOfSpeech {
     private final String mSentenceText;
     private final TypedDependency mDependency;
 
-    public Noun(final TypedDependency nounDependency,
+    public Verb(final TypedDependency nounDependency,
                 final int index,
                 final String word,
                 final String questionText,

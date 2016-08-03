@@ -5,11 +5,11 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 /**
- * Noun: Represents a Noun and its properties.
+ * Conjunction: Represents a Conjunction and its properties.
  */
 @EqualsAndHashCode
 @ToString(exclude = {"mQuestionText", "mSentenceText", "mDependency"})
-public class Noun implements PartsOfSpeech {
+public class Conjunction implements PartsOfSpeech {
 
     private final int mIndex;
     private final String mWord;
@@ -17,11 +17,11 @@ public class Noun implements PartsOfSpeech {
     private final String mSentenceText;
     private final TypedDependency mDependency;
 
-    public Noun(final TypedDependency nounDependency,
-                final int index,
-                final String word,
-                final String questionText,
-                final String sentenceText) {
+    public Conjunction(final TypedDependency nounDependency,
+                       final int index,
+                       final String word,
+                       final String questionText,
+                       final String sentenceText) {
         mDependency = nounDependency;
         mIndex = index;
         mWord = word;

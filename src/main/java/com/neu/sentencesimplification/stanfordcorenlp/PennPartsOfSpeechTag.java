@@ -48,6 +48,12 @@ public enum PennPartsOfSpeechTag {
     UNKNOWN;   /** NULL in case of Root's governer. */
 
     private static final List<PennPartsOfSpeechTag> PENN_NOUN_TAGS = new ArrayList<>();
+    private static final List<PennPartsOfSpeechTag> PENN_VERB_TAGS = new ArrayList<>();
+    private static final List<PennPartsOfSpeechTag> PENN_PREPOSITION_TAGS = new ArrayList<>();
+    private static final List<PennPartsOfSpeechTag> PENN_CONJUNCTION_TAGS = new ArrayList<>();
+    private static final List<PennPartsOfSpeechTag> PENN_WHADVERB_TAGS = new ArrayList<>();
+    private static final List<PennPartsOfSpeechTag> PENN_EXPLETIVE_TAGS = new ArrayList<>();
+    private static final List<PennPartsOfSpeechTag> PENN_CARDINAL_TAGS = new ArrayList<>();
 
     static {
         PENN_NOUN_TAGS.add(NN);
@@ -58,10 +64,51 @@ public enum PennPartsOfSpeechTag {
         PENN_NOUN_TAGS.add(WP$);
         PENN_NOUN_TAGS.add(PRP);
         PENN_NOUN_TAGS.add(PRP$);
+
+        PENN_VERB_TAGS.add(VB);
+        PENN_VERB_TAGS.add(VBD);
+        PENN_VERB_TAGS.add(VBG);
+        PENN_VERB_TAGS.add(VBN);
+        PENN_VERB_TAGS.add(VBP);
+        PENN_VERB_TAGS.add(VBZ);
+
+        PENN_PREPOSITION_TAGS.add(IN);
+
+        PENN_CONJUNCTION_TAGS.add(CC);
+
+        PENN_WHADVERB_TAGS.add(WRB);
+
+        PENN_EXPLETIVE_TAGS.add(EX);
+
+        PENN_CARDINAL_TAGS.add(CD);
     }
 
-    public static boolean isANoun(PennPartsOfSpeechTag tag) {
+    public static boolean isANoun(final PennPartsOfSpeechTag tag) {
         return PENN_NOUN_TAGS.contains(tag);
+    }
+
+    public static boolean isAVerb(final PennPartsOfSpeechTag tag) {
+        return PENN_VERB_TAGS.contains(tag);
+    }
+
+    public static boolean isAPreposition(final PennPartsOfSpeechTag tag) {
+        return PENN_PREPOSITION_TAGS.contains(tag);
+    }
+
+    public static boolean isAConjunction(final PennPartsOfSpeechTag tag) {
+        return PENN_CONJUNCTION_TAGS.contains(tag);
+    }
+
+    public static boolean isAWHADverb(final PennPartsOfSpeechTag tag) {
+        return PENN_WHADVERB_TAGS.contains(tag);
+    }
+
+    public static boolean isAExpletive(final PennPartsOfSpeechTag tag) {
+        return PENN_EXPLETIVE_TAGS.contains(tag);
+    }
+
+    public static boolean isACardinal(final PennPartsOfSpeechTag tag) {
+        return PENN_CARDINAL_TAGS.contains(tag);
     }
 
     public static PennPartsOfSpeechTag valueOfNullable(final String tagString) {

@@ -8,6 +8,6 @@ import com.neu.sentencesimplification.stanfordcorenlp.DependenciesParser;
 public class MainClass {
 
     public static void main(String[] args) {
-        DependenciesParser.extractPartsOfSpeechFromDependencies("Ravi is a bad boy.");
+        DependenciesParser.extractPartsOfSpeechFromDependencies("There were 8 cats on the bench.");
     }
 }
