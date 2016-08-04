@@ -5,11 +5,11 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 /**
- * WHAdverb: Represents a WHAdverb and its properties.
+ * Adjective: Represents an Adjective and its properties.
  */
 @EqualsAndHashCode
 @ToString(exclude = {"mQuestionText", "mSentenceText", "mDependency"})
-public class WHAdverb implements PartsOfSpeech {
+public class Adjective implements PartsOfSpeech {
 
     private final int mIndex;
     private final String mWord;
@@ -17,11 +17,11 @@ public class WHAdverb implements PartsOfSpeech {
     private final String mSentenceText;
     private final TypedDependency mDependency;
 
-    public WHAdverb(final TypedDependency nounDependency,
-                       final int index,
-                       final String word,
-                       final String questionText,
-                       final String sentenceText) {
+    public Adjective(final TypedDependency nounDependency,
+                     final int index,
+                     final String word,
+                     final String questionText,
+                     final String sentenceText) {
         mDependency = nounDependency;
         mIndex = index;
         mWord = word;
@@ -41,6 +41,6 @@ public class WHAdverb implements PartsOfSpeech {
 
     @Override
     public PartsOfSpeech.Type getType() {
-        return PartsOfSpeech.Type.WHADVERB;
+        return PartsOfSpeech.Type.ADJECTIVE;
     }
 }

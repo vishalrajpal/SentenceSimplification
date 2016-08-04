@@ -1,9 +1,23 @@
 package com.neu.sentencesimplification.stanfordcorenlp;
 
+import java.lang.reflect.ParameterizedType;
+
 /**
  * PartsOfSpeech: Interface to be implemented by different PartsOfSpeech.
  */
 public interface PartsOfSpeech {
+
+    enum Type {
+        ADJECTIVE,
+        CARDINAL,
+        CONJUNCTION,
+        DETERMINER,
+        EXPLETIVE,
+        NOUN,
+        PREPOSITION,
+        VERB,
+        WHADVERB;
+    }
 
     /**
      * Returns the index of the PartsOfSpeech in the sentence.
@@ -16,4 +30,9 @@ public interface PartsOfSpeech {
      * @return the word for this PartsOfSpeech.
      */
     String getWord();
+
+    /**
+     *
+     */
+    PartsOfSpeech.Type getType();
 }

@@ -38,4 +38,9 @@ public class Preposition implements PartsOfSpeech {
     public String getWord() {
         return mWord;
     }
+
+    @Override
+    public PartsOfSpeech.Type getType() {
+        return PartsOfSpeech.Type.PREPOSITION;
+    }
 }

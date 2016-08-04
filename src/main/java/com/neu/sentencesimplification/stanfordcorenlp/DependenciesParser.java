@@ -1,5 +1,6 @@
 package com.neu.sentencesimplification.stanfordcorenlp;
 
+import com.neu.sentencesimplification.simplifier.ConjunctionSimplifier;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.Sentence;
 import edu.stanford.nlp.ling.TaggedWord;
@@ -22,12 +23,14 @@ public class DependenciesParser {
     private static final MaxentTagger MAXENT_TAGGER;
     private static final GrammaticalStructureFactory GRAMMATICAL_STRUCTURE_FACTORY;
     private static final DependencyParser DEPENDENCY_PARSER;
+    private static final ConjunctionSimplifier CONJUNCTION_SIMPLIFIER;
 
     static {
         TREE_LANGUAGE_PACK = new PennTreebankLanguagePack();
         GRAMMATICAL_STRUCTURE_FACTORY = TREE_LANGUAGE_PACK.grammaticalStructureFactory();
         DEPENDENCY_PARSER = DependencyParser.loadFromModelFile("models/english_UD.gz");
         MAXENT_TAGGER = new MaxentTagger("models/tagger-models/english-left3words-distsim.tagger");
+        CONJUNCTION_SIMPLIFIER = new ConjunctionSimplifier();
     }
 
     public static List<QuestionSentence> extractPartsOfSpeechFromDependencies(final String text) {
@@ -39,11 +42,13 @@ public class DependenciesParser {
         for (List<HasWord> sentenceWordList : textProcessor) {
             final String sentenceText = Sentence.listToString(sentenceWordList);
 
-            List<TaggedWord> tagged = MAXENT_TAGGER.tagSentence(sentenceWordList);
-            final GrammaticalStructure grammaticalStructure = DEPENDENCY_PARSER.predict(tagged);
+            List<TaggedWord> taggedWords = MAXENT_TAGGER.tagSentence(sentenceWordList);
+            final GrammaticalStructure grammaticalStructure = DEPENDENCY_PARSER.predict(taggedWords);
 
             final Collection<TypedDependency> sentenceDependencies = grammaticalStructure.typedDependenciesCCprocessed();
-            final QuestionSentence questionSentence = new QuestionSentence(text, sentenceText, sentenceDependencies);
+            final QuestionSentence questionSentence = new QuestionSentence(text, sentenceText, sentenceDependencies, taggedWords);
+
+            CONJUNCTION_SIMPLIFIER.simplify(questionSentence, taggedWords);
             questionSentences.add(questionSentence);
         }
 

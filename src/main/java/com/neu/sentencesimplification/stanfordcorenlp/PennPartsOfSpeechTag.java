@@ -54,6 +54,8 @@ public enum PennPartsOfSpeechTag {
     private static final List<PennPartsOfSpeechTag> PENN_WHADVERB_TAGS = new ArrayList<>();
     private static final List<PennPartsOfSpeechTag> PENN_EXPLETIVE_TAGS = new ArrayList<>();
     private static final List<PennPartsOfSpeechTag> PENN_CARDINAL_TAGS = new ArrayList<>();
+    private static final List<PennPartsOfSpeechTag> PENN_ADJECTIVE_TAGS = new ArrayList<>();
+    private static final List<PennPartsOfSpeechTag> PENN_DETERMINERS_TAG = new ArrayList<>();
 
     static {
         PENN_NOUN_TAGS.add(NN);
@@ -81,6 +83,12 @@ public enum PennPartsOfSpeechTag {
         PENN_EXPLETIVE_TAGS.add(EX);
 
         PENN_CARDINAL_TAGS.add(CD);
+
+        PENN_ADJECTIVE_TAGS.add(JJ);
+        PENN_ADJECTIVE_TAGS.add(JJR);
+        PENN_ADJECTIVE_TAGS.add(JJS);
+
+        PENN_DETERMINERS_TAG.add(DT);
     }
 
     public static boolean isANoun(final PennPartsOfSpeechTag tag) {
@@ -99,7 +107,7 @@ public enum PennPartsOfSpeechTag {
         return PENN_CONJUNCTION_TAGS.contains(tag);
     }
 
-    public static boolean isAWHADverb(final PennPartsOfSpeechTag tag) {
+    public static boolean isAWHAdverb(final PennPartsOfSpeechTag tag) {
         return PENN_WHADVERB_TAGS.contains(tag);
     }
 
@@ -109,6 +117,14 @@ public enum PennPartsOfSpeechTag {
 
     public static boolean isACardinal(final PennPartsOfSpeechTag tag) {
         return PENN_CARDINAL_TAGS.contains(tag);
+    }
+
+    public static boolean isAAdjective(final PennPartsOfSpeechTag tag) {
+        return PENN_ADJECTIVE_TAGS.contains(tag);
+    }
+
+    public static boolean isADeterminer(final PennPartsOfSpeechTag tag) {
+        return PENN_DETERMINERS_TAG.contains(tag);
     }
 
     public static PennPartsOfSpeechTag valueOfNullable(final String tagString) {
