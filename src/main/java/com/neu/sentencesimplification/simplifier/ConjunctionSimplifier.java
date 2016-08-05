@@ -37,14 +37,15 @@ public class ConjunctionSimplifier implements Simplifier {
                 updateConjunctionPartsBasedOnNoun(partsOfSpeechBeforeConjunction,
                         partsOfSpeechAfterConjunction);
 
-                updateConjunctionPartsBasedOnPreposition(partsOfSpeechBeforeConjunction,
+                final PartsOfSpeech prepositionInSecondSentence = updateConjunctionPartsBasedOnPreposition(partsOfSpeechBeforeConjunction,
                         partsOfSpeechAfterConjunction);
 
                 mergeTaggedWordsAndPartsOfSpeechOfAConjunction(taggedWords,
                         partsOfSpeechBeforeConjunction,
                         partsOfSpeechAfterConjunction,
                         splitPartsOfSpeech,
-                        questionSentence);
+                        questionSentence,
+                        prepositionInSecondSentence);
 
                 final QuestionSentence firstSentenceQuestionSentence = createQuestionSentenceFromPartsOfSpeech(partsOfSpeechBeforeConjunction);
                 final QuestionSentence secondSentenceQuestionSentence = createQuestionSentenceFromPartsOfSpeech(partsOfSpeechAfterConjunction);
@@ -150,12 +151,13 @@ public class ConjunctionSimplifier implements Simplifier {
         }
     }
 
-    private void updateConjunctionPartsBasedOnPreposition(final SortedSet<PartsOfSpeech> partsOfSpeechBeforeConjunction,
+    private PartsOfSpeech updateConjunctionPartsBasedOnPreposition(final SortedSet<PartsOfSpeech> partsOfSpeechBeforeConjunction,
                                                           final SortedSet<PartsOfSpeech> partsOfSpeechAfterConjunction) {
 
         //boolean prepositionExistsIn
         PartsOfSpeech lastPrepositionOfSecondSentence = null;
-        final SortedSet<PartsOfSpeech> partsOfSpeechAfterLastPreposition = new TreeSet<>();
+        final SortedSet<PartsOfSpeech> partsOfSpeechAfterLastPreposition =
+                new TreeSet<>(partsOfSpeechBeforeConjunction.comparator());
         for (final PartsOfSpeech partsOfSpeech: partsOfSpeechAfterConjunction) {
             if (partsOfSpeech.getType().equals(PartsOfSpeech.Type.PREPOSITION)) {
                 lastPrepositionOfSecondSentence = partsOfSpeech;
@@ -167,9 +169,13 @@ public class ConjunctionSimplifier implements Simplifier {
         }
 
         /**
+         * Currently, if finds a Preposition in the second sentence, adds it to the first sentence.
          * TODO Identify if there is a preposition in the first sentence, if not use the preposition from the second sentence
          **/
-
+        for (final PartsOfSpeech partsOfSpeech: partsOfSpeechAfterLastPreposition) {
+            partsOfSpeechBeforeConjunction.add(partsOfSpeech);
+        }
+        return lastPrepositionOfSecondSentence;
     }
 
 
@@ -178,7 +184,8 @@ public class ConjunctionSimplifier implements Simplifier {
             final SortedSet<PartsOfSpeech> partsOfSpeechBeforeConjunction,
             final SortedSet<PartsOfSpeech> partsOfSpeechAfterConjunction,
             final PartsOfSpeech splitPartsOfSpeech,
-            final QuestionSentence questionSentence) {
+            final QuestionSentence questionSentence,
+            final PartsOfSpeech prepositionInSecondSentence) {
 
         final SortedSet<Integer> sortedIndicesInPartsOfSpeech = new TreeSet<>();
 
@@ -204,7 +211,11 @@ public class ConjunctionSimplifier implements Simplifier {
                         questionSentence.getQuestionText(),
                         questionSentence.getSentenceText());
 
-                if (word.equals(FULL_STOP)) {
+                /**
+                 * If the word is a FULL_STOP or it is after the preposition identified in the second sentence,
+                 * append it in both the sentences.
+                 */
+                if (word.equals(FULL_STOP) || taggedWordIndex > prepositionInSecondSentence.getIndex()) {
                     partsOfSpeechBeforeConjunction.add(otherPartsOfSpeech);
                     partsOfSpeechAfterConjunction.add(otherPartsOfSpeech);
                 } else if (taggedWordIndex < splitPartsOfSpeech.getIndex()) {

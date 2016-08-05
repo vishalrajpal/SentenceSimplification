@@ -8,6 +8,6 @@ import com.neu.sentencesimplification.stanfordcorenlp.DependenciesParser;
 public class MainClass {
 
     public static void main(String[] args) {
-        DependenciesParser.extractPartsOfSpeechFromDependencies("He went to the orchard and picked peaches to stock up .");
+        DependenciesParser.extractPartsOfSpeechFromDependencies("Joan found 6 seashells and Jessica found 8 seashells on the beach .");
     }
 }
