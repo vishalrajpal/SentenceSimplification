@@ -10,28 +10,23 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Cardinal: Represents a Cardinal Number and its properties.
+ * OtherPartsOfSpeech: Represents a word which has not been extracted by the dependency parser.
  */
-@EqualsAndHashCode(exclude = "mDependencies")
-@ToString(exclude = {"mQuestionText", "mSentenceText", "mDependencies"})
+@EqualsAndHashCode
+@ToString(exclude = {"mQuestionText", "mSentenceText"})
 @Accessors(prefix = "m")
 @Getter
-public class Cardinal implements PartsOfSpeech {
+public class OtherPartsOfSpeech implements PartsOfSpeech {
 
     private final int mIndex;
     private final String mWord;
     private final String mQuestionText;
     private final String mSentenceText;
-    private final Set<TypedDependency> mDependencies;
 
-    public Cardinal(final TypedDependency cardinalDependency,
-                    final int index,
-                    final String word,
-                    final String questionText,
-                    final String sentenceText) {
-        mDependencies = new HashSet<>();
-        mDependencies.add(cardinalDependency);
-
+    public OtherPartsOfSpeech(final int index,
+                              final String word,
+                              final String questionText,
+                              final String sentenceText) {
         mIndex = index;
         mWord = word;
         mQuestionText = questionText;
@@ -50,11 +45,9 @@ public class Cardinal implements PartsOfSpeech {
 
     @Override
     public PartsOfSpeech.Type getType() {
-        return PartsOfSpeech.Type.CARDINAL;
+        return PartsOfSpeech.Type.OTHER;
     }
 
     @Override
-    public void associateDependency(final TypedDependency dependency) {
-        mDependencies.add(dependency);
-    }
+    public void associateDependency(TypedDependency dependency) {}
 }

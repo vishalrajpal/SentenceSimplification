@@ -2,27 +2,36 @@ package com.neu.sentencesimplification.stanfordcorenlp;
 
 import edu.stanford.nlp.trees.TypedDependency;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.ToString;
+import lombok.experimental.Accessors;
+
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Expletive: Represents a Expletive and its properties.
  */
-@EqualsAndHashCode
-@ToString(exclude = {"mQuestionText", "mSentenceText", "mDependency"})
+@EqualsAndHashCode(exclude = "mDependencies")
+@ToString(exclude = {"mQuestionText", "mSentenceText", "mDependencies"})
+@Accessors(prefix = "m")
+@Getter
 public class Expletive implements PartsOfSpeech {
 
     private final int mIndex;
     private final String mWord;
     private final String mQuestionText;
     private final String mSentenceText;
-    private final TypedDependency mDependency;
+    private final Set<TypedDependency> mDependencies;
 
-    public Expletive(final TypedDependency nounDependency,
+    public Expletive(final TypedDependency expletiveDependency,
                     final int index,
                     final String word,
                     final String questionText,
                     final String sentenceText) {
-        mDependency = nounDependency;
+        mDependencies = new HashSet<>();
+        mDependencies.add(expletiveDependency);
+
         mIndex = index;
         mWord = word;
         mQuestionText = questionText;
@@ -42,5 +51,10 @@ public class Expletive implements PartsOfSpeech {
     @Override
     public PartsOfSpeech.Type getType() {
         return PartsOfSpeech.Type.EXPLETIVE;
+    }
+
+    @Override
+    public void associateDependency(final TypedDependency dependency) {
+        mDependencies.add(dependency);
     }
 }

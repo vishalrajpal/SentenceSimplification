@@ -1,5 +1,7 @@
 package com.neu.sentencesimplification.stanfordcorenlp;
 
+import edu.stanford.nlp.trees.TypedDependency;
+
 import java.lang.reflect.ParameterizedType;
 
 /**
@@ -14,6 +16,7 @@ public interface PartsOfSpeech {
         DETERMINER,
         EXPLETIVE,
         NOUN,
+        OTHER,
         PREPOSITION,
         VERB,
         WHADVERB;
@@ -32,7 +35,13 @@ public interface PartsOfSpeech {
     String getWord();
 
     /**
-     *
+     * Returns the Type of PartOfSpeech.
      */
     PartsOfSpeech.Type getType();
+
+    /**
+     * Associate a dependency with this PartOfSpeech.
+     * @param dependency The dependency to associate with this PartOfSpeech.
+     */
+    void associateDependency(final TypedDependency dependency);
 }
