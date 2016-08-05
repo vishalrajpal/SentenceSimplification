@@ -75,6 +75,7 @@ public enum PennPartsOfSpeechTag {
         PENN_VERB_TAGS.add(VBZ);
 
         PENN_PREPOSITION_TAGS.add(IN);
+        PENN_PREPOSITION_TAGS.add(TO);
 
         PENN_CONJUNCTION_TAGS.add(CC);
 
