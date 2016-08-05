@@ -102,9 +102,9 @@ public class ConjunctionSimplifier implements Simplifier {
         final boolean toPrependNounToSecondPart =
                 !partsOfSpeechAfterConjunction.first().getType().equals(PartsOfSpeech.Type.NOUN);
 
-        /** If the first part of speech of the second part of the conjunction is not a Verb,
+        /** If the first part of speech of the second part of the conjunction is not a Verb and not the Noun,
          * prepend the Verb from the first part. */
-        final boolean toPrependVerbToSecondPart =
+        final boolean toPrependVerbToSecondPart = toPrependNounToSecondPart &&
                 !partsOfSpeechAfterConjunction.first().getType().equals(PartsOfSpeech.Type.VERB);
 
         if (toPrependNounToSecondPart) {

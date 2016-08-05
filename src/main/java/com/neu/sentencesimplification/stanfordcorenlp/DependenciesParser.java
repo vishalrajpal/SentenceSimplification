@@ -48,7 +48,9 @@ public class DependenciesParser {
             final Collection<TypedDependency> sentenceDependencies = grammaticalStructure.typedDependenciesCCprocessed();
             final QuestionSentence questionSentence = new QuestionSentence(text, sentenceText, sentenceDependencies, taggedWords);
 
-            questionSentences.addAll(CONJUNCTION_SIMPLIFIER.simplify(questionSentence, taggedWords));
+            final List<QuestionSentence> conjunctionSimplifiedQuestionSentences =
+                    CONJUNCTION_SIMPLIFIER.simplify(questionSentence, taggedWords);
+            questionSentences.addAll(conjunctionSimplifiedQuestionSentences);
         }
 
         System.out.println(questionSentences);
