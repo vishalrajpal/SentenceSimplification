@@ -1,0 +1,32 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{coling2016}
+\usepackage{times}
+\usepackage{enumerate}
+
+\title{Sentence Simplification Rules for an identified Conjunction}
+
+\begin{document}
+\maketitle
+\section{Rules to split the sentence based on a Conjunction}
+\begin{enumerate}[(a)]
+\item Create two sentences from the actual sentence. The first sentence is the part before the Conjunction while the second sentence is the part after the Conjunction.
+\item After this split, there may be some words which would be needed in the second Sentence as well.
+\item For Example: He went to the orchard and picked peaches to stock up . In this case after the split based on 'and' the first sentence will have a Pronoun while the second will not.
+\item Hence, there are some rules based on which the words will be added to the second sentence.
+\item If the first sentence starts with an Expletive/Existential and the second does not add the Expletive/Existential to the second sentence as well. 
+\item If the first sentence starts with an Expletive/Existential and has a Verb after the Expletive, If the second sentence does not have any of the Expletive/Existential and Verb add them to the second sentence.
+\item Example There were 2 siamese cats and 4 house cats.
+\item The two sentences should be There were 2 siamese cats. There were 2 house cats.
+\item If the first sentence starts with a Noun, and if the second sentence starts with a Verb add the Noun from the first sentence to it.
+\item Example: Joan ate 2 oranges and threw 3 apples.
+\item After splitting the sentences will be: Joan ate 2 oranges. Joan threw 3 apples.
+\item If the first sentence starts with a Noun and if the second sentence does not starts with a Noun Verb pattern, add the Noun and Verb to the second sentence.
+\item Example: Joan ate 2 oranges and 3 apples.
+\item After splitting the sentences will be: Joan ate 2 oranges. Joan ate 3 apples.
+\item If the first sentence starts with a Noun and the second sentence has a Noun Verb pattern, do nothing.
+\item When two sentences are created based on the DependencyParser and out extraction method, there might be some words which might not have been identified by our extraction method. But we still need those words in the simplified sentences.
+\item Therefore, extract all the words which have not been identified by our method.
+\item If those words occur before the conjunction append it to the first sentence and if they occur after the conjunction append it to the second sentence.
+
+\end{enumerate}
+\end{document}
