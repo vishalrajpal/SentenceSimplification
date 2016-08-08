@@ -1,0 +1,31 @@
+\begin{thebibliography}{}
+
+\bibitem[Hosseini et~al., 2014]{ARIS}
+Hosseini, M.~J., Hajishirzi, H., Etzioni, O., and Kushman, N. (2014).
+\newblock Learning to solve arithmetic word problems with verb categorization.
+\newblock In Moschitti, A., Pang, B., and Daelemans, W., editors, {\em
+  Proceedings of the 2014 Conference on Empirical Methods in Natural Language
+  Processing, {EMNLP} 2014, October 25-29, 2014, Doha, Qatar, {A} meeting of
+  SIGDAT, a Special Interest Group of the {ACL}}, pages 523--533. {ACL}.
+
+\bibitem[Kushman et~al., 2014]{Kushman}
+Kushman, N., Artzi, Y., Zettlemoyer, L., and Barzilay, R. (2014).
+\newblock Learning to automatically solve algebra word problems.
+\newblock In {\em Proceedings of the 52nd Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 271--281,
+  Baltimore, Maryland. Association for Computational Linguistics.
+
+\bibitem[Roy and Roth, 2015]{RoyR15}
+Roy, S. and Roth, D. (2015).
+\newblock Solving general arithmetic word problems.
+\newblock In Màrquez, L., Callison-Burch, C., Su, J., Pighin, D., and Marton,
+  Y., editors, {\em EMNLP}, pages 1743--1752. The Association for Computational
+  Linguistics.
+
+\bibitem[Roy et~al., 2015]{RoyTACL15}
+Roy, S., Vieira, T., and Roth, D. (2015).
+\newblock Reasoning about quantities in natural language.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  3:1--13.
+
+\end{thebibliography}
