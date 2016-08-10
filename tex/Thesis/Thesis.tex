@@ -17,10 +17,10 @@ In order to respond to an arithmetic word problem correctly one needs to underst
 \end{abstract}
 
 \section{Introduction}
-Answering arithmetic word problems has gained a lot of interest in recent years. The problem is attractive to NLP since the text is concise and relatively straightforward with identifiable semantic constraints. As the arithmetic word problems are directed towards elementary school students, they begin by describing a partial world state, followed by simple quantified updates or elaborations and end with a quantitative question. This information can be mapped to basic operators(addition, subtraction, multiplication and division) and a equation corresponding to the entire problem can be created. 
+Answering arithmetic word problems has gained a lot of interest in recent years. The problem is attractive to NLP since the text is concise and relatively straightforward with identifiable semantic constraints. As these problems are directed towards elementary school students, they begin by describing a partial world state, followed by simple quantified updates or elaborations and end with a quantitative question. This information can be mapped to basic operations(addition, subtraction, multiplication and division) and an equation can be created corresponding to the problem text. 
 
 There have been a number of attempts to solve arithmetic word problems through Machine Learning. 
-All the approaches which are not template based \citep{ARIS}, \citep{RoyTACL15} and \citep{RoyR15} use different methods to extract similar information. Based on different ways the information is represented, an equation is built for the problem text. The template absed method of \citep{Kushman} implicitly assumes that the solution will be generated from a set of predefined equation templates. Some of these methods only solve addition and subtraction problems \citep{ARIS}, \citep{RoyTACL15} while \citep{RoyR15} and \citep{Kushman} can solve problems for all operations.
+All the approaches which are not template based \citep{ARIS}, \citep{RoyTACL15} and \citep{RoyR15} use different methods to extract similar information. Based on different ways the information is represented, an equation is built for the problem text. The template based method of \citep{Kushman} implicitly assumes that the solution will be generated from a set of predefined equation templates. Some of these methods only solve addition and subtraction problems \citep{ARIS}, \citep{RoyTACL15} while \citep{RoyR15} and \citep{Kushman} can solve problems for all operations.
 
 The approach presented in this thesis can solve a general class of addition and subtraction arithmetic word problems without any predefined equation templates. In particular, it can handle an arithmetic problem as shown in Table 1.
 
@@ -30,22 +30,30 @@ The approach presented in this thesis can solve a general class of addition and 
 \hline
 Example 1:\\
 \hline
-Joan found 70 seashells on the beach . she gave Sam some of her seashells . She has 27 seashell . How many seashells did she give to Sam ?\\
+For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?\\
 \hline
 \end{tabular}
 \caption{Example Arithmetic Word Problem.}
 \label{table:1}
 \end{table}
 
-To derive the solution to this problem, the approach needs to understand that after giving some number of seashells from initial 70, Joan was left with 27. 
+To derive the solution to this problem, the approach needs to understand that \textit{they} refers to \textit{Debby and her sister}. Hence, the number of candies need to be summed up and then \textit{35 candies} need to be subtracted from the total number of candies. 
 
 While a solution to these problems requires extracting information and composing numeric expressions, if the sentence is too complex it is hard to extract information accurately.
 
-At the heart of the technical approach, the novel notion of \textit{Sentence Simplification} is involved. Once the sentences in the problem text are simplified, extracting information becomes easier. Each sentence in the problem is simplified to a level where it consists information which is able to be mapped to a single operator. This allows us to decompose the entire problem to a collection of simplified sentences as operator prediction problems, each sentence representing the quantitative information with the mapped operator. These predictions(operators with the quantitative information) can be combined together to form a mathematical equation.
+At the heart of the technical approach, the novel notion of \textit{Sentence Simplification} is involved. Once the sentences in the problem text are simplified, extracting information becomes easier. Each sentence in the problem is simplified to a level where it consists information which is able to be mapped to a single operator. This allows us to decompose the entire problem to a collection of simplified sentences as operator prediction problems. Each sentence represents the quantitative information with the mapped operator. These predictions(operators with the quantitative information) can be combined together to form a mathematical equation.
 
 The approach focuses on addition and subtraction problems currently, but learning to classify operators will allow us to generalize the approach to multiplication and division problems as well. In particular, the system was able to solve Example 1 although it had never seen the problem before and required both addition and subtraction operations.
 
-The approach is evaluated on 3 datasets, achieving competitive performance on all of them. The next section describes the related work in the area of automated arithmetic word problem solving. The theory of sentence simplification is then presented and the information decomposition strategy that is based on it. Section 4 presents the overall computational approach, including the way we learn to classify simplified sentences to operators. Finally, experimental study is discussed followed with conclusion.
+The approach is evaluated on 3 datasets, achieving competitive performance on all of them. The next section describes the related work in the area of automated arithmetic word problem solving. The theory of sentence simplification is then presented, later the information decomposition strategy that is based on it is discussed. Section 4 presents the overall computational approach, including the way classifier learns to classify simplified sentences to operators. Finally, experimental study is discussed followed with a conclusion.
+
+\section{Related Work}
+Most of the previous work in automated arithmetic problem solvers has focused on a restricted subset of problems.The approach described in \citep{RoyTACL15} handles problems with all basic operations but makes assumptions about the number of quantities in the problem text and the number of steps required to solve the problem. In contrast, our approach does not make any assumptions about the data in the problem text. Kushman's approach \citep{Kushman} tries to map numbers from the problem text to predefined equation templates and implicitly assume that similar equation forms have been seen in the training data. In contrast, our system does not rely on pre-defined templates and hence is able to solve questions of type which have never been seen before.  The approach described in \citep{ARIS} might be the most related to ours. It handles addition and subtraction problems and tries to predict an operator for the verb in the problem text. Hence, it requires additional annotated data for verb categories. Our approach uses the information of the verb present in the sentence and handles addition and subtraction problems for now, but there is no requirement of additional annotated data. 
+
+Most of the methods mentioned above are able to solve problems with all basic operations, but our approach is easily generalizable to all the operators and also it performs competitevely as compared to all other approaches. 
+
+\section{Sentence Simplification and Problem Decomposition}
+
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
