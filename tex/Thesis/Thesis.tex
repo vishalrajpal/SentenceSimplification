@@ -53,6 +53,58 @@ Most of the previous work in automated arithmetic problem solvers has focused on
 Most of the methods mentioned above are able to solve problems with all basic operations, but our approach is easily generalizable to all the operators and also it performs competitevely as compared to all other approaches. 
 
 \section{Sentence Simplification and Problem Decomposition}
+Sentences in an arithmetic word problem are sometimes complex. Hence, its difficult to extract information from such sentences. More than extracting the information it is difficult to predict the impact of the sentence on the result. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{25em} | }
+\hline
+Example 2:\\
+\hline
+Henry had 11 dollars. For his birthday he got 18 more dollars but spent 10 on a new game. How much money does he have now?\\
+\hline
+\end{tabular}
+\caption{Example Arithmetic Word Problem.}
+\label{table:2}
+\end{table}
+
+The second sentence in the above example is complex for a machine learning algorithm. It has addition and subtraction operation in a single sentence. Our idea is to simplify the sentence to multiple simple sentences so that each simplified sentence has a single operation. Below are the simplified sentences for the second sentence in the above example:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{25em} | }
+\hline
+ \textbf{For his birthday he got 18 more dollars but spent 10 on a new game.}\\
+\hline
+ For his birthday he got 18 more dollars.\\
+\hline
+He spent 10 dollars on a new game.\\
+\hline
+\end{tabular}
+\caption{Simplified Sentences.}
+\label{table:3}
+\end{table}
+
+We create a mapping for each sentence in the problem text to its simplified sentences by extracting the relational dependencies for each sentence from the stanford dependency parser\footnote{http://stanfordnlp.github.io/CoreNLP/ }. Multiple sentences are created based on the dependencies of the actual sentence. Currenly, our simplification system simplifies sentences based on conjunctions and commas. There are certain rules when simplifying the sentence.
+
+\subsection{Rules for simplifying sentences based on conjunctions.}
+ When a conjunction is encountered, our simplification system attempts to create two simplified sentences from the actual sentence. The first sentence is the part before the conjunction while the second sentence is the part after the conjunction.
+
+But, after the split there may be some words which would be required in the second sentence. Consider the example in Table 4:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{25em} | }
+\hline
+ \textbf{Example Sentence.}\\
+\hline
+The school cafeteria ordered 42 red apples and 7 green apples for students lunches.\\
+\hline
+\end{tabular}
+\label{table:4}
+\end{table}
+
+In the sentence above, the split based on conjunction 'and' will result in the first sentence with a Noun while the second will not have a Noun and a Verb. Hence, there are some rules for adding words to the second simplified sentence.
 
 \newpage
 \bibliographystyle{apalike}
