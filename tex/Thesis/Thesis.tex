@@ -320,7 +320,63 @@ In this thesis, a new concept known as Syntactic Pattern is introduced which is 
 \caption{\label{fig:Figure1}Example sentence of a word problem and its syntactic pattern.}
 \end{figure}
 
+As in the above example, the pattern \textit{NVQNPN} consists of the initials of the parts of speech in the sentence in their appearance order. This pattern is helpful in many ways:
 
+\textbf{Grouping Multiple Fragments:} Many fragments will have a similar syntactic pattern. Our findings suggest that the fragments having a similar pattern perform similar type of operation. Refer to the below example:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{16em} | m{6em} | m{6em} |}
+\hline
+\textbf{Example Sentence} & \textbf{Syntactic Pattern} & \textbf{Operation}\\
+\hline
+Joan found 70 seashells on the beach. & \textbf{NVQNPN} & Addition \\
+\hline
+Mary took 10 rulers from the drawer. & \textbf{NVQNPN} & Subtraction\\
+\hline
+Dave gave some rulers to Mary. & \textbf{NVDNPN} & Assignment\\
+\hline
+\end{tabular}
+\caption{Example sentences and their Syntactic Pattern.}
+\label{table:14}
+\end{table}
+ 
+The first two examples have the same pattern and hence perform a similar operation \textit{Addition and Subtraction}. The last sentence has a different pattern and performs an assignment operation which is different than the basic math operations. Refer to Section Features for more information.
+
+\textbf{Metadata:} The pattern acts as a metadata for our fragments. Based on our representation, it is easy to determine if the fragment consists of any conjunction, quantities or any other parts of speech. This information is used in Section Features.
+
+\section {Operator Prediction Classifier}
+We train 4 Logistic Regression binary classifiers each for different operators \textit{(+, -, =, ?)}. We then use one versus all technique tocombine the results from the binary classifiers and determine, given a fragment \textit{f} from a problem text \textit{p}, which one of the operations \textit{f} is most likely to perform. Our training data consists of 350 labeled fragments. 
+
+\subsection {Features}
+
+\subsubsection{Syntactic Patterns}
+From 350 training fragments, we were able to extract 125 syntactic patterns. This proves that multiple fragments had same patterns. We use these patterns as individual features. The pattern to which the fragment belongs is set\textit{(on)} and the other patterns are not set\textit{(off)}. We use one-hot encoding approach for pattern features.
+
+\subsubsection{Count based Features}
+Based on our analysis we found that having a count of some parts of speech occuring the the syntactic pattern proves to be helpful to the classifier in learning accurately. Refer to Table 14 for more details:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{5em} | m{25em} |}
+\hline
+\textbf{Feature} & \textbf{Description} \\
+\hline
+ Number of Nouns. & Generally a fragment having 2 nouns\textit{subject and object} is more likely to be predicted to addition or subtraction operation.\\
+\hline
+Number of Prepositions. & A single preposition(such as \textit{from} or \textit{to} is suggesting some basic math operation.\\
+\hline
+Number of Verbs. & This is basically to indicate that of a verb exists, the fragment suggests an operation.\\
+\hline
+Number of Quantities. & Similar to verbs, existence of quantities in the fragment is more likely to predict an operation.\\
+\hline
+\end{tabular}
+\caption{Count based Features.}
+\label{table:15}
+\end{table}
+
+\subsubsection{Occurence based Features}
+\textbf{Relation based occurence features:}
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
