@@ -52,6 +52,80 @@ Most of the previous work in automated arithmetic problem solvers has focused on
 
 Most of the methods mentioned above are able to solve problems with all basic operations, but our approach is easily generalizable to all the operators and also it performs competitevely as compared to all other approaches. 
 
+\section{Arithmetic Problem Representation}
+
+Our approach addresses word problems that include addition and subtraction problems. Given a problem text, multiple fragments are extracted from it  where each fragment is a simplified version of the information presented in the sentence. We refer to these fragments as simplified sentences. Each fragment is represented based on the Parts of Speech it contains. Below are the parts of speech we consider in our representation:
+\par
+
+
+
+\textbf{Adjective:} A problem text might have multiple types of same entities. Consider the below example:
+
+ \begin{table}[h!]
+\centering
+\begin{tabular}{ | m{25em} | }
+\hline
+ \textbf{A pet store had 13 siamese cats and 5 house cats.}\\
+\hline
+ siamese cats\\
+\hline
+house cats.\\
+\hline
+\end{tabular}
+\caption{Entities with Adjective.}
+\label{table:2}
+\end{table}
+
+Though the example sentence had cats as the Noun, but based on the adjectives\textit{(siamese and house)} there were siamese cats and house cats. We consider them as different Nouns unless the Noun is mentioned without any adjectives.
+
+\textbf{Cardinal:} Cardinals are the numbers present in the problem text. We associate them to Nouns based on the index at which they occur. Mostly, they occur before the Noun and hence associating it is not difficult. Sometimes, the cardinal is a reference to an already occured Noun. Consider the example below:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{25em} | }
+\hline
+He bought 2 games from a friend and bought 5 more at a garage sale.\\
+\hline
+2 games\\
+\hline
+5 games\\
+\hline
+\end{tabular}
+\caption{Entity with Cardinal Numbers.}
+\label{table:2}
+\end{table}
+
+\textit{5 more} in the above example refers to games. We associate this to the last quantified Noun encountered in the sentence.
+
+\textbf{Conjunction:} Conjunctions are stored mainly to simplify the sentence having them. Most importantly, the index at which it occurs in the sentence plays a crucial role in creating simplified sentences.
+
+\textbf{Determiner:} Determiner by definition is \textit{a modifying word that determines the kind of reference a noun or a noun group has.} 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{25em} | }
+\hline
+There are 28 students and Every student has their own lunchbox.\\
+\hline
+\textit{Every} is a determiner\\
+\hline
+\end{tabular}
+\caption{Sentence with Determiner.}
+\label{table:2}
+\end{table}
+
+In the above example, \textit{Every} is a determiner and when considering it, our system will be able to extract the information that there are \textit{28 lunchboxes}.
+
+\textbf{Existential/Expletive:} Since, Existentials/Expletives indicate the existence or presence of something they are an important Part of Speech for our system. Also, when the sentences are simplified, the existentials are added to the fragments which don't have them. Refer to the next section for more details.
+
+\textbf{Noun:} Nouns are important for answering the arithmetic word problems. Each problem text has some Nouns in form of a subject \textit{(acting entity)} or an object \textit{(Entity that is acted upon by the subject)}. All the nouns are extracted from the simplified sentence and stored as a list. 
+
+\textbf{Preposition:} Prepositions are helpful to keep track of location or time. Also when simplifying sentences based on conjunctions we use this representation to add to the sentences which are missing prepositions. Refee to the next section for more details and example.
+
+\textbf{Verb:} Verbs are important for out system to predict the type of action taken by the subject. Determining the kind of action helps to predict an operation. More details on this in Section Features.
+
+\textbf{WHAdverb:} Existence of a WHAdverb mostly indicates the beginning of a question. Hence, having the wbadverb in our representation helps us in the classification process. Refer to the Section Features.
+
 \section{Sentence Simplification and Problem Decomposition}
 Sentences in an arithmetic word problem are sometimes complex. Hence, its difficult to extract information from such sentences. More than extracting the information it is difficult to predict the impact of the sentence on the result. 
 
@@ -168,6 +242,26 @@ Sara has 8 yellow balloons.\\
 \end{table}
 
 No words from the first sentence were added to the second since the second sentence had the \textit{Noun Verb (Sara has)} pattern.
+
+\item
+If the second sentence contains a preposition at the end and the first sentence does not have a preposition, the preposition from the second sentence will be added to the first. Consider the below example:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{25em} | }
+\hline
+ \textbf{Joan found 6 seashells and Jessica found 8 seashells on the beach.}\\
+\hline
+Joan found 6 seashells on the beach.\\
+\hline
+Jessica found 8 seashells on the beach .\\
+\hline
+\end{tabular}
+\caption{Example sentence for this rule.}
+\label{table:7}
+\end{table}
+
+After splitting the sentence based on \textit{and} the preposition and the words after it \textit{on the beach} were added to the first sentence.
 
 \item
 Based on the output by the dependency parser and our rules, there might be some words which might not have been identified. But we still need those words in the simplified sentences.
