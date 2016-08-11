@@ -30,7 +30,7 @@ The approach presented in this thesis can solve a general class of addition and 
 \hline
 Example 1:\\
 \hline
-For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?\\
+For Halloween, Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?\\
 \hline
 \end{tabular}
 \caption{Example Arithmetic Word Problem.}
@@ -45,18 +45,16 @@ At the heart of the technical approach, the novel notion of \textit{Sentence Sim
 
 The approach focuses on addition and subtraction problems currently, but learning to classify operators will allow us to generalize the approach to multiplication and division problems as well. In particular, the system was able to solve Example 1 although it had never seen the problem before and required both addition and subtraction operations.
 
-The approach is evaluated on 3 datasets, achieving competitive performance on all of them. The next section describes the related work in the area of automated arithmetic word problem solving. The theory of sentence simplification is then presented, later the information decomposition strategy that is based on it is discussed. Section 4 presents the overall computational approach, including the way classifier learns to classify simplified sentences to operators. Finally, experimental study is discussed followed with a conclusion.
+The approach is evaluated on 3 datasets, achieving competitive performance on all of them. The next section describes the related work in the area of automated arithmetic word problem solving. The theory of sentence simplification is then presented. Later the information decomposition strategy that is based on it is discussed. Section 4 presents the overall computational approach, including the way classifier learns to classify simplified sentences to operators. Finally, experimental study is discussed followed with a conclusion.
 
 \section{Related Work}
-Most of the previous work in automated arithmetic problem solvers has focused on a restricted subset of problems.The approach described in \citep{RoyTACL15} handles problems with all basic operations but makes assumptions about the number of quantities in the problem text and the number of steps required to solve the problem. In contrast, our approach does not make any assumptions about the data in the problem text. Kushman's approach \citep{Kushman} tries to map numbers from the problem text to predefined equation templates and implicitly assume that similar equation forms have been seen in the training data. In contrast, our system does not rely on pre-defined templates and hence is able to solve questions of type which have never been seen before.  The approach described in \citep{ARIS} might be the most related to ours. It handles addition and subtraction problems and tries to predict an operator for the verb in the problem text. Hence, it requires additional annotated data for verb categories. Our approach uses the information of the verb present in the sentence and handles addition and subtraction problems for now, but there is no requirement of additional annotated data. 
+Most of the previous work in automated arithmetic problem solvers has focused on a restricted subset of problems.The approach described in \citep{RoyTACL15} handles problems with all basic operations but makes assumptions about the number of quantities in the problem text and the number of steps required to solve the problem. In contrast, our approach does not make any assumptions about the data in the problem text. Kushman's approach \citep{Kushman} tries to map numbers from the problem text to predefined equation templates and implicitly assume that similar equation forms have been seen in the training data. On the contrary, our system does not rely on pre-defined templates and hence is able to solve questions of type which have never been seen before.  The approach described in \citep{ARIS} might be the most related to ours. It handles addition and subtraction problems and tries to predict an operator for the verb in the problem text. Hence, it requires additional annotated data for verb categories. Our approach uses the information of the verb present in the sentence and handles addition and subtraction problems for now, but there is no requirement of additional annotated data. Refer to Section 5 for how the information from verbs is used as a feature. 
 
-Most of the methods mentioned above are able to solve problems with all basic operations, but our approach is easily generalizable to all the operators and also it performs competitevely as compared to all other approaches. 
+Most of the methods mentioned above are able to solve problems with all basic operations but our approach is easily generalizable to all the operators and also it performs competitevely compared to all other approaches. 
 
 \section{Arithmetic Problem Representation}
 
-Our approach addresses word problems that include addition and subtraction problems. Given a problem text, multiple fragments are extracted from it  where each fragment is a simplified version of the information presented in the sentence. We refer to these fragments as simplified sentences. Each fragment is represented based on the Parts of Speech it contains. Below are the parts of speech we consider in our representation:
-\par
-
+Our approach addresses word problems that include addition and subtraction operations. Given a problem text, multiple fragments are extracted from it  where each fragment is a simplified version of the information presented in the sentence. We refer to these fragments as simplified sentences. Each fragment is represented based on the Parts of Speech it contains. Below are the parts of speech we consider in our representation:
 
 
 \textbf{Adjective:} A problem text might have multiple types of same entities. Consider the below example:
@@ -76,15 +74,16 @@ house cats.\\
 \label{table:2}
 \end{table}
 
-Though the example sentence had cats as the Noun, but based on the adjectives\textit{(siamese and house)} there were siamese cats and house cats. We consider them as different Nouns unless the Noun is mentioned without any adjectives.
+Though the example sentence has cats as the noun, but based on the adjectives\textit{(siamese and house)} there were siamese cats and house cats.
+\vspace{4mm}
 
-\textbf{Cardinal:} Cardinals are the numbers present in the problem text. We associate them to Nouns based on the index at which they occur. Mostly, they occur before the Noun and hence associating it is not difficult. Sometimes, the cardinal is a reference to an already occured Noun. Consider the example below:
+\textbf{Cardinal:} Cardinals are the numbers present in the problem text. We associate them to nouns based on the index at which they occur. Mostly, they occur before the noun and hence associating it is not difficult. Sometimes, the cardinal is a reference to an already occured noun. Consider the example below:
 
 \begin{table}[h!]
 \centering
 \begin{tabular}{ | m{25em} | }
 \hline
-He bought 2 games from a friend and bought 5 more at a garage sale.\\
+\textbf{He bought 2 games from a friend and bought 5 more at a garage sale.}\\
 \hline
 2 games\\
 \hline
@@ -92,12 +91,14 @@ He bought 2 games from a friend and bought 5 more at a garage sale.\\
 \hline
 \end{tabular}
 \caption{Entity with Cardinal Numbers.}
-\label{table:2}
+\label{table:3}
 \end{table}
 
-\textit{5 more} in the above example refers to games. We associate this to the last quantified Noun encountered in the sentence.
+\textit{5 more} in the above example refers to games. We associate this to the last quantified noun encountered in the sentence.
+\vspace{4mm}
 
-\textbf{Conjunction:} Conjunctions are stored mainly to simplify the sentence having them. Most importantly, the index at which it occurs in the sentence plays a crucial role in creating simplified sentences.
+\textbf{Conjunction:} Conjunctions are stored mainly to simplify the sentence. Most importantly, the index at which it occurs in the sentence plays a crucial role in creating simplified sentences.
+\vspace{4mm}
 
 \textbf{Determiner:} Determiner by definition is \textit{a modifying word that determines the kind of reference a noun or a noun group has.} 
 
@@ -105,29 +106,51 @@ He bought 2 games from a friend and bought 5 more at a garage sale.\\
 \centering
 \begin{tabular}{ | m{25em} | }
 \hline
-There are 28 students and Every student has their own lunchbox.\\
+\textbf{There are 28 students and every student has their own lunchbox.}\\
 \hline
 \textit{Every} is a determiner\\
 \hline
 \end{tabular}
 \caption{Sentence with Determiner.}
-\label{table:2}
+\label{table:4}
 \end{table}
 
 In the above example, \textit{Every} is a determiner and when considering it, our system will be able to extract the information that there are \textit{28 lunchboxes}.
+\vspace{4mm}
 
-\textbf{Existential/Expletive:} Since, Existentials/Expletives indicate the existence or presence of something they are an important Part of Speech for our system. Also, when the sentences are simplified, the existentials are added to the fragments which don't have them. Refer to the next section for more details.
+\textbf{Existential/Expletive:} Since, existentials indicate the existence or presence of something, they are an important part of speech for our system. Also, when the sentences are simplified, the existentials are added to the fragments which don't have them. Refer to the next section for more details.
 
-\textbf{Noun:} Nouns are important for answering the arithmetic word problems. Each problem text has some Nouns in form of a subject \textit{(acting entity)} or an object \textit{(Entity that is acted upon by the subject)}. All the nouns are extracted from the simplified sentence and stored as a list. 
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{25em} | }
+\hline
+\textbf{There are 11 rulers and 34 crayons in the drawer.}\\
+\hline
+There are 11 rulers in the drawer.\\
+\hline
+There are 34 crayons in the drawer.\\
+\hline
+\end{tabular}
+\caption{Simplified sentences based on Existential.}
+\label{table:5}
+\end{table}
 
-\textbf{Preposition:} Prepositions are helpful to keep track of location or time. Also when simplifying sentences based on conjunctions we use this representation to add to the sentences which are missing prepositions. Refee to the next section for more details and example.
+After the split based on conjunction \textit{and} the expletive \textit{There} is added to the fragment after the conjunction.
+\vspace{4mm}
+
+\textbf{Noun:} Nouns are important for answering the arithmetic word problems. Each problem text has some nouns in form of a subject \textit{(acting entity)} or an object \textit{(Entity that is acted upon by the subject)}. All the nouns are extracted from the simplified sentence and stored as a list. 
+\vspace{4mm}
+
+\textbf{Preposition:} Prepositions are helpful to keep track of location or time. Also, when simplifying sentences based on conjunctions we add prepositions to the fragments which are missing them. Refer to the next section for more details and example.
+\vspace{4mm}
 
 \textbf{Verb:} Verbs are important for out system to predict the type of action taken by the subject. Determining the kind of action helps to predict an operation. More details on this in Section Features.
+\vspace{4mm}
 
-\textbf{WHAdverb:} Existence of a WHAdverb mostly indicates the beginning of a question. Hence, having the wbadverb in our representation helps us in the classification process. Refer to the Section Features.
+\textbf{WHAdverb:} Existence of a WHAdverb mostly indicates the beginning of a question. Hence, having the WHAdverb in our representation helps us in the classification process. Refer to the Section Features.
 
 \section{Sentence Simplification and Problem Decomposition}
-Sentences in an arithmetic word problem are sometimes complex. Hence, its difficult to extract information from such sentences. More than extracting the information it is difficult to predict the impact of the sentence on the result. 
+Sentences in an arithmetic word problem are sometimes complex. Hence, it is difficult to extract information from such sentences. Even more challenging is to predict the impact of the sentence on the result. 
 
 \begin{table}[h!]
 \centering
@@ -139,7 +162,7 @@ Henry had 11 dollars. For his birthday he got 18 more dollars but spent 10 on a 
 \hline
 \end{tabular}
 \caption{Example Arithmetic Word Problem.}
-\label{table:2}
+\label{table:6}
 \end{table}
 
 The second sentence in the above example is complex for a machine learning algorithm. It has addition and subtraction operation in a single sentence. Our idea is to simplify the sentence to multiple simple sentences so that each simplified sentence has a single operation. Below are the simplified sentences for the second sentence in the above example:
@@ -156,10 +179,10 @@ He spent 10 dollars on a new game.\\
 \hline
 \end{tabular}
 \caption{Simplified Sentences.}
-\label{table:3}
+\label{table:7}
 \end{table}
 
-We create a mapping for each sentence in the problem text to its simplified sentences by extracting the relational dependencies for each sentence from the stanford dependency parser\footnote{http://stanfordnlp.github.io/CoreNLP/ }. Multiple sentences are created based on the dependencies of the actual sentence. Currenly, our simplification system simplifies sentences based on conjunctions and commas. There are certain rules when simplifying the sentence.
+We create a mapping for each sentence in the problem text to its simplified sentences by extracting their relational dependencies for each sentence from the stanford dependency parser\footnote{http://stanfordnlp.github.io/CoreNLP/ }. Currenly, our simplification system simplifies sentences based on conjunctions and commas. There are certain rules when simplifying the sentence.
 
 \subsection{Rules for simplifying sentences based on conjunctions.}
  When a conjunction is encountered, our simplification system attempts to create two simplified sentences from the actual sentence. The first sentence is the part before the conjunction while the second sentence is the part after the conjunction.
@@ -175,18 +198,18 @@ But, after the split there may be some words which would be required in the seco
 The school cafeteria ordered 42 red apples and 7 green apples for students lunches.\\
 \hline
 \end{tabular}
-\label{table:4}
+\label{table:8}
 \end{table}
 
-In the sentence above, the split based on conjunction 'and' will result in the first sentence with a Noun while the second will not have a Noun and a Verb. Hence, there are some rules for adding words to the second simplified sentence.
+In the sentence above, the split based on conjunction \textit{and} will result in the first sentence with a subject while the second will not have a subject and a verb. Hence, there are some rules for adding words to the second simplified sentence.
 
 \subsubsection{Rules for adding words to second simplified sentence.}
 \begin{enumerate}
  \item 
-If the first sentence starts with an Expletive/Existential and the second does not, add the Expletive/Existential to the second sentence as well.
+If the first sentence starts with an existential and the second does not, add the existential to the second sentence as well.
 
 \item 
-If the first sentence starts with an Expletive/Existential and has a Verb after the Expletive, If the second sentence does not have any of the Expletive/Existential and Verb, add them to the second sentence. Consider the below example:
+If the first sentence starts with an existential and has a verb after it, If the second sentence does not have either expletive or verb, add them to the second sentence. Consider the below example:
 
 \begin{table}[h!]
 \centering
@@ -200,13 +223,13 @@ There were 2 house cats.\\
 \hline
 \end{tabular}
 \caption{Example sentence for this rule.}
-\label{table:4}
+\label{table:9}
 \end{table}
 
 The expletive and verb were added to second sentence based on the simplification rule mentioned above.
 
 \item
-If the first sentence starts with a Noun, and if the second sentence starts with a Verb, the Noun from the first sentence will be added to the second.
+If the first sentence starts with a noun, and if the second sentence starts with a verb, the noun from the first sentence will be added to the second.
 
 \begin{table}[h!]
 \centering
@@ -220,11 +243,11 @@ Joan threw 3 apples.\\
 \hline
 \end{tabular}
 \caption{Example sentence for this rule.}
-\label{table:5}
+\label{table:10}
 \end{table}
 
 \item 
-If the first sentence starts with a Noun and the second sentence has a \textit{Noun Verb} pattern, do nothing.
+If the first sentence starts with a noun and the second sentence has a \textit{noun verb} pattern, do nothing.
 
 \begin{table}[h!]
 \centering
@@ -238,10 +261,10 @@ Sara has 8 yellow balloons.\\
 \hline
 \end{tabular}
 \caption{Example sentence for this rule.}
-\label{table:6}
+\label{table:11}
 \end{table}
 
-No words from the first sentence were added to the second since the second sentence had the \textit{Noun Verb (Sara has)} pattern.
+No words from the first sentence were added to the second since the second sentence had the \textit{noun verb (Sara has)} pattern.
 
 \item
 If the second sentence contains a preposition at the end and the first sentence does not have a preposition, the preposition from the second sentence will be added to the first. Consider the below example:
@@ -258,7 +281,7 @@ Jessica found 8 seashells on the beach .\\
 \hline
 \end{tabular}
 \caption{Example sentence for this rule.}
-\label{table:7}
+\label{table:12}
 \end{table}
 
 After splitting the sentence based on \textit{and} the preposition and the words after it \textit{on the beach} were added to the first sentence.
@@ -281,7 +304,7 @@ Sara has 8 yellow balloons.\\
 \hline
 \end{tabular}
 \caption{Example sentence for this rule.}
-\label{table:7}
+\label{table:13}
 \end{table}
 
 \end{enumerate}
