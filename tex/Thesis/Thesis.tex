@@ -537,7 +537,7 @@ The function is defined by the below formula:
 The function has finite limits and approaches negative infinity from the left side and to infinity from the right.  When the algorithm encounters an example, it updates the weight for a particular feature in the weight vector if the feature is set in the current example's feature vector. Based on the sigmoid function value, the gradient and all the parameters are updated. 
 
 \subsubsection{Training the classifier}
-We train our four LR binary classifiers on 300 operator labeled fragments and then use one versus all\textit(OvA) technique to combine the results from all four of them. The OvA strategy involves training a single classifier per class\textit(4 operators in our case). The samples of that class are treated as positive and all other samples are treated as negative. For example, when training a classifier for \textbf{+} operator, the training samples having \textbf{+} label are positive and samples having other labels i.e. \textbf{-, =, ?} are considered negative. This strategy requires the base classifiers to produce a real-valued confidence score for its decision, rather than just a label. Once we have a real valued score from all the base classifiers, the technique predicts a single class using the below mechanism:
+We train our four LR binary classifiers on 300 operator labeled fragments and then use one versus all\textit{(OvA)} technique to combine the results from all four of them. The OvA strategy involves training a single classifier per class\textit(4 operators in our case). The samples of that class are treated as positive and all other samples are treated as negative. For example, when training a classifier for \textbf{+} operator, the training samples having \textbf{+} label are positive and samples having other labels i.e. \textbf{-, =, ?} are considered negative. This strategy requires the base classifiers to produce a real-valued confidence score for its decision, rather than just a label. Once we have a real valued score from all the base classifiers, the technique predicts a single class using the below mechanism:
 
 \begin{equation}
 y^{\prime} = \argmax_{k = 1,...,K} f_{k}(x)
@@ -585,6 +585,60 @@ We evaluate our system on three datasets, each of which comprise a different cat
 
 
 \subsubsection{Experimental Setup}
+As explained in the Section 5.2, the algorithm needs 2 parameters \begin{math}\eta\end{math} and \begin{math}b\end{math}. Below are the values we use for all the four classifiers:
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Operator} & \begin{math}\eta\end{math} & \begin{math}b\end{math} \\
+\hline
++ & 0.0001 & -1.5 \\
+\hline
+- & 0.0005 & -1.0\\
+\hline
+= & 0.01 & 0.0\\
+\hline
+? & 0.001 & 0.0\\
+\hline
+\end{tabular}
+\end{center}
+\label{table:21}
+\caption{Parameter Values}
+\end{table}
+
+These values were decided based on performance on trial of certain values. The next section describes the results achieved on the datasets.
+
+\newpage
+\subsubsection{Results}
+
+The below results are achieved in evaluating our system on datasets mentioned above. 
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\bf Approach/Datasets & \bf A12 & \bf IL & \bf CC \\
+\hline
+ & 60\% & $72.88\%^{*}$ & $50\%^{*}$ \\
+\hline
+~\citep{RoyR15} & 78\% & 73.9\% & 45.2\% \\
+\hline
+~\citep{Kushman} & 64\% & 73.7\% & 2.3\% \\
+\hline
+~\citep{ARIS} & 77.7\% & - & - \\
+\hline
+~\citep{RoyTACL15} & - & 52.7 & - \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Accuracy in correctly solving arithmetic problems.}
+\label{table:22}
+\end{table}
+
+The first row of the above table are the results achieved by our system. We achieve competitive results compared to other approaches. For IL and CC datasets we only evvaluate on addition and subtraction problems and hence the results might not be the exact comparison.
+
+
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
