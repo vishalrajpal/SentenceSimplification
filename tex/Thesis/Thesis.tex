@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-\usepackage{amsmath}
+\usepackage{mathtools}
 
 \graphicspath{ {images/} }
 \begin{document}
@@ -527,10 +527,12 @@ We have 3 parameters as shown above: $\theta$(weight vector), $\eta$(learning ra
 \end{figure}
 
 The function is defined by the below formula:
-\begin{align*}
-S(t) &= \frac{1}{1 + e^{-t}} \\
-t &= \theta_{T}X
-\end{align*}
+\begin{flalign*}
+&S(t) = \frac{1}{1 + e^{-t}} \\
+&t = \theta_{T}X \\
+&\theta \rightarrow Weight vector \\
+&X \rightarrow Feature vector for an example
+\end{flalign*}
 
 The function has finite limits and approaches negative infinity from the left side and to infinity from the right.  When the algorithm encounters an example, it updates the weight for a particular feature in the weight vector if the feature is set in the current example's feature vector. Based on the sigmoid function value, the gradient and all the parameters are updated. 
 
