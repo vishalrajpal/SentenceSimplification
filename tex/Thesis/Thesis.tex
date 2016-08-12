@@ -638,7 +638,42 @@ The below results are achieved in evaluating our system on datasets mentioned ab
 
 The first row of the above table are the results achieved by our system. We achieve competitive results compared to other approaches. For IL and CC datasets we only evvaluate on addition and subtraction problems and hence the results might not be the exact comparison.
 
+\section{Discussion}
 
+Our system is generalized as it gives importance to every fragment initially and then based on its structure ignores irrelevant information. Not only verbs\citep{ARIS}, but other parts of speech play an equal role in solving arithmetic word problems. 
+
+\subsection{Future Work}
+\subsubsection{Multiplication and Division Problems}
+We aim to solve multiplication and division problems using a similar approach. Based on our analysis, we believe that by adding additional features and training data, multiplication and division problems could be solved.
+
+\subsubsection{Additional Complex Parsing Rules}
+Currently, our system employs some complex but mostly simpl rules to solve arithmetic problems. We aim to add more complex parsing rules to extract quantified nouns and their relations with verbs. This would help the classifier to predict operations more accurately. 
+
+\subsubsection{Improving the Classifier}
+We also plan to focus on improving the classifier by using some advanced machine learning methods. At this point, we have a LR classifier which performs reassonably well. This is an area to predict the operator for a fragment more accurately. We plan to consider ensembling methods in future.
+
+\subsection{Detailed Error Analysis}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{8cm}|>{\centering\arraybackslash}m{6cm}|}
+\hline
+\bf Error Type & \bf Example \\
+\hline
+Classification Errors (75\%) & He now has 56 books in his library. \textbf{Classified to "+" but should be "="}. \\
+\hline
+Parsing Issues (15\%) & Sara has 31 \textbf{red} and 15 green balloons. \\
+\hline
+Coreference Resolution (10\%) & When they cleaned them , they discovered that \textbf{29} were cracked. \\
+\hline
+\end{tabular}
+\label{table:23}
+\caption{Examples of different error categories and relative frequencies.}
+\end{center}
+\end{table}
+
+\section{Conclusion}
+This thesis presents a novel method for understanding and solving addition and subtraction arithmetic word problems. We develop a novel theoritical framework, centered around the notion of syntactic patterns and implement it to produce simplified sentences. This theory naturally leads to a solution to uniquely solve word problems - \textit{determine the operation and quantified nouns in the problem text}. The theory underlies our algorithmic solution. We show this by developing a classifier that yiields strong performance on several benchmark collections. Our approach also performs equally erll on multistep problems, even when it has never observed the particular problem type before.
+ 
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
