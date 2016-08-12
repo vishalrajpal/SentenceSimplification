@@ -4,6 +4,8 @@
 \usepackage{graphicx}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage{amsmath}
+
 \graphicspath{ {images/} }
 \begin{document}
 
@@ -502,15 +504,36 @@ Each class has its own binary LR classifier. We use an algorithm known as \textb
 
 \begin{algorithm}
 \caption{Stochastic Gradient Descent (SGD)}
-\textit{Initialize $\theta$, $\eta$;}
+\textit{Initialize $\theta$, $\eta$, b;}
 \begin{algorithmic}
 \Repeat 
-\State this
+\State Randomly permute data;
+\For{\texttt{i = 1:N}}
+\State s = sigm($X_{i}$);
+\State updateWeightVector(s, $X_{i}$);
+\State g = updateGradient(s, $y_{i}$);
+\State Update b;
+\EndFor
 \Until
 \end{algorithmic}
 \end{algorithm}
 
-In SGD, we repeatedly run through the training set, and each time we encounter a training example, we update the parameters according to the gradient of the error with respect to that single example only.
+We have 3 parameters as shown above: $\theta$(weight vector), $\eta$(learning rate) and b(bias). In SGD, we repeatedly run through the training set, and each time we encounter a training example, we update the parameters according to the gradient of the error with respect to that single example only. We calculate the error based on sigmoid function value. A sigmoid function is a mathematical function having an \textit{S} shaped curve \textbf{sigmoid curve}. Below is the sigmoid function:
+
+\begin{figure}[h!]
+\includegraphics[width=0.7\textwidth]{Figure2}
+\centering
+\caption{\label{fig:Figure2}Sigmoid Curve.}
+\end{figure}
+
+The function is defined by the below formula:
+\begin{align*}
+S(t) &= \frac{1}{1 + e^{-t}} \\
+t &= \theta_{T}X
+\end{align*}
+
+The function has finite limits and approaches negative infinity from the left side and to infinity from the right.  When the algorithm encounters an example, it updates the weight for a particular feature in the weight vector if the feature is set in the current example's feature vector. Based on the sigmoid function value, the gradient and all the parameters are updated. 
+
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
