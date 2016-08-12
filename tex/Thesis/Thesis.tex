@@ -2,6 +2,8 @@
 \usepackage{natbib}
 \usepackage{array}
 \usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \graphicspath{ {images/} }
 \begin{document}
 
@@ -496,7 +498,19 @@ Each fragment will to be classified to one of the operators/class mentioned in t
 \label{table:19}
 \end{table}
 
-Each class has its own binary LR classifier. 
+Each class has its own binary LR classifier. We use an algorithm known as \textbf{Stochastic Gradient Descent (SGD)} to train all the four LR classifiers. Below is the algorithm:
+
+\begin{algorithm}
+\caption{Stochastic Gradient Descent (SGD)}
+\textit{Initialize $\theta$, $\eta$;}
+\begin{algorithmic}
+\Repeat 
+\State this
+\Until
+\end{algorithmic}
+\end{algorithm}
+
+In SGD, we repeatedly run through the training set, and each time we encounter a training example, we update the parameters according to the gradient of the error with respect to that single example only.
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
