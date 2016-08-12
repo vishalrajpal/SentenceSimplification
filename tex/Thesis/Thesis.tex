@@ -5,7 +5,7 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{mathtools}
-
+\DeclareMathOperator*{\argmax}{arg\,max}
 \graphicspath{ {images/} }
 \begin{document}
 
@@ -536,6 +536,55 @@ The function is defined by the below formula:
 
 The function has finite limits and approaches negative infinity from the left side and to infinity from the right.  When the algorithm encounters an example, it updates the weight for a particular feature in the weight vector if the feature is set in the current example's feature vector. Based on the sigmoid function value, the gradient and all the parameters are updated. 
 
+\subsubsection{Training the classifier}
+We train our four LR binary classifiers on 300 operator labeled fragments and then use one versus all\textit(OvA) technique to combine the results from all four of them. The OvA strategy involves training a single classifier per class\textit(4 operators in our case). The samples of that class are treated as positive and all other samples are treated as negative. For example, when training a classifier for \textbf{+} operator, the training samples having \textbf{+} label are positive and samples having other labels i.e. \textbf{-, =, ?} are considered negative. This strategy requires the base classifiers to produce a real-valued confidence score for its decision, rather than just a label. Once we have a real valued score from all the base classifiers, the technique predicts a single class using the below mechanism:
+
+\begin{equation}
+y^{\prime} = \argmax_{k = 1,...,K} f_{k}(x)
+\end{equation}
+
+\subsubsection{Precision and Recall}
+Our testing data consists of 55 fragments. Below is the distribution of fragments among all the operations and their precision and recall values:
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\bf Operator & \bf No. of instances & \bf Precision & \bf Recall \\
+\hline
++ & 32 & 95.83\% & 71.87\% \\
+\hline
+- & 9 & 40\% & 66.66\% \\
+\hline
+= & 2 & 50\% & 50\% \\
+\hline
+? & 15 & 82.35\% & 93.33\% \\
+\hline
+\end{tabular}
+\end{center}
+\label{table:20}
+\caption{Precision and Recall}
+\end{table}
+
+The higher precision and recall of \textbf{?} is well understood as there were features such as the presence of an WHAdverb which made it easy for the classifier to predict them accurately. Whereas, for \textbf{+} the verb based similarity features played an important role. For \textbf{-} and \textbf{=} its not reallt correct to judge since there were less number of testing fragments.
+
+\subsection{Experimental Results}
+In this section, we evaluate the proposed method on publicly available datasets of arithmetic word problems. We show the parameter setup of our LR classifiers. Lastly, we evaluate the performance of the full system.
+
+\subsubsection{Datasets}
+We evaluate our system on three datasets, each of which comprise a different category of arithmetic word problems.
+
+\begin{enumerate}
+\item \textbf{A12 Dataset:} This dataset is a collection of 395 addition and subtraction problems, released by \citep{ARIS}. They perform a 3-fold cross validation, with every fold containing problems from different sources. This helps to evaluate robustness to domain diversity. To evaluate our system, we follow the same evaluation setting.
+
+\item \textbf{IL Dataset:} This is a collection of arithmetic problems released by \citep{RoyTACL15}. Each of these problems can be solved by performaing one operation. This dataset consists of problems having all basic operations but we only consider addition and subtraction problems. Though, we cannot compare our results to them, we still achieve a competitive accuracy on addition and subtraction problems. We use a 5-fold cross validation to evaluate on this dataset.
+
+\item \textbf{Commoncore Dataset:} This dataset is released by \citep{RoyR15} and consists of 600 word problems. These problems similar to the IL dataset have all basic operations, but we only consider addition and subtraction problems. 200 problems have addition and subtraction operations in them. We perform 6-fold cross validation to evaluate on these problems.
+\end{enumerate}
+
+
+\subsubsection{Experimental Setup}
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
