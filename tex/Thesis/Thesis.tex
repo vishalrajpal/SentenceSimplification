@@ -467,6 +467,36 @@ verb.weather\\
 \label{table:18}
 \end{table}
 
+We use Word2Vec to get 3 nearest words to the verb and send those words as an input to WordNet to get the verb categories they belong. We normalize the results for these 3 words and the results for the verb itself. Hence, In total we have 8 normalized similarity based features(verb categories)
+
+\subsection{Logistic Regression Classifier}
+
+Logistic Regression tries to fit a model of the form \begin{math} p(y|X) \end{math} which directly models the mapping from input \begin{math}X\end{math} to output \begin{math}y\end{math}. Since, it discriminates between class labels it is known as a discriminaive classifier. LR corresponds to following binary classification model:
+
+\begin{equation} p(y|X,W) = Ber(y|sigm(W^{T}X)) \end{equation}
+
+Each fragment will to be classified to one of the operators/class mentioned in the below table:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{5em} | m{20em} |}
+\hline
+ \textbf{Operator} & \textbf{Description}\\
+\hline
++ & Addition operation. \\
+\hline
+- & Subtraction operation. \\
+\hline
+= & Assignment operation. \\
+\hline
+? & The fragment is asking some question.\\
+\hline
+\end{tabular}
+\caption{Logistic Regression output classes.}
+\label{table:19}
+\end{table}
+
+Each class has its own binary LR classifier. 
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
