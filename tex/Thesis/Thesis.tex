@@ -315,7 +315,7 @@ Sara has 8 yellow balloons.\\
 In this thesis, a new concept known as Syntactic Pattern is introduced which is basically a summarized information about a fragment. It is a pattern consisting of the initials of the parts of speech which appear in the fragment. The initials are arranged in the order in which the words appear in the sentence. Consider the below figure:
 
 \begin{figure}[h!]
-\includegraphics[width=1.0\textwidth]{Figure1}
+\includegraphics[width=0.9\textwidth]{Figure1}
 \centering
 \caption{\label{fig:Figure1}Example sentence of a word problem and its syntactic pattern.}
 \end{figure}
@@ -353,6 +353,66 @@ We train 4 Logistic Regression binary classifiers each for different operators \
 \subsubsection{Syntactic Patterns}
 From 350 training fragments, we were able to extract 125 syntactic patterns. This proves that multiple fragments had same patterns. We use these patterns as individual features. The pattern to which the fragment belongs is set\textit{(on)} and the other patterns are not set\textit{(off)}. We use one-hot encoding approach for pattern features.
 
+\subsubsection{Occurence based Features}
+
+\textbf{Relation based occurence features:} Dependency relations in a fragment depict its structure. Presence of some dependency relations is useful for the classifier to predict operations. Particularly, \textit{nmod:poss} relation if exists in the fragment, can determine information about a subject possessing an object. \textit{nmod:of} helps to differentiate between two nouns of same kind. Below are the examples:
+
+\newpage
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{25em} | }
+\hline
+ \textbf{Sam had 20 pieces of cake and 10 pieces of butter in his plate.}\\
+\hline
+\textit{nmod:of(pieces-4, cake-6)}\\
+\hline
+\textit{nmod:of(pieces-9, butter-11)}\\
+\hline
+\textit{nmod:poss(plate-14, his-13)}\\
+\hline
+\end{tabular}
+\caption{Example relations in the fragment.}
+\label{table:16}
+\end{table}
+
+As in the above example, it is easy to see that presence of these relations is mostly in the fragments in which some operation takes place.
+
+\textbf{Pattern based occurence features:} Occurence of some sprecific sub pattern in the syntactic pattern of the fragment can be helpful. Specifically, \textbf{NVQN} and \textbf{QN} are used as features for the classifier. Their presence again indicates some operation. Consider the below example:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{20em} | m{5em} |}
+\hline
+ \textbf{Sentence} & \textbf{Syntacttic Pattern}\\
+\hline
+George had 30 dollars. & \textbf{NVQN} \\
+\hline
+18 cupcakes were sold. & \textbf{QNVV} \\
+\hline
+\end{tabular}
+\caption{Example occurence of a sub pattern.}
+\label{table:17}
+\end{table}
+
+In the first exmaple, both \textit{NVQN} and \textit{QN} appear. While, in the second \textit{QN} appears. Presence of quantity in a fragment is more likely to suggest an operation. 
+
+\textbf{Word based occurence features:} Occurence of some particular words in the fragment help the classifier. Below is list of some words and description of how they are helpful:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{5em} | m{15em} | m{15em} | }
+\hline
+ \textbf{Word} & \textbf{Description} & \textbf{Example}\\
+\hline
+\textit{now} & Suggests a resulting output after some operations. & 28 students wanted to have fruit. There are now 12 fruits remaining. \\
+\hline
+\textit{most, several, some} & Suggest an unknown quantity in the fragment. & Joan gave some of her seashells to Sam. \\
+\hline
+\end{tabular}
+\caption{Examples for occurence of specific words.}
+\label{table:17}
+\end{table}
+
 \subsubsection{Count based Features}
 Based on our analysis we found that having a count of some parts of speech occuring the the syntactic pattern proves to be helpful to the classifier in learning accurately. Refer to Table 14 for more details:
 
@@ -375,8 +435,38 @@ Number of Quantities. & Similar to verbs, existence of quantities in the fragmen
 \label{table:15}
 \end{table}
 
-\subsubsection{Occurence based Features}
-\textbf{Relation based occurence features:}
+\subsubsection{Verb similarity based features}
+Verbs are important to determine the kind of action the fragment is trying to perform. The verbs present in the sentence are given as an input to WordNet\textit{(a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms)} and Word2Vec\textit{Computes vector representations of words}. 
+
+For an input verb \textit{v}, WordNet outputs a set of categories \textit{($c_{1}$, $c_{2}$,...,$c_{n}$)} to which the verb is most likely to belong. We shortlisted 8 verb categories which can prove helpful to our system. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{15em} | }
+\hline
+ \textbf{Verb Categories.}\\
+\hline
+verb.possession\\
+\hline
+verb.change\\
+\hline
+verb.communication\\
+\hline
+verb.consumption\\
+\hline
+verb.contact\\
+\hline
+verb.creation\\
+\hline
+verb.motion\\
+\hline
+verb.weather\\
+\hline
+\end{tabular}
+\caption{Shortlisted Verb Categories.}
+\label{table:18}
+\end{table}
+
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
