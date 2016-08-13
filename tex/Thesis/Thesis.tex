@@ -8,6 +8,7 @@
 \DeclareMathOperator*{\argmax}{arg\,max}
 \graphicspath{ {images/} }
 \begin{document}
+\nocite{Murphy, Wasserman, Hastie}
 
 \title{Learning to Solve Arithmetic Word Problems Using Sentence Simplification}
 \author{
@@ -188,10 +189,10 @@ He spent 10 dollars on a new game.\\
 \label{table:7}
 \end{table}
 
-We create a mapping for each sentence in the problem text to its simplified sentences by extracting their relational dependencies for each sentence from the stanford dependency parser\footnote{http://stanfordnlp.github.io/CoreNLP/ }. Currenly, our simplification system simplifies sentences based on conjunctions and commas. There are certain rules when simplifying the sentence.
+We create a mapping for each sentence in the problem text to its simplified sentences by extracting their relational dependencies from the stanford dependency parser\footnote{http://stanfordnlp.github.io/CoreNLP/ }. Currenly, our system simplifies sentences based on conjunctions and commas. There are certain rules when simplifying the sentence.
 
 \subsection{Rules for simplifying sentences based on conjunctions.}
- When a conjunction is encountered, our simplification system attempts to create two simplified sentences from the actual sentence. The first sentence is the part before the conjunction while the second sentence is the part after the conjunction.
+ When a conjunction is encountered, our system attempts to create two simplified sentences from the actual sentence. The first sentence is the part before the conjunction while the second sentence is the part after the conjunction.
 
 But, after the split there may be some words which would be required in the second sentence. Consider the example in Table 4:
 
@@ -211,9 +212,6 @@ In the sentence above, the split based on conjunction \textit{and} will result i
 
 \subsubsection{Rules for adding words to second simplified sentence.}
 \begin{enumerate}
- \item 
-If the first sentence starts with an existential and the second does not, add the existential to the second sentence as well.
-
 \item 
 If the first sentence starts with an existential and has a verb after it, If the second sentence does not have either expletive or verb, add them to the second sentence. Consider the below example:
 
@@ -235,7 +233,7 @@ There were 2 house cats.\\
 The expletive and verb were added to second sentence based on the simplification rule mentioned above.
 
 \item
-If the first sentence starts with a noun, and if the second sentence starts with a verb, the noun from the first sentence will be added to the second.
+If the first sentence starts with a noun, and if the second sentence starts with a verb, the noun from the former will be added to the latter.
 
 \begin{table}[h!]
 \centering
@@ -255,6 +253,7 @@ Joan threw 3 apples.\\
 \item 
 If the first sentence starts with a noun and the second sentence has a \textit{noun verb} pattern, do nothing.
 
+\newpage
 \begin{table}[h!]
 \centering
 \begin{tabular}{ | m{25em} | }
@@ -290,33 +289,17 @@ Jessica found 8 seashells on the beach .\\
 \label{table:12}
 \end{table}
 
-After splitting the sentence based on \textit{and} the preposition and the words after it \textit{on the beach} were added to the first sentence.
+After splitting the sentence based on \textit{and}, the preposition and the words after it \textit{on the beach} were added to the first sentence.
 
 \item
-Based on the output by the dependency parser and our rules, there might be some words which might not have been identified. But we still need those words in the simplified sentences.
-
-\item
-Therefore, the sentence simplification system identifies all the words which were not identified by our process. The words which appear before the conjunction are added to the first sentence at the right index. If the words appear after the conjunction, they are added to the second sentence.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{ | m{25em} | }
-\hline
- \textbf{He went to the orchard and picked peaches to stock up .}\\
-\hline
-Tom has 9 yellow balloons.\\
-\hline
-Sara has 8 yellow balloons.\\
-\hline
-\end{tabular}
-\caption{Example sentence for this rule.}
-\label{table:13}
-\end{table}
+Based on the output by the dependency parser and our rules, there might be some words which might not have been identified. But we still need those words in the simplified sentences. Therefore, the sentence simplification system identifies all such words. If these words appear before the conjunction, they are added to the first sentence at the correct index and if they appear after the conjunction, they are added to the second.
 
 \end{enumerate}
 
 \subsection{Syntactic Pattern}
 In this thesis, a new concept known as Syntactic Pattern is introduced which is basically a summarized information about a fragment. It is a pattern consisting of the initials of the parts of speech which appear in the fragment. The initials are arranged in the order in which the words appear in the sentence. Consider the below figure:
+
+\newpage
 
 \begin{figure}[h!]
 \includegraphics[width=0.9\textwidth]{Figure1}
@@ -345,19 +328,19 @@ Dave gave some rulers to Mary. & \textbf{NVDNPN} & Assignment\\
 \label{table:14}
 \end{table}
  
-The first two examples have the same pattern and hence perform a similar operation \textit{Addition and Subtraction}. The last sentence has a different pattern and performs an assignment operation which is different than the basic math operations. Refer to Section Features for more information.
+The first two examples have the same pattern and hence perform a similar operation \textit{Addition and Subtraction}. The last sentence has a different pattern and performs an assignment operation which is different than the basic math operations. Refer to Section 5.1 for more information.
 
-\textbf{Metadata:} The pattern acts as a metadata for our fragments. Based on our representation, it is easy to determine if the fragment consists of any conjunction, quantities or any other parts of speech. This information is used in Section Features.
+\textbf{Metadata:} The pattern acts as a metadata for our fragments. Based on our representation, it is easy to determine if the fragment consists of any conjunction, quantities or any other parts of speech. This information is used in Section 5.1.
 
 \section {Operator Prediction Classifier}
-We train 4 Logistic Regression binary classifiers each for different operators \textit{(+, -, =, ?)}. We then use one versus all technique tocombine the results from the binary classifiers and determine, given a fragment \textit{f} from a problem text \textit{p}, which one of the operations \textit{f} is most likely to perform. Our training data consists of 350 labeled fragments. 
+We train 4 Logistic Regression binary classifiers each for different operators \textit{(+, -, =, ?)}. We then use one versus all technique to combine the results from the binary classifiers. Given a fragment \textit{f} from a problem text \textit{p}, we determine which one of the operations, fragment \textit{f} is most likely to perform. Our training data consists of 350 labeled fragments. 
 
 \subsection {Features}
 
 \subsubsection{Syntactic Patterns}
-From 350 training fragments, we were able to extract 125 syntactic patterns. This proves that multiple fragments had same patterns. We use these patterns as individual features. The pattern to which the fragment belongs is set\textit{(on)} and the other patterns are not set\textit{(off)}. We use one-hot encoding approach for pattern features.
+From 350 training fragments, we were able to extract 125 syntactic patterns. This proves that multiple fragments had same patterns. We use these patterns as individual features. For a given fragment, the pattern to which it belongs is set\textit{(on)} and the other patterns are not set\textit{(off)}. We use one-hot encoding approach for pattern features.
 
-\subsubsection{Occurence based Features}
+\subsubsection{Occurence Features}
 
 \textbf{Relation based occurence features:} Dependency relations in a fragment depict its structure. Presence of some dependency relations is useful for the classifier to predict operations. Particularly, \textit{nmod:poss} relation if exists in the fragment, can determine information about a subject possessing an object. \textit{nmod:of} helps to differentiate between two nouns of same kind. Below are the examples:
 
@@ -381,7 +364,7 @@ From 350 training fragments, we were able to extract 125 syntactic patterns. Thi
 
 As in the above example, it is easy to see that presence of these relations is mostly in the fragments in which some operation takes place.
 
-\textbf{Pattern based occurence features:} Occurence of some sprecific sub pattern in the syntactic pattern of the fragment can be helpful. Specifically, \textbf{NVQN} and \textbf{QN} are used as features for the classifier. Their presence again indicates some operation. Consider the below example:
+\textbf{Pattern based occurence features:} Occurence of some specific sub pattern in the syntactic pattern of the fragment can be helpful. Specifically, \textbf{NVQN} and \textbf{QN} are used as features for the classifier. Their presence again indicates some operation. Consider the below example:
 
 \begin{table}[h!]
 \centering
@@ -389,7 +372,7 @@ As in the above example, it is easy to see that presence of these relations is m
 \hline
  \textbf{Sentence} & \textbf{Syntacttic Pattern}\\
 \hline
-George had 30 dollars. & \textbf{NVQN} \\
+George received 30 dollars. & \textbf{NVQN} \\
 \hline
 18 cupcakes were sold. & \textbf{QNVV} \\
 \hline
@@ -398,7 +381,7 @@ George had 30 dollars. & \textbf{NVQN} \\
 \label{table:17}
 \end{table}
 
-In the first exmaple, both \textit{NVQN} and \textit{QN} appear. While, in the second \textit{QN} appears. Presence of quantity in a fragment is more likely to suggest an operation. 
+In the first example, both \textit{NVQN} and \textit{QN} appear. While, in the second \textit{QN} appears. Presence of quantity in a fragment is more likely to suggest an operation. 
 
 \textbf{Word based occurence features:} Occurence of some particular words in the fragment help the classifier. Below is list of some words and description of how they are helpful:
 
@@ -408,7 +391,7 @@ In the first exmaple, both \textit{NVQN} and \textit{QN} appear. While, in the s
 \hline
  \textbf{Word} & \textbf{Description} & \textbf{Example}\\
 \hline
-\textit{now} & Suggests a resulting output after some operations. & 28 students wanted to have fruit. There are now 12 fruits remaining. \\
+\textit{now} & Suggests a resulting output after some operations. & Fruits were distributed to 28 students. There are now 12 fruits remaining. \\
 \hline
 \textit{most, several, some} & Suggest an unknown quantity in the fragment. & Joan gave some of her seashells to Sam. \\
 \hline
@@ -426,13 +409,13 @@ Based on our analysis we found that having a count of some parts of speech occur
 \hline
 \textbf{Feature} & \textbf{Description} \\
 \hline
- Number of Nouns. & Generally a fragment having 2 nouns\textit{subject and object} is more likely to be predicted to addition or subtraction operation.\\
+ Number of Nouns. & Generally a fragment having 2 nouns \textit{subject and object} is more likely to be predicted to addition or subtraction operation.\\
 \hline
-Number of Prepositions. & A single preposition(such as \textit{from} or \textit{to} is suggesting some basic math operation.\\
+Number of Prepositions. & A single preposition(such as \textit{from} or \textit{to} is suggesting the movement of object.\\
 \hline
-Number of Verbs. & This is basically to indicate that of a verb exists, the fragment suggests an operation.\\
+Number of Verbs. & If there are no verbs in the fragment, there should ideally be no actions performed.\\
 \hline
-Number of Quantities. & Similar to verbs, existence of quantities in the fragment is more likely to predict an operation.\\
+Number of Quantities. & If there is no quantity in the fragment, it is more likely that math operations have not been performed.\\
 \hline
 \end{tabular}
 \caption{Count based Features.}
@@ -440,7 +423,7 @@ Number of Quantities. & Similar to verbs, existence of quantities in the fragmen
 \end{table}
 
 \subsubsection{Verb similarity based features}
-Verbs are important to determine the kind of action the fragment is trying to perform. The verbs present in the sentence are given as an input to WordNet\textit{(a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms)} and Word2Vec\textit{Computes vector representations of words}. 
+Verbs are important to determine the kind of action the fragment is trying to perform. The verbs present in the sentence are given as an input to WordNet\textit{(a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms)} and Word2Vec(\textit{Computes vector representations of words}). 
 
 For an input verb \textit{v}, WordNet outputs a set of categories \textit{($c_{1}$, $c_{2}$,...,$c_{n}$)} to which the verb is most likely to belong. We shortlisted 8 verb categories which can prove helpful to our system. 
 
@@ -475,7 +458,7 @@ We use Word2Vec to get 3 nearest words to the verb and send those words as an in
 
 \subsection{Logistic Regression Classifier}
 
-Logistic Regression tries to fit a model of the form \begin{math} p(y|X) \end{math} which directly models the mapping from input \begin{math}X\end{math} to output \begin{math}y\end{math}. Since, it discriminates between class labels it is known as a discriminaive classifier. LR corresponds to following binary classification model:
+Logistic Regression tries to fit a model of the form \begin{math} p(y|X) \end{math} which directly models the mapping from input \begin{math}X\end{math} to output \begin{math}y\end{math}. Since, it discriminates between class labels it is known as a discriminative classifier. LR corresponds to following binary classification model:
 
 \begin{equation} p(y|X,W) = Ber(y|sigm(W^{T}X)) \end{equation}
 
@@ -530,14 +513,14 @@ The function is defined by the below formula:
 \begin{flalign*}
 &S(t) = \frac{1}{1 + e^{-t}} \\
 &t = \theta_{T}X \\
-&\theta \rightarrow Weight vector \\
-&X \rightarrow Feature vector for an example
+&\theta \rightarrow \textit{Weight vector} \\
+&X \rightarrow \textit{Feature vector for an example}
 \end{flalign*}
 
 The function has finite limits and approaches negative infinity from the left side and to infinity from the right.  When the algorithm encounters an example, it updates the weight for a particular feature in the weight vector if the feature is set in the current example's feature vector. Based on the sigmoid function value, the gradient and all the parameters are updated. 
 
 \subsubsection{Training the classifier}
-We train our four LR binary classifiers on 300 operator labeled fragments and then use one versus all\textit{(OvA)} technique to combine the results from all four of them. The OvA strategy involves training a single classifier per class\textit(4 operators in our case). The samples of that class are treated as positive and all other samples are treated as negative. For example, when training a classifier for \textbf{+} operator, the training samples having \textbf{+} label are positive and samples having other labels i.e. \textbf{-, =, ?} are considered negative. This strategy requires the base classifiers to produce a real-valued confidence score for its decision, rather than just a label. Once we have a real valued score from all the base classifiers, the technique predicts a single class using the below mechanism:
+We train our four LR binary classifiers on 350 operator labeled fragments and then use one versus all\textit{(OvA)} technique to combine the results from all four of them. The OvA strategy involves training a single classifier per class\textit(4 operators in our case). The samples of that class are treated as positive and all other samples are treated as negative. For example, when training a classifier for \textbf{+} operator, the training samples having \textbf{+} label are positive and samples having other labels i.e. \textbf{-, =, ?} are considered negative. This strategy requires the base classifiers to produce a real-valued confidence score for its decision, rather than just a label. Once we have a real valued score from all the base classifiers, the technique predicts a single class using the below mechanism:
 
 \begin{equation}
 y^{\prime} = \argmax_{k = 1,...,K} f_{k}(x)
@@ -551,7 +534,7 @@ Our testing data consists of 55 fragments. Below is the distribution of fragment
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-\bf Operator & \bf No. of instances & \bf Precision & \bf Recall \\
+\bf Operation & \bf No. of instances & \bf Precision & \bf Recall \\
 \hline
 + & 32 & 95.83\% & 71.87\% \\
 \hline
@@ -567,7 +550,7 @@ Our testing data consists of 55 fragments. Below is the distribution of fragment
 \caption{Precision and Recall}
 \end{table}
 
-The higher precision and recall of \textbf{?} is well understood as there were features such as the presence of an WHAdverb which made it easy for the classifier to predict them accurately. Whereas, for \textbf{+} the verb based similarity features played an important role. For \textbf{-} and \textbf{=} its not reallt correct to judge since there were less number of testing fragments.
+The higher precision and recall of operation \textbf{?} is well understood as there were features such as the presence of an WHAdverb which made it easy for the classifier to predict them accurately. Whereas, for \textbf{+} the verb based similarity features played an important role. For operations \textbf{-} and \textbf{=} its not really correct to judge since there were less number of testing fragments.
 
 \subsection{Experimental Results}
 In this section, we evaluate the proposed method on publicly available datasets of arithmetic word problems. We show the parameter setup of our LR classifiers. Lastly, we evaluate the performance of the full system.
@@ -652,10 +635,10 @@ Currently, our system employs some complex but mostly simpl rules to solve arith
 \subsubsection{Improving the Classifier}
 We also plan to focus on improving the classifier by using some advanced machine learning methods. At this point, we have a LR classifier which performs reassonably well. This is an area to predict the operator for a fragment more accurately. We plan to consider ensembling methods in future.
 
-\subsection{Detailed Error Analysis}
+\subsection{Error Analysis}
 \begin{table}[h!]
 \begin{center}
-\begin{tabular}{|>{\centering\arraybackslash}m{8cm}|>{\centering\arraybackslash}m{6cm}|}
+\begin{tabular}{|>{\centering\arraybackslash}m{8em}|>{\centering\arraybackslash}m{20em}|}
 \hline
 \bf Error Type & \bf Example \\
 \hline
@@ -671,9 +654,15 @@ Coreference Resolution (10\%) & When they cleaned them , they discovered that \t
 \end{center}
 \end{table}
 
+We can see the need to improve the classifier based on the number of classification errors. There is a possibilit of improvement in parsing issues by adding more rules. 
+
 \section{Conclusion}
 This thesis presents a novel method for understanding and solving addition and subtraction arithmetic word problems. We develop a novel theoritical framework, centered around the notion of syntactic patterns and implement it to produce simplified sentences. This theory naturally leads to a solution to uniquely solve word problems - \textit{determine the operation and quantified nouns in the problem text}. The theory underlies our algorithmic solution. We show this by developing a classifier that yiields strong performance on several benchmark collections. Our approach also performs equally erll on multistep problems, even when it has never observed the particular problem type before.
- 
+
+
+\paragraph{Acknowledgements} \hspace{0pt} \\
+I thank Kevin Small and anonymous reviewers for guidance, motivation, helpful reviews and feedback on the work.
+
 \newpage
 \bibliographystyle{apalike}
 \bibliography{Thesis}
