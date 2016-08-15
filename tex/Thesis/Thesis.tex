@@ -329,7 +329,7 @@ Based on the output by the dependency parser and our rules, there might be some 
 In this thesis, a concept known as Syntactic Pattern is introduced which is basically a summarized information about a fragment. It is a pattern consisting of the initials of the parts of speech which appear in the fragment. The initials are arranged in the order in which the words appear in the sentence. Consider the picture in Figure \ref{figure:13}:
 
 \begin{figure}[h!]
-\includegraphics[width=0.9\textwidth]{Figure1}
+\includegraphics[width=0.8\textwidth]{Figure1}
 \centering
 \caption{Example sentence of a word problem and its syntactic pattern.}
 \label{figure:13}
@@ -456,9 +456,9 @@ It is easy to see that presence of these relations is mostly in the fragments in
 \hline
  \textbf{Sentence} & \textbf{Syntactic Pattern}\\
 \hline
-\begin{math}s_{1}\end{math}George received 30 dollars. & \textbf{NVQN} \\
+\begin{math}s_{1}\end{math}: George received 30 dollars. & \textbf{NVQN} \\
 \hline
-\begin{math}s_{2}\end{math}18 cupcakes were sold. & \textbf{QNVV} \\
+\begin{math}s_{2}\end{math}: 18 cupcakes were sold. & \textbf{QNVV} \\
 \hline
 \end{tabular}
 \caption{Example occurence of a sub pattern.}
@@ -469,7 +469,6 @@ In \begin{math}s_{1}\end{math}, both \textit{NVQN} and \textit{QN} appear. While
 
 \textbf{Word based occurence features:} Occurence of some particular words in the fragment help the classifier. Figure \ref{figure:17} has the list of some words and description of how they are helpful:
 
-\newpage
 \begin{table}[h!]
 \centering
 \begin{tabular}{ | m{5em} | m{15em} | m{15em} | }
@@ -512,6 +511,7 @@ Verbs are important to determine the kind of action the fragment is trying to pe
 
 For an input verb \textit{v}, WordNet outputs a set of categories \textit{($c_{1}$, $c_{2}$,...,$c_{n}$)} to which the verb is most likely to belong. We shortlisted 8 verb categories as listed in Figure \ref{figure:19} which can prove helpful to our system:
 
+\newpage
 \begin{table}[h!]
 \centering
 \begin{tabular}{ | m{15em} | }
