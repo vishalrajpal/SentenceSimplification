@@ -210,7 +210,7 @@ He spent 10 dollars on a new game.\\
 \label{figure:7}
 \end{table}
 
-We create a mapping for each sentence in the problem text to its simplified sentences by extracting their relational dependencies from the Stanford dependency parser\footnote{http://stanfordnlp.github.io/CoreNLP/ }. Currenly, our system simplifies sentences based on conjunctions and commas. There are certain rules when simplifying the sentence.
+We create a mapping for each sentence in the problem text to its simplified sentences by extracting their relational dependencies from the Stanford dependency parser\footnote{http://stanfordnlp.github.io/CoreNLP/ }. Currenly, our system simplifies sentences based on conjunctions. There are certain rules when simplifying the sentence.
 
 \subsection{Rules for simplifying sentences based on conjunctions.}\label{sec:simplifyingrules}
  When a conjunction is encountered, our system attempts to create two simplified sentences from the actual sentence. The first sentence is the part before the conjunction while the second sentence is the part after the conjunction.
@@ -228,14 +228,14 @@ The school cafeteria ordered 42 red apples and 7 green apples for students lunch
 \label{figure:8}
 \end{table}
 
-Given a sentence \begin{math}s\end{math} from problem text \begin{math}p\end{math}, after simplification process it will have  \begin{math}n\end{math} simplified sentences i.e. \begin{math}<s_{1},..., s_{n}>\end{math}. In the sentence  \begin{math}s\end{math}. \begin{math}s\end{math}, the split based on conjunction \textit{and} will result in two sentences. 
+Given a sentence \begin{math}s\end{math} from problem text \begin{math}p\end{math}, after simplification process it will have  \begin{math}n\end{math} simplified sentences i.e. \begin{math}<s_{1},..., s_{n}>\end{math}. In the sentence \begin{math}s\end{math}, the split based on conjunction \textit{and} will result in two sentences. 
 
-\begin{math}s_{1}\end{math}:\textit(The school cafeteria ordered 42 red apples)
+\begin{math}s_{1}\end{math}:\textit{The school cafeteria ordered 42 red apples}
 
 \begin{math}s_{2}\end{math}:\textit{7 green apples for students lunches}
 
 
-\begin{math}s_{1}\end{math} will have a subject while \begin{math}s_{2}\end{math} will not have a subject and a verb making it an improper sentenc. Hence, there are some rules for adding words to simplified sentences:
+\begin{math}s_{1}\end{math} will have a subject while \begin{math}s_{2}\end{math} will not have a subject and a verb making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
 
 \subsubsection{Rules for adding words to simplified sentences.}\label{sec:secondsentencesimplification}
 \begin{enumerate}
