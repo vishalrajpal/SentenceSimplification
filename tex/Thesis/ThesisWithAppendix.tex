@@ -539,7 +539,78 @@ verb.weather\\
 \label{figure:19}
 \end{table}
 
-We use Word2Vec to get 3 nearest words to the verb and send those words as an input to WordNet to get the verb categories they belong. We normalize the results for these 3 words and the results for the verb itself. Hence, In total we have 8 normalized similarity based features(verb categories)
+We use Word2Vec to get 3 nearest words to the verb and send those words as an input to WordNet to get the verb categories they belong. We normalize the results for these 3 words and the results for the verb itself. Hence, In total we have 8 normalized similarity based features(verb categories).
+
+\textbf{Step 1:} Pass the identitified verb in the sentence as an input to WordNet. Refer to Figure \ref{wordnetexample} for an example:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{30em} |}
+\hline
+\textbf{Example Sentence:} Joan baked 10 cupcakes.\\
+\hline
+ \textbf{Verb:} baked\\
+\hline
+\textit{Sense 1 \textless verb.change\textgreater bake =\textgreater \textless verb.change\textgreater cook}\\
+\hline
+\textit{Sense 2 \textless verb.creation\textgreater bake =\textgreater \textless verb.creation\textgreater create from raw material, create from raw stuff}\\
+\hline
+\textit{Sense 3 \textless verb.change\textgreater broil1, bake2 =\textgreater \textless verb.change\textgreater heat1, heat up}\\
+\hline
+\end{tabular}
+\caption{Using WordNet on the Verb.}
+\label{wordnetexample}
+\end{table}
+
+\textbf{Step 2:} Get the top 3 closest words to the verb using Word2Vec. Figure \ref{word2vecexample} consists an example:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{30em} |}
+\hline
+Word2Vec for verb: \textit{baked} \\
+\hline
+["unbaked", 0.602738618850708]\\
+\hline
+["cooked", 0.6022148728370667]\\
+\hline
+["bakes", 0.5771548748016357]\\
+\hline
+\end{tabular}
+\caption{Using WordNet on the Verb.}
+\label{word2vecexample}
+\end{table}
+
+\textbf{Step 3:} Pass the closest words as an input to WordNet to identify their verb categories. Similar to Figure \ref{wordnetexample}, each word will have their own distribution of categories. Hence, we normalize results between 8 categories as in Figure \ref{normalized}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{20em} | m{5em} |}
+\hline
+\textbf{Verb Category} & \textbf{Probability} \\
+\hline
+verb.possession & 0\\
+\hline
+verb.change & 0.6\\
+\hline
+verb.communication & 0\\
+\hline
+verb.consumption & 0\\
+\hline
+verb.contact & 0\\
+\hline
+verb.creation & 0.4\\
+\hline
+verb.motion & 0\\
+\hline
+verb.weather & 0\\
+\hline
+\end{tabular}
+\caption{Normalized results for verb categories.}
+\label{normalized}
+\end{table}
+
+Alongside other features, these values are also used as features for our classifier.
 
 \subsection{Logistic Regression Classifier}\label{sec:logisticregressionclassifier}
 
