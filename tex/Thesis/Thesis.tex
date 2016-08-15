@@ -175,7 +175,7 @@ In the example in Figure \ref{figure:5}, after the split based on conjunction \t
 Sentences in an arithmetic word problem are sometimes complex. Hence, it is difficult to extract information from such sentences. Even more challenging is to predict the impact of the sentence on the result. 
 
 \textbf{Notation:} Given a problem text $\mathbf{S}$, let the sentences in the $\mathbf{S}$ be $\mathbf{<s_{1},..., s_{n}>}$. Each sentence $\mathbf{s_{i}}$ will be simplified to \begin{math}n\end{math} simplified sentences. Let the simplified sentences of $\mathbf{s_{i}}$ be $\mathit{<k_{1},..., k_{m}>}$.
-s
+
 \begin{table}[h!]
 \centering
 \begin{tabular}{ | m{25em} | }
@@ -195,7 +195,7 @@ $\mathbf{s_{3}}$: How much money does he have now?\\
 \label{figure:6}
 \end{table}
 
-Consider the example presented in Figure \ref{figure:6}. Sentence \begin{math}s_{2}\end{math} is unnecessarily complex for many information extraction methods. Specifically, It has addition and subtraction operations in a single sentence. Our idea is to simplify the sentence to multiple simple sentences so that each simplified sentence has a single operation. The simplified sentences for \begin{math}s_{2}\end{math} are listed in Figure \ref{figure:7}.
+Consider the example presented in Figure \ref{figure:6}. Sentence $\mathbf{s_{2}}$ is unnecessarily complex for many information extraction methods. Specifically, It has addition and subtraction operations in a single sentence. Our idea is to simplify the sentence to multiple simple sentences so that each simplified sentence has a single operation. The simplified sentences for $\mathbf{s_{2}}$ are listed in Figure \ref{figure:7}.
 
 \begin{table}[h!]
 \centering
@@ -232,16 +232,16 @@ $\mathbf{s}$: The school cafeteria ordered 42 red apples and 7 green apples for 
 \paragraph{}
 In $\mathbf{s}$, the split based on conjunction \textit{and} will result in two sentences: \\
 \\
-$\mathbf{s_{1}}$:\textit{The school cafeteria ordered 42 red apples}\\
-$\mathbf{s_{2}}$:\textit{7 green apples for students lunches}
+$\mathit{k_{1}}$:\textit{The school cafeteria ordered 42 red apples}\\
+$\mathit{k_{2}}$:\textit{7 green apples for students lunches}
 
 \paragraph{}
-$\mathit{k_{1}}$ will have a subject and a verb while $\mathit{k_{2}}$ will not have them, making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
+$\mathit{k_{1}}$ has a subject and a verb while $\mathit{k_{2}}$ does not have them, making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
 
 \subsubsection{Rules for adding words to simplified sentences.}\label{sec:secondsentencesimplification}
 \begin{enumerate}
 \item \label{rule:1}
-If $\mathbf{s_{1}}$ starts with an existential and has a verb after it and if $\mathbf{s_{2}}$ does not have either expletive or verb, distribute them to $\mathit{k_{2}}$. Consider the example in Figure \ref{figure:9}:
+If $\mathit{k_{1}}$ starts with an existential and has a verb after it and if $\mathit{k_{2}}$ does not have either expletive or verb, distribute them to $\mathit{k_{2}}$. Consider the example in Figure \ref{figure:9}:
 
 \newpage
 \begin{table}[h!]
@@ -259,10 +259,10 @@ $\mathit{k_{2}}$: There were 2 house cats.\\
 \label{figure:9}
 \end{table}
 
-The expletive and verb were added to \begin{math}s_{2}\end{math} based on the simplification rule mentioned above.
+The expletive and verb were added to $\mathit{k_{2}}$ based on the simplification rule mentioned above.
 
 \item \label{rule:2}
-If \begin{math}s_{1}\end{math} starts with a noun, and if \begin{math}s_{2}\end{math} starts with a verb, the noun from the former will be distributed to the latter. Refer to an example in Figure \ref{figure:10}.
+If $\mathit{k_{1}}$ starts with a noun, and if $\mathit{k_{2}}$ starts with a verb, the noun from the former will be distributed to the latter. Refer to an example in Figure \ref{figure:10}.
 
 \begin{table}[h!]
 \centering
@@ -280,7 +280,7 @@ $\mathit{k_{2}}$: Joan threw 3 apples.\\
 \end{table}
 
 \item  \label{rule:3}
-If \begin{math}s_{1}\end{math} starts with a noun and \begin{math}s_{2}\end{math} has a \textit{noun verb} pattern, do nothing.
+If $\mathit{k_{1}}$ starts with a noun and $\mathit{k_{2}}$ has a \textit{noun verb} pattern, do nothing.
 
 \begin{table}[h!]
 \centering
@@ -297,10 +297,10 @@ $\mathit{k_{2}}$: Sara has 8 yellow balloons.\\
 \label{figure:11}
 \end{table}
 
-In the example presented in Figure \ref{figure:11}, No words from \begin{math}s_{1}\end{math} were added to \begin{math}s_{2}\end{math} since it had the \textit{noun verb (Sara has)} pattern.
+In the example presented in Figure \ref{figure:11}, No words from $\mathit{k_{1}}$ were added to $\mathit{k_{2}}$ since it had the \textit{noun verb (Sara has)} pattern.
 
 \item \label{rule:4}
-If \begin{math}s_{2}\end{math} contains a preposition at the end and \begin{math}s_{1}\end{math} does not, it will be distributed from \begin{math}s_{2}\end{math} to \begin{math}s_{1}\end{math}. Consider the example presented in Figure \ref{figure:12}:
+If $\mathit{k_{2}}$ contains a preposition at the end and $\mathit{k_{1}}$ does not, it will be distributed from $\mathit{k_{2}}$ to $\mathit{k_{1}}$. Consider the example presented in Figure \ref{figure:12}:
 
 \newpage
 \begin{table}[h!]
@@ -321,7 +321,7 @@ $\mathit{k_{2}}$: Jessica found 8 seashells on the beach.\\
 After splitting the sentence based on \textit{and}, the preposition and the words after it \textit{on the beach} were added to the first sentence.
 
 \item
-Based on the output by the dependency parser and our rules, there might be some words which might not have been identified. But we still need those words in the simplified sentences. Therefore, the sentence simplification system identifies all such words. If these words appear before the conjunction, they are added to \begin{math}s_{1}\end{math} at the correct index and if they appear after the conjunction, they are added to \begin{math}s_{2}\end{math}.
+Based on the output by the dependency parser and our rules, there might be some words which might not have been identified. But we still need those words in the simplified sentences. Therefore, the sentence simplification system identifies all such words. If these words appear before the conjunction, they are added to $\mathit{k_{1}}$ at the correct index and if they appear after the conjunction, they are added to $\mathit{k_{2}}$.
 
 \end{enumerate}
 
