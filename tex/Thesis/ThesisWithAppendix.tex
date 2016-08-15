@@ -228,13 +228,13 @@ The school cafeteria ordered 42 red apples and 7 green apples for students lunch
 \label{figure:8}
 \end{table}
 
-Given a sentence $\mathbf{S}$ from problem text $\mathbf{p}$, let $\mathbf{<s_{1},..., s_{n}>}$ be the simplified sentences of $\mathbf{S}$. In $\mathbf{S}$, the split based on conjunction \textit{and} will result in two sentences. \\
+Given a sentence $\mathbf{S}$ from problem text $\mathbf{p}$, let $\mathbf{<s_{1},..., s_{n}>}$ be the simplified sentences of $\mathbf{S}$. In $\mathbf{S}$, the split based on conjunction \textit{and} will result in two sentences: \\
 \\
 \begin{math}s_{1}\end{math}:\textit{The school cafeteria ordered 42 red apples}\\
 \begin{math}s_{2}\end{math}:\textit{7 green apples for students lunches}
 
 \paragraph{}
-\begin{math}s_{1}\end{math} will have a subject while \begin{math}s_{2}\end{math} will not have a subject and a verb making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
+\begin{math}s_{1}\end{math} will have a subject and a verb while \begin{math}s_{2}\end{math} will not have them, making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
 
 \subsubsection{Rules for adding words to simplified sentences.}\label{sec:secondsentencesimplification}
 \begin{enumerate}
@@ -439,6 +439,7 @@ From 301 training fragments, we were able to extract 125 syntactic patterns. Thi
 
 \textbf{Relation based occurence features:} Dependency relations in a fragment depict its structure. Presence of some dependency relations is useful for the classifier to predict operations. Particularly, \textit{nmod:poss} relation if exists in the fragment, can determine information about a subject possessing an object. \textit{nmod:of} helps to differentiate between two nouns of same kind. The examples are listed in Figure \ref{figure:15}:
 
+\newpage
 \begin{table}[h!]
 \centering
 \begin{tabular}{ | m{25em} | }
@@ -697,7 +698,7 @@ y^{\prime} = \argmax_{k = 1,...,K} f_{k}(x)
 \subsubsection{Precision and Recall}\label{sec:precisionandrecall}
 Our testing data consists of 55 fragments. Figure \ref{figure:22} consists of the distribution of fragments among all the operations and their precision and recall values:
 
-
+\newpage
 \begin{table}[h]
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
@@ -714,8 +715,8 @@ Our testing data consists of 55 fragments. Figure \ref{figure:22} consists of th
 \hline
 \end{tabular}
 \end{center}
-\label{figure:22}
 \caption{Precision and Recall}
+\label{figure:22}
 \end{table}
 
 The higher precision and recall of operation \textbf{?} is well understood as there were features such as the presence of an WHAdverb which made it easy for the classifier to predict them accurately. Whereas, for \textbf{+} the verb based similarity features played an important role. For operations \textbf{-} and \textbf{=} its not really correct to judge since there were less number of testing fragments.
