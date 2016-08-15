@@ -228,13 +228,12 @@ The school cafeteria ordered 42 red apples and 7 green apples for students lunch
 \label{figure:8}
 \end{table}
 
-Given a sentence \begin{math}s\end{math} from problem text \begin{math}p\end{math}, after simplification process it will have  \begin{math}n\end{math} simplified sentences i.e. \begin{math}<s_{1},..., s_{n}>\end{math}. In the sentence \begin{math}s\end{math}, the split based on conjunction \textit{and} will result in two sentences. 
-
-\begin{math}s_{1}\end{math}:\textit{The school cafeteria ordered 42 red apples}
-
+Given a sentence $\mathbf{S}$ from problem text $\mathbf{p}$, let $\mathbf{<s_{1},..., s_{n}>}$ be the simplified sentences of $\mathbf{S}$. In $\mathbf{S}$, the split based on conjunction \textit{and} will result in two sentences. \\
+\\
+\begin{math}s_{1}\end{math}:\textit{The school cafeteria ordered 42 red apples}\\
 \begin{math}s_{2}\end{math}:\textit{7 green apples for students lunches}
 
-
+\paragraph{}
 \begin{math}s_{1}\end{math} will have a subject while \begin{math}s_{2}\end{math} will not have a subject and a verb making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
 
 \subsubsection{Rules for adding words to simplified sentences.}\label{sec:secondsentencesimplification}
@@ -346,7 +345,7 @@ D=Determiner, N=Noun, P=Preposition, Q=Cardinal, V=Verb \\
 \label{figure:13}
 \end{table}
 
-As in Figure \ref{figure:13}, the pattern \textit{NVQNPN} consists of the initials of the parts of speech in the sentence in their appearance order. This pattern is helpful in many ways:
+As in Figure \ref{figure:13}, the pattern \textit{NVQNPDN} consists of the initials of the parts of speech in the sentence in their appearance order. This pattern is helpful in many ways:
 
 \textbf{Grouping Multiple Fragments:} Many fragments will have a similar syntactic pattern. Our findings suggest that the fragments having a similar pattern perform similar type of operation. Refer to the example in Figure \ref{figure:14}:
 
@@ -805,6 +804,7 @@ Currently, our system employs some complex but mostly simple rules to solve arit
 \subsubsection{Improving the Classifier}\label{sec:classifierimprovement}
 We also plan to focus on improving the classifier by using some advanced machine learning methods. At this point, we have a LR classifier which performs reassonably well. This is an area to predict the operator for a fragment more accurately. We plan to consider ensembling methods in future.
 
+\newpage
 \subsection{Error Analysis}\label{sec:erroranalysis}
 \begin{table}[h!]
 \begin{center}
