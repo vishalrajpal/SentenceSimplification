@@ -174,8 +174,8 @@ In the example in Figure \ref{figure:5}, after the split based on conjunction \t
 \section{Sentence Simplification and Problem Decomposition} \label{sec:sentencesimplification}
 Sentences in an arithmetic word problem are sometimes complex. Hence, it is difficult to extract information from such sentences. Even more challenging is to predict the impact of the sentence on the result. 
 
-\textbf{Notation:} Given a problem text $\mathbf{S}$, let the sentences in the $\mathbf{S}$ be $\mathbf{<s_{1},..., s_{n}>}$. Each sentence $\mathbf{s_{i}}$ will be simplified to \begin{math}n\end{math} simplified sentences. Let the simplified sentences of $\mathbf{s_{i}}$ be $\mathit{<s_{1},..., s_{n}>}$.
-
+\textbf{Notation:} Given a problem text $\mathbf{S}$, let the sentences in the $\mathbf{S}$ be $\mathbf{<s_{1},..., s_{n}>}$. Each sentence $\mathbf{s_{i}}$ will be simplified to \begin{math}n\end{math} simplified sentences. Let the simplified sentences of $\mathbf{s_{i}}$ be $\mathit{<k_{1},..., k_{m}>}$.
+s
 \begin{table}[h!]
 \centering
 \begin{tabular}{ | m{25em} | }
@@ -203,9 +203,9 @@ Consider the example presented in Figure \ref{figure:6}. Sentence \begin{math}s_
 \hline
  $\mathbf{s}:$\textbf{For his birthday he got 18 more dollars but spent 10 on a new game.}\\
 \hline
- $\mathit{s_{1}}$: For his birthday he got 18 more dollars.\\
+ $\mathit{k_{1}}$: For his birthday he got 18 more dollars.\\
 \hline
-$\mathit{s_{2}}$: He spent 10 dollars on a new game.\\
+$\mathit{k_{2}}$: He spent 10 dollars on a new game.\\
 \hline
 \end{tabular}
 \caption{Simplified Sentences.}
@@ -236,12 +236,12 @@ $\mathbf{s_{1}}$:\textit{The school cafeteria ordered 42 red apples}\\
 $\mathbf{s_{2}}$:\textit{7 green apples for students lunches}
 
 \paragraph{}
-$\mathit{s_{1}}$ will have a subject and a verb while $\mathit{s_{2}}$ will not have them, making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
+$\mathit{k_{1}}$ will have a subject and a verb while $\mathit{k_{2}}$ will not have them, making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
 
 \subsubsection{Rules for adding words to simplified sentences.}\label{sec:secondsentencesimplification}
 \begin{enumerate}
 \item \label{rule:1}
-If $\mathbf{s_{1}}$ starts with an existential and has a verb after it and if $\mathbf{s_{2}}$ does not have either expletive or verb, distribute them to \begin{math}s_{2}\end{math}. Consider the example in Figure \ref{figure:9}:
+If $\mathbf{s_{1}}$ starts with an existential and has a verb after it and if $\mathbf{s_{2}}$ does not have either expletive or verb, distribute them to $\mathit{k_{2}}$. Consider the example in Figure \ref{figure:9}:
 
 \newpage
 \begin{table}[h!]
@@ -250,9 +250,9 @@ If $\mathbf{s_{1}}$ starts with an existential and has a verb after it and if $\
 \hline
  $\mathbf{s}$\textbf{: There were 2 siamese cats and 4 house cats.}\\
 \hline
-$\mathit{s_{1}}$: There were 2 siamese cats.\\
+$\mathit{k_{1}}$: There were 2 siamese cats.\\
 \hline
-$\mathit{s_{2}}$: There were 2 house cats.\\
+$\mathit{k_{2}}$: There were 2 house cats.\\
 \hline
 \end{tabular}
 \caption{Example sentence for Rule \ref{rule:1}}.
@@ -270,9 +270,9 @@ If \begin{math}s_{1}\end{math} starts with a noun, and if \begin{math}s_{2}\end{
 \hline
  $\mathbf{s}$\textbf{: Joan ate 2 oranges and threw 3 apples.}\\
 \hline
-$\mathit{s_{1}}$: Joan ate 2 oranges.\\
+$\mathit{k_{1}}$: Joan ate 2 oranges.\\
 \hline
-$\mathit{s_{2}}$: Joan threw 3 apples.\\
+$\mathit{k_{2}}$: Joan threw 3 apples.\\
 \hline
 \end{tabular}
 \caption{Example sentence for Rule \ref{rule:2}.}
@@ -288,9 +288,9 @@ If \begin{math}s_{1}\end{math} starts with a noun and \begin{math}s_{2}\end{math
 \hline
  $\mathbf{s}$\textbf{: Tom has 9 yellow balloons and Sara has 8 yellow balloons.}\\
 \hline
-$\mathit{s_{1}}$: Tom has 9 yellow balloons.\\
+$\mathit{k_{1}}$: Tom has 9 yellow balloons.\\
 \hline
-$\mathit{s_{2}}$: Sara has 8 yellow balloons.\\
+$\mathit{k_{2}}$: Sara has 8 yellow balloons.\\
 \hline
 \end{tabular}
 \caption{Example sentence for Rule  \ref{rule:3}.}
@@ -309,9 +309,9 @@ If \begin{math}s_{2}\end{math} contains a preposition at the end and \begin{math
 \hline
  $\mathbf{s}$\textbf{: Joan found 6 seashells and Jessica found 8 seashells on the beach.}\\
 \hline
-$\mathit{s_{1}}$: Joan found 6 seashells on the beach.\\
+$\mathit{k_{1}}$: Joan found 6 seashells on the beach.\\
 \hline
-$\mathit{s_{2}}$: Jessica found 8 seashells on the beach.\\
+$\mathit{k_{2}}$: Jessica found 8 seashells on the beach.\\
 \hline
 \end{tabular}
 \caption{Example sentence for Rule  \ref{rule:4}.}
@@ -845,65 +845,65 @@ I thank Kevin Small for guidance, motivation, helpful reviews and feedback on th
 \hline
 $\mathbf{{s}}$: \textbf{Lana picked 36 tulips and 37 roses to make flower bouquets.} \\
 \hline
-$\mathit{s_{1}}$: Lana picked 36 tulips to make flower bouquets. \\
+$\mathit{k_{1}}$: Lana picked 36 tulips to make flower bouquets. \\
 \hline
-$\mathit{s_{2}}$: Lana picked 37 roses to make flower bouquets. \\
+$\mathit{k_{2}}$: Lana picked 37 roses to make flower bouquets. \\
 \hline
 \\
 \hline
 $\mathbf{{s}}$: \textbf{Carol and her mom were picking carrots from their garden.} \\
 \hline
-$\mathit{s_{1}}$: Carol were picking carrots from their garden. \\
+$\mathit{k_{1}}$: Carol were picking carrots from their garden. \\
 \hline
-$\mathit{s_{2}}$: Her mom were picking carrots from their garden. \\
+$\mathit{k_{2}}$: Her mom were picking carrots from their garden. \\
 \hline
 \\
 \hline
 $\mathbf{{s}}$: \textbf{Megan took 15 pictures at the zoo and 18 at the museum.} \\
 \hline
-$\mathit{s_{1}}$: Megan took 15 pictures at the zoo. \\
+$\mathit{k_{1}}$: Megan took 15 pictures at the zoo. \\
 \hline
-$\mathit{s_{2}}$: Megan took 18 pictures at the museum. \\
+$\mathit{k_{2}}$: Megan took 18 pictures at the museum. \\
 \hline
 \\
 \hline
 $\mathbf{{s}}$: \textbf{Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts before school.} \\
 \hline
-$\mathit{s_{1}}$: Ned had to wash 9 short sleeve shirts before school. \\
+$\mathit{k_{1}}$: Ned had to wash 9 short sleeve shirts before school. \\
 \hline
-$\mathit{s_{2}}$: Ned had to wash 21 long sleeve shirts before school. \\
+$\mathit{k_{2}}$: Ned had to wash 21 long sleeve shirts before school. \\
 \hline
 \\
 \hline
 $\mathbf{{s}}$: \textbf{Faye had 46 math problems and 9 science problems for homework.} \\
 \hline
-$\mathit{s_{1}}$: Faye had 46 math problems for homework. \\
+$\mathit{k_{1}}$: Faye had 46 math problems for homework. \\
 \hline
-$\mathit{s_{2}}$: Faye had 9 science problems for homework. \\
+$\mathit{k_{2}}$: Faye had 9 science problems for homework. \\
 \hline
 \\
 \hline
 $\mathbf{{s}}$: \textbf{Amy had 4 music files and 21 video files on her flash drive.} \\
 \hline
-$\mathit{s_{1}}$: Amy had 4 music files on her flash drive. \\
+$\mathit{k_{1}}$: Amy had 4 music files on her flash drive. \\
 \hline
-$\mathit{s_{2}}$: Amy had 21 video files on her flash drive. \\
+$\mathit{k_{2}}$: Amy had 21 video files on her flash drive. \\
 \hline
 \\
 \hline
 $\mathbf{{s}}$: \textbf{He bought 11 games from a friend and bought 22 more at a garage sale.} \\
 \hline
-$\mathit{s_{1}}$: He bought 11 games from a friend. \\
+$\mathit{k_{1}}$: He bought 11 games from a friend. \\
 \hline
-$\mathit{s_{2}}$: He bought 22 games more at a garage sale. \\
+$\mathit{k_{2}}$: He bought 22 games more at a garage sale. \\
 \hline
 \\
 \hline
 $\mathbf{{s}}$: \textbf{In the first round she scored 40 points and in the second round she scored 50 points.} \\
 \hline
-$\mathit{s_{1}}$: In the first round she scored 40 points.\\
+$\mathit{k_{1}}$: In the first round she scored 40 points.\\
 \hline
-$\mathit{s_{2}}$: In the second round she scored 50 points. \\
+$\mathit{k_{2}}$: In the second round she scored 50 points. \\
 \hline
 \end{tabular}
 \caption{Example fragments simplified based on conjunctions.}
