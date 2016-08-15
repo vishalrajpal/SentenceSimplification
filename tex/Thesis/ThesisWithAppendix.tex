@@ -57,13 +57,13 @@ For Halloween, Debby and her sister combined the candy they received. Debby had 
 
 To derive the solution to this problem, the system needs to understand that \textit{they} refers to \textit{Debby and her sister} (i.e. anaphora/pronominal resolution). Hence, the number of candies need to be summed up and then \textit{35 candies} need to be subtracted from the total number of candies. 
 
-While a solution to these problems requires extracting information and composing numeric expressions, if the sentence is too complex it is hard to extract information accurately.
+While a solution to these problems requires extracting information and composing numeric expressions, if the sentence is too complex, it is hard to extract information accurately.
 
 At the heart of the technical approach, the novel notion of \textit{Sentence Simplification} is involved (Section \ref{sec:sentencesimplification}). Once the sentences in the problem text are simplified, extracting information becomes easier. Each sentence in the problem is simplified to a level where it consists information which is able to be mapped to a single operator. This allows us to decompose the entire problem to a collection of simplified sentences as operator prediction problems. Each sentence represents the quantitative information with the mapped operator. These predictions (operators with the quantitative information) can be combined together to form a mathematical equation.
 
 The approach focuses on addition and subtraction problems currently, but learning to classify operators will allow us to generalize the approach to multiplication and division problems as well. In particular, the system was able to solve Example 1 although it had never seen the problem before and required both addition and subtraction operations.
 
-The approach is evaluated on 3 datasets, achieving competitive performance on all of them. Section \ref{sec:relatedwork} describes the related work in the area of automated arithmetic word problem solving. The theory of sentence simplification is then presented. Later the information decomposition strategy that is based on it is discussed. Section \ref{sec:logisticregressionclassifier} presents the overall computational approach, including the way classifier learns to classify simplified sentences to operators. Finally, experimental study is discussed followed with future work and conclusion.
+The approach is evaluated on 3 datasets, achieving competitive performance on all of them. Section \ref{sec:relatedwork} describes the related work in the area of automated arithmetic word problem solving. The theory of sentence simplification is then presented. Later the information decomposition strategy that is based on it is discussed. Section \ref{sec:logisticregressionclassifier} presents the overall computational approach, including the way classifier learns to classify simplified sentences to operators. Finally, experimental study is discussed followed by future work and conclusion.
 
 \section{Related Work} \label{sec:relatedwork}
 Most of the previous work in automated arithmetic problem solvers has focused on a restricted subset of problems.The approach described in \citep{RoyTACL15} handles problems with all basic operations but makes assumptions about the number of quantities in the problem text and the number of steps required to solve the problem. In contrast, our approach does not make any assumptions about the data in the problem text. Kushman's approach \citep{Kushman} tries to map numbers from the problem text to predefined equation templates and implicitly assume that similar equation forms have been seen in the training data. On the contrary, our system does not rely on pre-defined templates and hence is able to solve questions of type which have never been seen before.  The approach described in \citep{ARIS} might be the most related to ours. It handles addition and subtraction problems and tries to predict an operator for the verb in the problem text. Hence, it requires additional annotated data for verb categories. Our approach uses the information of the verb present in the sentence and handles addition and subtraction problems for now, but there is no requirement of additional annotated data. Refer to Section \ref{sec:features} for how the information from verbs is used as a feature. 
@@ -135,7 +135,7 @@ Though the sentence has \textit{cats} as the noun, but based on the adjectives\t
 \label{figure:4}
 \end{table}
 
-In the example presented in Figure \ref{figure:4}, \textit{Every} is a determiner and when considering it, our system will be able to extract the information that there are \textit{28 lunchboxes}.
+In the example presented in Figure \ref{figure:4}, \textit{every} is a determiner and when considering it, our system will be able to extract the information that there are \textit{28 lunchboxes}.
 \vspace{4mm}
 
 \textbf{Existential/Expletive:} Since, existentials indicate the existence or presence of something, they are an important part of speech for our system. Also, when the sentences are simplified, the existentials are added to the fragments which don't have them. Refer to Section \ref{sec:sentencesimplification} for more details.
@@ -158,7 +158,7 @@ There are 34 crayons in the drawer.\\
 In the example in Figure \ref{figure:5}, after the split based on conjunction \textit{and} the expletive \textit{There} is added to the fragment after the conjunction.
 \vspace{4mm}
 
-\textbf{Noun:} Nouns are important for answering the arithmetic word problems. Each problem text has some nouns in form of a subject \textit{(acting entity)} or an object \textit{(Entity that is acted upon by the subject)}. All the nouns are extracted from the simplified sentence and stored as a list. 
+\textbf{Noun:} Nouns are important for answering the arithmetic word problems. Each problem text has some nouns in form of a subject \textit{(acting entity)} or an object \textit{(entity that is acted upon by the subject)}. All the nouns are extracted from the simplified sentence and stored as a list. 
 \vspace{4mm}
 
 \textbf{Preposition:} Prepositions are helpful to keep track of location or time. Also, when simplifying sentences based on conjunctions, we add prepositions to the fragments which are missing them. Refer to the Section \ref{sec:sentencesimplification} for more details and example.
@@ -169,7 +169,7 @@ In the example in Figure \ref{figure:5}, after the split based on conjunction \t
 \textbf{Verb:} Verbs are important for out system to predict the type of action taken by the subject. Determining the kind of action helps to predict an operation. More details on this in Section \ref{sec:features}.
 \vspace{4mm}
 
-\textbf{WHAdverb:} Existence of a WHAdverb mostly indicates the beginning of a question. Hence, having the WHAdverb in our representation helps us in the classification process. Refer to the Section \ref{sec:features}.
+\textbf{WHAdverb:} Existence of a WHAdverb mostly indicates the beginning of a question. Hence, having the WHAdverb in our representation helps us in the classification process. Refer to the Section \ref{sec:features} for more details.
 
 \section{Sentence Simplification and Problem Decomposition} \label{sec:sentencesimplification}
 Sentences in an arithmetic word problem are sometimes complex. Hence, it is difficult to extract information from such sentences. Even more challenging is to predict the impact of the sentence on the result. 
@@ -292,7 +292,7 @@ If \begin{math}s_{1}\end{math} starts with a noun and \begin{math}s_{2}\end{math
 \begin{math}s_{2}\end{math}: Sara has 8 yellow balloons.\\
 \hline
 \end{tabular}
-\caption{Example sentence Rule  \ref{rule:3}.}
+\caption{Example sentence for Rule  \ref{rule:3}.}
 \label{figure:11}
 \end{table}
 
@@ -328,12 +328,23 @@ Based on the output by the dependency parser and our rules, there might be some 
 \subsection{Syntactic Pattern}\label{sec:syntacticpattern}
 In this thesis, a concept known as Syntactic Pattern is introduced which is basically a summarized information about a fragment. It is a pattern consisting of the initials of the parts of speech which appear in the fragment. The initials are arranged in the order in which the words appear in the sentence. Consider the picture in Figure \ref{figure:13}:
 
-\begin{figure}[h!]
-\includegraphics[width=0.8\textwidth]{Figure1}
+\begin{table}[h!]
 \centering
+\begin{tabular}{ | m{30em} | }
+\hline
+\textbf{Arithmetic Word Problem with its Syntactic Pattern} \\
+\hline
+\textbf{Example Sentence:} \newline Joan found 70 seashells on the beach.\\
+\hline
+\textbf{Dependency Parser Output} \newline \includegraphics{parser_output.png} \\
+\hline
+\textbf{Syntactic Pattern: NVQNPDN} \newline
+D=Determiner, N=Noun, P=Preposition, Q=Cardinal, V=Verb \\
+\hline
+\end{tabular}
 \caption{Example sentence of a word problem and its syntactic pattern.}
 \label{figure:13}
-\end{figure}
+\end{table}
 
 As in Figure \ref{figure:13}, the pattern \textit{NVQNPN} consists of the initials of the parts of speech in the sentence in their appearance order. This pattern is helpful in many ways:
 
@@ -465,7 +476,7 @@ It is easy to see that presence of these relations is mostly in the fragments in
 \label{figure:16}
 \end{table}
 
-In \begin{math}s_{1}\end{math}, both \textit{NVQN} and \textit{QN} appear. While, in \begin{math}s_{2}\end{math} \textit{QN} appears. Presence of quantity in a fragment is more likely to suggest an operation. 
+In \begin{math}s_{1}\end{math}, both \textit{NVQN} and \textit{QN} appear. While, in \begin{math}s_{2}\end{math} \textit{QN} appears. Presence of quantity in a fragment is more likely to suggest a mathematical operation. 
 
 \textbf{Word based occurence features:} Occurence of some particular words in the fragment help the classifier. Figure \ref{figure:17} has the list of some words and description of how they are helpful:
 
@@ -581,7 +592,7 @@ Word2Vec for verb: \textit{baked} \\
 \label{word2vecexample}
 \end{table}
 
-\textbf{Step 3:} Pass the closest words as an input to WordNet to identify their verb categories. Similar to Figure \ref{wordnetexample}, each word will have their own distribution of categories. Hence, we normalize results between 8 categories as in Figure \ref{normalized}.
+\textbf{Step 3:} Pass the closest words as an input to WordNet to identify their verb categories. Similar to Figure \ref{wordnetexample}, each word will have their own distribution of categories. Hence, we normalize results between 8 categories as shown in Figure \ref{normalized}.
 
 \begin{table}[h!]
 \centering
@@ -776,20 +787,20 @@ The results in Figure \ref{figure:24} are achieved in evaluating our system on d
 \label{figure:24}
 \end{table}
 
-\textit{$^{*}$These datasets contain problems for all operations. From these datasets, we have evaluated our system for addition and subctraction problems only. Hence, the results for these datasets are for informational purposes.}\\
+\textit{$^{*}$These datasets contain problems for all operations. For each of them, we have evaluated our system for addition and subctraction problems only. Hence, the results for these datasets are for informational purposes.}\\
 
-The first row of the above table are the results achieved by our system. We achieve competitive results compared to other approaches. For IL and CC datasets we only evvaluate on addition and subtraction problems and hence the results if not be the correct comparison.
+The first row of the above table are the results achieved by our system. We achieve competitive results compared to other approaches. For IL and CC datasets, we only evaluate on addition and subtraction problems and hence the results if not be the correct comparison.
 
 \section{Discussion}\label{sec:discussion}
 
-Our system is generalized as it gives importance to every fragment initially and then based on its structure ignores irrelevant information. Not only verbs\citep{ARIS}, but other parts of speech play an equal role in solving arithmetic word problems. 
+Our system is generalized as it gives importance to every fragment initially and then ignores the irrelevant information based on its structure. Not only verbs\citep{ARIS}, but other parts of speech play an equal role in solving arithmetic word problems. 
 
 \subsection{Future Work}\label{sec:futurework}
 \subsubsection{Multiplication and Division Problems}\label{sec:futureworkmanddproblems}
 We aim to solve multiplication and division problems using a similar approach. Based on our analysis, we believe that by adding additional features and training data, multiplication and division problems could be solved.
 
 \subsubsection{Additional Complex Parsing Rules}\label{sec:futureworkparsingrules}
-Currently, our system employs some complex but mostly simpl rules to solve arithmetic problems. We aim to add more complex parsing rules to extract quantified nouns and their relations with verbs. This would help the classifier to predict operations more accurately. 
+Currently, our system employs some complex but mostly simple rules to solve arithmetic problems. We aim to add more complex parsing rules to extract quantified nouns and their relations with verbs. This would help the classifier to predict operations more accurately. 
 
 \subsubsection{Improving the Classifier}\label{sec:classifierimprovement}
 We also plan to focus on improving the classifier by using some advanced machine learning methods. At this point, we have a LR classifier which performs reassonably well. This is an area to predict the operator for a fragment more accurately. We plan to consider ensembling methods in future.
@@ -801,11 +812,11 @@ We also plan to focus on improving the classifier by using some advanced machine
 \hline
 \bf Error Type & \bf Example \\
 \hline
-Classification Errors (75\%) & He now has 56 books in his library. \textbf{Classified to "+" but should be "="}. \\
+Classification Errors (75\%) & \textit{He now has 56 books in his library.} \newline Classified to "+" but should be "=". \\
 \hline
-Parsing Issues (15\%) & Sara has 31 \textbf{red} and 15 green balloons. \\
+Parsing Issues (15\%) & \textit{Sara has 31 red and 15 green balloons.} \newline Currently, our approach is not able to identify \textit{red balloons} as a noun.\\
 \hline
-Coreference Resolution (10\%) & When they cleaned them , they discovered that \textbf{29} were cracked. \\
+Coreference Resolution (10\%) & \textit{When they cleaned them , they discovered that \textbf{29} were cracked.} \newline In this sentence, \textit{29} refers to an object (seashells) occured in previous sentences. We are not able to extract such information.\\
 \hline
 \end{tabular}
 \caption{Examples of different error categories and relative frequencies.}
@@ -816,7 +827,7 @@ Coreference Resolution (10\%) & When they cleaned them , they discovered that \t
 As per Figure \ref{figure:25}, we can see the need to improve the classifier based on the number of classification errors. There is a possibility of improvement in parsing issues by adding more rules. 
 
 \section{Conclusion}\label{sec:conclusion}
-This thesis presents a method for understanding and solving addition and subtraction arithmetic word problems. We develop a novel theoritical framework, centered around the notion of syntactic patterns and implement it to produce simplified sentences. This theory naturally leads to a solution to uniquely solve word problems - \textit{determine the quantified nouns and operation in the problem text}. The theory underlies our algorithmic solution. We show this by developing a classifier that yields strong performance on several benchmark collections. Our approach also performs equally well on multistep problems, even when it has never observed the particular problem type before.
+This thesis presents a method for understanding and solving addition and subtraction arithmetic word problems. We develop a novel theoritical framework, centered around the notion of syntactic patterns and implement it to produce simplified sentences. This theory naturally leads to a solution to uniquely solve word problems - \textit{determine the quantified nouns and operation in the problem text}. The theory underlies our algorithmic solution. We show this by developing a classifier that yields strong performance on several benchmark collections. Our approach also performs equally well on multistep problems, even when it has never observed a particular problem type before.
 
 
 \paragraph{Acknowledgements} \hspace{0pt} \\
