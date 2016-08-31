@@ -1,12 +1,12 @@
 package com.neu.sentencesimplification.stanfordcorenlp;
 
-import java.util.*;
-
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.trees.TypedDependency;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.experimental.Accessors;
+
+import java.util.*;
 
 /**
  * QuestionSentence: An individual sentence of a question.
@@ -32,6 +32,10 @@ public class QuestionSentence {
     private final Collection<Cardinal> mCardinals;
     private final Collection<Adjective> mAdjectives;
     private final Collection<Determiner> mDeterminers;
+    private final TypedDependency mSubjectVerbDependency;
+
+    private PartsOfSpeech mSubjectNounPartsOfSpeech;
+    private PartsOfSpeech mVerbPartsOfSpeech;
 
     public QuestionSentence(final String questionText,
                             final String sentenceText,
@@ -54,6 +58,8 @@ public class QuestionSentence {
 
         mPartsOfSpeech = extractSentencePartsOfSpeech();
         mTaggedWords = taggedWords;
+
+        mSubjectVerbDependency = extractSubjectVerbDependency(mDependencies);
     }
 
     private Comparator<PartsOfSpeech> getPartsOfSpeechComparator() {
@@ -108,6 +114,13 @@ public class QuestionSentence {
                             word, mQuestionText, mSentenceText);
                     nouns.add(nounFromCurrentDependency);
                     indexToNounMap.put(index, nounFromCurrentDependency);
+                }
+
+                /** Extract the Subject form the current sentence.*/
+                final String relation = dependency.reln().getShortName();
+                if (PennRelationsTag.valueOfNullable(relation).equals(PennRelationsTag.nsubj)
+                        && indexToNounMap.containsKey(index)) {
+                    mSubjectNounPartsOfSpeech = indexToNounMap.get(index);
                 }
             }
 
@@ -174,6 +187,12 @@ public class QuestionSentence {
                             word, mQuestionText, mSentenceText);
                     verbs.add(verbFromCurrentDependency);
                     indexToVerbMap.put(index, verbFromCurrentDependency);
+                }
+
+                final String relation = dependency.reln().getShortName();
+                if (PennRelationsTag.valueOfNullable(relation).equals(PennRelationsTag.dobj)
+                        && indexToVerbMap.containsKey(index)) {
+                    mVerbPartsOfSpeech = indexToVerbMap.get(index);
                 }
             }
         }
@@ -475,6 +494,22 @@ public class QuestionSentence {
             }
         }
         return determiners;
+    }
+
+    private TypedDependency extractSubjectVerbDependency (final Collection<TypedDependency> dependencies) {
+        TypedDependency subjectVerbDependency = null;
+        for (final TypedDependency dependency: dependencies) {
+            final String relation = dependency.reln().getShortName();
+            if (PennRelationsTag.valueOfNullable(relation).equals(PennRelationsTag.nsubj)) {
+                subjectVerbDependency = dependency;
+                break;
+            }
+        }
+        return subjectVerbDependency;
+    }
+
+    public void prependWordToSentenceText(final String word) {
+
     }
 
     public boolean hasConjunction() {

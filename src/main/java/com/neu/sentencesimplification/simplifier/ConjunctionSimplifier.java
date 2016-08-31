@@ -1,13 +1,16 @@
 package com.neu.sentencesimplification.simplifier;
 
-import com.neu.sentencesimplification.stanfordcorenlp.DependenciesParser;
 import com.neu.sentencesimplification.stanfordcorenlp.OtherPartsOfSpeech;
 import com.neu.sentencesimplification.stanfordcorenlp.PartsOfSpeech;
 import com.neu.sentencesimplification.stanfordcorenlp.QuestionSentence;
 import edu.stanford.nlp.ling.TaggedWord;
-import edu.stanford.nlp.pipeline.DependencyParseAnnotator;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+import static com.neu.sentencesimplification.simplifier.SimplifierUtilities.createQuestionSentenceFromPartsOfSpeech;
 
 /**
  * ConjunctionSimplifier: Simplifies a sentence based on a conjunction and returns all the simplified sentences.
@@ -227,34 +230,5 @@ public class ConjunctionSimplifier implements Simplifier {
             }
             taggedWordIndex++;
         }
-    }
-
-    private QuestionSentence createQuestionSentenceFromPartsOfSpeech(final SortedSet<PartsOfSpeech> partsOfSpeeches) {
-        final List<String> wordList = new ArrayList<>();
-
-        for (final PartsOfSpeech partsOfSpeech: partsOfSpeeches) {
-            wordList.add(partsOfSpeech.getWord());
-        }
-        final String sentenceText = createSentenceFromSortedList(wordList);
-        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(sentenceText);
-
-        if (questionSentences.size() > 1) {
-            System.err.println("Split Sentences size greater than 1.");
-        }
-        return questionSentences.get(0);
-    }
-
-    private String createSentenceFromSortedList(final List<String> wordList) {
-        final StringBuilder sentenceBuilder = new StringBuilder();
-        int index = 0;
-        for (final String word: wordList) {
-            if (index == 0) {
-                   index++;
-            } else {
-                sentenceBuilder.append(SPACE);
-            }
-            sentenceBuilder.append(word);
-        }
-        return sentenceBuilder.toString();
     }
 }

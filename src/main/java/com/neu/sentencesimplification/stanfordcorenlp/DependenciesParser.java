@@ -1,5 +1,6 @@
 package com.neu.sentencesimplification.stanfordcorenlp;
 
+import com.neu.sentencesimplification.simplifier.CommaSimplifier;
 import com.neu.sentencesimplification.simplifier.ConjunctionSimplifier;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.Sentence;
@@ -24,13 +25,15 @@ public class DependenciesParser {
     private static final GrammaticalStructureFactory GRAMMATICAL_STRUCTURE_FACTORY;
     private static final DependencyParser DEPENDENCY_PARSER;
     private static final ConjunctionSimplifier CONJUNCTION_SIMPLIFIER;
+    private static final CommaSimplifier COMMA_SIMPLIFIER;
 
     static {
         TREE_LANGUAGE_PACK = new PennTreebankLanguagePack();
         GRAMMATICAL_STRUCTURE_FACTORY = TREE_LANGUAGE_PACK.grammaticalStructureFactory();
         DEPENDENCY_PARSER = DependencyParser.loadFromModelFile("models/english_UD.gz");
-        MAXENT_TAGGER = new MaxentTagger("models/tagger-models/english-left3words-distsim.tagger");
+        MAXENT_TAGGER = new MaxentTagger("models/english-left3words/english-left3words-distsim.tagger");
         CONJUNCTION_SIMPLIFIER = new ConjunctionSimplifier();
+        COMMA_SIMPLIFIER = new CommaSimplifier();
     }
 
     public static List<QuestionSentence> extractPartsOfSpeechFromDependencies(final String text) {
@@ -48,9 +51,15 @@ public class DependenciesParser {
             final Collection<TypedDependency> sentenceDependencies = grammaticalStructure.typedDependenciesCCprocessed();
             final QuestionSentence questionSentence = new QuestionSentence(text, sentenceText, sentenceDependencies, taggedWords);
 
-            final List<QuestionSentence> conjunctionSimplifiedQuestionSentences =
-                    CONJUNCTION_SIMPLIFIER.simplify(questionSentence, taggedWords);
-            questionSentences.addAll(conjunctionSimplifiedQuestionSentences);
+            final List<QuestionSentence> commaSimplifiedQuestionSentences =
+                    COMMA_SIMPLIFIER.simplify(questionSentence, taggedWords);
+
+            for (final QuestionSentence commaSimplifiedQuestionSentence: commaSimplifiedQuestionSentences) {
+                final List<QuestionSentence> conjunctionSimplifiedQuestionSentences =
+                        CONJUNCTION_SIMPLIFIER.simplify(commaSimplifiedQuestionSentence, taggedWords);
+                questionSentences.addAll(conjunctionSimplifiedQuestionSentences);
+            }
+            
         }
 
         System.out.println(questionSentences);

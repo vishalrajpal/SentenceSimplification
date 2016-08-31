@@ -8,6 +8,6 @@ import com.neu.sentencesimplification.stanfordcorenlp.DependenciesParser;
 public class MainClass {
 
     public static void main(String[] args) {
-        DependenciesParser.extractPartsOfSpeechFromDependencies("Joan found 6 seashells and Jessica found 8 seashells on the beach .");
+        DependenciesParser.extractPartsOfSpeechFromDependencies(" He bought marbles for $ 9.05 , a football for $ 4.95 , and spent $ 6.52 on a baseball .");
     }
 }
