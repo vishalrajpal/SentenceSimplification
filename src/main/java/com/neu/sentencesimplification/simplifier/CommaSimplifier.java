@@ -1,5 +1,6 @@
 package com.neu.sentencesimplification.simplifier;
 
+import com.neu.sentencesimplification.stanfordcorenlp.OtherPartsOfSpeech;
 import com.neu.sentencesimplification.stanfordcorenlp.PartsOfSpeech;
 import com.neu.sentencesimplification.stanfordcorenlp.QuestionSentence;
 import edu.stanford.nlp.ling.TaggedWord;
@@ -32,7 +33,7 @@ public class CommaSimplifier implements Simplifier {
             final List<TaggedWord> firstSentenceTaggedWords = new ArrayList<>();
             final SortedSet<PartsOfSpeech> firstSentencePartsOfSpeech = new TreeSet<>(partsOfSpeeches.comparator());
             extractPartsOfSpeechByCommaIndex(partsOfSpeeches, taggedWords, 0, firstSentenceTaggedWords,
-                    firstSentencePartsOfSpeech);
+                    firstSentencePartsOfSpeech, questionSentence);
             final QuestionSentence firstSentenceQuestionSentence = createQuestionSentenceFromPartsOfSpeech(
                     firstSentencePartsOfSpeech);
 
@@ -46,7 +47,7 @@ public class CommaSimplifier implements Simplifier {
                     final List<TaggedWord> currentSentenceTaggedWords = new ArrayList<>();
                     final SortedSet<PartsOfSpeech> currentSentencePartsOfSpeech = new TreeSet<>(partsOfSpeeches.comparator());
                     extractPartsOfSpeechByCommaIndex(partsOfSpeeches, taggedWords, splitCounter,
-                            currentSentenceTaggedWords, currentSentencePartsOfSpeech);
+                            currentSentenceTaggedWords, currentSentencePartsOfSpeech, questionSentence);
                     final QuestionSentence currentSentenceQuestionSentence = createQuestionSentenceFromPartsOfSpeech(
                             currentSentencePartsOfSpeech);
 
@@ -86,16 +87,22 @@ public class CommaSimplifier implements Simplifier {
             final List<TaggedWord> taggedWords,
             final int commaIndex,
             final List<TaggedWord> indexTaggedWords,
-            final SortedSet<PartsOfSpeech> indexPartsOfSpeeches) {
+            final SortedSet<PartsOfSpeech> indexPartsOfSpeeches,
+            final QuestionSentence questionSentence) {
 
         int currentCommaIndex = 0;
-        int startIndex = 0;
+        int startIndex = 1;
         int endIndex = -1;
-        int currentTaggedWordIndex = -1;
+        int currentTaggedWordIndex = 1;
         final int noOfTaggedWords = taggedWords.size();
+        final SortedSet<Integer> partsOfSpeechIndices = new TreeSet<>();
+
+        for (final PartsOfSpeech partsOfSpeech: partsOfSpeeches) {
+            partsOfSpeechIndices.add(partsOfSpeech.getIndex());
+        }
 
         for (final TaggedWord taggedWord: taggedWords) {
-            currentTaggedWordIndex++;
+
             if (taggedWord.word().equals(COMMA)) {
                 if (currentCommaIndex == commaIndex) {
                     endIndex = currentTaggedWordIndex - 1;
@@ -104,28 +111,39 @@ public class CommaSimplifier implements Simplifier {
                     startIndex = currentTaggedWordIndex + 1;
                     currentCommaIndex++;
                 }
+            } else if (!partsOfSpeechIndices.contains(currentTaggedWordIndex)) {
+                final String word = taggedWord.word();
+                final OtherPartsOfSpeech otherPartsOfSpeech = new OtherPartsOfSpeech(currentTaggedWordIndex,
+                        word,
+                        questionSentence.getQuestionText(),
+                        questionSentence.getSentenceText());
+                partsOfSpeeches.add(otherPartsOfSpeech);
             }
 
-            if (endIndex == -1 && currentTaggedWordIndex == (noOfTaggedWords - 1)) {
+            currentTaggedWordIndex++;
+            if (endIndex == -1 && currentTaggedWordIndex == noOfTaggedWords) {
                 endIndex = currentTaggedWordIndex;
             }
+
         }
 
-        if (startIndex < noOfTaggedWords && endIndex >= 0 && endIndex < noOfTaggedWords) {
+        if (startIndex <= noOfTaggedWords && endIndex >= 1 && endIndex <= noOfTaggedWords) {
             int index = 0;
             for (final PartsOfSpeech pos : partsOfSpeeches) {
-                /** If the sentence after begins with a comma, ignore the conjunction.*/
-                if (index == 0 && pos.getType().equals(PartsOfSpeech.Type.CONJUNCTION)) {
-                    index++;
-                    continue;
-                }
-                final int posArrIndex = pos.getIndex() - 1;
+                final int posArrIndex = pos.getIndex();
                 if (posArrIndex >= startIndex && posArrIndex <= endIndex) {
+                    /** If the sentence after comma, begins with a conjunction, ignore the conjunction.*/
+                    if (index == 0 && pos.getType().equals(PartsOfSpeech.Type.CONJUNCTION)) {
+                        index++;
+                        startIndex++;
+                        continue;
+                    }
+                    index++;
                     indexPartsOfSpeeches.add(pos);
                 }
             }
 
-            for (int startCounter = startIndex; startCounter <= endIndex; startCounter++) {
+            for (int startCounter = startIndex - 1; startCounter < endIndex; startCounter++) {
                 indexTaggedWords.add(taggedWords.get(startCounter));
             }
         }

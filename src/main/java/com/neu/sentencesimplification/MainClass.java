@@ -8,6 +8,6 @@ import com.neu.sentencesimplification.stanfordcorenlp.DependenciesParser;
 public class MainClass {
 
     public static void main(String[] args) {
-        DependenciesParser.extractPartsOfSpeechFromDependencies(" He bought marbles for $ 9.05 , a football for $ 4.95 , and spent $ 6.52 on a baseball .");
+        DependenciesParser.extractPartsOfSpeechFromDependencies("Joan picked 43 apples from the orchard, and gave 27 apples to Melanie.");
     }
 }

@@ -47,4 +47,5 @@ public class SimplifierUtilities {
 
         return sentenceBuilder.toString();
     }
+
 }
