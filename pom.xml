@@ -51,6 +51,13 @@
             <version>4.12</version>
         </dependency>
 
+        <!-- JSON Glassfish -->
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+
     </dependencies>
 
 </project>
