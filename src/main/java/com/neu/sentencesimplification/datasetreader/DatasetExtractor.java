@@ -1,13 +1,16 @@
 package com.neu.sentencesimplification.datasetreader;
 
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.Sentence;
+import edu.stanford.nlp.process.DocumentPreprocessor;
+
 import javax.json.*;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.neu.sentencesimplification.datasetreader.PublicKeys.*;
 
 /**
  * Merge all the available datasets.
@@ -15,12 +18,12 @@ import java.util.List;
 public class DatasetExtractor {
 
     private static final List<String> DATASET_FILE_PATHS = new ArrayList<>();
-    private static final String DATASET_DIRECTORY = "datasets/mawps/";
+
     private static final String ADD_SUB_FILE_PATH = DATASET_DIRECTORY + "AddSub.json";
     private static final String MULTI_ARITH_FILE_PATH = DATASET_DIRECTORY + "MultiArithAddSub.json";
     private static final String SINGLE_EQ_FILE_PATH = DATASET_DIRECTORY + "SingleEQAddSub.json";
     private static final String SINGLE_OP_FILE_PATH = DATASET_DIRECTORY + "SingleOpAddSub.json";
-    private static final String KEY_PARENT_INDEX = "ParentIndex";
+
 
     static {
         DATASET_FILE_PATHS.add(ADD_SUB_FILE_PATH);
@@ -50,6 +53,30 @@ public class DatasetExtractor {
                     for (final String key: question.keySet()) {
                         newObjectBuilder.add(key, question.get(key));
                     }
+                    final JsonArrayBuilder sentencesArrayBuilder = Json.createArrayBuilder();
+                    final String questionText = question.getString(KEY_S_QUESTION);
+                    final Reader reader = new StringReader(questionText);
+                    final DocumentPreprocessor dp = new DocumentPreprocessor(reader);
+                    for (final List<HasWord> sentence : dp) {
+                        final String sentenceString = Sentence.listToString(sentence);
+
+                        //TODO Actually Simplify Sentences
+                        final JsonArrayBuilder simplifiedSentencesArrayBuilder = Json.createArrayBuilder();
+                        final JsonObject simplifiedSentenceObject = Json.createObjectBuilder()
+                                .add(KEY_SENTENCE, sentenceString)
+                                .add(KEY_LABEL, "")
+                                .add(KEY_SYNTACTICPATTERN, "")
+                                .build();
+                        simplifiedSentencesArrayBuilder.add(simplifiedSentenceObject);
+
+                        final JsonObject sentenceObject = Json.createObjectBuilder()
+                                .add(KEY_SENTENCE, sentenceString)
+                                .add(KEY_SIMPLIFIED_SENTENCES, simplifiedSentencesArrayBuilder.build())
+                                .build();
+                        sentencesArrayBuilder.add(sentenceObject);
+                    }
+                    newObjectBuilder.add(KEY_SENTENCES, sentencesArrayBuilder.build());
+
                     final JsonObject outputObject = newObjectBuilder.build();
                     outputArray.add(outputObject);
                 }

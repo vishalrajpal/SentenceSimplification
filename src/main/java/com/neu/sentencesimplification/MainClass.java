@@ -1,6 +1,6 @@
 package com.neu.sentencesimplification;
 
-import com.neu.sentencesimplification.stanfordcorenlp.DependenciesParser;
+import com.neu.sentencesimplification.datasetreader.CrossValidation;
 
 /**
  * MainClass: The entry point of the project.
@@ -8,6 +8,8 @@ import com.neu.sentencesimplification.stanfordcorenlp.DependenciesParser;
 public class MainClass {
 
     public static void main(String[] args) {
-        DependenciesParser.extractPartsOfSpeechFromDependencies("Joan picked 43 apples from the orchard, and gave 27 apples to Melanie.");
+
+        CrossValidation.createCrossValidationFolds("datasets/mawps/AdditionSubtraction.json", 5);
+        //DependenciesParser.extractPartsOfSpeechFromDependencies("Joan picked 43 apples from the orchard, and gave 27 apples to Melanie.");
     }
 }
