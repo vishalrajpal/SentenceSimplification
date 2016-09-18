@@ -36,8 +36,10 @@ public class ConjunctionSimplifier implements Simplifier {
 
             final PartsOfSpeech firstPartsOfSpeechBeforeConjunction = partsOfSpeechBeforeConjunction.first();
             final PartsOfSpeech.Type firstPartsOfSpeechBeforeConjunctionType = firstPartsOfSpeechBeforeConjunction.getType();
-            if (firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.NOUN)) {
-                updateConjunctionPartsBasedOnNoun(partsOfSpeechBeforeConjunction,
+            if (firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.NOUN)
+                    || firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.EXPLETIVE)
+                    || firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.DETERMINER)) {
+                updateConjunctionPartsBasedOnNoun1(partsOfSpeechBeforeConjunction,
                         partsOfSpeechAfterConjunction);
 
                 final PartsOfSpeech prepositionInSecondSentence = updateConjunctionPartsBasedOnPreposition(partsOfSpeechBeforeConjunction,
@@ -55,9 +57,7 @@ public class ConjunctionSimplifier implements Simplifier {
                 simplifiedSentences.add(firstSentenceQuestionSentence);
                 simplifiedSentences.add(secondSentenceQuestionSentence);
 
-            } /*else if(firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.EXPLETIVE)) {
-
-            }*/
+            }
         } else {
             simplifiedSentences.add(questionSentence);
         }
@@ -98,13 +98,18 @@ public class ConjunctionSimplifier implements Simplifier {
      * @param partsOfSpeechBeforeConjunction: PartsOfSpeech before the Conjunction.
      * @param partsOfSpeechAfterConjunction: PartsOfSpeech after the Conjunction.
      */
-    private void updateConjunctionPartsBasedOnNoun(final SortedSet<PartsOfSpeech> partsOfSpeechBeforeConjunction,
-                                                   final SortedSet<PartsOfSpeech> partsOfSpeechAfterConjunction) {
+    private void updateConjunctionPartsBasedOnNoun1(final SortedSet<PartsOfSpeech> partsOfSpeechBeforeConjunction,
+                                                    final SortedSet<PartsOfSpeech> partsOfSpeechAfterConjunction) {
+        boolean toTakeDeterminer, toTakeExpletive, toTakeNoun, toTakeVerb;
+        toTakeDeterminer = toTakeExpletive = toTakeNoun = toTakeVerb = false;
+
+        final PartsOfSpeech firstPartsOfSpeechBeforeConjunction = partsOfSpeechBeforeConjunction.first();
+        final PartsOfSpeech.Type firstPartsOfSpeechBeforeConjunctionType = firstPartsOfSpeechBeforeConjunction.getType();
+        final PartsOfSpeech firstPartsOfSpeechAfterConjunction = partsOfSpeechAfterConjunction.first();
+        final PartsOfSpeech.Type firstPartsOfSpeechAfterConjunctionType = firstPartsOfSpeechAfterConjunction.getType();
 
         final int maxIterateCount = 2;
         int currentIterateCount = 0;
-
-        final PartsOfSpeech firstPartsOfSpeechAfterConjunction = partsOfSpeechAfterConjunction.first();
 
         PartsOfSpeech secondPartsOfSpeechAfterConjunction = null;
         for (final PartsOfSpeech partsOfSpeech: partsOfSpeechAfterConjunction) {
@@ -115,68 +120,117 @@ public class ConjunctionSimplifier implements Simplifier {
             }
         }
 
-        boolean toTakeNounFromFirstSentence = false;
-        boolean toTakeVerbFromFirstSentence = false;
+        final PartsOfSpeech.Type secondPartsOfSpeechAfterConjunctionType = secondPartsOfSpeechAfterConjunction.getType();
 
-        /** If the pattern in the second sentence is not Noun,Verb then take both from the first sentence.
-         *  If the second sentence starts with a Verb, then take the Verb from the second sentence.*/
-        if (firstPartsOfSpeechAfterConjunction.getType().equals(PartsOfSpeech.Type.VERB)) {
-            toTakeNounFromFirstSentence = true;
-        } else if (!firstPartsOfSpeechAfterConjunction.getType().equals(PartsOfSpeech.Type.NOUN)
-                && !secondPartsOfSpeechAfterConjunction.getType().equals(PartsOfSpeech.Type.VERB)) {
-            toTakeNounFromFirstSentence = true;
-            toTakeVerbFromFirstSentence = true;
-        }
-
-        if (toTakeNounFromFirstSentence) {
-            partsOfSpeechAfterConjunction.add(partsOfSpeechBeforeConjunction.first());
-        }
-
-        if (toTakeVerbFromFirstSentence) {
-            boolean hasFirstNounBeenEncountered = false;
-            for (final PartsOfSpeech partsOfSpeech: partsOfSpeechBeforeConjunction) {
-                if (partsOfSpeech.getType().equals(PartsOfSpeech.Type.NOUN)) {
-
-                    if (!hasFirstNounBeenEncountered) {
-                        hasFirstNounBeenEncountered = true;
-                    } else {
-                        /** Break when you encounter the second Noun, Before this Noun all the verbs have been
-                         * added to the second sentence's PartOfSpeech. */
-                        break;
-                    }
-
-                } else if (partsOfSpeech.getType().equals(PartsOfSpeech.Type.VERB)) {
-                    if (hasFirstNounBeenEncountered) {
-                        partsOfSpeechAfterConjunction.add(partsOfSpeech);
-                    }
+        if (firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.EXPLETIVE) ||
+                firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.DETERMINER)) {
+            if (firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.CARDINAL)) {
+                toTakeExpletive = firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.EXPLETIVE);
+                toTakeDeterminer = firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.DETERMINER);
+                toTakeNoun = true;
+                toTakeVerb = true;
+            } else if (firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.VERB)) {
+                toTakeExpletive = firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.EXPLETIVE);
+                toTakeDeterminer = firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.DETERMINER);
+                toTakeNoun = true;
+            } else if (firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.NOUN)) {
+                if (!secondPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.VERB)) {
+                    toTakeNoun = true;
+                    toTakeVerb = true;
                 }
             }
+        } else if (firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.NOUN)){
+            if (firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.NOUN)) {
+                if (!secondPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.VERB)) {
+                    toTakeNoun = true;
+                    toTakeVerb = true;
+                }
+            } else if(firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.VERB)) {
+                toTakeNoun = true;
+            }
         }
+
+        if (toTakeExpletive) {
+            final PartsOfSpeech expletivePartsOfSpeech = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                    PartsOfSpeech.Type.EXPLETIVE);
+            partsOfSpeechAfterConjunction.add(expletivePartsOfSpeech);
+        } else if (toTakeDeterminer) {
+            final PartsOfSpeech determinerPartsOfSpeech = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                    PartsOfSpeech.Type.DETERMINER);
+            partsOfSpeechAfterConjunction.add(determinerPartsOfSpeech);
+        }
+
+        if (toTakeNoun) {
+            final PartsOfSpeech nounPartsOfSpeech = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                    PartsOfSpeech.Type.NOUN);
+            partsOfSpeechAfterConjunction.add(nounPartsOfSpeech);
+        }
+
+        if (toTakeVerb) {
+            final PartsOfSpeech verbPartsOfSpeech = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                    PartsOfSpeech.Type.VERB);
+            partsOfSpeechAfterConjunction.add(verbPartsOfSpeech);
+        }
+
+    }
+
+    private PartsOfSpeech findFirstOccurrenceOfType(final SortedSet<PartsOfSpeech> partsOfSpeech,
+                                                    final PartsOfSpeech.Type typeToFind) {
+        PartsOfSpeech typeParrtsOfSpeech = null;
+        for (final PartsOfSpeech pos: partsOfSpeech) {
+            if (pos.getType().equals(typeToFind)) {
+                typeParrtsOfSpeech = pos;
+                break;
+            }
+        }
+        return typeParrtsOfSpeech;
     }
 
     private PartsOfSpeech updateConjunctionPartsBasedOnPreposition(final SortedSet<PartsOfSpeech> partsOfSpeechBeforeConjunction,
                                                           final SortedSet<PartsOfSpeech> partsOfSpeechAfterConjunction) {
 
-        //boolean prepositionExistsIn
-        PartsOfSpeech lastPrepositionOfSecondSentence = null;
-        final SortedSet<PartsOfSpeech> partsOfSpeechAfterLastPreposition =
+        final SortedSet<PartsOfSpeech> partsOfSpeechAfterPrepositionSecondSentence =
                 new TreeSet<>(partsOfSpeechBeforeConjunction.comparator());
+        final PartsOfSpeech lastPrepositionOfSecondSentence = getAndUpdatePartsOfSpeechAfterPreposition(
+                partsOfSpeechAfterConjunction, partsOfSpeechAfterPrepositionSecondSentence);
+
+        final PartsOfSpeech prepositionBeforeConjunction = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                PartsOfSpeech.Type.PREPOSITION);
+
+        if (prepositionBeforeConjunction == null) {
+            for (final PartsOfSpeech partsOfSpeech : partsOfSpeechAfterPrepositionSecondSentence) {
+                partsOfSpeechBeforeConjunction.add(partsOfSpeech);
+            }
+        } else {
+            final SortedSet<PartsOfSpeech> partsOfSpeechAfterPrepositionFirstSentence =
+                    new TreeSet<>(partsOfSpeechBeforeConjunction.comparator());
+            getAndUpdatePartsOfSpeechAfterPreposition( partsOfSpeechBeforeConjunction, partsOfSpeechAfterPrepositionFirstSentence);
+            final int firstSentencePrepositionPOSSize = partsOfSpeechAfterPrepositionFirstSentence.size();
+            final int secondSentencePrepositionPOSSize = partsOfSpeechAfterPrepositionSecondSentence.size();
+            if (firstSentencePrepositionPOSSize != secondSentencePrepositionPOSSize) {
+                int currentIndex = 1;
+                for (final PartsOfSpeech pos: partsOfSpeechAfterPrepositionSecondSentence) {
+                    if (currentIndex > firstSentencePrepositionPOSSize) {
+                        partsOfSpeechBeforeConjunction.add(pos);
+                    }
+                    currentIndex++;
+                }
+            }
+        }
+        return lastPrepositionOfSecondSentence;
+    }
+
+    private PartsOfSpeech getAndUpdatePartsOfSpeechAfterPreposition(final SortedSet<PartsOfSpeech> partsOfSpeechAfterConjunction,
+                                                                    final SortedSet<PartsOfSpeech> partsOfSpeechAfterPreposition) {
+        PartsOfSpeech lastPrepositionOfSecondSentence = null;
         for (final PartsOfSpeech partsOfSpeech: partsOfSpeechAfterConjunction) {
             if (partsOfSpeech.getType().equals(PartsOfSpeech.Type.PREPOSITION)) {
                 lastPrepositionOfSecondSentence = partsOfSpeech;
-                partsOfSpeechAfterLastPreposition.clear();
-                partsOfSpeechAfterLastPreposition.add(partsOfSpeech);
+                partsOfSpeechAfterPreposition.clear();
+                partsOfSpeechAfterPreposition.add(partsOfSpeech);
             } else if (lastPrepositionOfSecondSentence != null) {
-                partsOfSpeechAfterLastPreposition.add(partsOfSpeech);
+                partsOfSpeechAfterPreposition.add(partsOfSpeech);
             }
-        }
-
-        /**
-         * Currently, if finds a Preposition in the second sentence, adds it to the first sentence.
-         * TODO Identify if there is a preposition in the first sentence, if not use the preposition from the second sentence
-         **/
-        for (final PartsOfSpeech partsOfSpeech: partsOfSpeechAfterLastPreposition) {
-            partsOfSpeechBeforeConjunction.add(partsOfSpeech);
         }
         return lastPrepositionOfSecondSentence;
     }
@@ -218,7 +272,8 @@ public class ConjunctionSimplifier implements Simplifier {
                  * If the word is a FULL_STOP or it is after the preposition identified in the second sentence,
                  * append it in both the sentences.
                  */
-                if (word.equals(FULL_STOP) || taggedWordIndex > prepositionInSecondSentence.getIndex()) {
+                //if (word.equals(FULL_STOP) || taggedWordIndex > prepositionInSecondSentence.getIndex()) {
+                if (word.equals(FULL_STOP)) {
                     partsOfSpeechBeforeConjunction.add(otherPartsOfSpeech);
                     partsOfSpeechAfterConjunction.add(otherPartsOfSpeech);
                 } else if (taggedWordIndex < splitPartsOfSpeech.getIndex()) {
