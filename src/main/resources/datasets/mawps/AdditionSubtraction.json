@@ -15,7 +15,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan found 70 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -25,7 +25,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "she gave Sam some of her seashells .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -35,7 +35,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She has 27 seashell .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -45,7 +45,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells did she give to Sam ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -68,7 +68,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There were 28 bales of hay in the barn .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -78,7 +78,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim stacked bales in the barn today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -88,7 +88,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are now 54 bales of hay in the barn .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -98,7 +98,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bales did he store in the barn ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -121,7 +121,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary is baking a cake .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -131,7 +131,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The recipe wants 8 cups of flour .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -141,7 +141,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She already put in 2 cups .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -151,7 +151,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cups does she need to add ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -174,7 +174,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara 's high school played 12 basketball games this year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -184,7 +184,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The team won most of their games .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -194,7 +194,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "They were defeated during 4 games .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -204,7 +204,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many games did they win ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -227,7 +227,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 22 walnut trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -237,7 +237,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant walnut trees today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -247,7 +247,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "When the workers are finished there will be 55 walnut trees in the park .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -257,7 +257,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many walnut trees did the workers plant today ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -280,7 +280,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike had 34 peaches at his roadside fruit dish .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -290,7 +290,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He went to the orchard and picked peaches to stock up .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -300,7 +300,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are now 86 peaches .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -310,7 +310,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "how many did he pick ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -333,7 +333,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There were 6 roses in the vase .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -343,7 +343,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary cut some roses from her flower garden .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -353,7 +353,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are now 16 roses in the vase .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -363,7 +363,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many roses did she cut ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -386,7 +386,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan went to 4 football games this year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -396,7 +396,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She went to 9 games last year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -406,7 +406,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many football games did Joan go to in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -462,7 +462,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 4 walnut trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -472,7 +472,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 6 walnut trees today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -482,7 +482,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many walnut trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -505,7 +505,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam had 9 dimes in his bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -515,7 +515,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "His dad gave him 7 dimes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -525,7 +525,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many dimes does Sam have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -548,7 +548,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa 's dog had puppies .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -558,7 +558,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She gave 7 to her friends .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -568,7 +568,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She now has 5 puppies .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -578,7 +578,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many puppies did she have to start with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -634,7 +634,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 2 pencils in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -644,7 +644,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim placed 3 pencils in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -654,7 +654,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pencils are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -710,7 +710,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sandy grew 6 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -720,7 +720,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam grew 3 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -730,7 +730,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many carrots did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -819,7 +819,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim 's cat had kittens .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -829,7 +829,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He gave 3 to Jessica and 6 to Sara .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -839,7 +839,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He now has 9 kittens .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -849,7 +849,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many kittens did he have to start with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -905,7 +905,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Melanie had 7 dimes in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -915,7 +915,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Her dad gave her 8 dimes and her mother gave her 4 dimes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -925,7 +925,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many dimes does Melanie have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -948,7 +948,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A restaurant served 5 cakes during lunch and 6 during dinner today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -958,7 +958,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The restaurant served 3 cakes yesterday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -968,7 +968,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cakes were served in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1024,7 +1024,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 7 dogwood trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1034,7 +1034,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 3 dogwood trees today and 2 dogwood trees tomorrow .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1044,7 +1044,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many dogwood trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1067,7 +1067,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara grew 4 onions , Sally grew 5 onions , and Fred grew 9 onions .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1077,7 +1077,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many onions did they grow in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1100,7 +1100,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason has 43 blue and 16 red marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1120,7 +1120,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blue marbles do they have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1143,7 +1143,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam found 18 seashells and Mary found 47 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1154,7 +1154,7 @@
           {
             "Sentence": "How many seashells did they find together ?",
             "label": "",
-            "SyntacticPattern": ""
+            "SyntacticPattern": "?"
           }
         ]
       }
@@ -1176,7 +1176,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason grew 23 watermelons and 18 turnips .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1186,7 +1186,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Nancy grew 28 watermelons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1196,7 +1196,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many watermelons did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1219,7 +1219,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 11 rulers and 34 crayons in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1229,7 +1229,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim placed 14 rulers in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1239,7 +1239,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many rulers are now there in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1262,7 +1262,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara picked 45 pears and Sally picked 11 pears from the pear tree .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1272,7 +1272,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pears were picked in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1295,7 +1295,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Keith has 20 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1305,7 +1305,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason has 21 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1315,7 +1315,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books do they have together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1338,7 +1338,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason had 49 quarters in his bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1348,7 +1348,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "His dad gave him 25 quarters .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1358,7 +1358,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many quarters does he have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1381,7 +1381,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom found 15 seashells and Fred found 43 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1391,7 +1391,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "When they cleaned them , they discovered that 29 were cracked .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -1401,7 +1401,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells did they find together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1424,7 +1424,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara has 31 red and 15 green balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1434,7 +1434,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sandy has 24 red balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1444,7 +1444,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many red balloons do they have in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1467,7 +1467,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan picked 37 oranges and Sara picked 10 oranges .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1477,7 +1477,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa picked 30 pears .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -1487,7 +1487,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oranges were picked in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1510,7 +1510,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred went to 36 basketball games this year , but missed 35 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1520,7 +1520,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He went to 11 games last year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1530,7 +1530,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many basketball games did Fred go to in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1553,7 +1553,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 33 pencils and 44 crayons in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1563,7 +1563,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan placed 27 pencils in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1573,7 +1573,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pencils are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1596,7 +1596,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam had 49 pennies and 24 nickels in his bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1606,7 +1606,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "His dad gave him 39 nickels and 31 quarters .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1616,7 +1616,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many nickels does he have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1639,7 +1639,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan grew 42 turnips and 38 cantelopes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1649,7 +1649,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jessica grew 47 turnips .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1659,7 +1659,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many turnips did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1683,7 +1683,7 @@
           {
             "Sentence": "There are 33 walnut trees currently in the park .",
             "label": "",
-            "SyntacticPattern": ""
+            "SyntacticPattern": "+"
           }
         ]
       },
@@ -1693,7 +1693,7 @@
           {
             "Sentence": "Park workers will plant 44 walnut trees today .",
             "label": "",
-            "SyntacticPattern": ""
+            "SyntacticPattern": "+"
           }
         ]
       },
@@ -1702,7 +1702,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many walnut trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1726,7 +1726,7 @@
           {
             "Sentence": "Sara had 21 quarters in her bank .",
             "label": "",
-            "SyntacticPattern": ""
+            "SyntacticPattern": "+"
           }
         ]
       },
@@ -1736,7 +1736,7 @@
           {
             "Sentence": "Her dad gave her 49 quarters .",
             "label": "",
-            "SyntacticPattern": ""
+            "SyntacticPattern": "+"
           }
         ]
       },
@@ -1746,7 +1746,7 @@
           {
             "Sentence": "How many quarters does she have now ?",
             "label": "",
-            "SyntacticPattern": ""
+            "SyntacticPattern": "?"
           }
         ]
       }
@@ -1768,7 +1768,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 41 pencils in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1778,7 +1778,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike placed 30 pencils in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1788,7 +1788,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pencils are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1811,7 +1811,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan has 10 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1821,7 +1821,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom has 38 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1831,7 +1831,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books do they have together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1854,7 +1854,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan has 40 blue balloons Melanie has 41 blue balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1864,7 +1864,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blue balloons do they have in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1887,7 +1887,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred grew 38 cantelopes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1897,7 +1897,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim grew 44 cantelopes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1907,7 +1907,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cantelopes did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1930,7 +1930,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam went to 14 football games this year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1940,7 +1940,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He went to 29 games last year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1950,7 +1950,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many football games did Sam go to in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -1973,7 +1973,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary found 18 seashells and Jessica found 41 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -1983,7 +1983,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells did they find together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2006,7 +2006,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 39 dogwood trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2016,7 +2016,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2026,7 +2026,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many dogwood trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2049,7 +2049,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sandy has 10 books , Benny has 24 books , and Tim has 33 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2059,7 +2059,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books do they have together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2082,7 +2082,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason picked 46 pears , Keith picked 47 pears , and Mike picked 12 pears from the pear tree .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2092,7 +2092,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pears were picked in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2115,7 +2115,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Keith grew 29 cantelopes , Fred grew 16 cantelopes , and Jason grew 20 cantelopes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2125,7 +2125,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cantelopes did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2148,7 +2148,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Melanie had 19 dimes in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2158,7 +2158,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Her dad gave her 39 dimes and her mother gave her 25 dimes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2168,7 +2168,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many dimes does Melanie have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2191,7 +2191,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa has 37 blue balloons , Sandy has 28 blue balloons , and Sally has 39 blue balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2201,7 +2201,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blue balloons do they have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2224,7 +2224,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sally had 27 Pokemon cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2234,7 +2234,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan gave her 41 new Pokemon cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2244,7 +2244,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sally bought 20 Pokemon cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2254,7 +2254,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many Pokemon cards does Sally have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2277,7 +2277,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason went to 11 football games this month .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2287,7 +2287,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He went to 17 games last month , and plans to go to 16 games next month .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2297,7 +2297,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many games will he attend in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2320,7 +2320,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 43 pencils in the drawer and 19 pencils on the desk .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2330,7 +2330,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan placed 16 pencils on the desk .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2340,7 +2340,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pencils are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2363,7 +2363,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike has 35 books in his library .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2373,7 +2373,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He bought several books at a yard sale over the weekend .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2383,7 +2383,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He now has 56 books in his library .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -2393,7 +2393,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books did he buy at the yard sale ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2416,7 +2416,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 53 maple trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2426,7 +2426,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant maple trees today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2436,7 +2436,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "When the workers are finished there will be 64 maple trees in the park .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -2446,7 +2446,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many maple trees did the workers plant today ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2479,7 +2479,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He has 22 seashell .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -2489,7 +2489,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells did he give to Jessica ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2512,7 +2512,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sally had 13 peaches at her roadside fruit dish .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2522,7 +2522,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She went to the orchard and picked peaches to stock up .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2532,7 +2532,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are now 55 peaches .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -2542,7 +2542,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "how many did she pick ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2565,7 +2565,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Benny received 67 dollars for his birthday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2608,7 +2608,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There were 3 roses in the vase .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2618,7 +2618,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa cut some roses from her flower garden .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2628,7 +2628,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are now 14 roses in the vase .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -2638,7 +2638,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many roses did she cut ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2661,7 +2661,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Last week Tom had 74 dollars .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2681,7 +2681,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much money did he make washing cars ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2704,7 +2704,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There were 73 bales of hay in the barn .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2714,7 +2714,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason stacked bales in the barn today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2724,7 +2724,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are now 96 bales of hay in the barn .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -2734,7 +2734,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bales did he store in the barn ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2757,7 +2757,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Nancy grew 6 potatoes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2767,7 +2767,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sandy grew 7 potatoes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2777,7 +2777,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many potatoes did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2800,7 +2800,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 9 crayons in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2810,7 +2810,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Benny placed 3 crayons in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2820,7 +2820,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many crayons are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2843,7 +2843,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 5 oak trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2853,7 +2853,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 4 oak trees today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -2863,7 +2863,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oak trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2896,7 +2896,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many unbroken seashells did Tom find ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2929,7 +2929,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many lemons were picked in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2962,7 +2962,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cakes were served today ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -2995,7 +2995,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many orange balloons does Joan have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3018,7 +3018,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred had 7 dimes in his bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3028,7 +3028,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "His sister borrowed 3 of his dimes .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -3038,7 +3038,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many dimes does Fred have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3061,7 +3061,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan 's cat had 8 kittens .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3071,7 +3071,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She gave 2 to her friends .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -3081,7 +3081,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many kittens does she have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3104,7 +3104,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 34 dogwood trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3114,7 +3114,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 49 dogwood trees today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3124,7 +3124,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many dogwood trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3147,7 +3147,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 27 pencils in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3157,7 +3157,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Nancy placed 45 pencils in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3167,7 +3167,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pencils are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3200,7 +3200,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells does he now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3223,7 +3223,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim has 22 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3233,7 +3233,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike has 20 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3243,7 +3243,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books do they have together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3266,7 +3266,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike has 87 baseball cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3276,7 +3276,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam bought 13 of Mike 's baseball cards .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -3286,7 +3286,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many baseball cards does Mike have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3309,7 +3309,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sandy grew 51 pumpkins .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3319,7 +3319,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike grew 23 pumpkins .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3329,7 +3329,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pumpkins did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3352,7 +3352,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim has 44 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3362,7 +3362,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam has 52 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3372,7 +3372,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books do they have together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3405,7 +3405,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many violet marbles does he now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3428,7 +3428,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 25 popular trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3438,7 +3438,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 73 popular trees today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3448,7 +3448,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many popular trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3471,7 +3471,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 54 scissors in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3481,7 +3481,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Keith placed 22 scissors in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3491,7 +3491,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many scissors are now there in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3524,7 +3524,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pears were picked in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3547,7 +3547,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam had 98 pennies in his bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3557,7 +3557,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He spent 93 of his pennies .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -3567,7 +3567,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pennies does he have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3600,7 +3600,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells does she now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3623,7 +3623,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam has 110 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3633,7 +3633,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan has 102 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3643,7 +3643,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books do they have together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3676,7 +3676,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oranges were picked in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3699,7 +3699,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sally had 760 quarters in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3709,7 +3709,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She spent 418 of her quarters .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -3719,7 +3719,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many quarters does she have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3742,7 +3742,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Melanie grew 139 turnips .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3752,7 +3752,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Benny grew 113 turnips .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3762,7 +3762,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many turnips did they grow in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3785,7 +3785,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason has 676 Pokemon cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3795,7 +3795,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa bought 224 of Jason 's Pokemon cards .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -3805,7 +3805,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many Pokemon cards does Jason have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3828,7 +3828,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 107 walnut trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3838,7 +3838,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 104 walnut trees today .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -3848,7 +3848,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many walnut trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3881,7 +3881,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many green balloons does he now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3904,7 +3904,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 115 pencils in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3914,7 +3914,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara placed 100 pencils in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3924,7 +3924,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pencils are now there in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -3947,7 +3947,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason has 3 Pokemon cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -3957,7 +3957,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Benny bought 2 of Jason 's Pokemon cards .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -3967,7 +3967,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many Pokemon cards does Jason have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4000,7 +4000,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many orange marbles does he now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4023,7 +4023,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan had 5 dimes in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4033,7 +4033,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She spent 2 of her dimes .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4043,7 +4043,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many dimes does she have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4066,7 +4066,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 2 orchid bushes currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4076,7 +4076,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 4 orchid bushes today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4086,7 +4086,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many orchid bushes will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4119,7 +4119,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pears were picked in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4152,7 +4152,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many watermelons does Sam have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4175,7 +4175,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason had Pokemon cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4185,7 +4185,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He gave 9 to his friends .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4195,7 +4195,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He now has 4 Pokemon cards .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": ""
           }
         ]
@@ -4205,7 +4205,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many Pokemon cards did he have to start with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4228,7 +4228,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary had 7 nickels in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4238,7 +4238,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Her dad gave her 5 nickels .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4248,7 +4248,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many nickels does Mary have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4271,7 +4271,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Keith grew 6 turnips .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4281,7 +4281,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa grew 9 turnips .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4291,7 +4291,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many turnips did they grow in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4324,7 +4324,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many yellow marbles do they have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4347,7 +4347,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sally grew 6 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4357,7 +4357,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred grew 4 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4367,7 +4367,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many carrots did they grow in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4390,7 +4390,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom found 5 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4400,7 +4400,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "he gave Jessica 2 of the seashells .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4410,7 +4410,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells does he now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4433,7 +4433,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred has 5 baseball cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4443,7 +4443,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Melanie bought 3 of Fred 's baseball cards .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4453,7 +4453,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many baseball cards does Fred have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4476,7 +4476,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary had 8 potatoes in the garden .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4486,7 +4486,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The rabbits ate 3 of the potatoes .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4496,7 +4496,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many potatoes does Mary now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4519,7 +4519,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 9 oak trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4529,7 +4529,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers had to cut down 2 oak trees that were damaged .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4539,7 +4539,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oak trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4562,7 +4562,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jessica had 8 quarters in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4572,7 +4572,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Her sister borrowed 3 of her quarters .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4582,7 +4582,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many quarters does Jessica have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4605,7 +4605,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A restaurant made 9 hamburgers to serve during lunch .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4615,7 +4615,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Only 3 were actually served .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4625,7 +4625,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many hamburgers were over from lunch ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4648,7 +4648,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 7 crayons in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4658,7 +4658,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary took 3 crayons out of the drawer .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4668,7 +4668,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many crayons are there now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4701,7 +4701,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many limes does Dan have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4734,7 +4734,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blue balloons does Joan have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4767,7 +4767,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many apples does Joan have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4800,7 +4800,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many violet balloons does he now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4823,7 +4823,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred has 40 baseball cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4833,7 +4833,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Keith bought 22 of Fred 's baseball cards .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4843,7 +4843,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many baseball cards does Fred have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4876,7 +4876,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells does he now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4909,7 +4909,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pumpkins does Sara have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4932,7 +4932,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan decided to sell all of her old books .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -4942,7 +4942,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She gathered up 33 books to sell .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4952,7 +4952,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She sold 26 books in a yard sale .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -4962,7 +4962,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books does Joan now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -4985,7 +4985,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 46 rulers in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -4995,7 +4995,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim took 25 rulers from the drawer .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -5005,7 +5005,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many rulers are now in the drawer ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5028,7 +5028,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 33 oak trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -5038,7 +5038,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers had to cut down 18 oak trees that were damaged .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": ""
           }
         ]
@@ -5048,7 +5048,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oak trees will be in the park when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5081,7 +5081,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did Joan spend on video games ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5104,7 +5104,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike joined his school 's band .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5124,7 +5124,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did Mike spend at the music store ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5147,7 +5147,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa bought some toys .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5167,7 +5167,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total , how much did Alyssa spend on toys ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5200,7 +5200,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "What was the total cost of Jessica 's purchases ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5223,7 +5223,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara got fast food for lunch .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5243,7 +5243,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "What was the total of the lunch bill ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5266,7 +5266,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason went to the mall on Saturday to buy clothes .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5286,7 +5286,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total , how much money did Jason spend on clothing ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5309,7 +5309,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa loves eating fruits .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5329,7 +5329,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total , how much money did Alyssa spend ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5352,7 +5352,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary loves eating fruits .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5372,7 +5372,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total , how much money did she spend ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5395,7 +5395,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sandy went to the mall to buy clothes .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5415,7 +5415,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much money did Sandy spend on clothes ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5438,7 +5438,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason joined his school 's band .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5458,7 +5458,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did Jason spend at the music store ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5491,7 +5491,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did Tom spend on video games ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5514,7 +5514,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike bought some toys .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5534,7 +5534,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total , how much did Mike spend on toys ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5557,7 +5557,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A ship is filled with 5973 tons of cargo .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -5567,7 +5567,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "It stops in the Bahamas , where sailors load 8723 tons of cargo onboard .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -5577,7 +5577,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many tons of cargo does the ship hold now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5600,7 +5600,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Before December , customers buy 1346 ear muffs from the mall .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -5610,7 +5610,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During December , they buy 6444 , and there are none .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -5620,7 +5620,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In all , how many ear muffs do the customers buy ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5643,7 +5643,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Diane is a beekeeper .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5653,7 +5653,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Last year , she harvested 2479 pounds of honey .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -5663,7 +5663,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "This year , she bought some new hives and increased her honey harvest by 6085 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -5673,7 +5673,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pounds of honey did Diane harvest this year ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5696,7 +5696,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "An oil pipe in the sea broke .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5706,7 +5706,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Before engineers started to fix the pipe , 6522 liters of oil leaked into the water .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -5716,7 +5716,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "While the engineers worked , the pipe leaked 5165 liters of oil .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": ""
           }
         ]
@@ -5726,7 +5726,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In all , how many liters of oil leaked into the water ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5759,7 +5759,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cars is that in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
@@ -5782,7 +5782,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Abe 's family moved from the Bahamas to Japan , so they had convert their money into Japanese yen .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": ""
           }
         ]
@@ -5802,7 +5802,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many yen do they have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": ""
           }
         ]
