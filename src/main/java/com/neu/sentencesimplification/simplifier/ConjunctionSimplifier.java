@@ -140,13 +140,13 @@ public class ConjunctionSimplifier implements Simplifier {
                 }
             }
         } else if (firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.NOUN)){
-            if (firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.NOUN)) {
+            if(firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.VERB)) {
+                toTakeNoun = true;
+            } else if (!firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.NOUN)) {
                 if (!secondPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.VERB)) {
                     toTakeNoun = true;
                     toTakeVerb = true;
                 }
-            } else if(firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.VERB)) {
-                toTakeNoun = true;
             }
         }
 

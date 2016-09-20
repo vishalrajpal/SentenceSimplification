@@ -1,10 +1,42 @@
 doubts- 7,26,28,29,36 59, 61 62 63, 144 154 159 167 168 169 183 195
 
-unsimplified- 9, 13, 15, 17, 18, 20,23,25,27,30,44, 47, 48 49 50 51 53 56 59, 61 63 68 69 70 71 76
-		81 84 86 88 93 96 99 100 104 113 114 115 116 118 119 123 124 125 126 127 128 129 130 131 132 133
-		134 139 140 146 147 148 150 151 152 156 157 158 160 161 164 166 170 174 176 177 178 179 180 181
-		182 185 186 187 188 189 190 191 192 193
+unsimplified- 9, 13, 15, 17, 18, 20,23,25,27,30,44, 47, 48 49 50 56 , 61 71 76
+		81 84 86 88 96 100 104 113 114 116 125 128 129 130
+		134 139 140 147 148 150 151 152 156 157 160 161 164 166 170 174 176 177 178 179 180 181
+	    186 187 188 189 192
 
 comma-simplifer:
 find verb & noun in first sentece
 assign verb and noun to second sentence..
+
+Working: 193, 191, 190, 185, 182, 158, 146, 133, 132, 131, 127, 126, 124, 123, 119, 118, 115, 99, 96, 93, 88, 84, 76, 70, 69, 63, 59, 53, 51
+
+1) Preposition in Comma Simplifier (18, 23, 50)
+2) Splitting based on sentence not having noun verb dependency (192, 189, 188, 187, 161, 160, 156, 152, 150, 148, 147, 140, 134, 33).
+
+192 "Each day , the polar bear at Richmond's zoo eats 0.2 bucket of trout and 0.4 bucket of salmon."
+189 "1 evening , a restaurant served a total of 0.2 loaf of wheat bread and 0.4 loaf of white bread ."
+188 "If Scarlett adds 0.6666666666666666 cup more , how much oil will be in the  measuring cup ?"
+187 "In Mr. Olsen 's mathematics class , 0.7 the students received A 's and 0.2 received B 's ."
+161 This morning , her employees used 816 eggs to bake pumpkin pies .
+160 Last week , she picked up a total of 1576 pieces of trash .
+156 So far , an orchard has sold a combined total of 9792 pounds of fresh and frozen fruit this season .
+152 Each year , salmon travel upstream , going from the ocean to the rivers where they were born .
+150 To fill an order , the factory dyed 61921 yards of silk green and 49500 yards pink .
+148 Last year , 90171 people were born in a country , and 16320 people immigrated to it .
+147 In response , the farmer releases ladybugs onto the fields .
+140 Abe 's family moved from the Bahamas to Japan , so they had convert their money into Japanese yen .
+134 In total , how much did Mike spend on toys ?
+33 When they cleaned them , they discovered that 29 were cracked .
+
+Done
+33  done (Included nsubj as a subject/object verb)
+134, 147, 148, 160, 161  If the first sentence does not contain a Noun and verb dependency, don't consider as a individual sentence.
+188 If the splitted sentence starts with a WHAdverb do not prepend noun or verb to it.
+
+3) Separate ToBe verbs and action verbs (181)
+4) Comma in question sentence (130, 129, 128, 125)
+5) NPE (157)
+6) Include adjectives with the Nouns (151, 139, 114, 36)
+7) Quantified Nouns Error (116, 104, 81, 71, 56)
+8) Conjunction Simplification Error (38, 39, 48)

@@ -34,6 +34,7 @@ public class QuestionSentence {
     private final Collection<Determiner> mDeterminers;
     private final TypedDependency mSubjectVerbDependency;
 
+    private final boolean mStartingWithWHAdverb;
     private PartsOfSpeech mSubjectNounPartsOfSpeech;
     private PartsOfSpeech mVerbPartsOfSpeech;
 
@@ -58,6 +59,7 @@ public class QuestionSentence {
 
         mPartsOfSpeech = extractSentencePartsOfSpeech();
         mTaggedWords = taggedWords;
+        mStartingWithWHAdverb = startsWithWHAdverb();
 
         mSubjectVerbDependency = extractSubjectVerbDependency(mDependencies);
     }
@@ -190,7 +192,8 @@ public class QuestionSentence {
                 }
 
                 final String relation = dependency.reln().getShortName();
-                if (PennRelationsTag.valueOfNullable(relation).equals(PennRelationsTag.dobj)
+                final PennRelationsTag verbTag = PennRelationsTag.valueOfNullable(relation);
+                if ((verbTag.equals(PennRelationsTag.dobj) || verbTag.equals(PennRelationsTag.nsubj))
                         && indexToVerbMap.containsKey(index)) {
                     mVerbPartsOfSpeech = indexToVerbMap.get(index);
                 }
@@ -508,8 +511,15 @@ public class QuestionSentence {
         return subjectVerbDependency;
     }
 
-    public void prependWordToSentenceText(final String word) {
-
+    private boolean startsWithWHAdverb() {
+        boolean startsWithWhAdverb = false;
+        for(final WHAdverb whAdverb: mWHAdverbs) {
+            if (whAdverb.getIndex() == 1) {
+                startsWithWhAdverb = true;
+                break;
+            }
+        }
+        return startsWithWhAdverb;
     }
 
     public boolean hasConjunction() {

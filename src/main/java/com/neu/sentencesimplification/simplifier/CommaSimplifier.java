@@ -24,7 +24,7 @@ public class CommaSimplifier implements Simplifier {
     public List<QuestionSentence> simplify(final QuestionSentence questionSentence,
                                            final List<TaggedWord> taggedWords) {
 
-        final String questionText = questionSentence.getQuestionText();
+        final String questionText = questionSentence.getSentenceText();
         final String[] commaSplitSentences = questionText.split(COMMA);
         final List<QuestionSentence> simplifiedQuestions = new ArrayList<>();
         if (commaSplitSentences.length > 1) {
@@ -38,10 +38,12 @@ public class CommaSimplifier implements Simplifier {
                     firstSentencePartsOfSpeech);
 
             final TypedDependency firstSentenceSubjectVerbDependency = firstSentenceQuestionSentence.getSubjectVerbDependency();
+            QuestionSentence preQuestionSentence = null;
             if (firstSentenceSubjectVerbDependency != null) {
-
                 simplifiedQuestions.add(firstSentenceQuestionSentence);
-
+            } else {
+                preQuestionSentence = firstSentenceQuestionSentence;
+            }
                 /** Assign the subject and verb to other sentences.*/
                 for (int splitCounter = 1; splitCounter < commaSplitSentences.length; splitCounter++) {
                     final List<TaggedWord> currentSentenceTaggedWords = new ArrayList<>();
@@ -54,25 +56,33 @@ public class CommaSimplifier implements Simplifier {
                     final boolean assignNoun = currentSentenceQuestionSentence.getSubjectNounPartsOfSpeech() == null;
                     final boolean assignVerb = currentSentenceQuestionSentence.getVerbPartsOfSpeech() == null;
 
-                    if (assignNoun) {
-                        currentSentencePartsOfSpeech.add(firstSentenceQuestionSentence.getSubjectNounPartsOfSpeech());
-                    }
+                    if (preQuestionSentence == null) {
+                        final boolean startsWithWhAdverb = currentSentenceQuestionSentence.isStartingWithWHAdverb();
 
-                    if (assignVerb) {
-                        currentSentencePartsOfSpeech.add(firstSentenceQuestionSentence.getVerbPartsOfSpeech());
-                    }
+                        if (assignNoun && !startsWithWhAdverb) {
+                            currentSentencePartsOfSpeech.add(firstSentenceQuestionSentence.getSubjectNounPartsOfSpeech());
+                        }
 
-                    if (assignNoun || assignVerb) {
-                        final QuestionSentence modifiedSentenceQuestionSentence = createQuestionSentenceFromPartsOfSpeech(
-                                currentSentencePartsOfSpeech);
+                        if (assignVerb && !startsWithWhAdverb) {
+                            currentSentencePartsOfSpeech.add(firstSentenceQuestionSentence.getVerbPartsOfSpeech());
+                        }
 
-                        simplifiedQuestions.add(modifiedSentenceQuestionSentence);
+                        if (assignNoun || assignVerb) {
+                            final QuestionSentence modifiedSentenceQuestionSentence = createQuestionSentenceFromPartsOfSpeech(
+                                    currentSentencePartsOfSpeech);
+
+                            simplifiedQuestions.add(modifiedSentenceQuestionSentence);
+                        } else {
+                            simplifiedQuestions.add(currentSentenceQuestionSentence);
+                        }
                     } else {
-                        simplifiedQuestions.add(currentSentenceQuestionSentence);
+                        currentSentencePartsOfSpeech.addAll(firstSentencePartsOfSpeech);
+                        final QuestionSentence currentSentenceWithPreQuestionSentence = createQuestionSentenceFromPartsOfSpeech(currentSentencePartsOfSpeech);
+                        simplifiedQuestions.add(currentSentenceWithPreQuestionSentence);
                     }
                 }
 
-            }
+
 
 
         } else {
