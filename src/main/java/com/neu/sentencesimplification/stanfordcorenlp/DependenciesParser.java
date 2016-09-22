@@ -86,7 +86,7 @@ public class DependenciesParser {
     private static void updateQuantifiedNouns(final List<TypedDependency> quantifiedNouns,
                                               final Collection<TypedDependency> dependencies) {
         for (final TypedDependency dependency: dependencies) {
-            if (PennRelationsTag.isANummod(dependency)) {
+            if (PennRelationsTag.isANummod(dependency) || PennRelationsTag.isNmodOf(dependency)) {
                 quantifiedNouns.add(dependency);
             }
         }
@@ -115,6 +115,8 @@ public class DependenciesParser {
         for (TypedDependency dependency: dependencies) {
             if (PennRelationsTag.isANummod(dependency)) {
                 cardinals.remove(dependency.dep());
+            } else if (PennRelationsTag.isNmodOf(dependency)) {
+                cardinals.remove(dependency.gov());
             }
         }
 
