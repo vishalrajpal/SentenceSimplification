@@ -12,22 +12,15 @@ assign verb and noun to second sentence..
 Working: 193, 191, 190, 185, 182, 158, 146, 133, 132, 131, 127, 126, 124, 123, 119, 118, 115, 99, 96, 93, 88, 84, 76, 70, 69, 63, 59, 53, 51
 
 1) Preposition in Comma Simplifier (18, 23, 50)
-2) Splitting based on sentence not having noun verb dependency (192, 189, 188, 187, 161, 160, 156, 152, 150, 148, 147, 140, 134, 33).
+2) Splitting based on sentence not having noun verb dependency (192, 189, 187, 156, 152, 150, 140).
 
 192 "Each day , the polar bear at Richmond's zoo eats 0.2 bucket of trout and 0.4 bucket of salmon."
 189 "1 evening , a restaurant served a total of 0.2 loaf of wheat bread and 0.4 loaf of white bread ."
-188 "If Scarlett adds 0.6666666666666666 cup more , how much oil will be in the  measuring cup ?"
 187 "In Mr. Olsen 's mathematics class , 0.7 the students received A 's and 0.2 received B 's ."
-161 This morning , her employees used 816 eggs to bake pumpkin pies .
-160 Last week , she picked up a total of 1576 pieces of trash .
 156 So far , an orchard has sold a combined total of 9792 pounds of fresh and frozen fruit this season .
 152 Each year , salmon travel upstream , going from the ocean to the rivers where they were born .
 150 To fill an order , the factory dyed 61921 yards of silk green and 49500 yards pink .
-148 Last year , 90171 people were born in a country , and 16320 people immigrated to it .
-147 In response , the farmer releases ladybugs onto the fields .
 140 Abe 's family moved from the Bahamas to Japan , so they had convert their money into Japanese yen .
-134 In total , how much did Mike spend on toys ?
-33 When they cleaned them , they discovered that 29 were cracked .
 
 Done
 33  done (Included nsubj as a subject/object verb)
@@ -35,8 +28,8 @@ Done
 188 If the splitted sentence starts with a WHAdverb do not prepend noun or verb to it.
 
 3) Separate ToBe verbs and action verbs (181)
-4) Comma in question sentence (130, 129, 128, 125)
+4) Count based preposition merge (128)
 5) NPE (157)
 6) Include adjectives with the Nouns (151, 139, 114, 36)
-7) Quantified Nouns Error (116, 104, 81, 71, 56)
-8) Conjunction Simplification Error (38, 39, 48)
+7) Quantified Nouns Error (71, 56)
+8) Conjunction Simplification Error (38, 48)

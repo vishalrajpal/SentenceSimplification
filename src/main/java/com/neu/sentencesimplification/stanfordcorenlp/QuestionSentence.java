@@ -102,50 +102,75 @@ public class QuestionSentence {
         final Map<Integer, Noun> indexToNounMap = new HashMap<>();
 
         for (final TypedDependency dependency: dependencies) {
-            final PennPartsOfSpeechTag depTag = PennPartsOfSpeechTag.valueOfNullable(dependency.dep().tag());
-            if (PennPartsOfSpeechTag.isANoun(depTag)) {
-                final String word = dependency.dep().backingLabel().
-                        getString(edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation.class);
-                final int index = dependency.dep().index();
 
-                if (indexToNounMap.containsKey(index)) {
-                    final Noun nounAlreadySeen = indexToNounMap.get(index);
-                    nounAlreadySeen.associateDependency(dependency);
-                } else {
-                    final Noun nounFromCurrentDependency = new Noun(dependency, dependency.dep().index(),
-                            word, mQuestionText, mSentenceText);
-                    nouns.add(nounFromCurrentDependency);
-                    indexToNounMap.put(index, nounFromCurrentDependency);
+            if (isAMergeableNounDependency(dependency)) {
+
+
+
+            } else {
+                final PennPartsOfSpeechTag depTag = PennPartsOfSpeechTag.valueOfNullable(dependency.dep().tag());
+                if (PennPartsOfSpeechTag.isANoun(depTag)) {
+                    final String word = dependency.dep().backingLabel().
+                            getString(edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation.class);
+                    final int index = dependency.dep().index();
+
+                    if (indexToNounMap.containsKey(index)) {
+                        final Noun nounAlreadySeen = indexToNounMap.get(index);
+                        nounAlreadySeen.associateDependency(dependency);
+                    } else {
+                        final Noun nounFromCurrentDependency = new Noun(dependency, dependency.dep().index(),
+                                word, mQuestionText, mSentenceText);
+                        nouns.add(nounFromCurrentDependency);
+                        indexToNounMap.put(index, nounFromCurrentDependency);
+                    }
+
+                    /** Extract the Subject form the current sentence.*/
+                    final String relation = dependency.reln().getShortName();
+                    if (PennRelationsTag.valueOfNullable(relation).equals(PennRelationsTag.nsubj)
+                            && indexToNounMap.containsKey(index)) {
+                        mSubjectNounPartsOfSpeech = indexToNounMap.get(index);
+                    }
                 }
 
-                /** Extract the Subject form the current sentence.*/
-                final String relation = dependency.reln().getShortName();
-                if (PennRelationsTag.valueOfNullable(relation).equals(PennRelationsTag.nsubj)
-                        && indexToNounMap.containsKey(index)) {
-                    mSubjectNounPartsOfSpeech = indexToNounMap.get(index);
-                }
-            }
+                final PennPartsOfSpeechTag govTag = PennPartsOfSpeechTag.valueOfNullable(dependency.gov().tag());
+                if (PennPartsOfSpeechTag.isANoun(govTag)) {
+                    final String word = dependency.gov().backingLabel().
+                            getString(edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation.class);
+                    final int index = dependency.gov().index();
 
-            final PennPartsOfSpeechTag govTag = PennPartsOfSpeechTag.valueOfNullable(dependency.gov().tag());
-            if (PennPartsOfSpeechTag.isANoun(govTag)) {
-                final String word = dependency.gov().backingLabel().
-                        getString(edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation.class);
-                final int index = dependency.gov().index();
-
-                if (indexToNounMap.containsKey(index)) {
-                    final Noun nounAlreadySeen = indexToNounMap.get(index);
-                    nounAlreadySeen.associateDependency(dependency);
-                } else {
-                    final Noun nounFromCurrentDependency = new Noun(dependency, dependency.gov().index(),
-                            word, mQuestionText, mSentenceText);
-                    nouns.add(nounFromCurrentDependency);
-                    indexToNounMap.put(index, nounFromCurrentDependency);
+                    if (indexToNounMap.containsKey(index)) {
+                        final Noun nounAlreadySeen = indexToNounMap.get(index);
+                        nounAlreadySeen.associateDependency(dependency);
+                    } else {
+                        final Noun nounFromCurrentDependency = new Noun(dependency, dependency.gov().index(),
+                                word, mQuestionText, mSentenceText);
+                        nouns.add(nounFromCurrentDependency);
+                        indexToNounMap.put(index, nounFromCurrentDependency);
+                    }
                 }
             }
         }
         return nouns;
     }
 
+    /**
+     * If the dependent and governer of the dependency can be merged to single string.
+     * @param dependency the dependency
+     * @return is the dependent and governer can be merged.
+     */
+    private boolean isAMergeableNounDependency(final TypedDependency dependency) {
+        boolean isAMergeableNounDependency = false;
+        final PennPartsOfSpeechTag govTag = PennPartsOfSpeechTag.valueOfNullable(dependency.gov().tag());
+        final PennPartsOfSpeechTag depTag = PennPartsOfSpeechTag.valueOfNullable(dependency.dep().tag());
+
+        if (PennPartsOfSpeechTag.isANoun(depTag)
+                && PennPartsOfSpeechTag.isANoun(govTag)
+                && PennRelationsTag.isAMergeableNoun(dependency)) {
+            isAMergeableNounDependency = true;
+        }
+
+        return isAMergeableNounDependency;
+    }
     /**
      * Extract Verbs based on dependent and governer. If the index of the Verb has already been encountered,
      * it associates the dependency with the existing Verb.

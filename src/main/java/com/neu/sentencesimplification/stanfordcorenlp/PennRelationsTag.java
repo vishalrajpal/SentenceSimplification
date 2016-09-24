@@ -3,15 +3,27 @@ package com.neu.sentencesimplification.stanfordcorenlp;
 import edu.stanford.nlp.trees.GrammaticalRelation;
 import edu.stanford.nlp.trees.TypedDependency;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public enum PennRelationsTag {
 
-    nsubj,
-    dobj,
-    nummod,
-    nmodof,
+    nsubj, /** Nominal Subject*/
+    dobj,  /** Direct Object */
+    nummod, /** Numeric Modifier */
+    nmodof, /** nominal modifier with preposition of*/
+    compound, /** Compound Noun*/
+    amod, /** */
     other;
 
     private final static String COLON = ":";
+    private final static List<PennRelationsTag> MERGEABLE_NOUN_RELATIONS = new ArrayList<>();
+
+    static {
+        MERGEABLE_NOUN_RELATIONS.add(compound);
+        MERGEABLE_NOUN_RELATIONS.add(amod);
+
+    }
 
     public static PennRelationsTag valueOfNullable (final String relation) {
         PennRelationsTag relationTag;
@@ -36,8 +48,17 @@ public enum PennRelationsTag {
     }
 
     public static boolean isNmodOf(final TypedDependency dependency){
-        final GrammaticalRelation relation = dependency.reln();
-        final PennRelationsTag relationsTag = valueOfNullable(relation.toString());
+        final PennRelationsTag relationsTag = valueOfTypedDependency(dependency);
         return relationsTag.equals(PennRelationsTag.nmodof);
+    }
+
+    public static boolean isAMergeableNoun(final TypedDependency dependency) {
+        final PennRelationsTag relationsTag = valueOfTypedDependency(dependency);
+        return MERGEABLE_NOUN_RELATIONS.contains(relationsTag);
+    }
+
+    public static PennRelationsTag valueOfTypedDependency(final TypedDependency dependency) {
+        final GrammaticalRelation relation = dependency.reln();
+        return valueOfNullable(relation.toString());
     }
 }

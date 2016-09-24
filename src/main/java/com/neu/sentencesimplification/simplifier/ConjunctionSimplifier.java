@@ -122,6 +122,7 @@ public class ConjunctionSimplifier implements Simplifier {
 
         final PartsOfSpeech.Type secondPartsOfSpeechAfterConjunctionType = secondPartsOfSpeechAfterConjunction.getType();
 
+
         if (firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.EXPLETIVE) ||
                 firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.DETERMINER)) {
             if (firstPartsOfSpeechAfterConjunctionType.equals(PartsOfSpeech.Type.CARDINAL)) {
@@ -272,7 +273,7 @@ public class ConjunctionSimplifier implements Simplifier {
                  * If the word is a FULL_STOP or it is after the preposition identified in the second sentence,
                  * append it in both the sentences.
                  */
-                //if (word.equals(FULL_STOP) || taggedWordIndex > prepositionInSecondSentence.getIndex()) {
+                //if (word.equals(FULL_STOP) || taggedWordIndex > prepositionInSecondSentence.getIndices()) {
                 if (word.equals(FULL_STOP)) {
                     partsOfSpeechBeforeConjunction.add(otherPartsOfSpeech);
                     partsOfSpeechAfterConjunction.add(otherPartsOfSpeech);

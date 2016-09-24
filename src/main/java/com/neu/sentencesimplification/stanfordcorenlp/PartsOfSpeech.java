@@ -2,7 +2,7 @@ package com.neu.sentencesimplification.stanfordcorenlp;
 
 import edu.stanford.nlp.trees.TypedDependency;
 
-import java.lang.reflect.ParameterizedType;
+import java.util.Set;
 
 /**
  * PartsOfSpeech: Interface to be implemented by different PartsOfSpeech.
@@ -26,7 +26,7 @@ public interface PartsOfSpeech {
      * Returns the index of the PartsOfSpeech in the sentence.
      * @return the index of the word in the sentence.
      */
-    int getIndex();
+    Set<Integer> getIndices();
 
     /**
      * Returns the word
