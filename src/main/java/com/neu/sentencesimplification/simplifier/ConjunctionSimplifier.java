@@ -248,23 +248,25 @@ public class ConjunctionSimplifier implements Simplifier {
         final SortedSet<Integer> sortedIndicesInPartsOfSpeech = new TreeSet<>();
 
         for (final PartsOfSpeech partsOfSpeech: partsOfSpeechBeforeConjunction) {
-            sortedIndicesInPartsOfSpeech.add(partsOfSpeech.getIndex());
+            sortedIndicesInPartsOfSpeech.addAll(partsOfSpeech.getIndices());
         }
 
         for (final PartsOfSpeech partsOfSpeech: partsOfSpeechAfterConjunction) {
-            sortedIndicesInPartsOfSpeech.add(partsOfSpeech.getIndex());
+            sortedIndicesInPartsOfSpeech.addAll(partsOfSpeech.getIndices());
         }
 
         int taggedWordIndex = 1;
         for (final TaggedWord taggedWord: taggedWords) {
-            if (taggedWordIndex == splitPartsOfSpeech.getIndex()) {
+            if (taggedWordIndex == splitPartsOfSpeech.getLowestIndex()) {
                 taggedWordIndex++;
                 continue;
             }
 
             if (!sortedIndicesInPartsOfSpeech.contains(taggedWordIndex)) {
                 final String word = taggedWord.word();
-                final OtherPartsOfSpeech otherPartsOfSpeech = new OtherPartsOfSpeech(taggedWordIndex,
+                final SortedSet<Integer> indices = new TreeSet<>();
+                indices.add(taggedWordIndex);
+                final OtherPartsOfSpeech otherPartsOfSpeech = new OtherPartsOfSpeech(indices,
                         word,
                         questionSentence.getQuestionText(),
                         questionSentence.getSentenceText());
@@ -277,7 +279,7 @@ public class ConjunctionSimplifier implements Simplifier {
                 if (word.equals(FULL_STOP)) {
                     partsOfSpeechBeforeConjunction.add(otherPartsOfSpeech);
                     partsOfSpeechAfterConjunction.add(otherPartsOfSpeech);
-                } else if (taggedWordIndex < splitPartsOfSpeech.getIndex()) {
+                } else if (taggedWordIndex < splitPartsOfSpeech.getHighestIndex()) {
                     partsOfSpeechBeforeConjunction.add(otherPartsOfSpeech);
                 } else {
                     partsOfSpeechAfterConjunction.add(otherPartsOfSpeech);

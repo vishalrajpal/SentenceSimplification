@@ -2,7 +2,7 @@ package com.neu.sentencesimplification.stanfordcorenlp;
 
 import edu.stanford.nlp.trees.TypedDependency;
 
-import java.util.Set;
+import java.util.SortedSet;
 
 /**
  * PartsOfSpeech: Interface to be implemented by different PartsOfSpeech.
@@ -26,7 +26,19 @@ public interface PartsOfSpeech {
      * Returns the index of the PartsOfSpeech in the sentence.
      * @return the index of the word in the sentence.
      */
-    Set<Integer> getIndices();
+    SortedSet<Integer> getIndices();
+
+    /**
+     * Returns the highest index of the Parts of Speech.
+     * @return the highest index for this Parts of Speech.
+     */
+    int getHighestIndex();
+
+    /**
+     * Returns the lowest index of the Parts of Speech.
+     * @return the lowest index for this Parts of Speech.
+     */
+    int getLowestIndex();
 
     /**
      * Returns the word

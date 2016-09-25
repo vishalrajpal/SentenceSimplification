@@ -8,6 +8,7 @@ import lombok.experimental.Accessors;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.SortedSet;
 
 /**
  * Conjunction: Represents a Conjunction and its properties.
@@ -18,30 +19,41 @@ import java.util.Set;
 @Getter
 public class Conjunction implements PartsOfSpeech {
 
-    private final int mIndex;
+    private final SortedSet<Integer> mIndices;
     private final String mWord;
     private final String mQuestionText;
     private final String mSentenceText;
     private final Set<TypedDependency> mDependencies;
 
     public Conjunction(final TypedDependency conjunctionDependency,
-                       final int index,
+                       final SortedSet<Integer> indices,
                        final String word,
                        final String questionText,
                        final String sentenceText) {
         mDependencies = new HashSet<>();
         mDependencies.add(conjunctionDependency);
 
-        mIndex = index;
+        mIndices = indices;
         mWord = word;
         mQuestionText = questionText;
         mSentenceText = sentenceText;
     }
 
     @Override
-    public int getIndex() {
-        return mIndex;
+    public SortedSet<Integer> getIndices() {
+        return mIndices;
     }
+
+    @Override
+    public int getHighestIndex() {
+        return mIndices.last();
+    }
+
+    @Override
+    public int getLowestIndex() {
+        return mIndices.first();
+    }
+
 
     @Override
     public String getWord() {

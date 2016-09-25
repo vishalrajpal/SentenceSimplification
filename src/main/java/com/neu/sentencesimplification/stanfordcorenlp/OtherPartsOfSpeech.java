@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.ToString;
 import lombok.experimental.Accessors;
 
-import java.util.Set;
+import java.util.SortedSet;
 
 /**
  * OtherPartsOfSpeech: Represents a word which has not been extracted by the dependency parser.
@@ -17,12 +17,12 @@ import java.util.Set;
 @Getter
 public class OtherPartsOfSpeech implements PartsOfSpeech {
 
-    private final Set<Integer> mIndices;
+    private final SortedSet<Integer> mIndices;
     private final String mWord;
     private final String mQuestionText;
     private final String mSentenceText;
 
-    public OtherPartsOfSpeech(final Set<Integer> indices,
+    public OtherPartsOfSpeech(final SortedSet<Integer> indices,
                               final String word,
                               final String questionText,
                               final String sentenceText) {
@@ -33,8 +33,18 @@ public class OtherPartsOfSpeech implements PartsOfSpeech {
     }
 
     @Override
-    public Set<Integer> getIndices() {
+    public SortedSet<Integer> getIndices() {
         return mIndices;
+    }
+
+    @Override
+    public int getHighestIndex() {
+        return mIndices.last();
+    }
+
+    @Override
+    public int getLowestIndex() {
+        return mIndices.first();
     }
 
     @Override

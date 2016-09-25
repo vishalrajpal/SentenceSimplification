@@ -8,6 +8,7 @@ import lombok.experimental.Accessors;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.SortedSet;
 
 /**
  * WHAdverb: Represents a WHAdverb and its properties.
@@ -18,14 +19,14 @@ import java.util.Set;
 @Getter
 public class WHAdverb implements PartsOfSpeech {
 
-    private final Set<Integer> mIndices;
+    private final SortedSet<Integer> mIndices;
     private final String mWord;
     private final String mQuestionText;
     private final String mSentenceText;
     private final Set<TypedDependency> mDependencies;
 
     public WHAdverb(final TypedDependency nounDependency,
-                       final Set<Integer> indices,
+                       final SortedSet<Integer> indices,
                        final String word,
                        final String questionText,
                        final String sentenceText) {
@@ -39,8 +40,18 @@ public class WHAdverb implements PartsOfSpeech {
     }
 
     @Override
-    public Set<Integer> getIndices() {
+    public SortedSet<Integer> getIndices() {
         return mIndices;
+    }
+
+    @Override
+    public int getHighestIndex() {
+        return mIndices.last();
+    }
+
+    @Override
+    public int getLowestIndex() {
+        return mIndices.first();
     }
 
     @Override

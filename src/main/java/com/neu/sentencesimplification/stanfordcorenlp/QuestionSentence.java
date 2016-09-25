@@ -68,7 +68,7 @@ public class QuestionSentence {
         final Comparator<PartsOfSpeech> comparator = new Comparator<PartsOfSpeech>() {
             @Override
             public int compare(PartsOfSpeech o1, PartsOfSpeech o2) {
-                return o1.getIndex() - o2.getIndex();
+                return o1.getLowestIndex() - o2.getLowestIndex();
             }
         };
         return comparator;
@@ -114,15 +114,7 @@ public class QuestionSentence {
                             getString(edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation.class);
                     final int index = dependency.dep().index();
 
-                    if (indexToNounMap.containsKey(index)) {
-                        final Noun nounAlreadySeen = indexToNounMap.get(index);
-                        nounAlreadySeen.associateDependency(dependency);
-                    } else {
-                        final Noun nounFromCurrentDependency = new Noun(dependency, dependency.dep().,
-                                word, mQuestionText, mSentenceText);
-                        nouns.add(nounFromCurrentDependency);
-                        indexToNounMap.put(index, nounFromCurrentDependency);
-                    }
+                    createOrUpdateNoun(nouns, indexToNounMap, dependency, word, index);
 
                     /** Extract the Subject form the current sentence.*/
                     final String relation = dependency.reln().getShortName();
@@ -138,19 +130,37 @@ public class QuestionSentence {
                             getString(edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation.class);
                     final int index = dependency.gov().index();
 
-                    if (indexToNounMap.containsKey(index)) {
-                        final Noun nounAlreadySeen = indexToNounMap.get(index);
-                        nounAlreadySeen.associateDependency(dependency);
-                    } else {
-                        final Noun nounFromCurrentDependency = new Noun(dependency, dependency.gov().index(),
-                                word, mQuestionText, mSentenceText);
-                        nouns.add(nounFromCurrentDependency);
-                        indexToNounMap.put(index, nounFromCurrentDependency);
-                    }
+                    createOrUpdateNoun(nouns, indexToNounMap, dependency, word, index);
                 }
             }
         }
         return nouns;
+    }
+
+    /**
+     *
+     * @param nouns
+     * @param indexToNounMap
+     * @param dependency
+     * @param word
+     * @param index
+     */
+    private void createOrUpdateNoun(final Collection<Noun> nouns,
+                                    final Map<Integer, Noun> indexToNounMap,
+                                    final TypedDependency dependency,
+                                    final String word,
+                                    final int index) {
+        if (indexToNounMap.containsKey(index)) {
+            final Noun nounAlreadySeen = indexToNounMap.get(index);
+            nounAlreadySeen.associateDependency(dependency);
+        } else {
+            final SortedSet<Integer> indices = new TreeSet<>();
+            indices.add(index);
+            final Noun nounFromCurrentDependency = new Noun(dependency, indices,
+                    word, mQuestionText, mSentenceText);
+            nouns.add(nounFromCurrentDependency);
+            indexToNounMap.put(index, nounFromCurrentDependency);
+        }
     }
 
     /**
@@ -193,7 +203,9 @@ public class QuestionSentence {
                     final Verb verbAlreadySeen = indexToVerbMap.get(index);
                     verbAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Verb verbFromCurrentDependency = new Verb(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Verb verbFromCurrentDependency = new Verb(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     verbs.add(verbFromCurrentDependency);
                     indexToVerbMap.put(index, verbFromCurrentDependency);
@@ -210,7 +222,9 @@ public class QuestionSentence {
                     final Verb verbAlreadySeen = indexToVerbMap.get(index);
                     verbAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Verb verbFromCurrentDependency = new Verb(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Verb verbFromCurrentDependency = new Verb(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     verbs.add(verbFromCurrentDependency);
                     indexToVerbMap.put(index, verbFromCurrentDependency);
@@ -243,7 +257,9 @@ public class QuestionSentence {
                     final Preposition prepositionAlreadySeen = indexToPrepositionMap.get(index);
                     prepositionAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Preposition prepositionFromCurrentDependency = new Preposition(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Preposition prepositionFromCurrentDependency = new Preposition(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     prepositions.add(prepositionFromCurrentDependency);
                     indexToPrepositionMap.put(index, prepositionFromCurrentDependency);
@@ -260,7 +276,9 @@ public class QuestionSentence {
                     final Preposition prepositionAlreadySeen = indexToPrepositionMap.get(index);
                     prepositionAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Preposition prepositionFromCurrentDependency = new Preposition(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Preposition prepositionFromCurrentDependency = new Preposition(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     prepositions.add(prepositionFromCurrentDependency);
                     indexToPrepositionMap.put(index, prepositionFromCurrentDependency);
@@ -286,7 +304,9 @@ public class QuestionSentence {
                     final Conjunction conjunctionAlreadySeen = indexToConjunctionMap.get(index);
                     conjunctionAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Conjunction conjunctionFromCurrentDependency = new Conjunction(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Conjunction conjunctionFromCurrentDependency = new Conjunction(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     conjunctions.add(conjunctionFromCurrentDependency);
                     indexToConjunctionMap.put(index, conjunctionFromCurrentDependency);
@@ -303,7 +323,9 @@ public class QuestionSentence {
                     final Conjunction conjunctionAlreadySeen = indexToConjunctionMap.get(index);
                     conjunctionAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Conjunction conjunctionFromCurrentDependency = new Conjunction(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Conjunction conjunctionFromCurrentDependency = new Conjunction(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     conjunctions.add(conjunctionFromCurrentDependency);
                     indexToConjunctionMap.put(index, conjunctionFromCurrentDependency);
@@ -329,7 +351,9 @@ public class QuestionSentence {
                     final WHAdverb whAdverbAlreadySeen = indexToWHAdverbMap.get(index);
                     whAdverbAlreadySeen.associateDependency(dependency);
                 } else {
-                    final WHAdverb whAdverbFromCurrentDependency = new WHAdverb(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final WHAdverb whAdverbFromCurrentDependency = new WHAdverb(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     whAdverbs.add(whAdverbFromCurrentDependency);
                     indexToWHAdverbMap.put(index, whAdverbFromCurrentDependency);
@@ -346,7 +370,9 @@ public class QuestionSentence {
                     final WHAdverb whAdverbAlreadySeen = indexToWHAdverbMap.get(index);
                     whAdverbAlreadySeen.associateDependency(dependency);
                 } else {
-                    final WHAdverb whAdverbFromCurrentDependency = new WHAdverb(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final WHAdverb whAdverbFromCurrentDependency = new WHAdverb(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     whAdverbs.add(whAdverbFromCurrentDependency);
                     indexToWHAdverbMap.put(index, whAdverbFromCurrentDependency);
@@ -372,7 +398,9 @@ public class QuestionSentence {
                     final Expletive expletiveAlreadySeen = indexToExpletiveMap.get(index);
                     expletiveAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Expletive expletiveFromCurrentDependency = new Expletive(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Expletive expletiveFromCurrentDependency = new Expletive(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     expletives.add(expletiveFromCurrentDependency);
                     indexToExpletiveMap.put(index, expletiveFromCurrentDependency);
@@ -389,7 +417,9 @@ public class QuestionSentence {
                     final Expletive expletiveAlreadySeen = indexToExpletiveMap.get(index);
                     expletiveAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Expletive expletiveFromCurrentDependency = new Expletive(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Expletive expletiveFromCurrentDependency = new Expletive(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     expletives.add(expletiveFromCurrentDependency);
                     indexToExpletiveMap.put(index, expletiveFromCurrentDependency);
@@ -415,7 +445,9 @@ public class QuestionSentence {
                     final Cardinal cardinalAlreadySeen = indexToCardinalMap.get(index);
                     cardinalAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Cardinal cardinalFromCurrentDependency = new Cardinal(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Cardinal cardinalFromCurrentDependency = new Cardinal(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     cardinals.add(cardinalFromCurrentDependency);
                     indexToCardinalMap.put(index, cardinalFromCurrentDependency);
@@ -432,7 +464,9 @@ public class QuestionSentence {
                     final Cardinal cardinalAlreadySeen = indexToCardinalMap.get(index);
                     cardinalAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Cardinal cardinalFromCurrentDependency = new Cardinal(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Cardinal cardinalFromCurrentDependency = new Cardinal(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     cardinals.add(cardinalFromCurrentDependency);
                     indexToCardinalMap.put(index, cardinalFromCurrentDependency);
@@ -458,7 +492,9 @@ public class QuestionSentence {
                     final Adjective adjectiveAlreadySeen = indexToAdjectiveMap.get(index);
                     adjectiveAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Adjective adjectiveFromCurrentDependency = new Adjective(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Adjective adjectiveFromCurrentDependency = new Adjective(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     adjectives.add(adjectiveFromCurrentDependency);
                     indexToAdjectiveMap.put(index, adjectiveFromCurrentDependency);
@@ -475,7 +511,9 @@ public class QuestionSentence {
                     final Adjective adjectiveAlreadySeen = indexToAdjectiveMap.get(index);
                     adjectiveAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Adjective adjectiveFromCurrentDependency = new Adjective(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Adjective adjectiveFromCurrentDependency = new Adjective(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     adjectives.add(adjectiveFromCurrentDependency);
                     indexToAdjectiveMap.put(index, adjectiveFromCurrentDependency);
@@ -499,7 +537,10 @@ public class QuestionSentence {
                     final Determiner determinerAlreadySeen = indexToDeterminerMap.get(index);
                     determinerAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Determiner determinerFromCurrentDependency = new Determiner(dependency, index, word, mQuestionText, mSentenceText);
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Determiner determinerFromCurrentDependency = new Determiner(dependency, indices,
+                            word, mQuestionText, mSentenceText);
                     determiners.add(determinerFromCurrentDependency);
                     indexToDeterminerMap.put(index, determinerFromCurrentDependency);
                 }
@@ -514,7 +555,9 @@ public class QuestionSentence {
                     final Determiner determinerAlreadySeen = indexToDeterminerMap.get(index);
                     determinerAlreadySeen.associateDependency(dependency);
                 } else {
-                    final Determiner determinerFromCurrentDependency = new Determiner(dependency, index,
+                    final SortedSet<Integer> indices = new TreeSet<>();
+                    indices.add(index);
+                    final Determiner determinerFromCurrentDependency = new Determiner(dependency, indices,
                             word, mQuestionText, mSentenceText);
                     determiners.add(determinerFromCurrentDependency);
                     indexToDeterminerMap.put(index, determinerFromCurrentDependency);
@@ -539,7 +582,7 @@ public class QuestionSentence {
     private boolean startsWithWHAdverb() {
         boolean startsWithWhAdverb = false;
         for(final WHAdverb whAdverb: mWHAdverbs) {
-            if (whAdverb.getIndices() == 1) {
+            if (whAdverb.getLowestIndex() == 1) {
                 startsWithWhAdverb = true;
                 break;
             }

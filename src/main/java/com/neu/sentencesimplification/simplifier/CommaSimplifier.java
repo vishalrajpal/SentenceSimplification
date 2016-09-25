@@ -108,7 +108,7 @@ public class CommaSimplifier implements Simplifier {
         final SortedSet<Integer> partsOfSpeechIndices = new TreeSet<>();
 
         for (final PartsOfSpeech partsOfSpeech: partsOfSpeeches) {
-            partsOfSpeechIndices.add(partsOfSpeech.getIndex());
+            partsOfSpeechIndices.addAll(partsOfSpeech.getIndices());
         }
 
         for (final TaggedWord taggedWord: taggedWords) {
@@ -123,7 +123,9 @@ public class CommaSimplifier implements Simplifier {
                 }
             } else if (!partsOfSpeechIndices.contains(currentTaggedWordIndex)) {
                 final String word = taggedWord.word();
-                final OtherPartsOfSpeech otherPartsOfSpeech = new OtherPartsOfSpeech(currentTaggedWordIndex,
+                final SortedSet<Integer> indices = new TreeSet<>();
+                indices.add(currentTaggedWordIndex);
+                final OtherPartsOfSpeech otherPartsOfSpeech = new OtherPartsOfSpeech(indices,
                         word,
                         questionSentence.getQuestionText(),
                         questionSentence.getSentenceText());
@@ -134,14 +136,15 @@ public class CommaSimplifier implements Simplifier {
             if (endIndex == -1 && currentTaggedWordIndex == noOfTaggedWords) {
                 endIndex = currentTaggedWordIndex;
             }
-
         }
 
         if (startIndex <= noOfTaggedWords && endIndex >= 1 && endIndex <= noOfTaggedWords) {
             int index = 0;
             for (final PartsOfSpeech pos : partsOfSpeeches) {
-                final int posArrIndex = pos.getIndex();
-                if (posArrIndex >= startIndex && posArrIndex <= endIndex) {
+                final int highestIndex = pos.getHighestIndex();
+                final int lowestIndex = pos.getLowestIndex();
+                //final int posArrIndex = pos.getIndex();
+                if (lowestIndex >= startIndex && highestIndex <= endIndex) {
                     /** If the sentence after comma, begins with a conjunction, ignore the conjunction.*/
                     if (index == 0 && pos.getType().equals(PartsOfSpeech.Type.CONJUNCTION)) {
                         index++;
