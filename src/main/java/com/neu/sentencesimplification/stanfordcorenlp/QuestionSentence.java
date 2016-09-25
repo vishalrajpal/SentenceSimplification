@@ -118,7 +118,7 @@ public class QuestionSentence {
                         final Noun nounAlreadySeen = indexToNounMap.get(index);
                         nounAlreadySeen.associateDependency(dependency);
                     } else {
-                        final Noun nounFromCurrentDependency = new Noun(dependency, dependency.dep().index(),
+                        final Noun nounFromCurrentDependency = new Noun(dependency, dependency.dep().,
                                 word, mQuestionText, mSentenceText);
                         nouns.add(nounFromCurrentDependency);
                         indexToNounMap.put(index, nounFromCurrentDependency);
@@ -539,7 +539,7 @@ public class QuestionSentence {
     private boolean startsWithWHAdverb() {
         boolean startsWithWhAdverb = false;
         for(final WHAdverb whAdverb: mWHAdverbs) {
-            if (whAdverb.getIndex() == 1) {
+            if (whAdverb.getIndices() == 1) {
                 startsWithWhAdverb = true;
                 break;
             }

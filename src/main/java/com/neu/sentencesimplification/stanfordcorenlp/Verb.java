@@ -18,29 +18,29 @@ import java.util.Set;
 @Getter
 public class Verb implements PartsOfSpeech {
 
-    private final int mIndex;
+    private final Set<Integer> mIndices;
     private final String mWord;
     private final String mQuestionText;
     private final String mSentenceText;
     private final Set<TypedDependency> mDependencies;
 
     public Verb(final TypedDependency verbDependency,
-                final int index,
+                final Set<Integer> indices,
                 final String word,
                 final String questionText,
                 final String sentenceText) {
         mDependencies = new HashSet<>();
         mDependencies.add(verbDependency);
 
-        mIndex = index;
+        mIndices = indices;
         mWord = word;
         mQuestionText = questionText;
         mSentenceText = sentenceText;
     }
 
     @Override
-    public int getIndex() {
-        return mIndex;
+    public Set<Integer> getIndices() {
+        return mIndices;
     }
 
     @Override

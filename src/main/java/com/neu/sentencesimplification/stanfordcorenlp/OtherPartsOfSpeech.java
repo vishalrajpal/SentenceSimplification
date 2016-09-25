@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.ToString;
 import lombok.experimental.Accessors;
 
-import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -18,24 +17,24 @@ import java.util.Set;
 @Getter
 public class OtherPartsOfSpeech implements PartsOfSpeech {
 
-    private final int mIndex;
+    private final Set<Integer> mIndices;
     private final String mWord;
     private final String mQuestionText;
     private final String mSentenceText;
 
-    public OtherPartsOfSpeech(final int index,
+    public OtherPartsOfSpeech(final Set<Integer> indices,
                               final String word,
                               final String questionText,
                               final String sentenceText) {
-        mIndex = index;
+        mIndices = indices;
         mWord = word;
         mQuestionText = questionText;
         mSentenceText = sentenceText;
     }
 
     @Override
-    public int getIndex() {
-        return mIndex;
+    public Set<Integer> getIndices() {
+        return mIndices;
     }
 
     @Override
