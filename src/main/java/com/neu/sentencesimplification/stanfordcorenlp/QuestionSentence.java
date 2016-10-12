@@ -35,6 +35,7 @@ public class QuestionSentence {
     private final TypedDependency mSubjectVerbDependency;
 
     private final boolean mStartingWithWHAdverb;
+    private final List<QuestionSentence> mSimplifiedSentences;
     private PartsOfSpeech mSubjectNounPartsOfSpeech;
     private PartsOfSpeech mVerbPartsOfSpeech;
 
@@ -62,6 +63,15 @@ public class QuestionSentence {
         mStartingWithWHAdverb = startsWithWHAdverb();
 
         mSubjectVerbDependency = extractSubjectVerbDependency(mDependencies);
+        mSimplifiedSentences = new ArrayList<>();
+    }
+
+    public void addSimplifiedSentences(final List<QuestionSentence> questionSentences) {
+        mSimplifiedSentences.addAll(questionSentences);
+    }
+
+    public List<QuestionSentence> getSimplifiedSentences() {
+        return  mSimplifiedSentences;
     }
 
     private Comparator<PartsOfSpeech> getPartsOfSpeechComparator() {
@@ -182,7 +192,7 @@ public class QuestionSentence {
         return isAMergeableNounDependency;
     }
     /**
-     * Extract Verbs based on dependent and governer. If the index of the Verb has already been encountered,
+     * Extract Verbs based on dependent and governor. If the index of the Verb has already been encountered,
      * it associates the dependency with the existing Verb.
      * @param dependencies: The dependencies from which the Verbs will be extracted.
      * @return the extracted Verbs.

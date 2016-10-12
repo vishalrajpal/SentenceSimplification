@@ -1,14 +1,18 @@
 package com.neu.sentencesimplification.datasetreader;
 
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.ling.Sentence;
-import edu.stanford.nlp.process.DocumentPreprocessor;
+import com.neu.sentencesimplification.stanfordcorenlp.DependenciesParser;
+import com.neu.sentencesimplification.stanfordcorenlp.PartsOfSpeech;
+import com.neu.sentencesimplification.stanfordcorenlp.QuestionSentence;
 
 import javax.json.*;
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.SortedSet;
 
 import static com.neu.sentencesimplification.datasetreader.PublicKeys.*;
 
@@ -55,22 +59,29 @@ public class DatasetExtractor {
                     }
                     final JsonArrayBuilder sentencesArrayBuilder = Json.createArrayBuilder();
                     final String questionText = question.getString(KEY_S_QUESTION);
-                    final Reader reader = new StringReader(questionText);
-                    final DocumentPreprocessor dp = new DocumentPreprocessor(reader);
-                    for (final List<HasWord> sentence : dp) {
-                        final String sentenceString = Sentence.listToString(sentence);
 
-                        //TODO Actually Simplify Sentences
+                    final List<QuestionSentence> sentences = DependenciesParser.extractPartsOfSpeechFromDependencies(questionText);
+
+                    for (final QuestionSentence sentence: sentences) {
                         final JsonArrayBuilder simplifiedSentencesArrayBuilder = Json.createArrayBuilder();
-                        final JsonObject simplifiedSentenceObject = Json.createObjectBuilder()
-                                .add(KEY_SENTENCE, sentenceString)
-                                .add(KEY_LABEL, "")
-                                .add(KEY_SYNTACTICPATTERN, "")
-                                .build();
-                        simplifiedSentencesArrayBuilder.add(simplifiedSentenceObject);
+                        for (final QuestionSentence simpleSentence : sentence.getSimplifiedSentences()) {
+                            final SortedSet<PartsOfSpeech> partsOfSpeeches = simpleSentence.getPartsOfSpeech();
+                            StringBuilder pattern = new StringBuilder();
+                            for (final PartsOfSpeech part : partsOfSpeeches) {
+                                String type =  part.getType().toString();
+                                pattern.append(type.charAt(0));
+                            }
+
+                            final JsonObject simplifiedSentenceObject = Json.createObjectBuilder()
+                                    .add(KEY_SENTENCE, simpleSentence.getSentenceText())
+                                    .add(KEY_LABEL, "")
+                                    .add(KEY_SYNTACTICPATTERN, pattern.toString())
+                                    .build();
+                            simplifiedSentencesArrayBuilder.add(simplifiedSentenceObject);
+                        }
 
                         final JsonObject sentenceObject = Json.createObjectBuilder()
-                                .add(KEY_SENTENCE, sentenceString)
+                                .add(KEY_SENTENCE, sentence.getSentenceText())
                                 .add(KEY_SIMPLIFIED_SENTENCES, simplifiedSentencesArrayBuilder.build())
                                 .build();
                         sentencesArrayBuilder.add(sentenceObject);
@@ -80,7 +91,6 @@ public class DatasetExtractor {
                     final JsonObject outputObject = newObjectBuilder.build();
                     outputArray.add(outputObject);
                 }
-
             }
 
             final JsonWriter writer = Json.createWriter(outputStream);

@@ -33,3 +33,8 @@ Done
 6) Include adjectives with the Nouns (151, 139, 114, 36)
 7) Quantified Nouns Error (71, 56)
 8) Conjunction Simplification Error (38, 48)
+9) Attach last object noun instead of last quantified noun to the cardinalWithoutNummod (607)
+10) Preposition from last simplified sentence not added to comma-simplified previous sentence
+    Melanie picked 4 plums , Dan picked 9 plums , and Sally picked 3 plums from the plum tree . How many plums were picked in total ?
+11) noun from second simplified sentence not added to first.
+   Jason has 43 blue and 16 red marbles . Tom has 24 blue marbles . How many blue marbles do they have in all ?

@@ -52,6 +52,12 @@ public enum PennRelationsTag {
         return relationsTag.equals(PennRelationsTag.nmodof);
     }
 
+    public static boolean isDobjANoun(final TypedDependency dependency){
+        final PennRelationsTag relationsTag = valueOfTypedDependency(dependency);
+        final PennPartsOfSpeechTag depTag = PennPartsOfSpeechTag.valueOfNullable(dependency.dep().tag());
+        return relationsTag.equals(PennRelationsTag.dobj) && PennPartsOfSpeechTag.isANoun(depTag);
+    }
+
     public static boolean isAMergeableNoun(final TypedDependency dependency) {
         final PennRelationsTag relationsTag = valueOfTypedDependency(dependency);
         return MERGEABLE_NOUN_RELATIONS.contains(relationsTag);
