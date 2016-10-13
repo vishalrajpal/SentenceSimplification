@@ -29,27 +29,36 @@ public class DependencyParserTests {
     @Test
     public void sentenceWithConjunction1_Test() throws Exception {
         final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(SENTENCE_WITH_CONJUNCTION_1);
-
-        assertTrue("Size should be equal to 2.", questionSentences.size() == 2);
-        assertEquals("First sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_1_1'", SENTENCE_WITHOUT_CONJUNCTION_1_1, questionSentences.get(0).getSentenceText());
-        assertEquals("Second sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_1_2'", SENTENCE_WITHOUT_CONJUNCTION_1_2, questionSentences.get(1).getSentenceText());
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_1_1'", SENTENCE_WITHOUT_CONJUNCTION_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_1_2'", SENTENCE_WITHOUT_CONJUNCTION_1_2, simplifiedSentences.get(1).getSentenceText());
     }
 
     @Test
     public void sentenceWithConjunction2_Test() throws Exception {
         final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(SENTENCE_WITH_CONJUNCTION_2);
-
-        assertTrue("Size should be equal to 2.", questionSentences.size() == 2);
-        assertEquals("First sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_2_1'", SENTENCE_WITHOUT_CONJUNCTION_2_1, questionSentences.get(0).getSentenceText());
-        assertEquals("Second sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_2_2'", SENTENCE_WITHOUT_CONJUNCTION_2_2, questionSentences.get(1).getSentenceText());
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_2_1'", SENTENCE_WITHOUT_CONJUNCTION_2_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_2_2'", SENTENCE_WITHOUT_CONJUNCTION_2_2, simplifiedSentences.get(1).getSentenceText());
     }
 
     @Test
     public void sentenceWithConjunction3_Test() throws Exception {
         final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(SENTENCE_WITH_CONJUNCTION_3);
-
-        assertTrue("Size should be equal to 2.", questionSentences.size() == 2);
-        assertEquals("First sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_3_1'", SENTENCE_WITHOUT_CONJUNCTION_3_1, questionSentences.get(0).getSentenceText());
-        assertEquals("Second sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_3_2'", SENTENCE_WITHOUT_CONJUNCTION_3_2, questionSentences.get(1).getSentenceText());
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_3_1'", SENTENCE_WITHOUT_CONJUNCTION_3_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'SENTENCE_WITHOUT_CONJUNCTION_3_2'", SENTENCE_WITHOUT_CONJUNCTION_3_2, simplifiedSentences.get(1).getSentenceText());
     }
 }
