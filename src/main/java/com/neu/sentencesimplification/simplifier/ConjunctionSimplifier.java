@@ -152,39 +152,44 @@ public class ConjunctionSimplifier implements Simplifier {
         }
 
         if (toTakeExpletive) {
-            final PartsOfSpeech expletivePartsOfSpeech = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
-                    PartsOfSpeech.Type.EXPLETIVE);
-            partsOfSpeechAfterConjunction.add(expletivePartsOfSpeech);
+            findAndAddFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                    PartsOfSpeech.Type.EXPLETIVE, partsOfSpeechAfterConjunction);
+
         } else if (toTakeDeterminer) {
-            final PartsOfSpeech determinerPartsOfSpeech = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
-                    PartsOfSpeech.Type.DETERMINER);
-            partsOfSpeechAfterConjunction.add(determinerPartsOfSpeech);
+            findAndAddFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                    PartsOfSpeech.Type.DETERMINER, partsOfSpeechAfterConjunction);
         }
 
         if (toTakeNoun) {
-            final PartsOfSpeech nounPartsOfSpeech = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
-                    PartsOfSpeech.Type.NOUN);
-            partsOfSpeechAfterConjunction.add(nounPartsOfSpeech);
+            findAndAddFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                    PartsOfSpeech.Type.NOUN, partsOfSpeechAfterConjunction);
         }
 
         if (toTakeVerb) {
-            final PartsOfSpeech verbPartsOfSpeech = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
-                    PartsOfSpeech.Type.VERB);
-            partsOfSpeechAfterConjunction.add(verbPartsOfSpeech);
+            findAndAddFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                    PartsOfSpeech.Type.VERB, partsOfSpeechAfterConjunction);
         }
 
     }
 
-    private PartsOfSpeech findFirstOccurrenceOfType(final SortedSet<PartsOfSpeech> partsOfSpeech,
-                                                    final PartsOfSpeech.Type typeToFind) {
-        PartsOfSpeech typeParrtsOfSpeech = null;
+    private boolean findAndAddFirstOccurrenceOfType(final SortedSet<PartsOfSpeech> partsOfSpeech,
+                                                          final PartsOfSpeech.Type typeToFind,
+                                                          final SortedSet<PartsOfSpeech> partsOfSpeechToAdd) {
+        boolean found = false;
+        PartsOfSpeech typePartsOfSpeech = null;
         for (final PartsOfSpeech pos: partsOfSpeech) {
             if (pos.getType().equals(typeToFind)) {
-                typeParrtsOfSpeech = pos;
+                typePartsOfSpeech = pos;
                 break;
             }
         }
-        return typeParrtsOfSpeech;
+        if (typePartsOfSpeech != null){
+            found = true;
+            if (partsOfSpeechToAdd != null) {
+                partsOfSpeechToAdd.add(typePartsOfSpeech);
+            }
+        }
+        return found;
     }
 
     private PartsOfSpeech updateConjunctionPartsBasedOnPreposition(final SortedSet<PartsOfSpeech> partsOfSpeechBeforeConjunction,
@@ -195,10 +200,10 @@ public class ConjunctionSimplifier implements Simplifier {
         final PartsOfSpeech lastPrepositionOfSecondSentence = getAndUpdatePartsOfSpeechAfterPreposition(
                 partsOfSpeechAfterConjunction, partsOfSpeechAfterPrepositionSecondSentence);
 
-        final PartsOfSpeech prepositionBeforeConjunction = findFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
-                PartsOfSpeech.Type.PREPOSITION);
+        final boolean prepositionBeforeConjunctionFound = findAndAddFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
+                PartsOfSpeech.Type.PREPOSITION, null);
 
-        if (prepositionBeforeConjunction == null) {
+        if (prepositionBeforeConjunctionFound) {
             for (final PartsOfSpeech partsOfSpeech : partsOfSpeechAfterPrepositionSecondSentence) {
                 partsOfSpeechBeforeConjunction.add(partsOfSpeech);
             }
