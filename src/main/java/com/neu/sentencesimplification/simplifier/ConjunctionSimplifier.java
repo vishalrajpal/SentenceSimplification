@@ -203,7 +203,7 @@ public class ConjunctionSimplifier implements Simplifier {
         final boolean prepositionBeforeConjunctionFound = findAndAddFirstOccurrenceOfType(partsOfSpeechBeforeConjunction,
                 PartsOfSpeech.Type.PREPOSITION, null);
 
-        if (prepositionBeforeConjunctionFound) {
+        if (!prepositionBeforeConjunctionFound) {
             for (final PartsOfSpeech partsOfSpeech : partsOfSpeechAfterPrepositionSecondSentence) {
                 partsOfSpeechBeforeConjunction.add(partsOfSpeech);
             }
