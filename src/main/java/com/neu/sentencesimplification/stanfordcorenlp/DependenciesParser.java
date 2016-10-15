@@ -1,15 +1,29 @@
 package com.neu.sentencesimplification.stanfordcorenlp;
 
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
 import com.neu.sentencesimplification.simplifier.CommaSimplifier;
 import com.neu.sentencesimplification.simplifier.ConjunctionSimplifier;
-import edu.stanford.nlp.ling.*;
+
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.IndexedWord;
+import edu.stanford.nlp.ling.Sentence;
+import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.parser.nndep.DependencyParser;
 import edu.stanford.nlp.process.DocumentPreprocessor;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
-import edu.stanford.nlp.trees.*;
-
-import java.io.StringReader;
-import java.util.*;
+import edu.stanford.nlp.trees.GrammaticalStructure;
+import edu.stanford.nlp.trees.GrammaticalStructureFactory;
+import edu.stanford.nlp.trees.PennTreebankLanguagePack;
+import edu.stanford.nlp.trees.TreebankLanguagePack;
+import edu.stanford.nlp.trees.TypedDependency;
 
 /**
  * DependenciesParser: Parses the dependencies returned by Stanford Parser.
@@ -25,7 +39,7 @@ public class DependenciesParser {
 
     private static final List<PennRelationsTag> QUANTIFIED_NOUN_DEP_TAGS;
     private static final List<PennRelationsTag> QUANTIFIED_NOUN_GOV_TAGS;
-
+    private static final List<PennRelationsTag> QUANTIFIED_NOUN_DEP_GOV_TAGS;
     static {
         TREE_LANGUAGE_PACK = new PennTreebankLanguagePack();
         GRAMMATICAL_STRUCTURE_FACTORY = TREE_LANGUAGE_PACK.grammaticalStructureFactory();
@@ -38,7 +52,9 @@ public class DependenciesParser {
 
         QUANTIFIED_NOUN_GOV_TAGS = new ArrayList<>();
         QUANTIFIED_NOUN_GOV_TAGS.add(PennRelationsTag.nummod);
-        QUANTIFIED_NOUN_GOV_TAGS.add(PennRelationsTag.nmodof);
+        
+        QUANTIFIED_NOUN_DEP_GOV_TAGS = new ArrayList<>();
+        QUANTIFIED_NOUN_DEP_GOV_TAGS.add(PennRelationsTag.nmodof);
     }
 
     public static List<QuestionSentence> extractPartsOfSpeechFromDependencies(final String text) {
@@ -135,6 +151,8 @@ public class DependenciesParser {
                 cardinals.remove(dependency.dep());
             } else if (PennRelationsTag.isNmodOf(dependency)) {
                 cardinals.remove(dependency.gov());
+            } else if (PennRelationsTag.isACompound(dependency)) {
+            	cardinals.remove(dependency.dep());
             }
         }
 
@@ -159,6 +177,18 @@ public class DependenciesParser {
         } else if (QUANTIFIED_NOUN_DEP_TAGS.contains(PennRelationsTag.valueOfTypedDependency(lastQuantifiedNoun))) {
             word = lastQuantifiedNoun.dep().backingLabel().
                     getString(edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation.class);
+        } else if (QUANTIFIED_NOUN_DEP_GOV_TAGS.contains(PennRelationsTag.valueOfTypedDependency(lastQuantifiedNoun))) {
+        	final PennPartsOfSpeechTag depTag = PennPartsOfSpeechTag.valueOfNullable(lastQuantifiedNoun.dep().tag());
+            if (!PennPartsOfSpeechTag.isACardinal(depTag)) {
+                word = lastQuantifiedNoun.dep().backingLabel().
+                        getString(edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation.class);
+            }
+        	
+            final PennPartsOfSpeechTag govTag = PennPartsOfSpeechTag.valueOfNullable(lastQuantifiedNoun.gov().tag());
+            if (!PennPartsOfSpeechTag.isACardinal(govTag)) {
+                word = lastQuantifiedNoun.gov().backingLabel().
+                        getString(edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation.class);
+            }
         }
 
         for (final IndexedWord indexedWord: cardinalsWithoutNummods) {
