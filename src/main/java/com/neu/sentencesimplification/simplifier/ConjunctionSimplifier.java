@@ -26,14 +26,13 @@ public class ConjunctionSimplifier implements Simplifier {
         final SortedSet<PartsOfSpeech> partsOfSpeeches = questionSentence.getPartsOfSpeech();
         final List<QuestionSentence> simplifiedSentences = new ArrayList<>();
 
-        if (questionSentence.hasConjunction()) {
+        final SortedSet<PartsOfSpeech> partsOfSpeechBeforeConjunction = new TreeSet<>(partsOfSpeeches.comparator());
+        final SortedSet<PartsOfSpeech> partsOfSpeechAfterConjunction = new TreeSet<>(partsOfSpeeches.comparator());
+        final PartsOfSpeech splitPartsOfSpeech = populateBeforeAndAfterConjunctionLists(partsOfSpeeches,
+                partsOfSpeechBeforeConjunction,
+                partsOfSpeechAfterConjunction);
 
-            final SortedSet<PartsOfSpeech> partsOfSpeechBeforeConjunction = new TreeSet<>(partsOfSpeeches.comparator());
-            final SortedSet<PartsOfSpeech> partsOfSpeechAfterConjunction = new TreeSet<>(partsOfSpeeches.comparator());
-            final PartsOfSpeech splitPartsOfSpeech = populateBeforeAndAfterConjunctionLists(partsOfSpeeches,
-                    partsOfSpeechBeforeConjunction,
-                    partsOfSpeechAfterConjunction);
-
+        if (partsOfSpeechBeforeConjunction.size() > 0 && partsOfSpeechAfterConjunction.size() > 0) {
             final PartsOfSpeech firstPartsOfSpeechBeforeConjunction = partsOfSpeechBeforeConjunction.first();
             final PartsOfSpeech.Type firstPartsOfSpeechBeforeConjunctionType = firstPartsOfSpeechBeforeConjunction.getType();
             if (firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.NOUN)
@@ -120,7 +119,7 @@ public class ConjunctionSimplifier implements Simplifier {
             }
         }
 
-        final PartsOfSpeech.Type secondPartsOfSpeechAfterConjunctionType = secondPartsOfSpeechAfterConjunction.getType();
+        final PartsOfSpeech.Type secondPartsOfSpeechAfterConjunctionType = secondPartsOfSpeechAfterConjunction != null ? secondPartsOfSpeechAfterConjunction.getType() : PartsOfSpeech.Type.OTHER;
 
 
         if (firstPartsOfSpeechBeforeConjunctionType.equals(PartsOfSpeech.Type.EXPLETIVE) ||

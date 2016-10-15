@@ -64,7 +64,10 @@ public class CommaSimplifier implements Simplifier {
                         }
 
                         if (assignVerb && !startsWithWhAdverb) {
-                            currentSentencePartsOfSpeech.add(firstSentenceQuestionSentence.getVerbPartsOfSpeech());
+                            final PartsOfSpeech verbPartsOfSpeech = firstSentenceQuestionSentence.getVerbPartsOfSpeech();
+                            if (verbPartsOfSpeech != null){
+                                currentSentencePartsOfSpeech.add(verbPartsOfSpeech);
+                            }
                         }
 
                         if (assignNoun || assignVerb) {
