@@ -27,6 +27,12 @@ public class CommaSimplifierTests {
     private static final String SENTENCE_WITHOUT_COMMA_3_1 = "Joan picked 43 apples from the orchard .";
     private static final String SENTENCE_WITHOUT_COMMA_3_2 = "Joan gave 27 apples to Melanie .";
 
+    private static final String SENTENCE_WITH_COMMAS_4 = "Fred picked 36 limes , Alyssa picked 32 limes , and Nancy picked 35 limes and 18 pears.";
+    private static final String SENTENCE_WITHOUT_COMMA_4_1 = "Fred picked 36 limes .";
+    private static final String SENTENCE_WITHOUT_COMMA_4_2 = "Alyssa picked 32 limes .";
+    private static final String SENTENCE_WITHOUT_COMMA_4_3 = "Nancy picked 35 limes .";
+    private static final String SENTENCE_WITHOUT_COMMA_4_4 = "Nancy picked 18 pears .";
+
     @Test
     public void sentenceWithComma_1_Test() throws Exception {
         final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(SENTENCE_WITH_COMMAS_1);
@@ -62,6 +68,20 @@ public class CommaSimplifierTests {
         assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
         assertEquals("First sentence should be equal to 'SENTENCE_WITHOUT_COMMA_3_1'", SENTENCE_WITHOUT_COMMA_3_1, simplifiedSentences.get(0).getSentenceText());
         assertEquals("Second sentence should be equal to 'SENTENCE_WITHOUT_COMMA_3_2'", SENTENCE_WITHOUT_COMMA_3_2, simplifiedSentences.get(1).getSentenceText());
+    }
+
+    @Test
+    public void sentenceWithComma_4_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(SENTENCE_WITH_COMMAS_4);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 3.", simplifiedSentences.size() == 4);
+        assertEquals("First sentence should be equal to 'SENTENCE_WITHOUT_COMMA_4_1'", SENTENCE_WITHOUT_COMMA_4_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'SENTENCE_WITHOUT_COMMA_4_2'", SENTENCE_WITHOUT_COMMA_4_2, simplifiedSentences.get(1).getSentenceText());
+        assertEquals("Third sentence should be equal to 'SENTENCE_WITHOUT_COMMA_4_3'", SENTENCE_WITHOUT_COMMA_4_3, simplifiedSentences.get(2).getSentenceText());
+        assertEquals("Fourth sentence should be equal to 'SENTENCE_WITHOUT_COMMA_4_4'", SENTENCE_WITHOUT_COMMA_4_4, simplifiedSentences.get(3).getSentenceText());
     }
 }
 
