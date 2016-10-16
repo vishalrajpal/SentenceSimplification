@@ -14114,12 +14114,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan spent $ 11.76 on a snake toy .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPDN"
           },
           {
             "Sentence": "a cage cost him $ 14.54 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVNC"
           }
         ]
@@ -14129,7 +14129,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan also found a dollar bill on the ground .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDNPDN"
           }
         ]
@@ -14139,7 +14139,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "What was the total cost of Dan 's purchases ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "NVDANPNN"
           }
         ]
@@ -14162,7 +14162,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary went to the mall .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVPDN"
           }
         ]
@@ -14172,12 +14172,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She spent $ 13.04 on a shirt .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPDN"
           },
           {
             "Sentence": "She spent $ 12.27 on a jacket .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPDN"
           }
         ]
@@ -14187,7 +14187,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She went to 2 shops .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -14197,7 +14197,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total how much money did Mary spend on clothing ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "PAWANVNVPN"
           }
         ]
@@ -14220,7 +14220,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan joined his school 's band .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVNNN"
           }
         ]
@@ -14230,13 +14230,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He bought a clarinet for $ 130.30 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPC"
           },
           {
-            "Sentence": "bought a song book which was $ 11.24 .",
-            "label": "",
-            "SyntacticPattern": "VDNVC"
+            "Sentence": "He bought a song book which was $ 11.24 .",
+            "label": "+",
+            "SyntacticPattern": "NVDNVC"
           }
         ]
       },
@@ -14245,7 +14245,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan found $ 12.32 in his pocket .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCPNN"
           }
         ]
@@ -14255,7 +14255,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did Dan spend at the music store ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNVPDN"
           }
         ]
@@ -14278,12 +14278,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom bought a skateboard for $ 9.46 .",
-            "label": "",
+            "label": ""+,
             "SyntacticPattern": "NVDNPC"
           },
           {
             "Sentence": "Tom spent $ 9.56 on marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPN"
           }
         ]
@@ -14293,7 +14293,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom also spent $ 14.50 on shorts .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCPN"
           }
         ]
@@ -14303,7 +14303,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total how much did Tom spend on toys ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "PAWAVNVPN"
           }
         ]
@@ -14326,7 +14326,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary got fast food for lunch .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVANPN"
           }
         ]
@@ -14335,13 +14335,13 @@
         "Sentence": "Mary spent $ 1.08 on soup and $ 4.80 on a salad .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Mary spent $ 1.08 on soup salad .",
-            "label": "",
+            "Sentence": "Mary spent $ 1.08 on soup .",
+            "label": "+",
             "SyntacticPattern": "NVCPN"
           },
           {
             "Sentence": "Mary spent $ 4.80 on a salad .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPDN"
           }
         ]
@@ -14351,7 +14351,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary paid with a 20 dollar bill .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVPDCN"
           }
         ]
@@ -14361,7 +14361,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "What was the total of the lunch bill ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "NVDNPDN"
           }
         ]
@@ -14381,19 +14381,30 @@
     "Sentences": [
       {
         "Sentence": "For his car , Mike spent $ 118.54 on speakers and $ 106.33 on new tires .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "For his car Mike spent $ 118.54 on speakers .",
+            "label": "+",
+            "SyntacticPattern": "NVCPN"
+          },
+          {
+            "Sentence": "For his car Mike spent $ 106.33 on new tires .",
+            "label": "+",
+            "SyntacticPattern": "NVCPAN"
+          }
+        ]
       },
       {
         "Sentence": "Mike wanted 3 CD 's for $ 4.58 but decided not to .",
         "SimplifiedSentences": [
           {
             "Sentence": "Mike wanted 3 CD 's for $ 4.58 .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCNPC"
           },
           {
             "Sentence": "Mike decided not to .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVP"
           }
         ]
@@ -14403,7 +14414,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total how much did Mike spend on car parts ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "PAWAVNVPN"
           }
         ]
@@ -14426,12 +14437,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom purchased a Batman game for $ 13.60 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPC"
           },
           {
             "Sentence": "Tom purchased a Superman game for $ 5.06 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPC"
           }
         ]
@@ -14441,7 +14452,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom already owns 2 games .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -14451,7 +14462,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did Tom spend on video games ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNVPN"
           }
         ]
@@ -14473,18 +14484,13 @@
         "Sentence": "Joan spent $ 15 on shorts and $ 14.82 on a jacket , and $ 12.51 on a shirt .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Joan spent $ 15 on shorts jacket .",
-            "label": "",
+            "Sentence": "Joan spent $ 15 on shorts .",
+            "label": "+",
             "SyntacticPattern": "NVCPN"
           },
           {
-            "Sentence": "Joan spent $ 14.82 on a jacket , and $ 12.51 on a shirt .",
-            "label": "",
-            "SyntacticPattern": "NVOCPDNCOCPDNO"
-          },
-          {
             "Sentence": "Joan spent $ 12.51 on a shirt .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPDN"
           }
         ]
@@ -14494,7 +14500,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She went to 3 shops .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -14504,7 +14510,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total how much money did Joan spend on clothing ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "PAWANVNVPN"
           }
         ]
@@ -14527,7 +14533,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan joined her school 's band .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVNNN"
           }
         ]
@@ -14537,18 +14543,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She bought a trumpet for $ 149.16 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPC"
           },
           {
             "Sentence": "She bought a music tool for $ 9.98 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPC"
           },
           {
-            "Sentence": "bought a song book which was $ 4.14 .",
-            "label": "",
-            "SyntacticPattern": "VDNVC"
+            "Sentence": "She bought a song book which was $ 4.14 .",
+            "label": "+",
+            "SyntacticPattern": "NVDNVC"
           }
         ]
       },
@@ -14557,7 +14563,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan found $ 8.65 in her pocket .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCPNN"
           }
         ]
@@ -14567,7 +14573,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did Joan spend at the music store ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNVPDN"
           }
         ]
@@ -14590,17 +14596,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Melanie bought a Batman game for $ 6.95 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPC"
           },
           {
             "Sentence": "Melanie bought a strategy game for $ 7.90 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPC"
           },
           {
             "Sentence": "Melanie bought a Superman game for $ 7.73 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPC"
           }
         ]
@@ -14610,7 +14616,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Melanie already owns 4 games .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -14620,7 +14626,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did Melanie spend on video games ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNVPN"
           }
         ]
@@ -14643,17 +14649,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Keith spent $ 6.51 on a rabbit toy .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPDN"
           },
           {
             "Sentence": "Keith spent $ 5.79 on pet food .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPN"
           },
           {
             "Sentence": "a cage cost him $ 12.51 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVNC"
           }
         ]
@@ -14663,7 +14669,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He found a dollar bill on the ground .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDNPDN"
           }
         ]
@@ -14673,7 +14679,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "What was the total cost of Keith 's purchases ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "NVDANPNN"
           }
         ]
@@ -14696,17 +14702,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Keith spent $ 136.01 on speakers .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPN"
           },
           {
             "Sentence": "Keith spent $ 139.38 on a CD player .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPDN"
           },
           {
             "Sentence": "Keith spent $ 112.46 on new tires .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCPAN"
           }
         ]
@@ -14716,12 +14722,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He wanted 3 CD 's for $ 6.16 .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCNPC"
           },
           {
             "Sentence": "He did n't buy them .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVVN"
           }
         ]
@@ -14731,7 +14737,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total how much did he spend ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "PAWAVNV"
           }
         ]
@@ -14754,17 +14760,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan bought toy cars for $ 14.88 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVNPC"
           },
           {
             "Sentence": "Joan bought a skateboard for $ 4.88 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPC"
           },
           {
             "Sentence": "Joan got toy trucks for $ 5.86 .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVNPC"
           }
         ]
@@ -14774,7 +14780,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She spent $ 14.55 on pants .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCPN"
           }
         ]
@@ -14784,7 +14790,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In total how much did Joan spend on toys ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "PAWAVNVPN"
           }
         ]
@@ -14806,13 +14812,18 @@
         "Sentence": "After paying 6 dollars for the pie , Mary has 52 dollars , her friend has 43 dollars .",
         "SimplifiedSentences": [
           {
-            "Sentence": "After paying 6 dollars for the pie Mary has 52 dollars .",
+            "Sentence": "Mary paid 6 dollars for the pie .",
             "label": "",
-            "SyntacticPattern": "PVCNPDNVCN"
+            "SyntacticPattern": "NVCPDN"
+          },
+          {
+            "Sentence": "Mary has 52 dollars .",
+            "label": "",
+            "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "After paying 6 dollars for the pie her friend has 43 dollars .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PVCNPDNNNVCN"
           }
         ]
@@ -14822,7 +14833,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much money did she have before buying the pie ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPVDN"
           }
         ]
@@ -14845,12 +14856,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There were 46 bales of hay in the barn .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPNPDN"
           },
           {
-            "Sentence": "There were bales 32 bales in the shed .",
-            "label": "",
+            "Sentence": "There were 32 bales of hay in the shed .",
+            "label": "i",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -14860,7 +14871,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom stacked bales in the barn today .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVNPDNN"
           }
         ]
@@ -14870,7 +14881,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are now 60 bales of hay in the barn .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "EVCNPNPDN"
           }
         ]
@@ -14880,7 +14891,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bales did he store in the barn ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPDN"
           }
         ]
