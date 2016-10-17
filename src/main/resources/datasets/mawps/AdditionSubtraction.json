@@ -6310,7 +6310,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 1986 books in Oak Grove 's public library .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPNAN"
           }
         ]
@@ -6320,7 +6320,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In addition there are 5106 books in its school libraries .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNEVCNPNN"
           }
         ]
@@ -6330,7 +6330,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books do the libraries in Oak Grove have overall ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVDNPNVA"
           }
         ]
@@ -6353,7 +6353,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There were originally 20817 houses in Lincoln County .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPN"
           }
         ]
@@ -6363,7 +6363,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During a housing boom developers built 97741 houses .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PDNVCN"
           }
         ]
@@ -6373,7 +6373,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many houses are there now in Lincoln County ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVEPN"
           }
         ]
@@ -6396,7 +6396,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A farmer estimates that he will harvest 48097 bushels of wheat .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVPNVCNPN"
           }
         ]
@@ -6406,12 +6406,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The weather is perfect during the growing season .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVAPDVN"
           },
           {
             "Sentence": "so he harvests 684 bushels of wheat than expected .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNPV"
           }
         ]
@@ -6421,7 +6421,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bushels of wheat does the farmer harvest ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVDNN"
           }
         ]
@@ -6444,7 +6444,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Christina just transferred $ 69 out of her bank account .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPPNN"
           }
         ]
@@ -6454,7 +6454,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "As a result the account now has $ 26935 in it .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "PDNDNVCPN"
           }
         ]
@@ -6464,7 +6464,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much money was in the account before the transfer ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPDNPDN"
           }
         ]
@@ -6487,7 +6487,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Last year at Newberg 's airport 14507 passengers landed on time .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "ANPNNCNVPN"
           }
         ]
@@ -6497,7 +6497,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Unfortunately 213 passengers landed late .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNV"
           }
         ]
@@ -6507,7 +6507,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In all how many passengers landed in Newberg last year ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "PDWANVPNAN"
           }
         ]
@@ -6530,7 +6530,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A dust storm sweeps across the prairie .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVPDN"
           }
         ]
@@ -6540,12 +6540,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "It covers 64535 acres of the prairie in dust .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDNPN"
           },
           {
             "Sentence": "It leaves 522 acres untouched .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNA"
           }
         ]
@@ -6555,7 +6555,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many acres does the prairie cover ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVDN"
           }
         ]
@@ -6578,7 +6578,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Some insects called aphids attack a large farm .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVNVDAN"
           }
         ]
@@ -6588,7 +6588,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In response the farmer releases ladybugs onto the fields .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PNDNVNPDN"
           }
         ]
@@ -6598,12 +6598,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 12170 ladybugs with spots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPN"
           },
           {
             "Sentence": "There are ladybugs 54912 ladybugs without spots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPN"
           }
         ]
@@ -6613,7 +6613,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many ladybugs are there in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVEPD"
           }
         ]
@@ -6636,12 +6636,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Last year 90171 people were born in a country .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "ANCNVVPDN"
           },
           {
             "Sentence": "Last year 16320 people immigrated to it .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "ANCNVPN"
           }
         ]
@@ -6651,7 +6651,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many new people began living in the country last year ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVVPDNAN"
           }
         ]
@@ -6674,7 +6674,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A ship full of grain crashes into a coral reef .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNAPNPDN"
           }
         ]
@@ -6684,7 +6684,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "By the time the ship is fixed 49952 tons of grain have spilled into the water .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PDNDNVVCNPNVVPDN"
           }
         ]
@@ -6694,7 +6694,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Only 918 tons of grain remain onboard .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNPNVA"
           }
         ]
@@ -6704,7 +6704,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many tons of grain did the ship originally contain ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVDNV"
           }
         ]
@@ -6724,14 +6724,25 @@
     "Sentences": [
       {
         "Sentence": "To fill an order , the factory dyed 61921 yards of silk green and 49500 yards pink .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "To fill an order the factory dyed 61921 yards of silk green.",
+            "label": "+",
+            "SyntacticPattern": "NNVCNPNN"
+          },
+          {
+            "Sentence": "To fill an order the factory dyed 49500 yards of silk pink .",
+            "label": "+",
+            "SyntacticPattern": "NNVCNPNN"
+          }
+        ]
       },
       {
         "Sentence": "How many yards of silk did it dye for that order ?",
         "SimplifiedSentences": [
           {
             "Sentence": "How many yards of silk did it dye for that order ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNVPDN"
           }
         ]
@@ -6754,12 +6765,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A multi-national corporation has 2041 part-time employees .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCAN"
           },
           {
-            "Sentence": "A corporation has 63093 full-time employees .",
-            "label": "",
+            "Sentence": "A multi-national corporation has 63093 full-time employees .",
+            "label": "+",
             "SyntacticPattern": "DNVCAN"
           }
         ]
@@ -6769,7 +6780,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many employees work for the corporation ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPDN"
           }
         ]
@@ -6792,12 +6803,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Each year salmon travel upstream .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DN"
           },
           {
             "Sentence": "Each year going from the ocean to the rivers where they were born .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVPDNPDNWNVV"
           }
         ]
@@ -6806,13 +6817,13 @@
         "Sentence": "This year , 712261 male and 259378 female salmon returned to their rivers .",
         "SimplifiedSentences": [
           {
-            "Sentence": "This year 712261 male to their rivers .",
-            "label": "",
+            "Sentence": "This year 712261 male salmon returned to their rivers .",
+            "label": "+",
             "SyntacticPattern": "DNCNPNN"
           },
           {
-            "Sentence": "This year 259378 female salmon returned to their rivers rivers .",
-            "label": "",
+            "Sentence": "This year 259378 female salmon returned to their rivers .",
+            "label": "+",
             "SyntacticPattern": "DNCANVPNN"
           }
         ]
@@ -6822,7 +6833,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many salmon made the trip ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVDN"
           }
         ]
@@ -6845,7 +6856,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A bathing suit manufacturer has a supply of 14797 bathing suits for men .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVDNPCNPN"
           }
         ]
@@ -6855,7 +6866,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In addition it has 4969 bathing suits for women .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNNVCNPN"
           }
         ]
@@ -6865,7 +6876,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bathing suits are available overall ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVAA"
           }
         ]
@@ -6888,7 +6899,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Before the recent housing boom there were 1426 houses in Lawrence County .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PDANEVCNPN"
           }
         ]
@@ -6898,7 +6909,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Now there are 2000 houses .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "EVCN"
           }
         ]
@@ -6908,7 +6919,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many houses did developers build during the housing boom ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPDN"
           }
         ]
@@ -6931,7 +6942,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A worker at a medical lab is studying blood samples .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNPDANVVN"
           }
         ]
@@ -6941,7 +6952,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "2 samples contained a total of 7341 blood cells .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "CNVDNPCN"
           }
         ]
@@ -6951,7 +6962,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The first sample contained 4221 blood cells .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           }
         ]
@@ -6961,7 +6972,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blood cells were in the second sample ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPDAN"
           }
         ]
@@ -6983,14 +6994,9 @@
         "Sentence": "So far , an orchard has sold a combined total of 9792 pounds of fresh and frozen fruit this season .",
         "SimplifiedSentences": [
           {
-            "Sentence": "So far an orchard has sold a combined total of 9792 pounds of fresh .",
-            "label": "",
-            "SyntacticPattern": "DNVVDANPCNPA"
-          },
-          {
-            "Sentence": "frozen fruit this season season .",
-            "label": "",
-            "SyntacticPattern": "ANDN"
+            "Sentence": "So far an orchard has sold a combined total of 9792 pounds of fresh and frozen fruit this season .",
+            "label": "+",
+            "SyntacticPattern": "DNVVDANPCNPAN"
           }
         ]
       },
