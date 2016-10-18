@@ -15991,12 +15991,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sally had 8 pennies in her bank .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPNN"
           },
           {
             "Sentence": "Sally had 7 nickels in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           }
         ]
@@ -16006,12 +16006,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Her dad gave her 9 nickels .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVNCN"
           },
           {
             "Sentence": "her mother gave her 2 nickels .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVNCN"
           }
         ]
@@ -16021,7 +16021,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many nickels does Sally have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -16044,7 +16044,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Nancy went to 9 football games this month .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCNDN"
           }
         ]
@@ -16053,14 +16053,14 @@
         "Sentence": "She went to 8 games last month , and plans to go to 7 games next month .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She went to 8 games last month .",
-            "label": "",
+            "Sentence": "She went to 8 football games last month .",
+            "label": "+",
             "SyntacticPattern": "NVPCNAN"
           },
           {
-            "Sentence": "She went plans to go to 7 games next month .",
-            "label": "",
-            "SyntacticPattern": "NVNPVPCNAN"
+            "Sentence": "She plans to go to 7 football games next month .",
+            "label": "+",
+            "SyntacticPattern": "NVPVPCNAN"
           }
         ]
       },
@@ -16069,7 +16069,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She paid 3 dollars for the tickets .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -16079,7 +16079,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many games will she attend in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNVPD"
           }
         ]
@@ -16101,33 +16101,33 @@
         "Sentence": "Keith found 6 seashells , Jessica found 8 seashells , and Tim found 7 seashells on the beach .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Keith found 6 seashells .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
+            "Sentence": "Keith found 6 seashells on the beach .",
+            "label": "+",
+            "SyntacticPattern": "NVCNPDN"
           },
           {
-            "Sentence": "Jessica found 8 seashells .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
+            "Sentence": "Jessica found 8 seashells on the beach .",
+            "label": "+",
+            "SyntacticPattern": "NVCNPDN"
           },
           {
             "Sentence": "Tim found 7 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
       },
       {
-        "Sentence": "When they cleaned them , they discovered that 3 them were cracked .",
+        "Sentence": "When they cleaned them , they discovered that 3 were cracked .",
         "SimplifiedSentences": [
           {
             "Sentence": "When they cleaned them .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "WNVN"
           },
           {
-            "Sentence": "they discovered that 3 them were cracked .",
-            "label": "",
+            "Sentence": "they discovered that 3 seashells were cracked .",
+            "label": "i",
             "SyntacticPattern": "NVPCNVV"
           }
         ]
@@ -16137,7 +16137,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells did they find together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -16160,17 +16160,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Nancy grew 2 onions .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Dan grew 9 onions .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Mike grew 4 onions .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -16180,7 +16180,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "They worked for 6 days on the farm .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVPCNPDN"
           }
         ]
@@ -16190,7 +16190,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many onions did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPN"
           }
         ]
@@ -16213,17 +16213,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred has 5 yellow balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAN"
           },
           {
             "Sentence": "Sam has 6 yellow balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAN"
           },
           {
             "Sentence": "Mary has 7 yellow balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAN"
           }
         ]
@@ -16233,7 +16233,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The balloons cost 5 dollars .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVCN"
           }
         ]
@@ -16243,7 +16243,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many yellow balloons do they have in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNVPN"
           }
         ]
@@ -16262,16 +16262,16 @@
     "sQuestion": "A restaurant served 4 pies during lunch and 9 during dinner today . The restaurant served 7 pies and 2 pizzas yesterday . How many pies were served in total ? ",
     "Sentences": [
       {
-        "Sentence": "A restaurant served 4 pies during lunch and 9 pies during dinner today .",
+        "Sentence": "A restaurant served 4 pies during lunch and 9 during dinner today .",
         "SimplifiedSentences": [
           {
             "Sentence": "A restaurant served 4 pies during lunch today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPNN"
           },
           {
             "Sentence": "A restaurant served 9 pies during dinner today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPNN"
           }
         ]
@@ -16280,13 +16280,13 @@
         "Sentence": "The restaurant served 7 pies and 2 pizzas yesterday .",
         "SimplifiedSentences": [
           {
-            "Sentence": "The restaurant served 7 pies .",
+            "Sentence": "The restaurant served 7 pies yesterday.",
             "label": "",
-            "SyntacticPattern": "DNVCN"
+            "SyntacticPattern": "DNVCNN"
           },
           {
             "Sentence": "The restaurant served 2 pizzas yesterday .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVCNN"
           }
         ]
@@ -16296,7 +16296,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pies were served in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPN"
           }
         ]
@@ -16319,12 +16319,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim found 37 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           },
           {
             "Sentence": "Sally found 13 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -16334,12 +16334,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "When they cleaned them .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "WNVN"
           },
           {
             "Sentence": "they discovered that 25 them were cracked .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVPCNVV"
           }
         ]
@@ -16349,7 +16349,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells did they find together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -16372,12 +16372,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom had 27 pennies in his bank .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCNPNN"
           },
           {
             "Sentence": "Tom had 15 dimes in his bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           }
         ]
@@ -16387,13 +16387,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "His dad gave him 33 dimes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVNCN"
           },
           {
-            "Sentence": "His gave 49 nickels .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
+            "Sentence": "His dad gave him 49 nickels .",
+            "label": "i",
+            "SyntacticPattern": "NNVNCN"
           }
         ]
       },
@@ -16402,7 +16402,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many dimes does he have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -16425,12 +16425,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 39 scissors in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           },
           {
             "Sentence": "There are scissors 22 pencils in the drawer .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -16440,7 +16440,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan placed 13 scissors in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -16450,7 +16450,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many scissors are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPN"
           }
         ]
@@ -16472,13 +16472,13 @@
         "Sentence": "Sam has 16 blue and 25 green balloons .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Sam has 16 blue .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
+            "Sentence": "Sam has 16 blue balloons.",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           },
           {
             "Sentence": "Sam has 25 green balloons .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCAN"
           }
         ]
@@ -16488,7 +16488,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa has 21 blue balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAN"
           }
         ]
@@ -16498,7 +16498,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blue balloons do they have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNVPD"
           }
         ]
@@ -16520,13 +16520,13 @@
         "Sentence": "There are 22 orchid bushes and 40 orange trees currently in the park .",
         "SimplifiedSentences": [
           {
-            "Sentence": "There are 22 orchid bushes in the park .",
-            "label": "",
+            "Sentence": "There are 22 orchid bushes currently in the park .",
+            "label": "+",
             "SyntacticPattern": "EVCANPDN"
           },
           {
             "Sentence": "There are bushes 40 orange trees currently in the park .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "EVCANPDN"
           }
         ]
@@ -16536,7 +16536,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 13 orchid bushes today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCANN"
           }
         ]
@@ -16546,7 +16546,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many orchid bushes will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANDNVWDNVV"
           }
         ]
@@ -16565,17 +16565,17 @@
     "sQuestion": "Mary had 33 Pokemon cards , and 6 were torn . Sam gave Mary 23 new Pokemon cards . How many Pokemon cards does Mary have now ? ",
     "Sentences": [
       {
-        "Sentence": "Mary had 33 Pokemon cards , and 6 cards were torn .",
+        "Sentence": "Mary had 33 Pokemon cards , and 6 were torn .",
         "SimplifiedSentences": [
           {
             "Sentence": "Mary had 33 Pokemon cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
-            "Sentence": "Mary had 6 cards were torn .",
-            "label": "",
-            "SyntacticPattern": "NVCNVV"
+            "Sentence": "6 Pokemon cards were torn .",
+            "label": "i",
+            "SyntacticPattern": "CNVV"
           }
         ]
       },
@@ -16584,7 +16584,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam gave Mary 23 new Pokemon cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAN"
           }
         ]
@@ -16594,7 +16594,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many Pokemon cards does Mary have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -16617,12 +16617,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary picked 14 oranges .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Jason picked 41 oranges .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -16632,7 +16632,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Keith picked 38 apples .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -16642,7 +16642,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oranges were picked in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPD"
           }
         ]
@@ -16665,12 +16665,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason grew 37 watermelons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Jason grew 30 pumpkins .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -16680,7 +16680,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sandy grew 11 watermelons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -16690,7 +16690,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many watermelons did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPN"
           }
         ]
@@ -16713,13 +16713,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike went to 15 basketball games this year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCNDN"
           },
           {
-            "Sentence": "Mike missed 41 games .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
+            "Sentence": "Mike missed 41 basketball games this year .",
+            "label": "i",
+            "SyntacticPattern": "NVCNDN"
           }
         ]
       },
@@ -16727,8 +16727,8 @@
         "Sentence": "He went to 39 games last year .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He went to 39 games last year .",
-            "label": "",
+            "Sentence": "He went to 39 basketball games last year .",
+            "label": "+",
             "SyntacticPattern": "NVPCNAN"
           }
         ]
@@ -16738,7 +16738,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many basketball games did Mike go to in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPPN"
           }
         ]
@@ -16761,12 +16761,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Melanie had 10 quarters in her bank .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCNPNN"
           },
           {
             "Sentence": "Melanie had 17 pennies in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           }
         ]
@@ -16776,12 +16776,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Her dad gave her 27 pennies .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVNCN"
           },
           {
             "Sentence": "her mother gave her 19 pennies .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVNCN"
           }
         ]
@@ -16791,7 +16791,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pennies does Melanie have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -16814,17 +16814,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan grew 24 pumpkins .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Keith grew 42 pumpkins .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Alyssa grew 13 pumpkins .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -16834,7 +16834,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "They worked for 34 days on the farm .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVPCNPDN"
           }
         ]
@@ -16844,7 +16844,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pumpkins did they grow in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -16867,12 +16867,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary had 18 baseball cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
-            "Sentence": "Mary had 8 cards were torn .",
-            "label": "",
+            "Sentence": "8 baseball cards were torn .",
+            "label": "i",
             "SyntacticPattern": "NVCNVV"
           }
         ]
@@ -16882,7 +16882,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred gave Mary 26 new baseball cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAN"
           }
         ]
@@ -16892,7 +16892,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary bought 40 baseball cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -16902,7 +16902,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many baseball cards does Mary have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -16925,13 +16925,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa went to 11 soccer games this year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCNDN"
           },
           {
-            "Sentence": "Alyssa missed 12 games .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
+            "Sentence": "Alyssa missed 12 soccer games this year .",
+            "label": "i",
+            "SyntacticPattern": "NVCNDN"
           }
         ]
       },
@@ -16939,13 +16939,13 @@
         "Sentence": "She went to 13 games last year and plans to go to 15 games next year .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She went to 13 games last year .",
-            "label": "",
+            "Sentence": "She went to 13 soccer games last year .",
+            "label": "+",
             "SyntacticPattern": "NVPCNAN"
           },
           {
-            "Sentence": "She plans to go to 15 games next year .",
-            "label": "",
+            "Sentence": "She plans to go to 15 soccer games next year .",
+            "label": "+",
             "SyntacticPattern": "NVPVPCNAN"
           }
         ]
@@ -16955,7 +16955,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many soccer games will Alyssa go to in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNVPPD"
           }
         ]
@@ -16978,12 +16978,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 48 erasers in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           },
           {
             "Sentence": "There are erasers 30 erasers on the desk .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -16993,12 +16993,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa placed 39 erasers on the desk .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           },
           {
             "Sentence": "Alyssa placed 45 rulers on the desk .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -17008,7 +17008,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many erasers are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPN"
           }
         ]
