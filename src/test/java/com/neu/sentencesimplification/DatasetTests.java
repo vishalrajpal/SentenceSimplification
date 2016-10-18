@@ -1489,6 +1489,214 @@ public class DatasetTests {
         assertEquals("Second sentence should be equal to 'QUESTION_160_SENTENCE_1_2'", QUESTION_160_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
     }
 	
+	private static final String QUESTION_161_SENTENCE_1 = "If her employees used a total of 1339 eggs today , how many eggs did they use in the afternoon ?";
+	private static final String QUESTION_161_SENTENCE_1_1 = "If her employees used a total of 1339 eggs today .";
+	private static final String QUESTION_161_SENTENCE_1_2 = "how many eggs did they use in the afternoon ?";
+	
+	@Test
+    public void question161_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_161_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_161_SENTENCE_1_1'", QUESTION_161_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_161_SENTENCE_1_2'", QUESTION_161_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_163_SENTENCE_1 = "6922 coats were collected from the high schools , and the rest from the elementary schools .";
+	private static final String QUESTION_163_SENTENCE_1_1 = "6922 coats were collected from the high schools .";
+	private static final String QUESTION_163_SENTENCE_1_2 = "the rest coats were collected from the elementary schools .";
+	
+	@Test
+    public void question163_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_163_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_163_SENTENCE_1_1'", QUESTION_163_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_163_SENTENCE_1_2'", QUESTION_163_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_164_SENTENCE_1 = "If they used 660 gallons of white paint , how many gallons of blue paint did the company use ?";
+	private static final String QUESTION_164_SENTENCE_1_1 = "If they used 660 gallons of white paint .";
+	private static final String QUESTION_164_SENTENCE_1_2 = "how many gallons of blue paint did the company use ?";
+	
+	@Test
+    public void question164_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_164_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_164_SENTENCE_1_1'", QUESTION_164_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_164_SENTENCE_1_2'", QUESTION_164_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_166_SENTENCE_1 = "If 723 of its customers live in the United States , how many of its customers live in other countries ?";
+	private static final String QUESTION_166_SENTENCE_1_1 = "If 723 of its customers live in the United States .";
+	private static final String QUESTION_166_SENTENCE_1_2 = "how many of its customers live in other countries ?";
+	
+	@Test
+    public void question166_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_166_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_166_SENTENCE_1_1'", QUESTION_166_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_166_SENTENCE_1_2'", QUESTION_166_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_168_SENTENCE_1 = "Before engineers started to fix the pipe , 2475 gallons of oil leaked into the water .";
+	private static final String QUESTION_168_SENTENCE_1_1 = "Before engineers started to fix the pipe .";
+	private static final String QUESTION_168_SENTENCE_1_2 = "2475 gallons of oil leaked into the water .";
+	
+	@Test
+    public void question168_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_168_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_168_SENTENCE_1_1'", QUESTION_168_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_168_SENTENCE_1_2'", QUESTION_168_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_169_SENTENCE_1 = "45 of the gems were diamonds , and the rest were rubies .";
+	private static final String QUESTION_169_SENTENCE_1_1 = "45 of the gems were diamonds .";
+	private static final String QUESTION_169_SENTENCE_1_2 = "the rest of the gems were rubies .";
+	
+	@Test
+    public void question169_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_169_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_169_SENTENCE_1_1'", QUESTION_169_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_169_SENTENCE_1_2'", QUESTION_169_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_170_SENTENCE_1 = "If they have 4518 grams of blueberry jelly , how many grams of strawberry jelly do they have ?";
+	private static final String QUESTION_170_SENTENCE_1_1 = "If they have 4518 grams of blueberry jelly .";
+	private static final String QUESTION_170_SENTENCE_1_2 = "how many grams of strawberry jelly do they have ?";
+	
+	@Test
+    public void question170_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_170_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_170_SENTENCE_1_1'", QUESTION_170_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_170_SENTENCE_1_2'", QUESTION_170_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_171_SENTENCE_1 = "He and his cousin together have a total of 5816 points .";
+	private static final String QUESTION_171_SENTENCE_1_1 = "He and his cousin together have a total of 5816 points .";
+	
+	@Test
+    public void question171_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_171_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 1);
+        assertEquals("First sentence should be equal to 'QUESTION_171_SENTENCE_1_1'", QUESTION_171_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+    }
+	
+	private static final String QUESTION_173_SENTENCE_1 = "Now there are 3263 algae plants , and the lake has turned green .";
+	private static final String QUESTION_173_SENTENCE_1_1 = "Now there are 3263 algae plants .";
+	private static final String QUESTION_173_SENTENCE_1_2 = "the lake has turned green .";
+	
+	@Test
+    public void question173_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_173_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_173_SENTENCE_1_1'", QUESTION_173_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_173_SENTENCE_1_2'", QUESTION_173_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_174_SENTENCE_1 = "Oscar 's bus ride to school is 0.75 mile and Charlie 's bus ride is 0.25 mile .";
+	private static final String QUESTION_174_SENTENCE_1_1 = "Oscar 's bus ride to school is 0.75 mile .";
+	private static final String QUESTION_174_SENTENCE_1_2 = "Charlie 's bus ride is 0.25 mile .";
+	
+	@Test
+    public void question174_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_174_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_174_SENTENCE_1_1'", QUESTION_174_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_174_SENTENCE_1_2'", QUESTION_174_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_176_SENTENCE_1 = "Kendall is learning to drive , so this weekend she practiced driving 0.16666666666666666 mile with her mother and another 0.5 mile with her father .";
+	private static final String QUESTION_176_SENTENCE_1_1 = "Kendall is learning to drive .";
+	private static final String QUESTION_176_SENTENCE_1_2 = "so this weekend she practiced driving 0.16666666666666666 mile with her mother .";
+	private static final String QUESTION_176_SENTENCE_1_3 = "so this weekend she practiced driving 0.5 mile with her father .";
+	
+	@Test
+    public void question176_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_176_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 3.", simplifiedSentences.size() == 3);
+        assertEquals("First sentence should be equal to 'QUESTION_176_SENTENCE_1_1'", QUESTION_176_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_176_SENTENCE_1_2'", QUESTION_176_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+        assertEquals("Third sentence should be equal to 'QUESTION_176_SENTENCE_1_3'", QUESTION_176_SENTENCE_1_3, simplifiedSentences.get(2).getSentenceText());
+    }
+	
+	private static final String QUESTION_178_SENTENCE_1 = "A tailor cut 0.75 inch off a skirt and 0.5 inch off a pair of pants .";
+	private static final String QUESTION_178_SENTENCE_1_1 = "A tailor cut 0.75 inch off a skirt .";
+	private static final String QUESTION_178_SENTENCE_1_2 = "A tailor cut 0.5 inch off a pair of pants .";
+	
+	@Test
+    public void question178_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_178_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_178_SENTENCE_1_1'", QUESTION_178_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_178_SENTENCE_1_2'", QUESTION_178_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
+	private static final String QUESTION_180_SENTENCE_1 = "Darnel sprinted 0.875 lap and then took a break by jogging 0.75 lap .";
+	private static final String QUESTION_180_SENTENCE_1_1 = "Darnel sprinted 0.875 lap .";
+	private static final String QUESTION_180_SENTENCE_1_2 = "Darnel then took a break by jogging 0.75 lap .";
+	
+	@Test
+    public void question180_Test() throws Exception {
+        final List<QuestionSentence> questionSentences = DependenciesParser.extractPartsOfSpeechFromDependencies(QUESTION_180_SENTENCE_1);
+        assertTrue(questionSentences != null);
+        assertTrue("Size should be equal to 1.", questionSentences.size() == 1);
+        final QuestionSentence questionSentence = questionSentences.get(0);
+        final List<QuestionSentence> simplifiedSentences = questionSentence.getSimplifiedSentences();
+        assertTrue("Number of simplified sentences should be equal to 2.", simplifiedSentences.size() == 2);
+        assertEquals("First sentence should be equal to 'QUESTION_180_SENTENCE_1_1'", QUESTION_180_SENTENCE_1_1, simplifiedSentences.get(0).getSentenceText());
+        assertEquals("Second sentence should be equal to 'QUESTION_180_SENTENCE_1_2'", QUESTION_180_SENTENCE_1_2, simplifiedSentences.get(1).getSentenceText());
+    }
+	
 	private static final String QUESTION_301_SENTENCE_1 = "There are 9 pencils and 4 rulers in the drawer .";
     private static final String QUESTION_301_SENTENCE_1_1 = "There are 9 pencils in the drawer .";
     private static final String QUESTION_301_SENTENCE_1_2 = "There are 4 rulers in the drawer .";

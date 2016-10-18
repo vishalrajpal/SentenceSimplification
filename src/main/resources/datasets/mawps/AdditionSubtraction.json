@@ -7005,12 +7005,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If they have sold 3513 pounds of frozen fruit .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVVCNPAN"
           },
           {
             "Sentence": "how many pounds of fresh fruit have been sold so far ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPANVVV"
           }
         ]
@@ -7033,7 +7033,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Recently the value of Kate 's retirement fund decreased by $ 12 .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "DNPNNVPC"
           }
         ]
@@ -7043,12 +7043,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If her fund was worth $ 1472 before .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNNVACP"
           },
           {
             "Sentence": "how much is it worth now ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVNA"
           }
         ]
@@ -7071,7 +7071,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The Richmond Tigers sold a total of 9570 tickets last season .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVDNPCNAN"
           }
         ]
@@ -7081,12 +7081,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If they sold 3867 tickets in the first half of the season .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNVCNPDANPDN"
           },
           {
             "Sentence": "how many tickets did they sell in the second half ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPDAN"
           }
         ]
@@ -7109,7 +7109,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A petri dish originally contained 600 bacteria .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           }
         ]
@@ -7119,12 +7119,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A scientist let the bacteria grow of them .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVDNVPN"
           },
           {
-            "Sentence": "now there are 8917 of them .",
-            "label": "",
+            "Sentence": "now there are 8917 of bacteeria .",
+            "label": "=",
             "SyntacticPattern": "EVCPN"
           }
         ]
@@ -7134,7 +7134,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many more bacteria are there now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVE"
           }
         ]
@@ -7157,7 +7157,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tori is a school janitor .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDN"
           }
         ]
@@ -7167,7 +7167,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Last week she picked up a total of 1576 pieces of trash .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "ANNVDNPCNPN"
           }
         ]
@@ -7177,12 +7177,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If she picked up 344 pieces of trash in the classrooms .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNVCNPNPDN"
           },
           {
             "Sentence": "how many pieces of trash did Tori pick up outside the classrooms ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNVPDN"
           }
         ]
@@ -7205,7 +7205,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Molly owns the Wafting Pie Company .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDN"
           }
         ]
@@ -7215,7 +7215,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "This morning her employees used 816 eggs to bake pumpkin pies .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNNNVCNPVN"
           }
         ]
@@ -7225,12 +7225,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If her employees used a total of 1339 eggs today .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "PNNVDNPCNN"
           },
           {
             "Sentence": "how many eggs did they use in the afternoon ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPDN"
           }
         ]
@@ -7252,14 +7252,9 @@
         "Sentence": "Each of farmer Cunningham 's 6048 lambs is either black or white .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Each of farmer Cunningham 's 6048 lambs is either .",
-            "label": "",
+            "Sentence": "Each of farmer Cunningham 's 6048 lambs is either black or white .",
+            "label": "=",
             "SyntacticPattern": "DPNCNV"
-          },
-          {
-            "Sentence": "black white .",
-            "label": "",
-            "SyntacticPattern": "AA"
           }
         ]
       },
@@ -7268,7 +7263,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 193 white ones .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCAN"
           }
         ]
@@ -7278,7 +7273,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many of Farmer Cunningham 's lambs are black ?",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "WAPNNVA"
           }
         ]
@@ -7301,7 +7296,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Students at Arcadia schools are participating in a coat drive .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NPNVVPDN"
           }
         ]
@@ -7311,7 +7306,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "9437 coats have been collected so far .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVV"
           }
         ]
@@ -7320,9 +7315,14 @@
         "Sentence": "6922 coats were collected from the high schools , and the rest from the elementary schools .",
         "SimplifiedSentences": [
           {
-            "Sentence": "6922 coats were collected from the high schools the rest from the elementary schools .",
-            "label": "",
-            "SyntacticPattern": "CNVVPDANDNPDAN"
+            "Sentence": "6922 coats were collected from the high schools .",
+            "label": "+",
+            "SyntacticPattern": "CNVVPDAN"
+          },
+          {
+            "Sentence": " the rest coats were collected from the elementary schools",
+            "label": "+",
+            "SyntacticPattern": "DNPDAN"
           }
         ]
       },
@@ -7331,7 +7331,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many coats were collected at the elementary schools ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPDAN"
           }
         ]
@@ -7353,14 +7353,9 @@
         "Sentence": "A company painted some houses in Hancock County white and blue using a total of 6689 gallons of paint .",
         "SimplifiedSentences": [
           {
-            "Sentence": "A company painted some houses in Hancock County white .",
-            "label": "",
-            "SyntacticPattern": "DNVDNPN"
-          },
-          {
-            "Sentence": "blue using a total of 6689 gallons of paint .",
-            "label": "",
-            "SyntacticPattern": "AVDNPCNPN"
+            "Sentence": "A company painted some houses in Hancock County white and blue using a total of 6689 gallons of paint .",
+            "label": "=",
+            "SyntacticPattern": "DNVDNPNAVDNPCNPN"
           }
         ]
       },
@@ -7369,12 +7364,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If they used 660 gallons of white paint .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNVCNPAN"
           },
           {
             "Sentence": "how many gallons of blue paint did the company use ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPANVDNV"
           }
         ]
@@ -7397,7 +7392,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The Silvergrove Public Library used a grant to purchase 2647 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVDNPVCN"
           }
         ]
@@ -7407,7 +7402,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Now the library has a total of 8582 books .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "DNVDNPCN"
           }
         ]
@@ -7417,7 +7412,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books did the library have before the grant ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVDNVPDN"
           }
         ]
@@ -7440,7 +7435,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A cell phone company has a total of 7422 customers across the world .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "DNVDNPCNPDN"
           }
         ]
@@ -7450,12 +7445,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If 723 of its customers live in the United States .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PCPNNVPDN"
           },
           {
             "Sentence": "how many of its customers live in other countries ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAPNNVPAN"
           }
         ]
@@ -7478,7 +7473,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Last year egg producers in Douglas County produced 1416 eggs .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "ANPNVCN"
           }
         ]
@@ -7488,7 +7483,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "This year those same farms produced 4636 eggs .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "DNDANVCN"
           }
         ]
@@ -7498,7 +7493,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many more eggs did the farms produce this year ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVDNVDN"
           }
         ]
@@ -7521,7 +7516,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "An oil pipe in the sea broke .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNPDNV"
           }
         ]
@@ -7531,12 +7526,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Before engineers started to fix the pipe .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PNVPVDN"
           },
           {
             "Sentence": "engineers fix 2475 gallons of oil leaked into the water .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNVPDN"
           }
         ]
@@ -7546,7 +7541,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A total of 6206 gallons of oil leaked before the pipe was fixed .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNPCNPNVPDNVV"
           }
         ]
@@ -7556,7 +7551,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many gallons of oil leaked while the engineers were fixing the pipe ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVPDNVVDN"
           }
         ]
@@ -7579,7 +7574,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A treasure hunter discovered a buried treasure chest filled with a total of 5155 gems .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "DNVDVNVPDNPCN"
           }
         ]
@@ -7589,13 +7584,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "45 of the gems were diamonds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CPDNVN"
           },
           {
-            "Sentence": "the rest were rubies .",
-            "label": "",
-            "SyntacticPattern": "DNVN"
+            "Sentence": "the rest of the gems were rubies .",
+            "label": "+",
+            "SyntacticPattern": "DNPDNVN"
           }
         ]
       },
@@ -7604,7 +7599,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many of the gems were rubies ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAPDNVN"
           }
         ]
@@ -7626,19 +7621,9 @@
         "Sentence": "Shannon and her family use up a lot of strawberry and blueberry jelly , since they eat toast every morning .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Shannon and up of strawberry jelly .",
-            "label": "",
-            "SyntacticPattern": "NCPPN"
-          },
-          {
-            "Sentence": "her family use a lot of strawberry blueberry jelly , since they eat toast every morning .",
-            "label": "",
-            "SyntacticPattern": "NNVDNPOONPNVNDNO"
-          },
-          {
-            "Sentence": "since they eat toast every morning .",
-            "label": "",
-            "SyntacticPattern": "PNVNDN"
+            "Sentence": "Shannon and her family use a lot of strawberry blueberry jelly , since they eat toast every morning .",
+            "label": "i",
+            "SyntacticPattern": "NCNNVDNPOONPNVNDNO"
           }
         ]
       },
@@ -7647,7 +7632,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "At the moment they have a combined total of 6310 grams of jelly .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "PDNNVDANPCNPN"
           }
         ]
@@ -7657,12 +7642,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If they have 4518 grams of blueberry jelly .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNVCNPAN"
           },
           {
             "Sentence": "how many grams of strawberry jelly do they have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNV"
           }
         ]
@@ -7685,7 +7670,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "While playing a video game Paul scored 3103 points .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PVDNVCN"
           }
         ]
@@ -7694,14 +7679,9 @@
         "Sentence": "He and his cousin together have a total of 5816 points .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He of 5816 points .",
-            "label": "",
-            "SyntacticPattern": "NPCN"
-          },
-          {
-            "Sentence": "his cousin together have a total of 5816 points .",
-            "label": "",
-            "SyntacticPattern": "NNVDNPCN"
+            "Sentence": "He and his cousin together have a total of 5816 points .",
+            "label": "=",
+            "SyntacticPattern": "NCNNVDNPCN"
           }
         ]
       },
@@ -7710,7 +7690,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many points does Paul 's cousin have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNNV"
           }
         ]
@@ -7733,7 +7713,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A construction company is repaving a damaged road .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVVDVN"
           }
         ]
@@ -7743,7 +7723,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "So far they have repaved a total of 4938 inches of the road .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "NVVDNPCNPDN"
           }
         ]
@@ -7753,7 +7733,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Today they repaved 805 inches of the road .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCNPDN"
           }
         ]
@@ -7763,7 +7743,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many inches of the road had they repaved before today ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPDNVNVPN"
           }
         ]
@@ -7786,7 +7766,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Milford Lake was originally blue because it only had 809 algae plants .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVAPNVCN"
           }
         ]
@@ -7796,12 +7776,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Now there are 3263 algae plants .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "EVCN"
           },
           {
             "Sentence": "the lake has turned green .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVVA"
           }
         ]
@@ -7811,7 +7791,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many more algae plants are in Milford Lake now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVPN"
           }
         ]
@@ -7834,12 +7814,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Oscar 's bus ride to school is 0.75 mile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNPNVCN"
           },
           {
             "Sentence": "Charlie 's bus ride is 0.25 mile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCN"
           }
         ]
@@ -7849,7 +7829,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much longer is Oscar 's bus ride than Charlie 's ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNNPN"
           }
         ]
@@ -7872,7 +7852,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Karen added 0.25 cup of walnuts to a batch of trail mix .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNPDNPN"
           }
         ]
@@ -7882,7 +7862,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later she added 0.25 cup of almonds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -7892,7 +7872,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cups of nuts did Karen put in the trail mix in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNVPDNPD"
           }
         ]
@@ -7915,17 +7895,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kendall is learning to drive .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVVPV"
           },
           {
-            "Sentence": "Kendall this weekend she practiced driving 0.16666666666666666 mile with her mother .",
-            "label": "",
+            "Sentence": "Kendall this weekend practiced driving 0.16666666666666666 mile with her mother .",
+            "label": "+",
             "SyntacticPattern": "NDNNVVCNPNN"
           },
           {
             "Sentence": "another 0.5 mile with her father another 0.5 mile with her father .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DCNPNNDCNPNN"
           }
         ]
@@ -7935,7 +7915,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How far did Kendall drive in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNVPD"
           }
         ]
@@ -7951,15 +7931,25 @@
     "lSolutions": [
       "0.3333333333333333"
     ],
-    "sQuestion": "At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called ; Frank finished just 0.3333333333333333 pie . How much more pie did Erik eat than Frank ? ",
+    "sQuestion": "At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called. Frank finished just 0.3333333333333333 pie . How much more pie did Erik eat than Frank ? ",
     "Sentences": [
       {
-        "Sentence": "At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called ; Frank finished just 0.3333333333333333 pie .",
+        "Sentence": "At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called .",
         "SimplifiedSentences": [
           {
-            "Sentence": "At a pie-eating contest Erik got through 0.6666666666666666 pie before time was called ; Frank finished just 0.3333333333333333 pie .",
+            "Sentence": "At a pie-eating contest Erik got through 0.6666666666666666 pie before time was called .",
             "label": "",
-            "SyntacticPattern": "PDANNVPCNPNVVNVCN"
+            "SyntacticPattern": "PDANNVPCNPNVV"
+          }
+        ]
+      },
+      {
+        "Sentence": "Frank finished just 0.3333333333333333 pie .",
+        "SimplifiedSentences": [
+          {
+            "Sentence": "Frank finished just 0.3333333333333333 pie .",
+            "label": "",
+            "SyntacticPattern": "NVCN"
           }
         ]
       },
@@ -7968,7 +7958,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much more pie did Erik eat than Frank ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WNVNVPN"
           }
         ]
@@ -7991,12 +7981,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A tailor cut 0.75 inch off a skirt .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANCNPDN"
           },
           {
-            "Sentence": "A cut 0.5 inch off a pair of pants .",
-            "label": "",
+            "Sentence": "A tailor cut 0.5 inch off a pair of pants .",
+            "label": "+",
             "SyntacticPattern": "DCNPDNPN"
           }
         ]
@@ -8006,7 +7996,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much more did the tailor cut off the skirt than the pants ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVDNVDNPDN"
           }
         ]
@@ -8026,20 +8016,26 @@
     "Sentences": [
       {
         "Sentence": "At Lindsey 's Vacation Wear , 0.375 the garments are bikinis and 0.25 garments are trunks .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "At Lindsey 's Vacation Wear 0.375 the garments are bikinis .",
+            "label": "+",
+            "SyntacticPattern": "NNNCDNVN"
+          },
+          {
+            "Sentence": "At Lindsey 's Vacation Wear 0.25 garments are trunks .",
+            "label": "+",
+            "SyntacticPattern": "NNNCDNVN"
+          }
+        ]
       },
       {
         "Sentence": "What fraction of the garments are either bikinis or trunks ?",
         "SimplifiedSentences": [
           {
-            "Sentence": "What fraction of the garments are either bikinis .",
-            "label": "",
-            "SyntacticPattern": "NPDNV"
-          },
-          {
-            "Sentence": "trunks ? .",
-            "label": "",
-            "SyntacticPattern": "N"
+            "Sentence": "What fraction of the garments are either bikinis or trunks ?",
+            "label": "?",
+            "SyntacticPattern": "NPDNVN"
           }
         ]
       }
@@ -8060,13 +8056,13 @@
         "Sentence": "Darnel sprinted 0.875 lap and then took a break by jogging 0.75 lap .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Darnel sprinted 0.875 lap by jogging 0.75 lap .",
-            "label": "",
-            "SyntacticPattern": "NVCNPNCN"
+            "Sentence": "Darnel sprinted 0.875 lap .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Darnel then took a break by jogging 0.75 lap .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPNCN"
           }
         ]
@@ -8076,7 +8072,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much farther did Darnel sprint than jog ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVNPN"
           }
         ]
