@@ -8937,19 +8937,26 @@
     "Sentences": [
       {
         "Sentence": "At the beach , Miki and her sister both built sandcastles and then measured their heights .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "At the beach Miki and her sister both built sandcastles and then measured their heights .",
+            "label": "i",
+            "SyntacticPattern": "DNNNNVNVN"
+          }
+        ],
+
       },
       {
         "Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall and her sister 's was 0.5 foot tall .",
         "SimplifiedSentences": [
           {
             "Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCNA"
           },
           {
             "Sentence": "her sister 's was 0.5 foot tall .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCNA"
           }
         ]
@@ -8959,7 +8966,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much taller was Miki 's sandcastle than her sister 's ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAAVNNPNN"
           }
         ]
@@ -8975,29 +8982,29 @@
     "lSolutions": [
       "0.3333333333333333"
     ],
-    "sQuestion": "Michelle began her pizza delivery route with 0.5 tank of gas in her car . When she made it back to the pizzeria , 0.16666666666666666 tank of gas was . How much gas did Michelle use ? ",
+    "sQuestion": "Michelle began her pizza delivery route with 0.5 tank of gas in her car . When she made it back to the pizzeria , 0.16666666666666666 tank of gas was left. How much gas did Michelle use ? ",
     "Sentences": [
       {
         "Sentence": "Michelle began her pizza delivery route with 0.5 tank of gas in her car .",
         "SimplifiedSentences": [
           {
             "Sentence": "Michelle began her pizza delivery route with 0.5 tank of gas in her car .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVNNPCNPNPNN"
           }
         ]
       },
       {
-        "Sentence": "When she made it back to the pizzeria , 0.16666666666666666 tank of gas was .",
+        "Sentence": "When she made it back to the pizzeria , 0.16666666666666666 tank of gas was left.",
         "SimplifiedSentences": [
           {
             "Sentence": "When she made it back to the pizzeria .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "WNVNPDN"
           },
           {
             "Sentence": "0.16666666666666666 tank of gas was .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NPNV"
           }
         ]
@@ -9007,7 +9014,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much gas did Michelle use ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -9030,12 +9037,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "While taking inventory at her pastry shop Kelly realizes that she had 0.4 box of baking powder yesterday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PVNPNNNVPNVCNPVNN"
           },
           {
             "Sentence": "While taking inventory at her pastry shop the supply is now down to 0.3 box .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PVNPNNDNVPCN"
           }
         ]
@@ -9045,7 +9052,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much more baking powder did Kelly have yesterday ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVN"
           }
         ]
@@ -9067,13 +9074,13 @@
         "Sentence": "Craig walked 0.2 mile from school to David 's house and 0.7 mile from David 's house to his own house .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Craig walked 0.2 mile from school to David 's house house .",
-            "label": "",
-            "SyntacticPattern": "NVCNPNPNN"
+            "Sentence": "Craig walked 0.2 mile from school to David 's house .",
+            "label": "+",
+            "SyntacticPattern": "NVCNPNPN"
           },
           {
             "Sentence": "Craig walked 0.7 mile from David 's house to his own house .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNNPNAN"
           }
         ]
@@ -9083,7 +9090,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many miles did Craig walk in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -9105,13 +9112,8 @@
         "Sentence": "Greg and Sharon own neighboring cornfields .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Greg .",
-            "label": "",
-            "SyntacticPattern": "N"
-          },
-          {
-            "Sentence": "Sharon own neighboring cornfields .",
-            "label": "",
+            "Sentence": "Greg and Sharon own neighboring cornfields .",
+            "label": "i",
             "SyntacticPattern": "NAVN"
           }
         ]
@@ -9121,12 +9123,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Greg harvested 0.4 acre of corn on Monday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNPN"
           },
           {
             "Sentence": "Sharon harvested 0.1 acre .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -9136,7 +9138,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many more acres did Greg harvest than Sharon ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNPN"
           }
         ]
@@ -9156,20 +9158,26 @@
     "Sentences": [
       {
         "Sentence": "At the hardware store , 0.25 the nails are size 2d and 0.5 the nails are size 4d .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "At the hardware store , 0.25 of the nails are size 2d.",
+            "label": "+",
+            "SyntacticPattern": "DNNCPDNV"
+          },
+          {
+            "Sentence": "At the hardware store , 0.5 of the nails are size 4d .",
+            "label": "+",
+            "SyntacticPattern": "DNNCPDNV"
+          }
+        ]
       },
       {
         "Sentence": "What fraction of the nails are either size 2d or 4d ?",
         "SimplifiedSentences": [
           {
-            "Sentence": "What fraction of the nails are either size 2d .",
-            "label": "",
+            "Sentence": "What fraction of the nails are either size 2d or 4d.",
+            "label": "?",
             "SyntacticPattern": "NPDNVDN"
-          },
-          {
-            "Sentence": "4d ? .",
-            "label": "",
-            "SyntacticPattern": "N"
           }
         ]
       }
@@ -9190,9 +9198,14 @@
         "Sentence": "While making desserts for a bake sale , Victor used 0.625 scoop of brown sugar as well as 0.25 scoop of white sugar .",
         "SimplifiedSentences": [
           {
-            "Sentence": "While making desserts for a bake sale Victor used 0.625 scoop of brown sugar as well as 0.25 scoop of white sugar .",
-            "label": "",
-            "SyntacticPattern": "PVNPDANNVCNPANPCNPAN"
+            "Sentence": "While making desserts for a bake sale Victor used 0.625 scoop of brown sugar .",
+            "label": "+",
+            "SyntacticPattern": "PVNPDANNVCNPAN"
+          },
+          {
+            "Sentence": "While making desserts for a bake sale Victor used 0.25 scoop of white sugar .",
+            "label": "+",
+            "SyntacticPattern": "PVNPDANNVCNPAN"
           }
         ]
       },
@@ -9201,7 +9214,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much more brown sugar did Victor use ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -9224,12 +9237,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Eve ran 0.7 mile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Eve walked 0.6 mile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -9239,7 +9252,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much farther did Eve run than walk ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVNVPV"
           }
         ]
@@ -9261,13 +9274,13 @@
         "Sentence": "Jonah added 0.3 cup of yellow raisins and 0.4 cup of black raisins to a batch of trail mix .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Jonah added 0.3 cup of yellow raisins .",
-            "label": "",
-            "SyntacticPattern": "NVCNPAN"
+            "Sentence": "Jonah added 0.3 cup of yellow raisins to a batch of trail mix .",
+            "label": "+",
+            "SyntacticPattern": "NVCNPANPDNPN"
           },
           {
             "Sentence": "Jonah added 0.4 cup of black raisins to a batch of trail mix .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPANPDNPN"
           }
         ]
@@ -9277,7 +9290,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cups of raisins did Jonah add in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNVPD"
           }
         ]
@@ -9300,12 +9313,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "When Jake had 1 cat .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "WNVCN"
           },
           {
             "Sentence": "he needed to serve 0.5 can can can of cat food each day .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPVCPNDN"
           }
         ]
@@ -9315,12 +9328,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Now that Jake has adopted a second cat .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PNVVDAN"
           },
           {
             "Sentence": "he needs to serve a total of 0.9 total can each day .",
-            "label": "",
+            "label": "=",
             "SyntacticPattern": "NVPVDNPCNDN"
           }
         ]
@@ -9330,7 +9343,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much extra food is needed to feed the second cat ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVVPVDAN"
           }
         ]
@@ -9350,14 +9363,25 @@
     "Sentences": [
       {
         "Sentence": "In Yardley it snowed 0.125 inch in the morning and 0.5 inch in the afternoon .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "In Yardley it snowed 0.125 inch in the morning .",
+            "label": "+",
+            "SyntacticPattern": "DNVCNPDN"
+          },
+          {
+            "Sentence": "In Yardley it snowed 0.5 inch in the afternoon .",
+            "label": "+",
+            "SyntacticPattern": "DNVCNPDN"
+          }
+        ]
       },
       {
         "Sentence": "What was the total amount of snowfall ?",
         "SimplifiedSentences": [
           {
             "Sentence": "What was the total amount of snowfall ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "NVDANPN"
           }
         ]
@@ -9377,14 +9401,25 @@
     "Sentences": [
       {
         "Sentence": "While making pastries , a bakery used 0.2 bag of wheat flour and 0.1 bag of white flour .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "While making pastries a bakery used 0.2 bag of wheat flour .",
+            "label": "+",
+            "SyntacticPattern": "DVNDNVCNPNN"
+          },
+          {
+            "Sentence": "While making pastries a bakery used 0.1 bag of white flour .",
+            "label": "+",
+            "SyntacticPattern": "DVNDNVCNPNN"
+          }
+        ]
       },
       {
         "Sentence": "How many bags of flour did the bakery use in all ?",
         "SimplifiedSentences": [
           {
             "Sentence": "How many bags of flour did the bakery use in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVDNNPD"
           }
         ]
@@ -9407,7 +9442,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kaleen filled a bucket with 0.75 gallon of water .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPCNPN"
           }
         ]
@@ -9417,7 +9452,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A few minutes later she realized only 0.5 gallon of water remained .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "DANNVCNPNV"
           }
         ]
@@ -9427,7 +9462,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much water had leaked out of the bucket ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPPDN"
           }
         ]
@@ -9450,7 +9485,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Irwin 's family went on a camping trip in the mountains .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NNVPDNPDN"
           }
         ]
@@ -9460,7 +9495,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "On the first day they hiked from their car to the campsite .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PDANNVPNNPDN"
           }
         ]
@@ -9470,13 +9505,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "First they hiked 0.2 mile from the car to a stream .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDNPDN"
           },
           {
-            "Sentence": "First 0.4 mile from the stream to a meadow .",
-            "label": "",
-            "SyntacticPattern": "CNPDNPDN"
+            "Sentence": "they hiked 0.4 mile from the stream to a meadow .",
+            "label": "+",
+            "SyntacticPattern": "NVCNPDNPDN"
           }
         ]
       },
@@ -9485,7 +9520,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then they hiked 0.1 mile from the meadow to the campsite .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDNPDN"
           }
         ]
@@ -9495,7 +9530,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many miles did Irwin 's family hike in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNNPD"
           }
         ]
@@ -9518,18 +9553,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During a visit to an orchard Charlie picked 0.16666666666666666 bag of Golden Delicious apples .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PDNPDNVCNPN"
           },
           {
-            "Sentence": "During a visit to an orchard 0.16666666666666666 bag of Macintosh apples .",
-            "label": "",
-            "SyntacticPattern": "PDNPDCNPN"
+            "Sentence": "During a visit to an orchard Charlie picked 0.16666666666666666 bag of Macintosh apples .",
+            "label": "+",
+            "SyntacticPattern": "PDNPDNVCNPN"
           },
           {
-            "Sentence": "During a visit to an orchard 0.3333333333333333 bag of Cortland apples .",
-            "label": "",
-            "SyntacticPattern": "PDNPDCNPN"
+            "Sentence": "During a visit to an orchard Charlie picked 0.3333333333333333 bag of Cortland apples .",
+            "label": "+",
+            "SyntacticPattern": "PDNPDNVCNPN"
           }
         ]
       },
@@ -9538,7 +9573,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bags of fruit did Charlie pick in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNVPN"
           }
         ]
@@ -9561,7 +9596,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Before starting her shift a waitress checks to make sure there is enough mustard for her customers .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PVNNDNPVAEVANPNN"
           }
         ]
@@ -9571,17 +9606,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She finds 0.25 bottle at the first table .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDAN"
           },
           {
             "Sentence": "She finds 0.25 bottle at the second table .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDAN"
           },
           {
             "Sentence": "She finds 0.375 bottle at the third table .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDAN"
           }
         ]
@@ -9591,7 +9626,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Altogether how many bottles of mustard does the waitress find ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVDNV"
           }
         ]
@@ -9614,7 +9649,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A waitress put leftover tarts into the fridge on Thursday night .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVANPDNPN"
           }
         ]
@@ -9624,18 +9659,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She noticed that the restaurant had 0.08333333333333333 tart filled with cherries .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPDNVCAVPN"
           },
           {
-            "Sentence": "restaurant had 0.75 tart filled with blueberries .",
-            "label": "",
-            "SyntacticPattern": "NVCAVPN"
+            "Sentence": "She noticed that the restaurant had 0.75 tart filled with blueberries .",
+            "label": "+",
+            "SyntacticPattern": "NVPDNVCAVPN"
           },
           {
-            "Sentence": "restaurant had 0.08333333333333333 tart filled with peaches .",
-            "label": "",
-            "SyntacticPattern": "NVCAVPN"
+            "Sentence": "She noticed that the restaurant had 0.08333333333333333 tart filled with peaches .",
+            "label": "+",
+            "SyntacticPattern": "NVPDNVCAVPN"
           }
         ]
       },
@@ -9644,7 +9679,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many leftover tarts did the restaurant have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVDNVPD"
           }
         ]
@@ -9667,7 +9702,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "On her vacation last summer Trisha walked all over New York City to buy souvenirs .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PNNANNVDPNPVN"
           }
         ]
@@ -9677,7 +9712,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "First she walked 0.1111111111111111 mile from her hotel to a postcard shop .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCNPNNPDN"
           }
         ]
@@ -9687,12 +9722,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then she walked 0.1111111111111111 mile from the postcard shop to a T-shirt shop .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDNPDN"
           },
           {
             "Sentence": "she walked 0.6666666666666666 mile from the T-shirt shop back to the hotel .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDNVPDN"
           }
         ]
@@ -9702,7 +9737,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many miles did Trisha walk in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -9725,7 +9760,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Brandy made trail mix for a backpacking trip .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVNPDN"
           }
         ]
@@ -9735,17 +9770,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She used 0.16666666666666666 pound of peanuts .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "She used 0.16666666666666666 pound of chocolate chips .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "She used 0.08333333333333333 pound of raisins .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -9755,7 +9790,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pounds of trail mix did Brandy make ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNV"
           }
         ]
@@ -9778,7 +9813,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Allie counted the leftover ice cream after a sundae party .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDANPDN"
           }
         ]
@@ -9788,17 +9823,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She had 0.3333333333333333 carton of rocky road ice cream .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPAN"
           },
           {
             "Sentence": "She had 0.3333333333333333 carton of cookie dough ice cream .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "She had 0.16666666666666666 carton of strawberry cheesecake ice cream .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -9808,7 +9843,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cartons of ice cream did Allie have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNVPD"
           }
         ]
@@ -9831,7 +9866,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During a canned food drive items were sorted into bins .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PDVNVVPN"
           }
         ]
@@ -9841,17 +9876,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The drive resulted in 0.125 bin of soup .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVPCNPN"
           },
           {
             "Sentence": "drive resulted 0.125 bin of vegetables .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "drive resulted 0.5 bin of pasta .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -9861,7 +9896,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Altogether how many bins would the canned food take up ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANDVNV"
           }
         ]
@@ -9884,7 +9919,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Paco 's Countertop Company purchased pieces of marble from a quarry .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NNVNPNPDN"
           }
         ]
@@ -9894,18 +9929,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The weights of the pieces they purchased were 0.3333333333333333 ton .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNPDNNVVCN"
           },
           {
-            "Sentence": "they purchased 0.3333333333333333 ton .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
+            "Sentence": "The weights of the pieces they purchased 0.3333333333333333 ton .",
+            "label": "+",
+            "SyntacticPattern": "DNPDNNVVCN"
           },
           {
-            "Sentence": "they purchased 0.08333333333333333 ton .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
+            "Sentence": "The weights of the pieces they purchased 0.08333333333333333 ton .",
+            "label": "+",
+            "SyntacticPattern": "DNPDNNVVCN"
           }
         ]
       },
@@ -9914,7 +9949,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many tons of marble did Paco 's Countertop Company purchase in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNNPD"
           }
         ]
@@ -9937,7 +9972,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Nina did a running drill to get in shape for soccer season .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDVNPVPNPN"
           }
         ]
@@ -9947,7 +9982,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "First Nina ran 0.08333333333333333 mile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCN"
           }
         ]
@@ -9957,12 +9992,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then she ran 0.08333333333333333 mile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "she ran 0.6666666666666666 mile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -9972,7 +10007,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many miles did Nina run in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPN"
           }
         ]
@@ -9995,7 +10030,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Bonnie 's science class recorded the rainfall each day .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NNVDNDN"
           }
         ]
@@ -10005,17 +10040,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "They recorded 0.16666666666666666 centimeter of rain on Monday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNPN"
           },
           {
             "Sentence": "They recorded 0.4166666666666667 centimeter of rain on Tuesday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNPN"
           },
           {
             "Sentence": "They recorded 0.08333333333333333 centimeter of rain on Wednesday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNPN"
           }
         ]
@@ -10025,7 +10060,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many centimeters of rain did the class record in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVDNPD"
           }
         ]
@@ -10048,7 +10083,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Last Saturday Spencer walked all over town running errands .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "ANVDPNVN"
           }
         ]
@@ -10058,12 +10093,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "First he walked 0.3 mile from his house to the library .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNNPDN"
           },
           {
             "Sentence": "he walked 0.1 mile from the library to the the office office .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDNPDDN"
           }
         ]
@@ -10073,7 +10108,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then he walked 0.4 mile from the post office back home .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDNN"
           }
         ]
@@ -10083,7 +10118,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many miles did Spencer walk in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -10106,18 +10141,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A construction company ordered 0.16666666666666666 ton of concrete .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPN"
           },
           {
-            "Sentence": "company ordered 0.16666666666666666 ton of bricks .",
-            "label": "",
-            "SyntacticPattern": "NVCNPN"
+            "Sentence": "A construction company ordered 0.16666666666666666 ton of bricks .",
+            "label": "+",
+            "SyntacticPattern": "DNVCNPN"
           },
           {
-            "Sentence": "company ordered 0.5 ton of stone .",
-            "label": "",
-            "SyntacticPattern": "NVCNPN"
+            "Sentence": "A construction company ordered 0.5 ton of stone .",
+            "label": "+",
+            "SyntacticPattern": "DNVCNPN"
           }
         ]
       },
@@ -10126,7 +10161,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many tons of material did the company order in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVDNPD"
           }
         ]
@@ -10149,7 +10184,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kendra made punch for her friend 's birthday party .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVNPNNN"
           }
         ]
@@ -10159,17 +10194,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She used 0.25 gallon of grape juice .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "She used 0.375 gallon of cranberry juice .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "She used 0.125 gallon of club soda .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -10179,7 +10214,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many gallons of punch did Kendra make ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNV"
           }
         ]
@@ -10202,12 +10237,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A spaceship traveled 0.5 light-year from Earth to Planet X .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPNPN"
           },
           {
             "Sentence": "A spaceship traveled 0.1 light-year from Planet X to Planet Y .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPNPN"
           }
         ]
@@ -10217,7 +10252,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then it traveled 0.1 light-year from Planet Y back to Earth .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNPN"
           }
         ]
@@ -10227,7 +10262,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many light-years did the spaceship travel in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVDNNPD"
           }
         ]
@@ -10250,7 +10285,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Logan recorded the snowfall every day during a snowstorm .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDNDNPDN"
           }
         ]
@@ -10260,17 +10295,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He recorded 0.3333333333333333 centimeter on Wednesday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "He recorded 0.3333333333333333 centimeter on Thursday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "He recorded 0.2222222222222222 centimeter on Friday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -10280,7 +10315,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many total centimeters of snow did Logan record ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANPNVNV"
           }
         ]
@@ -10303,7 +10338,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Ellen made smoothies in the blender .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVNPDN"
           }
         ]
@@ -10313,17 +10348,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She used 0.2 cup of strawberries .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "She used 0.1 cup of yogurt .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "She used 0.2 cup of orange juice .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPAN"
           }
         ]
@@ -10333,7 +10368,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cups of ingredients did Ellen use for the smoothies ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNVPDN"
           }
         ]
@@ -10356,7 +10391,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During a school play Jonah staffed the snack bar .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PDNVDN"
           }
         ]
@@ -10366,18 +10401,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He served 0.25 pitcher of lemonade during the first intermission .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNPDAN"
           },
           {
-            "Sentence": "He served 0.4166666666666667 pitcher during the second .",
-            "label": "",
-            "SyntacticPattern": "NVCNPDA"
+            "Sentence": "He served 0.4166666666666667 pitcher of lemonade during the second .",
+            "label": "+",
+            "SyntacticPattern": "NVCNPNPDA"
           },
           {
-            "Sentence": "He served 0.25 pitcher during the third .",
-            "label": "",
-            "SyntacticPattern": "NVCNPDA"
+            "Sentence": "He served 0.25 pitcher of lemonade during the third .",
+            "label": "+",
+            "SyntacticPattern": "NVCNPNPDA"
           }
         ]
       },
@@ -10386,7 +10421,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pitchers of lemonade did Jonah pour in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNVPD"
           }
         ]
@@ -10409,7 +10444,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Heather went to the county fair last weekend .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVPDNAAN"
           }
         ]
@@ -10419,12 +10454,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "When she got there .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "WNV"
           },
           {
             "Sentence": "she had to walk 0.3333333333333333 mile from the car to the entrance .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPVCNPDNPDN"
           }
         ]
@@ -10434,12 +10469,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then she walked 0.3333333333333333 mile to the carnival rides .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           },
           {
             "Sentence": "she walked 0.08333333333333333 mile from the carnival rides back to the car .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDNPDN"
           }
         ]
@@ -10449,7 +10484,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many miles did Heather walk in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -10471,14 +10506,19 @@
         "Sentence": "A renovation project required 0.16666666666666666 truck-load of sand , 0.3333333333333333 truck-load of dirt , and 0.16666666666666666 truck-load of cement .",
         "SimplifiedSentences": [
           {
-            "Sentence": "A renovation project required 0.16666666666666666 truck-load of sand 0.3333333333333333 truck-load of dirt .",
-            "label": "",
-            "SyntacticPattern": "DNVCNPNCNPN"
+            "Sentence": "A renovation project required 0.16666666666666666 truck-load of sand .",
+            "label": "+",
+            "SyntacticPattern": "DNVCNPN"
           },
           {
-            "Sentence": "A renovation project required 0.16666666666666666 truck-load of sand 0.16666666666666666 truck-load of cement .",
-            "label": "",
-            "SyntacticPattern": "DNVCNPNCNPN"
+            "Sentence": "A renovation project required 0.3333333333333333 truck-load of dirt .",
+            "label": "+",
+            "SyntacticPattern": "DNVCNPN"
+          },
+          {
+            "Sentence": "A renovation project required 0.16666666666666666 truck-load of cement .",
+            "label": "+",
+            "SyntacticPattern": "DNVCNPN"
           }
         ]
       },
@@ -10487,7 +10527,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many truck-loads of material were needed in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVVPD"
           }
         ]
@@ -10510,7 +10550,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Karin 's science class weighed plastic rings for an experiment .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NNVANPDN"
           }
         ]
@@ -10520,17 +10560,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "They found that the orange ring weighed 0.08333333333333333 ounce .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPDANVCN"
           },
           {
             "Sentence": "the purple ring weighed 0.3333333333333333 ounce .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
             "Sentence": "the white ring weighed 0.4166666666666667 ounce .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           }
         ]
@@ -10540,7 +10580,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "What was the total weight of the plastic rings ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "NVDANPDN"
           }
         ]
@@ -10560,14 +10600,25 @@
     "Sentences": [
       {
         "Sentence": "Carefully following a recipe , Kenny used exactly 0.16666666666666666 cup of oil and 1.1666666666666667 cups of water .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "Carefully following a recipe Kenny used exactly 0.16666666666666666 cup of oil .",
+            "label": "+",
+            "SyntacticPattern": "VDNNVCNPN"
+          },
+          {
+            "Sentence": "Carefully following a recipe Kenny used exactly 1.1666666666666667 cups of water .",
+            "label": "+",
+            "SyntacticPattern": "VDNNVCNPN"
+          }
+        ]
       },
       {
         "Sentence": "How many cups of liquid did Kenny use in all ?",
         "SimplifiedSentences": [
           {
             "Sentence": "How many cups of liquid did Kenny use in all ?",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "WANPNVNVPD"
           }
         ]
@@ -10590,13 +10641,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dale 's Vegetarian Restaurant bought 2.8333333333333335 pounds of green peppers .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NANVCNPAN"
           },
           {
-            "Sentence": "Dale bought 2.8333333333333335 pounds of red peppers .",
-            "label": "",
-            "SyntacticPattern": "NVCNPAN"
+            "Sentence": "Dale 's Vegetarian Restaurant bought 2.8333333333333335 pounds of red peppers .",
+            "label": "+",
+            "SyntacticPattern": "NANVCNPAN"
           }
         ]
       },
@@ -10605,7 +10656,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pounds of peppers did Dale 's Vegetarian Restaurant buy in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNNVPD"
           }
         ]
@@ -10628,17 +10679,17 @@
         "SimplifiedSentences": [
           {
             "Sentence": "This afternoon Craig left school .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "DNVN"
           },
           {
             "Sentence": "Craig rode the bus 3.8333333333333335 miles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNCN"
           },
           {
             "Sentence": "Craig then walked 0.16666666666666666 mile to get home .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPVN"
           }
         ]
@@ -10648,7 +10699,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much farther did Craig ride than walk ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVNPV"
           }
         ]
@@ -10671,12 +10722,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kelly 's chemistry textbook weighs 7.125 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCN"
           },
           {
             "Sentence": "her geometry textbook weighs 0.625 pound .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCN"
           }
         ]
@@ -10686,7 +10737,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much more does the chemistry textbook weigh than the geometry textbook ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVDNVPDN"
           }
         ]
@@ -10709,13 +10760,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Roadster 's Paving Company used 10 tons of cement to pave Lexi 's street .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCNPNPVNN"
           },
           {
-            "Sentence": "Roadster used 5.1 tons of cement to pave Tess 's street .",
-            "label": "",
-            "SyntacticPattern": "NVCNPNPVNN"
+            "Sentence": "Roadster 's Paving Company used 5.1 tons of cement to pave Tess 's street .",
+            "label": "+",
+            "SyntacticPattern": "NNVCNPNPVNN"
           }
         ]
       },
@@ -10724,7 +10775,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much cement did Roadster 's Paving Company use in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNNVPD"
           }
         ]
@@ -10747,7 +10798,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "On a hot day Sam poured 1 bucket of water into a plastic wading pool .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PDANNVCNPNPDVN"
           }
         ]
@@ -10757,7 +10808,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A few minutes later he added another 8.8 buckets .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANNVDCN"
           }
         ]
@@ -10767,7 +10818,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much water did Sam pour into the pool ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPDN"
           }
         ]
@@ -10790,12 +10841,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kyle jogged 1.125 laps in P.E. class .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "Kyle jogged 2.125 laps during track practice .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -10805,7 +10856,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many laps did Kyle jog in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -10828,7 +10879,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A bucket contains 3 gallons of water .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPN"
           }
         ]
@@ -10838,12 +10889,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If Derek adds 6.8 gallons more .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNVCN"
           },
           {
             "Sentence": "how many gallons will there be in all ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPD"
           }
         ]
@@ -10863,14 +10914,25 @@
     "Sentences": [
       {
         "Sentence": "At a pizza party , Mason and his friends drank 2.6666666666666665 bottles of lemon-lime soda and 2.6666666666666665 bottles of cola .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "At a pizza party Mason and his friends drank 2.6666666666666665 bottles of lemon-lime soda .",
+            "label": "+",
+            "SyntacticPattern": "DNNNNNVCNPNN"
+          },
+          {
+            "Sentence": "At a pizza party Mason and his friends drank 2.6666666666666665 bottles of cola .",
+            "label": "+",
+            "SyntacticPattern": "DNNNNNVCNPNN"
+          }
+        ]
       },
       {
         "Sentence": "How much soda did they drink in all ?",
         "SimplifiedSentences": [
           {
             "Sentence": "How much soda did they drink in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -10893,7 +10955,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Professor Ellison weighed 2 pieces of metal for an experiment .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCNPNPDN"
           }
         ]
@@ -10903,12 +10965,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The piece of iron weighed 11.166666666666666 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNPNVCN"
           },
           {
             "Sentence": "the piece of aluminum weighed 0.8333333333333334 pound .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNPNVCN"
           }
         ]
@@ -10918,7 +10980,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much more did the piece of iron weigh than the piece of aluminum ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVDNPNVPDNPN"
           }
         ]
@@ -10941,7 +11003,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "As part of a lesson on earthquakes a science class is researching the movement of a nearby fault line .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PNPDNPNDNVVDNPDAN"
           }
         ]
@@ -10951,12 +11013,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The fault line moved 1.25 inches during the past year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPDAN"
           },
           {
             "Sentence": "The line moved 5.25 inches the year before .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNDNP"
           }
         ]
@@ -10966,7 +11028,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How far did the fault line move in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVDNPD"
           }
         ]
@@ -10989,7 +11051,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Hoping to be named Salesperson of the Month Rosa called the names from 10.2 pages of the phone book last week .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "VPVVNPDNVDNPCNPDNAN"
           }
         ]
@@ -10999,7 +11061,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "This week she called the people listed on another 8.6 pages of the same phone book .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNNVDNVPDCNPDAN"
           }
         ]
@@ -11009,7 +11071,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pages worth of people did Rosa call in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNPNVNVPD"
           }
         ]
@@ -11029,20 +11091,26 @@
     "Sentences": [
       {
         "Sentence": "At the beach , Janet and her sister both built sandcastles and then measured their heights .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "At the beach Janet and her sister both built sandcastles and then measured their heights .",
+            "label": "i",
+            "SyntacticPattern": "DDNNNNVNVN"
+          }
+        ]
       },
       {
         "Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall and her sister 's was 2.3333333333333335 feet tall .",
         "SimplifiedSentences": [
           {
             "Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCNA"
           },
           {
-            "Sentence": "her sister 's was 2.3333333333333335 feet tall .",
-            "label": "",
-            "SyntacticPattern": "NNVCNA"
+            "Sentence": "her sister 's sandcastle was 2.3333333333333335 feet tall .",
+            "label": "+",
+            "SyntacticPattern": "NNNVCNA"
           }
         ]
       },
@@ -11051,7 +11119,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much taller was Janet 's sandcastle than her sister 's ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAAVNNPNN"
           }
         ]
@@ -11074,12 +11142,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Nicole found an orange caterpillar in her backyard .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDANPNN"
           },
           {
             "Sentence": "Nicole found a green caterpillar in her backyard .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDANPNN"
           }
         ]
@@ -11089,12 +11157,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The green caterpillar was 3 inches long .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
             "Sentence": "the orange caterpillar was 1.1666666666666667 inches long .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           }
         ]
@@ -11104,7 +11172,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much longer was the green caterpillar than the orange caterpillar ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVDANPDAN"
           }
         ]
@@ -11126,14 +11194,14 @@
         "Sentence": "Alec and his roommates ate 3.25 pints of ice cream on Friday night and 0.25 pint of ice cream on Saturday night .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Alec and ice Friday on night .",
-            "label": "",
-            "SyntacticPattern": "NCNNPN"
+            "Sentence": "Alec and his roommates ate 3.25 pints of cream on Friday night .",
+            "label": "+",
+            "SyntacticPattern": "NNNVNCNNPN"
           },
           {
-            "Sentence": "his roommates ate 3.25 pints of cream on night 0.25 pint of ice cream on Saturday night .",
-            "label": "",
-            "SyntacticPattern": "NNVCNPNPNCNPNPN"
+            "Sentence": "Alec and his roommates ate 0.25 pint of ice cream on Saturday night .",
+            "label": "+",
+            "SyntacticPattern": "NNNVNCNNPN"
           }
         ]
       },
@@ -11142,7 +11210,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pints did they eat in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -11165,7 +11233,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A farmer started the day with 8.75 buckets of seeds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVDNPCNPN"
           }
         ]
@@ -11175,7 +11243,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "After spending the morning sowing seeds she now has 6 buckets .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PVDNNNVCN"
           }
         ]
@@ -11185,7 +11253,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many buckets of seeds did the farmer sow ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVDNV"
           }
         ]
@@ -11208,7 +11276,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Irene just bought a new lamp for her bedside table .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVDANPNN"
           }
         ]
@@ -11218,12 +11286,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The old lamp was 1 foot tall .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCNA"
           },
           {
             "Sentence": "the new lamp is 2.3333333333333335 feet tall .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCNA"
           }
         ]
@@ -11233,7 +11301,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much taller is the new lamp than the old lamp ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAAVDANPDAN"
           }
         ]
@@ -11256,7 +11324,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Ezra drew a white line that was 7.666666666666667 inches long .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDANVCN"
           }
         ]
@@ -11266,7 +11334,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then he drew a blue line that was 3.3333333333333335 inches long .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDANVCN"
           }
         ]
@@ -11276,7 +11344,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much longer was the white line than the blue line ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVDANPDAN"
           }
         ]
@@ -11292,14 +11360,14 @@
     "lSolutions": [
       "14.75"
     ],
-    "sQuestion": "There are 7.75 gallons of water in Becky 's fish tank . If Becky adds 7 gallons more , how many gallons will there be in all ? ",
+    "sQuestion": "There is 7.75 gallons of water in Becky 's fish tank . If Becky adds 7 gallons more , how many gallons will there be in all ? ",
     "Sentences": [
       {
-        "Sentence": "There are 7.75 gallons of water in Becky 's fish tank .",
+        "Sentence": "There is 7.75 gallons of water in Becky 's fish tank .",
         "SimplifiedSentences": [
           {
-            "Sentence": "There are 7.75 gallons of water in Becky 's fish tank .",
-            "label": "",
+            "Sentence": "There is 7.75 gallons of water in Becky 's fish tank .",
+            "label": "+",
             "SyntacticPattern": "EVCNPNPNN"
           }
         ]
@@ -11309,12 +11377,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If Becky adds 7 gallons more .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNVCN"
           },
           {
             "Sentence": "how many gallons will there be in all ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPD"
           }
         ]
@@ -11337,12 +11405,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Wendy ran 19.833333333333332 miles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Wendy walked 9.166666666666666 miles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -11352,7 +11420,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much farther did Wendy run than walk ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVNVPV"
           }
         ]
@@ -11374,14 +11442,9 @@
         "Sentence": "Kenji and his classmates placed colored blocks on a scale during a science lab .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Kenji during a lab .",
-            "label": "",
-            "SyntacticPattern": "NPDN"
-          },
-          {
-            "Sentence": "his classmates placed colored blocks on a scale during a science lab .",
-            "label": "",
-            "SyntacticPattern": "NNVVNPDNPDN"
+            "Sentence": "Kenji and his classmates placed colored blocks on a scale during a science lab .",
+            "label": "i",
+            "SyntacticPattern": "NNNVVNPDNPDN"
           }
         ]
       },
@@ -11390,12 +11453,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The yellow block weighed 0.6 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
             "Sentence": "the green block weighed 0.4 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           }
         ]
@@ -11405,7 +11468,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much more did the yellow block weigh than the green block ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVDANVPDAN"
           }
         ]
@@ -11428,7 +11491,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Terrell hiked 8.2 miles on Saturday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -11438,12 +11501,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then on Sunday .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PN"
           },
           {
             "Sentence": "Then he hiked another 1.6 miles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDCN"
           }
         ]
@@ -11453,7 +11516,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How far did Terrell hike all together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNVD"
           }
         ]
@@ -11476,7 +11539,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A carpenter bought a piece of wood that was 0.41 meters long .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVDNPNVCN"
           }
         ]
@@ -11486,7 +11549,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then she sawed 0.33 meters off the end .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -11496,7 +11559,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How long is the piece of wood now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVDNPN"
           }
         ]
@@ -11519,12 +11582,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kelly bought 0.1 pounds of peanuts .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "Kelly bought 0.4 pounds of raisins .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -11534,7 +11597,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pounds of snacks did she buy in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNVPD"
           }
         ]
@@ -11557,7 +11620,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kevin bought 2 watermelons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -11567,12 +11630,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The first watermelon was 9.91 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
             "Sentence": "the second watermelon was 4.11 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           }
         ]
@@ -11582,7 +11645,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pounds of watermelon did Kevin buy ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNV"
           }
         ]
@@ -11605,7 +11668,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In March it rained 0.81 inches .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNNVCN"
           }
         ]
@@ -11615,7 +11678,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "It rained 0.35 inches less in April than in March .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPNPPN"
           }
         ]
@@ -11625,7 +11688,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did it rain in April ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNNPN"
           }
         ]
@@ -11648,7 +11711,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Ron weighed 2 colored metal balls during a science class .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCVNPDN"
           }
         ]
@@ -11658,19 +11721,31 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The blue ball weighed 6 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
             "Sentence": "the brown ball weighed 3.12 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           }
         ]
       },
       {
         "Sentence": "If Ron places both balls on the scale at the same time , what will the scale read ?",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "If Ron places both balls on the scale at the same time .",
+            "label": "i",
+            "SyntacticPattern": "PNVNPDNPNN"
+          },
+          {
+            "Sentence": "what will the scale read ?",
+            "label": "?",
+            "SyntacticPattern": "WVDNV"
+          }
+
+        ]
       }
     ]
   },
@@ -11690,12 +11765,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A bee colony produced 0.36 pounds of honey .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPN"
           },
           {
-            "Sentence": "bears ate 0.05 pounds of it .",
-            "label": "",
+            "Sentence": "bears ate 0.05 pounds of honey .",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -11705,7 +11780,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much honey remains ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANV"
           }
         ]
@@ -11728,7 +11803,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "It rained 0.9 inches on Monday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -11738,7 +11813,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "On Tuesday it rained 0.7 inches less than on Monday .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNNVCNAPPN"
           }
         ]
@@ -11748,7 +11823,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did it rain on Tuesday ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNNPN"
           }
         ]
@@ -11771,19 +11846,25 @@
         "SimplifiedSentences": [
           {
             "Sentence": "It snowed 0.32 inches on Monday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "It snowed 0.21 inches on Tuesday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
       },
       {
         "Sentence": "How much did it snow on Monday and Tuesday combined ?",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "How much did it snow on Monday and Tuesday combined ?",
+            "label": "?",
+            "SyntacticPattern": "WVPNPNNV"
+          }
+        ]
       }
     ]
   },
@@ -11803,7 +11884,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Brennan had 0.25 grams of pepper .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -11813,7 +11894,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then he used 0.16 grams of the pepper to make some scrambled eggs .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPDNPVDVN"
           }
         ]
@@ -11823,7 +11904,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much pepper does Brennan have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -11846,12 +11927,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A construction company bought 5.91 tons of gravel .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPN"
           },
           {
-            "Sentence": "A company bought 8.11 tons of sand .",
-            "label": "",
+            "Sentence": "A construction company bought 8.11 tons of sand .",
+            "label": "+",
             "SyntacticPattern": "DNVCNPN"
           }
         ]
@@ -11861,7 +11942,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many tons of material did the company buy in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVDNVPD"
           }
         ]
@@ -11884,19 +11965,25 @@
         "SimplifiedSentences": [
           {
             "Sentence": "It rained 0.2 inches on Saturday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "It rained 0.4 inches on Sunday .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
       },
       {
         "Sentence": "How much did it rain on Saturday and Sunday combined ?",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+          {
+            "Sentence": "How much did it rain on Saturday and Sunday combined ?",
+            "label": "?",
+            "SyntacticPattern": "WNVPVPNNV"
+          }
+        ]
       }
     ]
   },
@@ -11909,30 +11996,30 @@
     "lSolutions": [
       "4.6"
     ],
-    "sQuestion": "Pamela bought 9.8 ounces of sugar , and she spilled 5.2 ounces of it on the floor . How much is ? ",
+    "sQuestion": "Pamela bought 9.8 ounces of sugar , and she spilled 5.2 ounces of it on the floor . How much sugar is remaining ? ",
     "Sentences": [
       {
         "Sentence": "Pamela bought 9.8 ounces of sugar , and she spilled 5.2 ounces of it on the floor .",
         "SimplifiedSentences": [
           {
             "Sentence": "Pamela bought 9.8 ounces of sugar .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "she spilled 5.2 ounces of it on the floor .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPNPDN"
           }
         ]
       },
       {
-        "Sentence": "How much is ?",
+        "Sentence": "How much sugar is remaining ?",
         "SimplifiedSentences": [
           {
-            "Sentence": "How much is ?",
-            "label": "",
-            "SyntacticPattern": "WAV"
+            "Sentence": "How much sugar is remaining ?",
+            "label": "?",
+            "SyntacticPattern": "WAVV"
           }
         ]
       }
@@ -11947,14 +12034,14 @@
     "lSolutions": [
       "1.22"
     ],
-    "sQuestion": "Gordon bought 3.42 pounds of fruit for a class party . The class ate 2.2 pounds of the fruit . How much fruit is ? ",
+    "sQuestion": "Gordon bought 3.42 pounds of fruit for a class party . The class ate 2.2 pounds of the fruit . How much fruit is left ? ",
     "Sentences": [
       {
         "Sentence": "Gordon bought 3.42 pounds of fruit for a class party .",
         "SimplifiedSentences": [
           {
             "Sentence": "Gordon bought 3.42 pounds of fruit for a class party .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNPDN"
           }
         ]
@@ -11964,18 +12051,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The class ate 2.2 pounds of the fruit .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "DNVCNPDN"
           }
         ]
       },
       {
-        "Sentence": "How much fruit is ?",
+        "Sentence": "How much fruit is left ?",
         "SimplifiedSentences": [
           {
-            "Sentence": "How much fruit is ?",
-            "label": "",
-            "SyntacticPattern": "WANV"
+            "Sentence": "How much fruit is left ?",
+            "label": "?",
+            "SyntacticPattern": "WANVV"
           }
         ]
       }
@@ -11997,12 +12084,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A chef bought 0.14 kilograms of almonds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPN"
           },
           {
             "Sentence": "A chef bought 0.38 kilograms of pecans .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPN"
           }
         ]
@@ -12012,7 +12099,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many kilograms of nuts did the chef buy in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVDNVPD"
           }
         ]
@@ -12035,7 +12122,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Marta picked 2 pumpkins .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12045,12 +12132,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The first pumpkin weighed 4 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
             "Sentence": "the second pumpkin weighed 8.7 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           }
         ]
@@ -12060,7 +12147,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did the 2 pumpkins weigh all together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVDCNVD"
           }
         ]
@@ -12083,12 +12170,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A truck carrying 4.1 pounds of sand travels to a construction yard .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPNPDN"
           },
           {
             "Sentence": "A truck loses 2.4 pounds of sand along the way .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "DNVCNPNPDN"
           }
         ]
@@ -12098,7 +12185,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much sand does the truck have when it arrives at the yard ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVDNVWNVPDN"
           }
         ]
@@ -12121,7 +12208,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tori was 4.4 feet tall .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNA"
           }
         ]
@@ -12131,7 +12218,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then she grew 2.86 feet taller .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNA"
           }
         ]
@@ -12141,7 +12228,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How tall is Tori now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVN"
           }
         ]
@@ -12164,7 +12251,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A carpenter bought a piece of wood that was 8.9 centimeters long .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVDNPNVCN"
           }
         ]
@@ -12174,7 +12261,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Then he sawed 2.3 centimeters off the end .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -12184,7 +12271,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How long is the piece of wood now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVDNPN"
           }
         ]
@@ -12207,12 +12294,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason found 49 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           },
           {
             "Sentence": "Jason found 48 starfish on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -12222,7 +12309,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He gave 13 of the seashells to Tim .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPDNPN"
           }
         ]
@@ -12232,7 +12319,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells does Jason now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -12255,12 +12342,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan grew 29 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Joan grew 14 watermelons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12270,7 +12357,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jessica grew 11 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12280,7 +12367,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many carrots did they grow in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -12303,12 +12390,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sally had 39 baseball cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Sally had 9 cards were torn .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNVV"
           }
         ]
@@ -12318,7 +12405,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara bought 24 of Sally 's baseball cards .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPNN"
           }
         ]
@@ -12328,7 +12415,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many baseball cards does Sally have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -12347,16 +12434,16 @@
     "sQuestion": "Dan has 32 green and 38 violet marbles . Mike took 23 of Dan 's green marbles . How many green marbles does Dan now have ? ",
     "Sentences": [
       {
-        "Sentence": "Dan has 32 marbles green and 38 violet marbles .",
+        "Sentence": "Dan has 32 green marbles and 38 violet marbles .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Dan has 32 marbles green .",
-            "label": "",
-            "SyntacticPattern": "NVCNA"
+            "Sentence": "Dan has 32 green marbles green .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           },
           {
             "Sentence": "Dan has 38 violet marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12366,7 +12453,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike took 23 of Dan 's green marbles .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPNAN"
           }
         ]
@@ -12376,7 +12463,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many green marbles does Dan now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNV"
           }
         ]
@@ -12399,12 +12486,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason has 18 books of them .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "he has read 9 of them .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVVCPN"
           }
         ]
@@ -12414,7 +12501,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary has 42 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12424,7 +12511,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many books do they have together ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -12447,12 +12534,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason grew 32 watermelons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Jason grew 22 cantelopes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12462,7 +12549,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan grew 31 watermelons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12472,7 +12559,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many watermelons did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPN"
           }
         ]
@@ -12495,12 +12582,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Benny found 66 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           },
           {
             "Sentence": "Benny found 49 starfish on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -12510,7 +12597,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He gave 52 of the seashells to Jason .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPDNPN"
           }
         ]
@@ -12520,7 +12607,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells does Benny now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -12543,12 +12630,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 41 crayons in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           },
           {
-            "Sentence": "There are crayons 26 pencils in the drawer .",
-            "label": "",
+            "Sentence": "There are 26 pencils in the drawer .",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -12558,7 +12645,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam placed 12 crayons in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -12568,7 +12655,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many crayons are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPN"
           }
         ]
@@ -12591,12 +12678,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike had 33 quarters in his bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           },
           {
             "Sentence": "Mike had 87 nickels in his bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           }
         ]
@@ -12606,7 +12693,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "His dad borrowed 75 nickels from Mike .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NNVCNPN"
           }
         ]
@@ -12616,7 +12703,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many nickels does he have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -12635,16 +12722,16 @@
     "sQuestion": "Sam has 86 yellow and 20 green marbles . Joan took 25 of Sam 's yellow marbles . How many yellow marbles does Sam now have ? ",
     "Sentences": [
       {
-        "Sentence": "Sam has 86 marbles yellow and 20 green marbles .",
+        "Sentence": "Sam has 86 yellow marbles and 20 green marbles .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Sam has 86 marbles yellow .",
-            "label": "",
-            "SyntacticPattern": "NVCNA"
+            "Sentence": "Sam has 86 yellow marbles .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           },
           {
             "Sentence": "Sam has 20 green marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAN"
           }
         ]
@@ -12654,7 +12741,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan took 25 of Sam 's yellow marbles .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPNAN"
           }
         ]
@@ -12664,7 +12751,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many yellow marbles does Sam now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNV"
           }
         ]
@@ -12687,12 +12774,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dan had 97 baseball cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Dan had 8 cards were torn .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNVV"
           }
         ]
@@ -12702,7 +12789,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sam bought 15 of Dan 's baseball cards .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPNN"
           }
         ]
@@ -12712,7 +12799,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many baseball cards does Dan have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -12735,12 +12822,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 41 short trees in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCANPDN"
           },
           {
-            "Sentence": "There are trees 44 tall trees currently in the park .",
-            "label": "",
+            "Sentence": "There are 44 tall trees currently in the park .",
+            "label": "+",
             "SyntacticPattern": "EVCANPDN"
           }
         ]
@@ -12750,7 +12837,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 57 short trees today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCANN"
           }
         ]
@@ -12760,7 +12847,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many short trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANDNVWDNVV"
           }
         ]
@@ -12783,12 +12870,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Alyssa picked 25 limes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Mike picked 32 limes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12798,7 +12885,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tom picked 12 plums .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12808,7 +12895,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many limes were picked in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPD"
           }
         ]
@@ -12831,12 +12918,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tim found 679 seashells on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           },
           {
             "Sentence": "Tim found 110 starfish on the beach .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -12846,7 +12933,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He gave 172 of the seashells to Sara .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPDNPN"
           }
         ]
@@ -12856,7 +12943,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many seashells does Tim now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -12879,12 +12966,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 139 erasers in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           },
           {
-            "Sentence": "There are erasers 118 scissors in the drawer .",
-            "label": "",
+            "Sentence": "There are 118 scissors in the drawer .",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -12894,7 +12981,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jason placed 131 erasers in the drawer .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -12904,7 +12991,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many erasers are now there in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPN"
           }
         ]
@@ -12927,12 +13014,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mike picked 123 oranges .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Melanie picked 104 oranges .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12942,7 +13029,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred picked 130 apples .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -12952,7 +13039,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oranges were picked in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPN"
           }
         ]
@@ -12975,12 +13062,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan had 695 Pokemon cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Joan had 6 cards were torn .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNVV"
           }
         ]
@@ -12990,7 +13077,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara bought 133 of Joan 's Pokemon cards .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPNN"
           }
         ]
@@ -13000,7 +13087,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many Pokemon cards does Joan have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -13023,12 +13110,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sally grew 113 turnips .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "Sally grew 118 pumpkins .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -13038,7 +13125,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mary grew 129 turnips .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -13048,7 +13135,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many turnips did they grow in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPN"
           }
         ]
@@ -13067,16 +13154,16 @@
     "sQuestion": "Sara has 792 black and 122 red marbles . Fred took 233 of Sara 's black marbles . How many black marbles does Sara now have ? ",
     "Sentences": [
       {
-        "Sentence": "Sara has 792 marbles black and 122 red marbles .",
+        "Sentence": "Sara has 792 black marbles and 122 red marbles .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Sara has 792 marbles black .",
-            "label": "",
-            "SyntacticPattern": "NVCNA"
+            "Sentence": "Sara has 792 black marbles .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           },
           {
             "Sentence": "Sara has 122 red marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAN"
           }
         ]
@@ -13086,7 +13173,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Fred took 233 of Sara 's black marbles .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPNAN"
           }
         ]
@@ -13096,7 +13183,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many black marbles does Sara now have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNV"
           }
         ]
@@ -13119,12 +13206,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joan 's high school played 864 baseball games this year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NANVCNDN"
           },
           {
-            "Sentence": "school played 128 of the games were played at night .",
-            "label": "",
+            "Sentence": "128 of the games were played at night .",
+            "label": "i",
             "SyntacticPattern": "NVCPDNVVPN"
           }
         ]
@@ -13134,7 +13221,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She attended 395 games .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -13144,7 +13231,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many baseball games did Joan miss ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -13167,12 +13254,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 112 short trees in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCANPDN"
           },
           {
             "Sentence": "There are trees 119 tall trees currently in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCANPDN"
           }
         ]
@@ -13182,7 +13269,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers will plant 105 short trees today .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCANN"
           }
         ]
@@ -13192,7 +13279,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many short trees will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANDNVWDNVV"
           }
         ]
@@ -13215,12 +13302,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara had 100 pennies in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           },
           {
             "Sentence": "Sara had 783 quarters in her bank .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           }
         ]
@@ -13230,7 +13317,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Her dad borrowed 271 quarters from Sara .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NNVCNPN"
           }
         ]
@@ -13240,7 +13327,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many quarters does she have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -13263,12 +13350,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A restaurant made 9 hamburgers during lunch .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCNPN"
           },
           {
             "Sentence": "A restaurant made 4 hot dogs to serve during lunch .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCANPVPN"
           }
         ]
@@ -13278,7 +13365,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Only 3 hamburgers were actually served .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "CNVV"
           }
         ]
@@ -13288,7 +13375,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many hamburgers were over ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVP"
           }
         ]
@@ -13311,12 +13398,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Melanie picked 7 plums from the orchard .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           },
           {
             "Sentence": "Melanie picked 4 oranges from the orchard .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -13326,7 +13413,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She gave 3 plums to Sam .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -13336,7 +13423,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many plums does she have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -13359,12 +13446,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 6 short bushes in the park .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCANPDN"
           },
           {
-            "Sentence": "There are bushes 4 tall trees currently in the park .",
-            "label": "",
+            "Sentence": "There are 4 tall trees currently in the park .",
+            "label": "+",
             "SyntacticPattern": "EVCANPDN"
           }
         ]
@@ -13374,7 +13461,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Park workers had to cut down 2 short bushes that were damaged .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVPVCANVV"
           }
         ]
@@ -13384,7 +13471,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many short bushes will the park have when the workers are finished ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANDNVWDNVV"
           }
         ]
@@ -13407,13 +13494,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There were a total of 8 football games this year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVDNPCNDN"
           },
           {
-            "Sentence": "were total 4 total are played at night .",
-            "label": "",
-            "SyntacticPattern": "VACNVVPN"
+            "Sentence": "4 games were played at night .",
+            "label": "i",
+            "SyntacticPattern": "CNVVPN"
           }
         ]
       },
@@ -13422,7 +13509,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Keith missed 4 of the games .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCPDN"
           }
         ]
@@ -13432,7 +13519,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many football games did Keith go to in total ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPPN"
           }
         ]
