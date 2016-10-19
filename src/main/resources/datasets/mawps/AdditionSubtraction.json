@@ -19089,7 +19089,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Katie picked 3 tulips to make flower bouquets .",
-            "label": ""+,
+            "label": "+",
             "SyntacticPattern": "NVCNPVN"
           },
           {
@@ -20359,12 +20359,12 @@
           {
             "Sentence": "There were 30 girls trying out for the schools basketball team .",
             "label": "+",
-            "SyntacticPattern": "EVNCNVPDN"
+            "SyntacticPattern": "EVCNVPDN"
           },
           {
             "Sentence": "There were 36 boys trying out for the schools basketball team .",
             "label": "+",
-            "SyntacticPattern": "EVNCNVPDN"
+            "SyntacticPattern": "EVCNVPDN"
           }
         ]
       },
@@ -21184,7 +21184,7 @@
       {
         "Sentence": "For his birthday he got 50 more dollars but spent 84 dollars on a new game .",
         "SimplifiedSentences": [
-		 {
+		  {
             "Sentence": "For his birthday he got 50 more dollars .",
             "label": "+",
             "SyntacticPattern": "PNNNVCN"
@@ -21340,12 +21340,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The school cafeteria ordered 33 red apples for students lunches .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           },
           {
-            "Sentence": "The cafeteria ordered 23 green apples for students lunches .",
-            "label": "",
+            "Sentence": "The school cafeteria ordered 23 green apples for students lunches .",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           }
         ]
@@ -21355,12 +21355,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "if only 21 students wanted fruit .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCNVN"
           },
           {
             "Sentence": "how many extra did the cafeteria end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAAVDNVP"
           }
         ]
@@ -21387,14 +21387,14 @@
         "Sentence": "Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Dave had to wash 9 short sleeve shirts .",
-            "label": "",
-            "SyntacticPattern": "NVPVCAN"
+            "Sentence": "Dave had to wash 9 short sleeve shirts before school .",
+            "label": "+",
+            "SyntacticPattern": "NVPVCANPN"
           },
           {
-            "Sentence": "Dave had 27 long sleeve shirts before school .",
-            "label": "",
-            "SyntacticPattern": "NVCANPN"
+            "Sentence": "Dave had to wash 27 long sleeve shirts before school .",
+            "label": "+",
+            "SyntacticPattern": "NVPVCANPN"
           }
         ]
       },
@@ -21403,12 +21403,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If he had only washed 20 of them by the time school started .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVVCPNPDNV"
           },
           {
             "Sentence": "how many did he not wash ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVNV"
           }
         ]
@@ -21433,19 +21433,30 @@
     "Sentences": [
       {
         "Sentence": "While on vacation , Rachel took 6 pictures at the zoo and 9 pictures at the museum .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "While on vacation Rachel took 6 pictures at the zoo .",
+            "label": "+",
+            "SyntacticPattern": "CPNNVCNPDN"
+          },
+          {
+            "Sentence": "While on vacation Rachel took 9 pictures at the museum .",
+            "label": "+",
+			"SyntacticPattern": "CPNNVCNPDN"
+          }
+		]
       },
       {
         "Sentence": "If she later deleted 11 of the pictures , how many pictures from her vacation did she still have ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If she later deleted 11 of the pictures .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPDN"
           },
           {
             "Sentence": "how many pictures from her vacation did she still have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNNVNV"
           }
         ]
@@ -21472,14 +21483,9 @@
         "Sentence": "Vanessa and her mom were picking carrots from their garden .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Vanessa from their garden .",
-            "label": "",
-            "SyntacticPattern": "NPNN"
-          },
-          {
-            "Sentence": "her mom were picking carrots from their garden .",
-            "label": "",
-            "SyntacticPattern": "NNVVNPNN"
+            "Sentence": "Vanessa and her mom were picking carrots from their garden .",
+            "label": "i",
+            "SyntacticPattern": "NVNNVVNPNN"
           }
         ]
       },
@@ -21488,12 +21494,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Vanessa picked 17 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "her mother picked 14 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCN"
           }
         ]
@@ -21503,12 +21509,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If only 24 of the carrots were good .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCPDNVA"
           },
           {
             "Sentence": "how many bad carrots did they have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNV"
           }
         ]
@@ -21536,13 +21542,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A pet store had 41 siamese cats .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
-            "Sentence": "A store had 28 house cats .",
-            "label": "",
-            "SyntacticPattern": "DNVCN"
+            "Sentence": "A pet store had 28 house cats .",
+            "label": "+",
+            "SyntacticPattern": "DANVCN"
           }
         ]
       },
@@ -21551,7 +21557,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During a sale they sold 15 cats .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PDNNVCN"
           }
         ]
@@ -21561,7 +21567,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cats do they have left ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVV"
           }
         ]
@@ -21588,13 +21594,13 @@
         "Sentence": "Janet picked 4 tulips and 11 roses to make flower bouquets .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Janet picked 4 tulips to make bouquets .",
-            "label": "",
+            "Sentence": "Janet picked 4 tulips to make flower bouquets .",
+            "label": "+",
             "SyntacticPattern": "NVCNPVN"
           },
           {
             "Sentence": "Janet picked 11 roses to make flower bouquets .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPVN"
           }
         ]
@@ -21604,12 +21610,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If she only used 11 of the flowers though .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPDNP"
           },
           {
             "Sentence": "how many extra flowers did Janet pick ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNV"
           }
         ]
@@ -21636,13 +21642,13 @@
         "Sentence": "Vanessa had 13 music files and 30 video files on her flash drive .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Vanessa had 13 music files on her drive .",
-            "label": "",
+            "Sentence": "Vanessa had 13 music files on her flash drive .",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           },
           {
             "Sentence": "Vanessa had 30 video files on her flash drive .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           }
         ]
@@ -21652,12 +21658,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If she deleted 10 of the files .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPDN"
           },
           {
             "Sentence": "how many files were still on her flash drive ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPNN"
           }
         ]
@@ -21685,21 +21691,32 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Debby bought two coloring books .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCVN"
           }
         ]
       },
       {
-        "Sentence": "One pictures had 16 pictures and the other had 40 pictures .",
-        "SimplifiedSentences": []
+        "Sentence": "One had 16 pictures and the other had 40 pictures .",
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "One coloring book had 16 pictures .",
+            "label": "+",
+            "SyntacticPattern": "NNVCN"
+          },
+		  {
+            "Sentence": "The other coloring book had 40 pictures .",
+            "label": "+",
+            "SyntacticPattern": "DNVCN"
+          }
+		]
       },
       {
         "Sentence": "After one week she had already colored 33 of the pictures .",
         "SimplifiedSentences": [
           {
             "Sentence": "After one week she had already colored 33 of the pictures .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCNNVVCPDN"
           }
         ]
@@ -21709,7 +21726,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pictures does she still have to color ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPV"
           }
         ]
@@ -21737,12 +21754,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The school cafeteria ordered 8 red apples for students lunches .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           },
           {
-            "Sentence": "The cafeteria ordered 43 green apples for students lunches .",
-            "label": "",
+            "Sentence": "The school cafeteria ordered 43 green apples for students lunches .",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           }
         ]
@@ -21752,12 +21769,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "if only 42 students wanted fruit .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCNVN"
           },
           {
             "Sentence": "how many extra did the cafeteria end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAAVDNVP"
           }
         ]
@@ -21785,26 +21802,37 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Edward started his own lawn mowing business .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVNAN"
           }
         ]
       },
       {
         "Sentence": "In the spring he made 2 dollars mowing lawns and in the summer he made 27 dollars .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "In the spring he made 2 dollars mowing lawns .",
+            "label": "+",
+            "SyntacticPattern": "PDNNVCNVN"
+          },
+		  {
+            "Sentence": "in the summer he made 27 dollars mowing lawns .",
+            "label": "+",
+            "SyntacticPattern": "PDNNVCNVN"
+          }
+		]
       },
       {
         "Sentence": "If he had to spend 5 dollars buying supplies , how much money did he end up with ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If he had to spend 5 dollars buying supplies .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVPVCNVN"
           },
           {
             "Sentence": "how much money did he end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -21832,13 +21860,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A pet store had 36 siamese cats .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
-            "Sentence": "A store had 18 house cats .",
-            "label": "",
-            "SyntacticPattern": "DNVCN"
+            "Sentence": "A pet store had 18 house cats .",
+            "label": "+",
+            "SyntacticPattern": "DANVCN"
           }
         ]
       },
@@ -21847,7 +21875,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During a sale they sold 26 cats .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PDNNVCN"
           }
         ]
@@ -21857,7 +21885,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cats do they have left ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVV"
           }
         ]
@@ -21883,15 +21911,10 @@
       {
         "Sentence": "Olivia and her mom were picking carrots from their garden .",
         "SimplifiedSentences": [
-          {
-            "Sentence": "Olivia from their garden .",
-            "label": "",
-            "SyntacticPattern": "NPNN"
-          },
-          {
-            "Sentence": "her mom were picking carrots from their garden .",
-            "label": "",
-            "SyntacticPattern": "NNVVNPNN"
+           {
+            "Sentence": "Olivia and her mom were picking carrots from their garden .",
+            "label": "i",
+            "SyntacticPattern": "NVNNVVNPNN"
           }
         ]
       },
@@ -21900,12 +21923,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Olivia picked 20 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "her mother picked 14 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCN"
           }
         ]
@@ -21915,12 +21938,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If only 19 of the carrots were good .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCPDNVA"
           },
           {
             "Sentence": "how many bad carrots did they have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNV"
           }
         ]
@@ -21948,21 +21971,32 @@
         "SimplifiedSentences": [
           {
             "Sentence": "George had 30 dollars .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
         "Sentence": "For his birthday he got 16 more dollars but spent 38 dollars on a new game .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "For his birthday he got 16 more dollars .",
+            "label": "+",
+            "SyntacticPattern": "PNNNVCN"
+          },
+		  {
+            "Sentence": "he spent 38 dollars on a new game .",
+            "label": "-",
+            "SyntacticPattern": "NVCNPDN"
+          }
+		]
       },
       {
         "Sentence": "How much money does he have now ?",
         "SimplifiedSentences": [
           {
             "Sentence": "How much money does he have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -21989,14 +22023,14 @@
         "Sentence": "There were 6 girls and 48 boys trying out for the schools basketball team .",
         "SimplifiedSentences": [
           {
-            "Sentence": "There were 6 girls for the team .",
-            "label": "",
-            "SyntacticPattern": "EVCNPDN"
+            "Sentence": "There were 6 girls trying out for the schools basketball team .",
+            "label": "+",
+            "SyntacticPattern": "EVCNVPDN"
           },
           {
-            "Sentence": "There were girls 48 boys trying out for the schools basketball team .",
-            "label": "",
-            "SyntacticPattern": "EVNCNVPDN"
+            "Sentence": "There were 48 boys trying out for the schools basketball team .",
+            "label": "+",
+            "SyntacticPattern": "EVCNVPDN"
           }
         ]
       },
@@ -22004,9 +22038,14 @@
         "Sentence": "If only 7 of them got called back , how many students did n't make the cut ?",
         "SimplifiedSentences": [
           {
-            "Sentence": "If only 7 of them got called back how many students did n't make the cut ? .",
-            "label": "",
-            "SyntacticPattern": "PCPNVVWANVVDN"
+            "Sentence": "If only 7 of them got called back .",
+            "label": "-",
+            "SyntacticPattern": "PCPNVV"
+          },
+		  {
+            "Sentence": "how many students did n't make the cut ? .",
+            "label": "?",
+            "SyntacticPattern": "WANVVDN"
           }
         ]
       }
@@ -22033,7 +22072,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "For the school bake sale Amy made pastries .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PDNVNVN"
           }
         ]
@@ -22043,13 +22082,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She baked 15 cupcakes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NACN"
           },
           {
-            "Sentence": "She 48 cookies .",
-            "label": "",
-            "SyntacticPattern": "NCN"
+            "Sentence": "She baked 48 cookies .",
+            "label": "+",
+            "SyntacticPattern": "NACN"
           }
         ]
       },
@@ -22058,7 +22097,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "After the sale she had 12 home to take back home .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PDNNVCNPVN"
           }
         ]
@@ -22068,7 +22107,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pastries did she sell ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -22093,15 +22132,31 @@
     "Sentences": [
       {
         "Sentence": "At the schools book fair Victor bought 32 adventure books and 37 mystery books .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "At the schools book fair Victor bought 32 adventure books .",
+            "label": "+",
+            "SyntacticPattern": "PDNNVCAN"
+          },
+		  {
+            "Sentence": "At the schools book fair Victor bought 37 mystery books .",
+            "label": "+",
+            "SyntacticPattern": "PDNNVCAN"
+          }
+		]
       },
       {
         "Sentence": "If 16 of the books were used , how many new books did he buy ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If 16 of the books were used how many new books did he buy ? .",
-            "label": "",
-            "SyntacticPattern": "PCPDNVVWAANVNV"
+            "label": "-",
+            "SyntacticPattern": "PCPDNVV"
+          },
+		  {
+            "Sentence": "how many new books did he buy ? .",
+            "label": "?",
+            "SyntacticPattern": "WAANVNV"
           }
         ]
       }
@@ -22125,19 +22180,30 @@
     "Sentences": [
       {
         "Sentence": "While on vacation , Haley took 50 pictures at the zoo and 8 pictures at the museum .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "While on vacation Haley took 50 pictures at the zoo .",
+            "label": "+",
+            "SyntacticPattern": "CPNNVCNPDN"
+          },
+          {
+            "Sentence": "While on vacation Haley took 8 pictures at the museum .",
+            "label": "+",
+			"SyntacticPattern": "CPNNVCNPDN"
+          }
+		]
       },
       {
         "Sentence": "If she later deleted 38 of the pictures , how many pictures from her vacation did she still have ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If she later deleted 38 of the pictures .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPDN"
           },
           {
             "Sentence": "how many pictures from her vacation did she still have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNNVNV"
           }
         ]
@@ -22165,12 +22231,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The school cafeteria ordered 37 red apples for students lunches .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           },
           {
-            "Sentence": "The cafeteria ordered 45 green apples for students lunches .",
-            "label": "",
+            "Sentence": "The school cafeteria ordered 45 green apples for students lunches .",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           }
         ]
@@ -22180,12 +22246,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "if only 51 students wanted fruit .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCNVN"
           },
           {
             "Sentence": "how many extra did the cafeteria end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAAVDNVP"
           }
         ]
@@ -22210,19 +22276,30 @@
     "Sentences": [
       {
         "Sentence": "While shopping , Maria bought 35 green towels and 21 white towels .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "While shopping Maria bought 35 green towels .",
+            "label": "+",
+            "SyntacticPattern": "PVNVCAN"
+          },
+          {
+            "Sentence": "While shopping Maria bought 21 white towels .",
+            "label": "+",
+            "SyntacticPattern": "PVNVCAN"
+          }
+		]
       },
       {
         "Sentence": "If she gave her mother 34 of them , how many towels did Maria end up with ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If she gave her mother 34 of them .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVNNCPN"
           },
           {
             "Sentence": "how many towels did Maria end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -22249,14 +22326,14 @@
         "Sentence": "There were 17 girls and 32 boys trying out for the schools basketball team .",
         "SimplifiedSentences": [
           {
-            "Sentence": "There were 17 girls for the team .",
-            "label": "",
+            "Sentence": "There were 17 girls trying out for the schools basketball team .",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           },
           {
-            "Sentence": "There were girls 32 boys trying out for the schools basketball team .",
-            "label": "",
-            "SyntacticPattern": "EVNCNVPDN"
+            "Sentence": "There were 32 boys trying out for the schools basketball team .",
+            "label": "+",
+            "SyntacticPattern": "EVCNVPDN"
           }
         ]
       },
@@ -22264,9 +22341,14 @@
         "Sentence": "If only 10 of them got called back , how many students did n't make the cut ?",
         "SimplifiedSentences": [
           {
-            "Sentence": "If only 10 of them got called back how many students did n't make the cut ? .",
-            "label": "",
-            "SyntacticPattern": "PCPNVVWANVVDN"
+            "Sentence": "If only 10 of them got called back .",
+            "label": "-",
+            "SyntacticPattern": "PCPNVV"
+          },
+		  {
+            "Sentence": "how many students did n't make the cut ? .",
+            "label": "?",
+            "SyntacticPattern": "WANVVDN"
           }
         ]
       }
@@ -22291,15 +22373,10 @@
       {
         "Sentence": "Nancy and her mom were picking carrots from their garden .",
         "SimplifiedSentences": [
-          {
-            "Sentence": "Nancy from their garden .",
-            "label": "",
-            "SyntacticPattern": "NPNN"
-          },
-          {
-            "Sentence": "her mom were picking carrots from their garden .",
-            "label": "",
-            "SyntacticPattern": "NNVVNPNN"
+           {
+            "Sentence": "Nancy and her mom were picking carrots from their garden .",
+            "label": "i",
+            "SyntacticPattern": "NVNNVVNPNN"
           }
         ]
       },
@@ -22308,12 +22385,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Nancy picked 38 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "her mother picked 47 carrots .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCN"
           }
         ]
@@ -22323,12 +22400,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If only 71 of the carrots were good .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCPDNVA"
           },
           {
             "Sentence": "how many bad carrots did they have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNV"
           }
         ]
@@ -22356,7 +22433,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A waiter at ` The Greasy Spoon ' restaurant had 29 customers to wait on .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNPDNNVCNPVP"
           }
         ]
@@ -22366,7 +22443,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During the lunch rush he added another 20 customers .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PDNNVDCN"
           }
         ]
@@ -22376,12 +22453,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If 34 of the customers did n't leave him a tip .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCPDNVVNDN"
           },
           {
             "Sentence": "how many customers did leave a tip ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVDN"
           }
         ]
@@ -22408,14 +22485,14 @@
         "Sentence": "Tom had to wash 10 short sleeve shirts and 25 long sleeve shirts before school .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Tom had to wash 10 short sleeve shirts .",
-            "label": "",
-            "SyntacticPattern": "NVPVCAN"
+            "Sentence": "Tom had to wash 10 short sleeve shirts before school .",
+            "label": "+",
+            "SyntacticPattern": "NVPVCANPN"
           },
           {
-            "Sentence": "Tom had 25 long sleeve shirts before school .",
-            "label": "",
-            "SyntacticPattern": "NVCANPN"
+            "Sentence": "Tom had to wash 25 long sleeve shirts before school .",
+            "label": "+",
+            "SyntacticPattern": "NVPVCANPN"
           }
         ]
       },
@@ -22424,12 +22501,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If he had only washed 5 of them by the time school started .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVVCPNPDNV"
           },
           {
             "Sentence": "how many did he not wash ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAVNV"
           }
         ]
@@ -22456,13 +22533,13 @@
         "Sentence": "Vanessa had 16 music files and 48 video files on her flash drive .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Vanessa had 16 music files on her drive .",
-            "label": "",
+            "Sentence": "Vanessa had 16 music files on her flash drive .",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           },
           {
             "Sentence": "Vanessa had 48 video files on her flash drive .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           }
         ]
@@ -22472,12 +22549,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If she deleted 30 of the files .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPDN"
           },
           {
             "Sentence": "how many files were still on her flash drive ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPNN"
           }
         ]
@@ -22505,26 +22582,37 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kaleb started his own lawn mowing business .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVNAN"
           }
         ]
       },
       {
         "Sentence": "In the spring he made 4 dollars mowing lawns and in the summer he made 50 dollars .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		 {
+            "Sentence": "In the spring he made 4 dollars mowing lawns .",
+            "label": "+",
+            "SyntacticPattern": "PDNNVCNVN"
+          },
+		  {
+            "Sentence": "in the summer he made 50 dollars mowing lawns .",
+            "label": "+",
+            "SyntacticPattern": "PDNNVCNVN"
+          }
+		]
       },
       {
         "Sentence": "If he had to spend 4 dollars buying supplies , how much money did he end up with ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If he had to spend 4 dollars buying supplies .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVPVCNVN"
           },
           {
             "Sentence": "how much money did he end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -22552,12 +22640,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The school cafeteria ordered 6 red apples for students lunches .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           },
           {
-            "Sentence": "The cafeteria ordered 15 green apples for students lunches .",
-            "label": "",
+            "Sentence": "The school cafeteria ordered 15 green apples for students lunches .",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           }
         ]
@@ -22567,12 +22655,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "if only 5 students wanted fruit .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCNVN"
           },
           {
             "Sentence": "how many extra did the cafeteria end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAAVDNVP"
           }
         ]
@@ -22599,13 +22687,13 @@
         "Sentence": "Bianca picked 39 tulips and 49 roses to make flower bouquets .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Bianca picked 39 tulips to make bouquets .",
-            "label": "",
+            "Sentence": "Bianca picked 39 tulips to make flower bouquets .",
+            "label": "+",
             "SyntacticPattern": "NVCNPVN"
           },
           {
             "Sentence": "Bianca picked 49 roses to make flower bouquets .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPVN"
           }
         ]
@@ -22615,12 +22703,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If she only used 81 of the flowers though .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPDNP"
           },
           {
             "Sentence": "how many extra flowers did Bianca pick ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNV"
           }
         ]
@@ -22645,19 +22733,30 @@
     "Sentences": [
       {
         "Sentence": "While on vacation , Nancy took 49 pictures at the zoo and 8 pictures at the museum .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "While on vacation Nancy took 49 pictures at the zoo .",
+            "label": "+",
+            "SyntacticPattern": "CPNNVCNPDN"
+          },
+          {
+            "Sentence": "While on vacation Nancy took 8 pictures at the museum .",
+            "label": "+",
+			"SyntacticPattern": "CPNNVCNPDN"
+          }
+		]
       },
       {
         "Sentence": "If she later deleted 38 of the pictures , how many pictures from her vacation did she still have ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If she later deleted 38 of the pictures .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPDN"
           },
           {
             "Sentence": "how many pictures from her vacation did she still have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNNVNV"
           }
         ]
@@ -22685,12 +22784,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Gwen had 18 math problems for homework .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           },
           {
             "Sentence": "Gwen had 11 science problems for homework .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -22700,12 +22799,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If she finished 24 of the problems at school .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPDNPN"
           },
           {
             "Sentence": "how many problems did she have to do for homework ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPVPN"
           }
         ]
@@ -22730,15 +22829,26 @@
     "Sentences": [
       {
         "Sentence": "For Halloween Katie and her sister combined the candy they received .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "For Halloween Katie and her sister combined the candy they received .",
+            "label": "i",
+            "SyntacticPattern": "PNNCNVDNDV"
+          }
+		]
       },
       {
         "Sentence": "Katie had 10 pieces of candy while her sister had 6 pieces .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Katie had 10 pieces of candy while her sister had 6 pieces .",
-            "label": "",
-            "SyntacticPattern": "NVCNPNPNNVCN"
+            "Sentence": "Katie had 10 pieces of candy .",
+            "label": "+",
+            "SyntacticPattern": "NVCNPN"
+          },
+		  {
+            "Sentence": "her sister had 6 pieces of candy .",
+            "label": "+",
+            "SyntacticPattern": "NNVCNPN"
           }
         ]
       },
@@ -22747,12 +22857,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If they ate 9 pieces the first night .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCNDAN"
           },
           {
             "Sentence": "how many pieces do they have left ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVV"
           }
         ]
@@ -22780,13 +22890,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A pet store had 15 siamese cats .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
-            "Sentence": "A store had 49 house cats .",
-            "label": "",
-            "SyntacticPattern": "DNVCN"
+            "Sentence": "A pet store had 49 house cats .",
+            "label": "+",
+            "SyntacticPattern": "DANVCN"
           }
         ]
       },
@@ -22795,7 +22905,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During a sale they sold 19 cats .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PDNNVCN"
           }
         ]
@@ -22805,7 +22915,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cats do they have left ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVV"
           }
         ]
@@ -22832,14 +22942,14 @@
         "Sentence": "There were 9 girls and 14 boys trying out for the schools basketball team .",
         "SimplifiedSentences": [
           {
-            "Sentence": "There were 9 girls for the team .",
-            "label": "",
-            "SyntacticPattern": "EVCNPDN"
+            "Sentence": "There were 9 girls trying out for the schools basketball team .",
+            "label": "+",
+            "SyntacticPattern": "EVCNVPDN"
           },
           {
-            "Sentence": "There were girls 14 boys trying out for the schools basketball team .",
-            "label": "",
-            "SyntacticPattern": "EVNCNVPDN"
+            "Sentence": "There were 14 boys trying out for the schools basketball team .",
+            "label": "+",
+            "SyntacticPattern": "EVCNVPDN"
           }
         ]
       },
@@ -22848,8 +22958,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If only 2 of them got called back how many students did n't make the cut ? .",
-            "label": "",
-            "SyntacticPattern": "PCPNVVWANVVDN"
+            "label": "-",
+            "SyntacticPattern": "PCPNVV"
+          },
+		  {
+            "Sentence": "how many students did n't make the cut ? .",
+            "label": "?",
+            "SyntacticPattern": "WANVVDN"
           }
         ]
       }
@@ -22875,13 +22990,13 @@
         "Sentence": "Haley had 27 music files and 42 video files on her flash drive .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Haley had 27 music files on her drive .",
-            "label": "",
+            "Sentence": "Haley had 27 music files on her flash drive .",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           },
           {
             "Sentence": "Haley had 42 video files on her flash drive .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPNN"
           }
         ]
@@ -22891,12 +23006,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If she deleted 11 of the files .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPDN"
           },
           {
             "Sentence": "how many files were still on her flash drive ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPNN"
           }
         ]
@@ -22921,19 +23036,30 @@
     "Sentences": [
       {
         "Sentence": "While shopping , Maria bought 40 green towels and 44 white towels .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "While shopping Maria bought 40 green towels .",
+            "label": "+",
+            "SyntacticPattern": "PVNVCAN"
+          },
+          {
+            "Sentence": "While shopping Maria bought 44 white towels .",
+            "label": "+",
+            "SyntacticPattern": "PVNVCAN"
+          }
+		]
       },
       {
         "Sentence": "If she gave her mother 65 of them , how many towels did Maria end up with ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If she gave her mother 65 of them .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVNNCPN"
           },
           {
             "Sentence": "how many towels did Maria end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -22961,7 +23087,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A waiter at ` The Greasy Spoon ' restaurant had 39 customers to wait on .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNPDNNVCNPVP"
           }
         ]
@@ -22971,7 +23097,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During the lunch rush he added another 12 customers .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PDNNVDCN"
           }
         ]
@@ -22981,12 +23107,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If 49 of the customers did n't leave him a tip .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCPDNVVNDN"
           },
           {
             "Sentence": "how many customers did leave a tip ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVDN"
           }
         ]
@@ -23014,13 +23140,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A pet store had 19 siamese cats .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DANVCN"
           },
           {
-            "Sentence": "A store had 45 house cats .",
-            "label": "",
-            "SyntacticPattern": "DNVCN"
+            "Sentence": "A pet store had 45 house cats .",
+            "label": "+",
+            "SyntacticPattern": "DANVCN"
           }
         ]
       },
@@ -23029,7 +23155,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During a sale they sold 56 cats .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PDNNVCN"
           }
         ]
@@ -23039,7 +23165,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cats do they have left ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVV"
           }
         ]
@@ -23067,7 +23193,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "A waiter at ` The Greasy Spoon ' restaurant had 26 customers to wait on .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNPDNNVCNPVP"
           }
         ]
@@ -23077,7 +23203,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "During the lunch rush he added another 27 customers .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PDNNVDCN"
           }
         ]
@@ -23087,12 +23213,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If 27 of the customers did n't leave him a tip .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCPDNVVNDN"
           },
           {
             "Sentence": "how many customers did leave a tip ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVDN"
           }
         ]
@@ -23120,21 +23246,32 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Rachel bought two coloring books .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVCVN"
           }
         ]
       },
       {
-        "Sentence": "One pictures had 24 pictures and the other had 39 pictures .",
-        "SimplifiedSentences": []
+        "Sentence": "One had 24 pictures and the other had 39 pictures .",
+        "SimplifiedSentences": [
+		 {
+            "Sentence": "One coloring book had 24 pictures .",
+            "label": "+",
+            "SyntacticPattern": "NNVCN"
+          },
+		  {
+            "Sentence": "The other coloring book had 39 pictures .",
+            "label": "+",
+            "SyntacticPattern": "DNVCN"
+          }
+		]
       },
       {
         "Sentence": "After one week she had already colored 4 of the pictures .",
         "SimplifiedSentences": [
           {
             "Sentence": "After one week she had already colored 4 of the pictures .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCNNVVCPDN"
           }
         ]
@@ -23144,7 +23281,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pictures does she still have to color ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPV"
           }
         ]
@@ -23169,19 +23306,30 @@
     "Sentences": [
       {
         "Sentence": "While shopping , Emily bought 5 green towels and 30 white towels .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "While shopping Emily bought 5 green towels .",
+            "label": "+",
+            "SyntacticPattern": "PVNVCAN"
+          },
+          {
+            "Sentence": "While shopping Emily bought 30 white towels .",
+            "label": "+",
+            "SyntacticPattern": "PVNVCAN"
+          }
+		]
       },
       {
         "Sentence": "If she gave her mother 26 of them , how many towels did Emily end up with ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If she gave her mother 26 of them .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVNNCPN"
           },
           {
             "Sentence": "how many towels did Emily end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -23206,15 +23354,26 @@
     "Sentences": [
       {
         "Sentence": "For Halloween Katie and her sister combined the candy they received .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "For Halloween Katie and her sister combined the candy they received .",
+            "label": "i",
+            "SyntacticPattern": "PNNCNVDNDV"
+          }
+		]
       },
       {
         "Sentence": "Katie had 8 pieces of candy while her sister had 23 pieces .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Katie had 8 pieces of candy while her sister had 23 pieces .",
-            "label": "",
-            "SyntacticPattern": "NVCNPNPNNVCN"
+            "Sentence": "Katie had 8 pieces of candy .",
+            "label": "+",
+            "SyntacticPattern": "NVCNPN"
+          },
+		  {
+            "Sentence": "her sister had 23 pieces of candy .",
+            "label": "+",
+            "SyntacticPattern": "NNVCNPN"
           }
         ]
       },
@@ -23223,12 +23382,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If they ate 8 pieces the first night .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCNDAN"
           },
           {
             "Sentence": "how many pieces do they have left ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVV"
           }
         ]
@@ -23256,7 +23415,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Ned was trying to expand his game collection .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "NVVPVNN"
           }
         ]
@@ -23266,13 +23425,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He bought 50 games from a friend .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           },
           {
-            "Sentence": "He bought 27 more at a garage sale .",
-            "label": "",
-            "SyntacticPattern": "NVCAPDN"
+            "Sentence": "He bought 27 more games at a garage sale .",
+            "label": "+",
+            "SyntacticPattern": "NVCANPDN"
           }
         ]
       },
@@ -23281,12 +23440,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If 74 of the games did n't work .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCPDNVV"
           },
           {
             "Sentence": "how many good games did he end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNVP"
           }
         ]
@@ -23314,7 +23473,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "For the school bake sale Wendy made pastries .",
-            "label": "",
+            "label": "i",
             "SyntacticPattern": "PDNVN"
           }
         ]
@@ -23324,13 +23483,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She baked 41 cupcakes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NACN"
           },
           {
-            "Sentence": "She 31 cookies .",
-            "label": "",
-            "SyntacticPattern": "NCN"
+            "Sentence": "She baked 31 cookies .",
+            "label": "+",
+            "SyntacticPattern": "NACN"
           }
         ]
       },
@@ -23339,7 +23498,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "After the sale she had 32 home to take back home .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PDNNVCNPVN"
           }
         ]
@@ -23349,7 +23508,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pastries did she sell ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -23377,12 +23536,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "The school cafeteria ordered 25 red apples for students lunches .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           },
           {
-            "Sentence": "The cafeteria ordered 17 green apples for students lunches .",
-            "label": "",
+            "Sentence": "The school cafeteria ordered 17 green apples for students lunches .",
+            "label": "+",
             "SyntacticPattern": "DNVCANPNN"
           }
         ]
@@ -23392,12 +23551,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "if only 10 students wanted fruit .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PCNVN"
           },
           {
             "Sentence": "how many extra did the cafeteria end up with ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAAVDNVP"
           }
         ]
@@ -23422,19 +23581,30 @@
     "Sentences": [
       {
         "Sentence": "At the arcade , Jerry won 29 tickets playing ` whack a mole ' and 17 tickets playing ` skee ball ' .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		 {
+            "Sentence": "At the arcade Jerry won 29 tickets playing ' whack a mole ' .",
+            "label": "+",
+            "SyntacticPattern": "PDNNVCNVN"
+          },
+		  {
+            "Sentence": "At the arcade Jerry won 17 tickets playing ' skee ball ' .",
+            "label": "+",
+            "SyntacticPattern": "PDNNVCNVN"
+          }
+		]
       },
       {
         "Sentence": "If he spent 12 of his tickets on a hat , how many tickets does Jerry have left ?",
         "SimplifiedSentences": [
           {
             "Sentence": "If he spent 12 of his tickets on a hat .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNVCPNNPDN"
           },
           {
             "Sentence": "how many tickets does Jerry have left ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVV"
           }
         ]
@@ -23462,21 +23632,32 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Cody had 45 dollars .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
         "Sentence": "For his birthday he got 9 more dollars but spent 19 dollars on a new game .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		  {
+            "Sentence": "For his birthday he got 9 more dollars .",
+            "label": "+",
+            "SyntacticPattern": "PNNNVCN"
+          },
+		  {
+            "Sentence": "he spent 19 dollars on a new game .",
+            "label": "-",
+            "SyntacticPattern": "NVCNPDN"
+          }
+		]
       },
       {
         "Sentence": "How much money does he have now ?",
         "SimplifiedSentences": [
           {
             "Sentence": "How much money does he have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -23504,7 +23685,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "For the school bake sale Carol made 30 cupcakes .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PDNVNVCN"
           }
         ]
@@ -23512,9 +23693,19 @@
       {
         "Sentence": "If she sold 9 of them and then made 28 more , how many cupcakes would she have ?",
         "SimplifiedSentences": [
+		  {
+            "Sentence": "If she sold 9 of them .",
+            "label": "-",
+            "SyntacticPattern": "PNVCPN"
+          },
+		   {
+            "Sentence": "then she made 28 more of them .",
+            "label": "+",
+            "SyntacticPattern": "NVCAPN"
+          },
           {
             "Sentence": "how many cupcakes would she have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -23542,7 +23733,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "For Halloween Faye scored 47 pieces of candy .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNVCNPN"
           }
         ]
@@ -23552,12 +23743,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She ate 25 pieces the first night .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNDAN"
           },
           {
             "Sentence": "then her sister gave her 40 more pieces .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVNCAN"
           }
         ]
@@ -23567,7 +23758,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many pieces of candy does Faye have now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPNVNV"
           }
         ]
@@ -23595,7 +23786,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kaleb had 34 books .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -23603,9 +23794,19 @@
       {
         "Sentence": "If he sold 17 of them and used the money he earned to buy 7 new books , how many books would Kaleb have ?",
         "SimplifiedSentences": [
+		  {
+            "Sentence": "If he sold 17 of them .",
+            "label": "-",
+            "SyntacticPattern": "PNVCPN"
+          },
+		  {
+            "Sentence": "he used the money he earned to buy 7 new books .",
+            "label": "+",
+            "SyntacticPattern": "NVDNNVVCAN"
+          },
           {
             "Sentence": "how many books would Kaleb have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -23633,21 +23834,32 @@
         "SimplifiedSentences": [
           {
             "Sentence": "In fourth grade there were 10 students at the start of the year .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PANEVCNPDNPDN"
           }
         ]
       },
       {
         "Sentence": "During the year 4 students left and 42 new students came to school .",
-        "SimplifiedSentences": []
+        "SimplifiedSentences": [
+		 {
+            "Sentence": "During the year 4 students left school .",
+            "label": "-",
+            "SyntacticPattern": "PDNCNVN"
+          },
+		   {
+            "Sentence": "During the year 42 new students came to school .",
+            "label": "+",
+            "SyntacticPattern": "PDNCANVN"
+          }
+		]
       },
       {
         "Sentence": "How many students were in fourth grade at the end ?",
         "SimplifiedSentences": [
           {
             "Sentence": "How many students were in fourth grade at the end ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPANPDN"
           }
         ]
@@ -23675,7 +23887,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Oliver had 33 dollars in January .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -23685,7 +23897,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "By March he had spent 4 dollars .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "PNNVVCN"
           }
         ]
@@ -23695,12 +23907,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "If he got another 32 dollars from his mom .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "PNVDCNPNN"
           },
           {
             "Sentence": "how much money would he have ? .",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
