@@ -47091,7 +47091,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Heather starts with 86 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -47101,7 +47101,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She shares 41 blocks with Jose .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -47111,7 +47111,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blocks does Heather end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -47138,7 +47138,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Ralph starts with 74 peanuts .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -47148,7 +47148,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He loses 59 peanuts .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47158,7 +47158,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many peanuts does Ralph end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -47185,7 +47185,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jack starts with 62 marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -47195,7 +47195,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He shares 33 marbles with Rebecca .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -47205,7 +47205,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many marbles does Jack end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -47232,7 +47232,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Clarence has 99 tickets .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47242,7 +47242,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He gives 7 tickets to Eugene .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -47252,7 +47252,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many tickets will Clarence have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -47279,7 +47279,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sean has 55 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47289,7 +47289,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "29 blocks are eaten by a hippopotamus .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -47299,7 +47299,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blocks will Sean have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -47326,7 +47326,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Tina has 82 bananas .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47336,7 +47336,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She gets 3 more from Joyce .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAPN"
           }
         ]
@@ -47346,7 +47346,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bananas does Tina have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -47373,7 +47373,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Janet has 3 stickers .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47383,7 +47383,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She gets 53 more from Ruth .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCAPN"
           }
         ]
@@ -47393,7 +47393,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many stickers does Janet have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -47420,7 +47420,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jennifer starts with 7 apples .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -47430,7 +47430,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She finds another 74 apples .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDCN"
           }
         ]
@@ -47440,7 +47440,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many apples does Jennifer end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -47467,7 +47467,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Heather has 60 oranges .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47477,7 +47477,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Russell takes 35 oranges away .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47487,7 +47487,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oranges will Heather have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -47514,7 +47514,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Helen starts with 9 oranges .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -47523,9 +47523,9 @@
         "Sentence": "She gets 29 more from Ann .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She gets 29 more from Ann .",
-            "label": "",
-            "SyntacticPattern": "NVCAPN"
+            "Sentence": "She gets 29 more oranges from Ann .",
+            "label": "+",
+            "SyntacticPattern": "NVCANPN"
           }
         ]
       },
@@ -47534,7 +47534,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oranges does Helen end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -47561,7 +47561,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "William has 2 bottle caps .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47570,9 +47570,9 @@
         "Sentence": "He buys 41 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He buys 41 more .",
-            "label": "",
-            "SyntacticPattern": "NVCA"
+            "Sentence": "He buys 41 more bottle caps .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           }
         ]
       },
@@ -47581,7 +47581,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bottle caps does William have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -47608,7 +47608,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Dorothy has 72 cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47618,7 +47618,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She gives 5 cards to Harold .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -47628,7 +47628,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cards will Dorothy have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -47655,7 +47655,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sara has 10 marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47665,7 +47665,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She loses 7 marbles .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47675,7 +47675,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many marbles will Sara have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -47702,7 +47702,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jennifer has 72 cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47712,7 +47712,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "61 cards are eaten by a hippopotamus .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -47722,7 +47722,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cards will Jennifer have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -47749,7 +47749,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Wanda has 4 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47758,9 +47758,9 @@
         "Sentence": "Theresa gives Wanda 79 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Theresa gives Wanda 79 more .",
-            "label": "",
-            "SyntacticPattern": "NVNCA"
+            "Sentence": "Theresa gives Wanda 79 more blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVNCAN"
           }
         ]
       },
@@ -47769,7 +47769,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blocks does Wanda have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -47796,7 +47796,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "William has 10 marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47806,7 +47806,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "He shares 3 marbles with Theresa .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -47816,7 +47816,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many marbles will William have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -47843,7 +47843,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Larry starts with 91 cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -47853,7 +47853,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "17 cards are eaten by a hippopotamus .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -47863,7 +47863,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cards does Larry end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -47890,7 +47890,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sarah has 26 bottle caps .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47899,9 +47899,9 @@
         "Sentence": "She buys 3 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She buys 3 more .",
-            "label": "",
-            "SyntacticPattern": "NVCA"
+            "Sentence": "She buys 3 more bottle caps .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           }
         ]
       },
@@ -47910,7 +47910,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bottle caps does Sarah have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -47937,7 +47937,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Marilyn starts with 51 bottle caps .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -47947,7 +47947,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She shares 36 caps with Nancy .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -47957,7 +47957,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bottle caps does Marilyn end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -47984,7 +47984,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "William has 2 bottle caps .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -47993,9 +47993,9 @@
         "Sentence": "He buys 41 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He buys 41 more .",
-            "label": "",
-            "SyntacticPattern": "NVCA"
+            "Sentence": "He buys 41 more bottle caps .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           }
         ]
       },
@@ -48004,7 +48004,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bottle caps does William have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -48031,7 +48031,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Carol starts with 42 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCN"
           }
         ]
@@ -48041,7 +48041,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She loses 25 blocks .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48051,7 +48051,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blocks does Carol end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -48078,7 +48078,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Lillian collects 88 candies .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48087,9 +48087,9 @@
         "Sentence": "Lillian 's father gives Lillian 5 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Lillian 's father gives Lillian 5 more .",
-            "label": "",
-            "SyntacticPattern": "NNVNCA"
+            "Sentence": "Lillian 's father gives Lillian 5 more candies .",
+            "label": "+",
+            "SyntacticPattern": "NNVNCAN"
           }
         ]
       },
@@ -48098,7 +48098,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many candies does Lillian have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -48125,7 +48125,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "William has 2 bottle caps .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48134,9 +48134,9 @@
         "Sentence": "He buys 41 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He buys 41 more .",
-            "label": "",
-            "SyntacticPattern": "NVCA"
+            "Sentence": "He buys 41 more bottle caps .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           }
         ]
       },
@@ -48145,7 +48145,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bottle caps does William have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -48172,18 +48172,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 8 apples in a pile on the desk .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDNPDN"
           }
         ]
       },
       {
-        "Sentence": "Each apple comes in a package of 11 package .",
+        "Sentence": "Each apple comes in a package of 11 .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Each apple comes in a package of 11 package .",
-            "label": "",
-            "SyntacticPattern": "DNVPDNPCN"
+            "Sentence": "Each apple comes in a package of 11 .",
+            "label": "i",
+            "SyntacticPattern": "DNVPDNPC"
           }
         ]
       },
@@ -48192,7 +48192,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "5 apples are added to the pile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -48202,7 +48202,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many apples are there in the pile ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVEPDN"
           }
         ]
@@ -48229,7 +48229,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Sean has 9 apples .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48239,7 +48239,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Susan gives Sean 8 apples more .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48249,7 +48249,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later Sean buys 18 tickets at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -48259,7 +48259,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many apples does Sean have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -48286,18 +48286,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 2 bananas in a pile on the desk .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDNPDN"
           }
         ]
       },
       {
-        "Sentence": "Each banana comes in a package of 17 package .",
+        "Sentence": "Each banana comes in a package of 17 .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Each banana comes in a package of 17 package .",
-            "label": "",
-            "SyntacticPattern": "DNVPDNPCN"
+            "Sentence": "Each banana comes in a package of 17 .",
+            "label": "i",
+            "SyntacticPattern": "DNVPDNPC"
           }
         ]
       },
@@ -48306,7 +48306,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "7 bananas are added to the pile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -48316,7 +48316,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bananas are there in the pile ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVEPDN"
           }
         ]
@@ -48343,18 +48343,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 6 candies in a pile on the desk .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDNPDN"
           }
         ]
       },
       {
-        "Sentence": "Each candy comes in a package of 15 package .",
+        "Sentence": "Each candy comes in a package of 15 .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Each candy comes in a package of 15 package .",
-            "label": "",
-            "SyntacticPattern": "DNVPDNPCN"
+            "Sentence": "Each candy comes in a package of 15 .",
+            "label": "i",
+            "SyntacticPattern": "DNVPDNPC"
           }
         ]
       },
@@ -48363,7 +48363,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "4 candies are added to the pile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -48373,7 +48373,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many candies are there in the pile ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVEPDN"
           }
         ]
@@ -48400,7 +48400,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kimberly has 5 Skittles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48409,9 +48409,9 @@
         "Sentence": "She buys 7 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She buys 7 more .",
-            "label": "",
-            "SyntacticPattern": "NVCA"
+            "Sentence": "She buys 7 more Skittles .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           }
         ]
       },
@@ -48420,7 +48420,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later Kimberly buys 18 oranges at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -48430,7 +48430,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many Skittles does Kimberly have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -48457,7 +48457,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Clarence has 5 oranges .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48466,9 +48466,9 @@
         "Sentence": "He gets 3 more from Joyce .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He gets 3 more from Joyce .",
-            "label": "",
-            "SyntacticPattern": "NVCAPN"
+            "Sentence": "He gets 3 more oranges from Joyce .",
+            "label": "+",
+            "SyntacticPattern": "NVCANPN"
           }
         ]
       },
@@ -48477,7 +48477,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later Clarence buys 9 Skittles at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -48487,7 +48487,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oranges does Clarence have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -48514,18 +48514,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 2 apples in a pile on the desk .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDNPDN"
           }
         ]
       },
       {
-        "Sentence": "Each apple comes in a package of 7 package .",
+        "Sentence": "Each apple comes in a package of 7 .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Each apple comes in a package of 7 package .",
-            "label": "",
-            "SyntacticPattern": "DNVPDNPCN"
+            "Sentence": "Each apple comes in a package of 7 .",
+            "label": "i",
+            "SyntacticPattern": "DNVPDNPC"
           }
         ]
       },
@@ -48534,7 +48534,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "4 apples are added to the pile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -48544,7 +48544,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many apples are there in the pile ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVEPDN"
           }
         ]
@@ -48571,7 +48571,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kimberly has 5 Skittles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48580,9 +48580,9 @@
         "Sentence": "She buys 7 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She buys 7 more .",
-            "label": "",
-            "SyntacticPattern": "NVCA"
+            "Sentence": "She buys 7 more Skittles .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           }
         ]
       },
@@ -48591,7 +48591,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later Kimberly buys 18 oranges at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -48601,7 +48601,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many Skittles does Kimberly have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -48628,7 +48628,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Annie has 6 apples .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48637,9 +48637,9 @@
         "Sentence": "She gets 6 more from Nathan .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She gets 6 more from Nathan .",
-            "label": "",
-            "SyntacticPattern": "NVCAPN"
+            "Sentence": "She gets 6 more apples from Nathan .",
+            "label": "+",
+            "SyntacticPattern": "NVCANPN"
           }
         ]
       },
@@ -48648,7 +48648,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later Annie buys 10 crayons at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -48658,7 +48658,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many apples does Annie have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -48685,7 +48685,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Joyce has 8 eggs .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48694,9 +48694,9 @@
         "Sentence": "Marie gives Joyce 6 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Marie gives Joyce 6 more .",
-            "label": "",
-            "SyntacticPattern": "NVNCA"
+            "Sentence": "Marie gives Joyce 6 more eggs .",
+            "label": "+",
+            "SyntacticPattern": "NVNCAN"
           }
         ]
       },
@@ -48705,7 +48705,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later Joyce buys 13 erasers at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -48715,7 +48715,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many eggs does Joyce have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -48742,18 +48742,18 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 2 bananas in a pile on the desk .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDNPDN"
           }
         ]
       },
       {
-        "Sentence": "Each banana comes in a package of 13 package .",
+        "Sentence": "Each banana comes in a package of 13  .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Each banana comes in a package of 13 package .",
-            "label": "",
-            "SyntacticPattern": "DNVPDNPCN"
+            "Sentence": "Each banana comes in a package of 13 .",
+            "label": "i",
+            "SyntacticPattern": "DNVPDNPC"
           }
         ]
       },
@@ -48762,7 +48762,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "7 bananas are added to the pile .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -48772,7 +48772,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bananas are there in the pile ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVEPDN"
           }
         ]
@@ -48799,7 +48799,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kenneth has 3 marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48808,9 +48808,9 @@
         "Sentence": "He buys 6 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He buys 6 more .",
-            "label": "",
-            "SyntacticPattern": "NVCA"
+            "Sentence": "He buys 6 more marbles .",
+            "label": "+",
+            "SyntacticPattern": "NVCAN"
           }
         ]
       },
@@ -48819,7 +48819,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later Kenneth buys 15 apples at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -48829,7 +48829,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many marbles does Kenneth have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -48849,25 +48849,25 @@
     "lSolutions": [
       67
     ],
-    "sQuestion": "Arthur has 6 cards. Aaron has with 5 cards. Aaron finds another 62. How many cards does Aaron end with?",
+    "sQuestion": "Arthur has 6 cards. Aaron has 5 cards. Aaron finds another 62. How many cards does Aaron end with?",
     "Sentences": [
       {
         "Sentence": "Arthur has 6 cards .",
         "SimplifiedSentences": [
           {
             "Sentence": "Arthur has 6 cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
-        "Sentence": "Aaron has with 5 cards .",
+        "Sentence": "Aaron has 5 cards .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Aaron has with 5 cards .",
-            "label": "",
-            "SyntacticPattern": "NVPCN"
+            "Sentence": "Aaron has 5 cards .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
           }
         ]
       },
@@ -48876,7 +48876,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Aaron finds another 62 cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDCN"
           }
         ]
@@ -48886,7 +48886,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cards does Aaron end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -48906,25 +48906,25 @@
     "lSolutions": [
       81
     ],
-    "sQuestion": "Scott has 4 tickets. Ernest has with 9 tickets. Ernest finds another 72. How many tickets does Ernest end with?",
+    "sQuestion": "Scott has 4 tickets. Ernest has 9 tickets. Ernest finds another 72. How many tickets does Ernest end with?",
     "Sentences": [
       {
         "Sentence": "Scott has 4 tickets .",
         "SimplifiedSentences": [
           {
             "Sentence": "Scott has 4 tickets .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
-        "Sentence": "Ernest has with 9 tickets .",
+        "Sentence": "Ernest has 9 tickets .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Ernest has with 9 tickets .",
-            "label": "",
-            "SyntacticPattern": "NVPCN"
+            "Sentence": "Ernest has 9 tickets .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
           }
         ]
       },
@@ -48933,7 +48933,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Ernest finds another 72 tickets .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDCN"
           }
         ]
@@ -48943,7 +48943,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many tickets does Ernest end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -48970,7 +48970,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Diane has 37 crayons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -48979,9 +48979,9 @@
         "Sentence": "She gets 5 more from Frances .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She gets 5 more from Frances .",
-            "label": "",
-            "SyntacticPattern": "NVCAPN"
+            "Sentence": "She gets 5 more crayons from Frances .",
+            "label": "+",
+            "SyntacticPattern": "NVCANPN"
           }
         ]
       },
@@ -48990,7 +48990,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later Diane buys 16 cards at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -49000,7 +49000,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many crayons does Diane have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -49020,25 +49020,25 @@
     "lSolutions": [
       53
     ],
-    "sQuestion": "Adam has 13 blocks. Ann has with 9 blocks. Ann finds another 44. How many blocks does Ann end with?",
+    "sQuestion": "Adam has 13 blocks. Ann has 9 blocks. Ann finds another 44. How many blocks does Ann end with?",
     "Sentences": [
       {
         "Sentence": "Adam has 13 blocks .",
         "SimplifiedSentences": [
           {
             "Sentence": "Adam has 13 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
-        "Sentence": "Ann has with 9 blocks .",
+        "Sentence": "Ann has 9 blocks .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Ann has with 9 blocks .",
-            "label": "",
-            "SyntacticPattern": "NVPCN"
+            "Sentence": "Ann has 9 blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
           }
         ]
       },
@@ -49047,7 +49047,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Ann finds another 44 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDCN"
           }
         ]
@@ -49057,7 +49057,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blocks does Ann end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -49077,25 +49077,25 @@
     "lSolutions": [
       84
     ],
-    "sQuestion": "Ronald has 13 blocks. Martha has with 4 blocks. Martha finds another 80. How many blocks does Martha end with?",
+    "sQuestion": "Ronald has 13 blocks. Martha has 4 blocks. Martha finds another 80. How many blocks does Martha end with?",
     "Sentences": [
       {
         "Sentence": "Ronald has 13 blocks .",
         "SimplifiedSentences": [
           {
             "Sentence": "Ronald has 13 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
-        "Sentence": "Martha has with 4 blocks .",
+        "Sentence": "Martha has 4 blocks .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Martha has with 4 blocks .",
-            "label": "",
-            "SyntacticPattern": "NVPCN"
+            "Sentence": "Martha has 4 blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
           }
         ]
       },
@@ -49104,7 +49104,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Martha finds another 80 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDCN"
           }
         ]
@@ -49114,7 +49114,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blocks does Martha end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -49134,25 +49134,25 @@
     "lSolutions": [
       15
     ],
-    "sQuestion": "Albert has 9 bottle caps. Anne has with 10 bottle caps. Anne finds another 5. How many bottle caps does Anne end with?",
+    "sQuestion": "Albert has 9 bottle caps. Anne has 10 bottle caps. Anne finds another 5. How many bottle caps does Anne end with?",
     "Sentences": [
       {
         "Sentence": "Albert has 9 bottle caps .",
         "SimplifiedSentences": [
           {
             "Sentence": "Albert has 9 bottle caps .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
-        "Sentence": "Anne has with 10 bottle caps .",
+        "Sentence": "Anne has 10 bottle caps .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Anne has with 10 bottle caps .",
-            "label": "",
-            "SyntacticPattern": "NVPCN"
+            "Sentence": "Anne has 10 bottle caps .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
           }
         ]
       },
@@ -49161,7 +49161,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Anne finds another 5 caps .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDCN"
           }
         ]
@@ -49171,7 +49171,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bottle caps does Anne end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVNP"
           }
         ]
@@ -49198,7 +49198,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Evelyn has 95 marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49207,9 +49207,9 @@
         "Sentence": "She gets 9 more from Henry .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She gets 9 more from Henry .",
-            "label": "",
-            "SyntacticPattern": "NVCAPN"
+            "Sentence": "She gets 9 more marbles from Henry .",
+            "label": "+",
+            "SyntacticPattern": "NVCANPN"
           }
         ]
       },
@@ -49218,7 +49218,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later Evelyn buys 6 cards at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -49228,7 +49228,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many marbles does Evelyn have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -49255,7 +49255,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "David has 8 bananas .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49264,9 +49264,9 @@
         "Sentence": "He gets 50 more from Christopher .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He gets 50 more from Christopher .",
-            "label": "",
-            "SyntacticPattern": "NVCAPN"
+            "Sentence": "He gets 50 more bananas from Christopher .",
+            "label": "+",
+            "SyntacticPattern": "NVCANPN"
           }
         ]
       },
@@ -49275,7 +49275,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Later David buys 9 cards at the store .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -49285,7 +49285,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bananas does David have in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVPD"
           }
         ]
@@ -49312,7 +49312,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Emily collects 63 cards .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49321,9 +49321,9 @@
         "Sentence": "Emily 's father gives Emily 7 more .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Emily 's father gives Emily 7 more .",
-            "label": "",
-            "SyntacticPattern": "NNVNCA"
+            "Sentence": "Emily 's father gives Emily 7 more cards .",
+            "label": "+",
+            "SyntacticPattern": "NNVNCAN"
           }
         ]
       },
@@ -49332,7 +49332,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Bruce has 13 apples .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49342,7 +49342,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many cards does Emily have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNV"
           }
         ]
@@ -49369,13 +49369,13 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Carolyn starts with 47 marbles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVPCN"
           },
           {
-            "Sentence": "Carolyn starts 6 oranges .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
+            "Sentence": "Carolyn starts with 6 oranges .",
+            "label": "+",
+            "SyntacticPattern": "NVPCN"
           }
         ]
       },
@@ -49384,7 +49384,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "She shares 42 oranges with Diana .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -49394,7 +49394,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many marbles does Carolyn end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -49421,7 +49421,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Willie has 48 bananas .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49431,7 +49431,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Charles has 14 bananas .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49440,8 +49440,8 @@
         "Sentence": "He loses 35 bananas .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He loses 35 bananas .",
-            "label": "",
+            "Sentence": "Willie loses 35 bananas .",
+            "label": "-",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49451,7 +49451,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many bananas will Willie have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -49478,7 +49478,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 55 oranges in a box .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -49488,7 +49488,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Deborah has 11 oranges in a bag .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -49498,7 +49498,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Susan takes 35 oranges out of the box .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPPDN"
           }
         ]
@@ -49508,7 +49508,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many oranges are left in the box ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPDN"
           }
         ]
@@ -49535,7 +49535,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 77 apples in a box .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -49545,7 +49545,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Louise has 9 apples in a bag .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -49555,7 +49555,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Scott takes 75 apples out of the box .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPPDN"
           }
         ]
@@ -49565,7 +49565,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many apples are left in the box ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPDN"
           }
         ]
@@ -49592,7 +49592,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Bruce has 75 eggs .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49602,7 +49602,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Kimberly has 17 eggs .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49611,8 +49611,8 @@
         "Sentence": "He loses 70 eggs .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He loses 70 eggs .",
-            "label": "",
+            "Sentence": "Bruce loses 70 eggs .",
+            "label": "-",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49622,7 +49622,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many eggs will Bruce have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -49649,7 +49649,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 69 erasers in a box .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -49659,7 +49659,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Jane has 15 erasers in a bag .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -49669,7 +49669,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Doris takes 54 erasers out of the box .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPPDN"
           }
         ]
@@ -49679,7 +49679,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many erasers are left in the box ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPDN"
           }
         ]
@@ -49706,7 +49706,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 97 erasers in a box .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -49716,7 +49716,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Ernest has 17 erasers in a bag .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -49726,7 +49726,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mark takes 97 erasers out of the box .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPPDN"
           }
         ]
@@ -49736,7 +49736,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many erasers are left in the box ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPDN"
           }
         ]
@@ -49763,7 +49763,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 88 candies in a box .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCNPDN"
           }
         ]
@@ -49773,7 +49773,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Lisa has 18 candies in a bag .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCNPDN"
           }
         ]
@@ -49783,7 +49783,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Diana takes 6 candies out of the box .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "NVCNPPDN"
           }
         ]
@@ -49793,7 +49793,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many candies are left in the box ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPDN"
           }
         ]
@@ -49820,7 +49820,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Brandon has 96 Skittles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49830,7 +49830,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Bonnie has 4 Skittles .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49839,8 +49839,8 @@
         "Sentence": "He loses 9 Skittles .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He loses 9 Skittles .",
-            "label": "",
+            "Sentence": "Brandon loses 9 Skittles .",
+            "label": "-",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49850,7 +49850,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many Skittles will Brandon have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -49877,7 +49877,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Theresa has 32 crayons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49887,7 +49887,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Janice has 12 crayons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49896,8 +49896,8 @@
         "Sentence": "She shares 13 crayons with Nancy .",
         "SimplifiedSentences": [
           {
-            "Sentence": "She shares 13 crayons with Nancy .",
-            "label": "",
+            "Sentence": "Theresa shares 13 crayons with Nancy .",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -49907,7 +49907,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many crayons will Theresa have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -49934,7 +49934,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Craig has 20 apples .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49944,7 +49944,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Judy has 11 apples .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -49953,8 +49953,8 @@
         "Sentence": "He shares 7 apples with Eugene .",
         "SimplifiedSentences": [
           {
-            "Sentence": "He shares 7 apples with Eugene .",
-            "label": "",
+            "Sentence": "Craig shares 7 apples with Eugene .",
+            "label": "-",
             "SyntacticPattern": "NVCNPN"
           }
         ]
@@ -49964,7 +49964,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many apples will Craig have ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANNV"
           }
         ]
@@ -49991,7 +49991,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Heather weighs 87 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -50001,7 +50001,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Emily weighs 9 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -50011,7 +50011,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Elizabeth weighs 8 pounds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
@@ -50021,7 +50021,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much heavier is Heather than Emily ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAAVNPN"
           }
         ]
@@ -50030,46 +50030,56 @@
   },
   {
     "ParentIndex": 1057,
-    "iIndex": 835,
+    "iIndex": 755,
     "lAlignments": [
-      22,
-      9
+      15,
+      39
     ],
     "lEquations": [
-      "X=(12.0-9.0)"
+      "X=(87.0-9.0)"
     ],
     "lSolutions": [
-      3
+      78
     ],
-    "sQuestion": "Rose has 9 apples and 12 erasers. If she shares the apples among 3 friends, how many apples does each friend get?",
+    "sQuestion": "Heather weighs 87 pounds. Emily weighs 9 pounds. Elizabeth weighs 8 pounds. How much heavier is Heather than Emily?",
     "Sentences": [
       {
-        "Sentence": "Rose has 9 apples and 12 erasers .",
+        "Sentence": "Heather weighs 87 pounds .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Rose has 9 apples .",
-            "label": "",
-            "SyntacticPattern": "NVCN"
-          },
-          {
-            "Sentence": "Rose has 12 erasers .",
-            "label": "",
+            "Sentence": "Heather weighs 87 pounds .",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
-        "Sentence": "If she shares the apples among 3 friends , how many apples does each friend get ?",
+        "Sentence": "Emily weighs 9 pounds .",
         "SimplifiedSentences": [
           {
-            "Sentence": "If she shares the apples among 3 friends .",
-            "label": "",
-            "SyntacticPattern": "PNVDNPCN"
-          },
+            "Sentence": "Emily weighs 9 pounds .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
+          }
+        ]
+      },
+      {
+        "Sentence": "Elizabeth weighs 8 pounds .",
+        "SimplifiedSentences": [
           {
-            "Sentence": "how many apples does each friend get ? .",
-            "label": "",
-            "SyntacticPattern": "WANVDNV"
+            "Sentence": "Elizabeth weighs 8 pounds .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
+          }
+        ]
+      },
+      {
+        "Sentence": "How much heavier is Heather than Emily ?",
+        "SimplifiedSentences": [
+          {
+            "Sentence": "How much heavier is Heather than Emily ?",
+            "label": "?",
+            "SyntacticPattern": "WAAVNPN"
           }
         ]
       }
@@ -50088,25 +50098,25 @@
     "lSolutions": [
       86
     ],
-    "sQuestion": "Shawn has 13 blocks. Mildred has with 2 blocks. Mildred finds another 84. How many blocks does Mildred end with?",
+    "sQuestion": "Shawn has 13 blocks. Mildred has 2 blocks. Mildred finds another 84. How many blocks does Mildred end with?",
     "Sentences": [
       {
         "Sentence": "Shawn has 13 blocks .",
         "SimplifiedSentences": [
           {
             "Sentence": "Shawn has 13 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
-        "Sentence": "Mildred has with 2 blocks .",
+        "Sentence": "Mildred has 2 blocks .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Mildred has with 2 blocks .",
-            "label": "",
-            "SyntacticPattern": "NVPCN"
+            "Sentence": "Mildred has 2 blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
           }
         ]
       },
@@ -50115,7 +50125,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mildred finds another 84 blocks .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDCN"
           }
         ]
@@ -50125,7 +50135,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many blocks does Mildred end with ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVNVP"
           }
         ]
@@ -50134,36 +50144,56 @@
   },
   {
     "ParentIndex": 1059,
-    "iIndex": 1066,
+    "iIndex": 969,
     "lAlignments": [
-      14,
-      30
+      38,
+      70
     ],
     "lEquations": [
-      "X=(4.0-2.0)"
+      "X=(2.0+84.0)"
     ],
     "lSolutions": [
-      2
+      86
     ],
-    "sQuestion": "Jose wandered 4 kilometers at 2 kilometers per hour. How long did Jose wander?",
+    "sQuestion": "Shawn has 13 blocks. Mildred has 2 blocks. Mildred finds another 84. How many blocks does Mildred end with?",
     "Sentences": [
       {
-        "Sentence": "Jose wandered 4 kilometers at 2 kilometers per hour .",
+        "Sentence": "Shawn has 13 blocks .",
         "SimplifiedSentences": [
           {
-            "Sentence": "Jose wandered 4 kilometers at 2 kilometers per hour .",
-            "label": "",
-            "SyntacticPattern": "NVCNPCNPN"
+            "Sentence": "Shawn has 13 blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
           }
         ]
       },
       {
-        "Sentence": "How long did Jose wander ?",
+        "Sentence": "Mildred has 2 blocks .",
         "SimplifiedSentences": [
           {
-            "Sentence": "How long did Jose wander ?",
-            "label": "",
-            "SyntacticPattern": "WVNV"
+            "Sentence": "Mildred has 2 blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
+          }
+        ]
+      },
+      {
+        "Sentence": "Mildred finds another 84 blocks .",
+        "SimplifiedSentences": [
+          {
+            "Sentence": "Mildred finds another 84 blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVDCN"
+          }
+        ]
+      },
+      {
+        "Sentence": "How many blocks does Mildred end with ?",
+        "SimplifiedSentences": [
+          {
+            "Sentence": "How many blocks does Mildred end with ?",
+            "label": "?",
+            "SyntacticPattern": "WANVNVP"
           }
         ]
       }
@@ -50171,31 +50201,56 @@
   },
   {
     "ParentIndex": 1060,
-    "iIndex": 1135,
+   "iIndex": 969,
     "lAlignments": [
-      19,
-      35
+      38,
+      70
     ],
     "lEquations": [
-      "X=(4.0-3.0)"
+      "X=(2.0+84.0)"
     ],
     "lSolutions": [
-      1
+      86
     ],
-    "sQuestion": "If Lawrence walked 4 kilometers at 3 kilometers per hour, how long was Lawrence walking?",
+    "sQuestion": "Shawn has 13 blocks. Mildred has 2 blocks. Mildred finds another 84. How many blocks does Mildred end with?",
     "Sentences": [
       {
-        "Sentence": "If Lawrence walked 4 kilometers at 3 kilometers per hour , how long was Lawrence walking ?",
+        "Sentence": "Shawn has 13 blocks .",
         "SimplifiedSentences": [
           {
-            "Sentence": "If Lawrence walked 4 kilometers at 3 kilometers per hour .",
-            "label": "",
-            "SyntacticPattern": "PNVCNPCNPN"
-          },
+            "Sentence": "Shawn has 13 blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
+          }
+        ]
+      },
+      {
+        "Sentence": "Mildred has 2 blocks .",
+        "SimplifiedSentences": [
           {
-            "Sentence": "how long was Lawrence walking ? .",
-            "label": "",
-            "SyntacticPattern": "WVNV"
+            "Sentence": "Mildred has 2 blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVCN"
+          }
+        ]
+      },
+      {
+        "Sentence": "Mildred finds another 84 blocks .",
+        "SimplifiedSentences": [
+          {
+            "Sentence": "Mildred finds another 84 blocks .",
+            "label": "+",
+            "SyntacticPattern": "NVDCN"
+          }
+        ]
+      },
+      {
+        "Sentence": "How many blocks does Mildred end with ?",
+        "SimplifiedSentences": [
+          {
+            "Sentence": "How many blocks does Mildred end with ?",
+            "label": "?",
+            "SyntacticPattern": "WANVNVP"
           }
         ]
       }
@@ -50221,12 +50276,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "You have 7 balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVCN"
           },
           {
             "Sentence": "your friend has 5 balloons .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NNVCN"
           }
         ]
@@ -50236,7 +50291,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many more balloons do you have than your friend ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVNVPNN"
           }
         ]
@@ -50263,7 +50318,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "2 birds were sitting on the fence .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -50272,9 +50327,9 @@
         "Sentence": "4 more birds came to join them .",
         "SimplifiedSentences": [
           {
-            "Sentence": "4 more birds came to join them .",
-            "label": "",
-            "SyntacticPattern": "CANVPVN"
+            "Sentence": "4 more birds came on the fence to join them .",
+            "label": "+",
+            "SyntacticPattern": "CANVPDNPVN"
           }
         ]
       },
@@ -50283,7 +50338,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many birds are sitting on the fence ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPDN"
           }
         ]
@@ -50310,7 +50365,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "You have collected 7 crickets .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVVCN"
           }
         ]
@@ -50318,10 +50373,15 @@
       {
         "Sentence": "How many more crickets do you need to collect to have 11 crickets ?",
         "SimplifiedSentences": [
+		  {
+            "Sentence": "to have 11 crickets .",
+            "label": "=",
+            "SyntacticPattern": "PVCN"
+          },
           {
-            "Sentence": "How many more crickets do you need to collect to have 11 crickets ?",
-            "label": "",
-            "SyntacticPattern": "WAANVNVPVPVCN"
+            "Sentence": "How many more crickets do you need to collect ?",
+            "label": "?",
+            "SyntacticPattern": "WAANVNVPV"
           }
         ]
       }
@@ -50347,12 +50407,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 6 birds .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCN"
           },
           {
-            "Sentence": "There are birds 3 nests .",
-            "label": "",
+            "Sentence": "There are 3 nests .",
+            "label": "+",
             "SyntacticPattern": "EVCN"
           }
         ]
@@ -50362,7 +50422,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many more birds are there than nests ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVEPN"
           }
         ]
@@ -50389,12 +50449,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "There are 5 flowers .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "EVCN"
           },
           {
-            "Sentence": "There are flowers 3 bees .",
-            "label": "",
+            "Sentence": "There are 3 bees .",
+            "label": "+",
             "SyntacticPattern": "EVCN"
           }
         ]
@@ -50404,7 +50464,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many fewer bees are there than flowers ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVEPN"
           }
         ]
@@ -50431,7 +50491,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "3 owls were sitting on the fence .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -50440,9 +50500,9 @@
         "Sentence": "2 more owls joined them .",
         "SimplifiedSentences": [
           {
-            "Sentence": "2 more owls joined them .",
-            "label": "",
-            "SyntacticPattern": "CANVN"
+            "Sentence": "2 more owls joined them on the fence .",
+            "label": "+",
+            "SyntacticPattern": "CANVNPDN"
           }
         ]
       },
@@ -50451,7 +50511,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many owls are on the fence now ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVPDN"
           }
         ]
@@ -50478,7 +50538,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "2 beavers were working on their home .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVPNN"
           }
         ]
@@ -50488,7 +50548,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "1 beavers went for a swim .",
-            "label": "",
+            "label": "-",
             "SyntacticPattern": "CNVPDV"
           }
         ]
@@ -50498,7 +50558,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many beavers are still working on their home ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANVVPNN"
           }
         ]
@@ -50525,7 +50585,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "2 toucans are sitting on a tree limb .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "CNVVPDN"
           }
         ]
@@ -50534,9 +50594,9 @@
         "Sentence": "1 more toucan joins them .",
         "SimplifiedSentences": [
           {
-            "Sentence": "1 more toucan joins them .",
-            "label": "",
-            "SyntacticPattern": "CANVN"
+            "Sentence": "1 more toucan joins them on a tree limb .",
+            "label": "+",
+            "SyntacticPattern": "CANVNPDN"
           }
         ]
       },
@@ -50545,7 +50605,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many toucans in all ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WANPD"
           }
         ]
@@ -50570,10 +50630,15 @@
       {
         "Sentence": "There are 4 squirrels in a tree with 2 nuts .",
         "SimplifiedSentences": [
+		  {
+            "Sentence": "There are 4 squirrels in a tree .",
+            "label": "+",
+            "SyntacticPattern": "EVCNPDN"
+          },
           {
-            "Sentence": "There are 4 squirrels in a tree with 2 nuts .",
-            "label": "",
-            "SyntacticPattern": "EVCNPDNPCN"
+            "Sentence": "in a tree with 2 nuts .",
+            "label": "+",
+            "SyntacticPattern": "PDNPCN"
           }
         ]
       },
@@ -50582,7 +50647,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How many more squirrels are there than nuts ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WAANVEPN"
           }
         ]
@@ -50609,12 +50674,12 @@
         "SimplifiedSentences": [
           {
             "Sentence": "Mrs. Hilt bought a yoyo for 24 cents .",
-            "label": "",
+            "label": "+",
             "SyntacticPattern": "NVDNPCN"
           },
           {
-            "Sentence": "a whistle for 14 cents .",
-            "label": "",
+            "Sentence": "Mrs. Hilt bought a whistle for 14 cents .",
+            "label": "+",
             "SyntacticPattern": "DVPCN"
           }
         ]
@@ -50624,7 +50689,7 @@
         "SimplifiedSentences": [
           {
             "Sentence": "How much did she spend in all for the two toys ?",
-            "label": "",
+            "label": "?",
             "SyntacticPattern": "WVNVPDPDCN"
           }
         ]
