@@ -1,0 +1,41 @@
+{
+  "sQuestion": "A car traveled 715 kilometers in 11 hours. What was its average speed?",
+  "lSolutions": [
+    65
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"715 kilometers",
+      	"11 hours"
+      ],
+      "action_verbs": [
+      	"traveled"
+      ],
+      "subj_entities": [
+      	"car"
+      ],
+      "obj_entities": [],
+      "sentence": "A car traveled 715 kilometers in 11 hours."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [],
+      "subj_entities": [
+      	"its"
+      ],
+      "obj_entities": [
+      	"average speed"
+      ],
+      "sentence": "What was its average speed?"
+    }
+  ],
+  "lQueryVars": [
+    "average_speed"
+  ],
+  "lEquations": [
+    "average_speed=715.0/11.0"
+  ],
+  "iIndex": 1514,
+  "NewIndex": 1515
+}

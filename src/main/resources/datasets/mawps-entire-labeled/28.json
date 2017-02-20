@@ -1,0 +1,56 @@
+{
+  "sQuestion": "One thousand tickets were sold for a baseball game. There were one hundred more adult tickets than student tickets , and there were four times as many tickets sold to students as to children. How many of student tickets , how many of adult tickets and how many of children tickets were sold? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"One thousand tickets"
+      ],
+      "action_verbs": [
+      	"sold"
+      ],
+      "subj_entities": [],
+      "obj_entities": [
+      	"baseball game"
+      ],
+      "sentence": "One thousand tickets were sold for a baseball game."
+    },
+    {
+      "quantities": [
+      	"one hundred",
+      	"four times"
+      ],
+      "action_verbs": [
+      	"were",
+      	"sold"
+      ],
+      "subj_entities": [],
+      "obj_entities": [
+      	"adult tickets",
+      	"student tickets",
+      	"students",
+      	"children"
+      ],
+      "sentence": "There were one hundred more adult tickets than student tickets , and there were four times as many tickets sold to students as to children."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"sold"
+      ],
+      "subj_entities": [
+      	"student tickets",
+      	"adult tickets",
+      	"children tickets"
+      ],
+      "obj_entities": [],
+      "sentence": "How many of student tickets , how many of adult tickets and how many of children tickets were sold?"
+    }
+  ],
+  "lSolutions": [
+    400,
+    500,
+    100
+  ],
+  "NewIndex": 1399,
+  "iIndex": 1398
+}

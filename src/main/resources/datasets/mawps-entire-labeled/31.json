@@ -1,0 +1,89 @@
+{
+  "sQuestion": "Suppose you are starting an office cleaning service. You have spent 315 dollars on equipment. To clean an office , you use 4 dollars worth of supplies you purchased. You charge 25 dollars per office. How many offices must you clean to break even? ",
+  "lSolutions": [
+    15
+  ],
+  "sentences": [
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"starting"
+      ],
+      "subj_entities": [
+      	"you"
+      ],
+      "obj_entities": [
+      	"office cleaning service"
+      ],
+      "sentence": "Suppose you are starting an office cleaning service."
+    },
+    {
+      "quantities": [
+      	"315 dollars"
+      ],
+      "action_verbs": [
+      	"spent"
+      ],
+      "subj_entities": [
+      	"You"
+      ],
+      "obj_entities": [
+      	"equipment"
+      ],
+      "sentence": "You have spent 315 dollars on equipment."
+    },
+    {
+      "quantities": [
+      	"4 dollars"
+      ],
+      "action_verbs": [
+      	"clean"
+      ],
+      "subj_entities": [
+      	"you"
+      ],
+      "obj_entities": [
+      	"an office",
+      	"supplies"
+      ],
+      "sentence": "To clean an office , you use 4 dollars worth of supplies you purchased."
+    },
+    {
+      "quantities": [
+      	"25 dollars"
+      ],
+      "action_verbs": [
+      	"charge"
+      ],
+      "subj_entities": [
+      	"You"
+      ],
+      "obj_entities": [
+      	"per office"
+      ],
+      "sentence": "You charge 25 dollars per office."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"clean",
+      	"break even"
+      ],
+      "subj_entities": [
+      	"you"
+      ],
+      "obj_entities": [
+      	"offices"
+      ],
+      "sentence": "How many offices must you clean to break even?"
+    }
+  ],
+  "lQueryVars": [
+    "office"
+  ],
+  "lEquations": [
+    "((0-315.0)+(25.0*office))-(4.0*office)=0.0"
+  ],
+  "iIndex": 1465,
+  "NewIndex": 1466
+}

@@ -1,0 +1,41 @@
+{
+  "sQuestion": "A 12 ounce can of cranberry juice sells for 84 cents. Give the unit cost in cents per ounce.",
+  "lSolutions": [
+    7
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"12 ounce",
+      	"84 cents"
+      ],
+      "action_verbs": [
+      	"sells"
+      ],
+      "subj_entities": [
+      	"can of cranberry juice"
+      ],
+      "obj_entities": [],
+      "sentence": "A 12 ounce can of cranberry juice sells for 84 cents."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [],
+      "subj_entities": [
+      	"unit"
+      ],
+      "obj_entities": [
+      	"cents per ounce"
+      ],
+      "sentence": "Give the unit cost in cents per ounce."
+    }
+  ],
+  "lQueryVars": [
+    "cost"
+  ],
+  "lEquations": [
+    "cost=84.0/12.0"
+  ],
+  "iIndex": 588,
+  "NewIndex": 589
+}

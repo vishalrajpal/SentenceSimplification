@@ -1,0 +1,58 @@
+{
+  "sQuestion": "Soybean meal is 12 % protein ; cornmeal is 6 % protein. To get a 240-pound mixture that is 11 % protein , how many pounds of cornmeal should be used? How many pounds of soybean should be used? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"12 % protein",
+      	"6 % protein"
+      ],
+      "action_verbs": [
+      	"is",
+      	"is"
+      ],
+      "subj_entities": [
+      	"Soybean meal",
+      	"cornmeal"
+      ],
+      "obj_entities": [
+      	"protein"
+      ],
+      "sentence": "Soybean meal is 12 % protein ; cornmeal is 6 % protein."
+    },
+    {
+      "quantities": [
+      	"240-pound mixture",
+      	"11 % protein"
+      ],
+      "action_verbs": [
+      	"is",
+      	"used"
+      ],
+      "subj_entities": [
+      	"cornmeal"
+      ],
+      "obj_entities": [
+      	"mixture",
+      	"protein"
+      ],
+      "sentence": "To get a 240-pound mixture that is 11 % protein , how many pounds of cornmeal should be used?"
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"used"
+      ],
+      "subj_entities": [
+      	"soybean"
+      ],
+      "obj_entities": [],
+      "sentence": "How many pounds of soybean should be used?"
+    }
+  ],
+  "lSolutions": [
+    40,
+    200
+  ],
+  "NewIndex": 1389,
+  "iIndex": 1388
+}

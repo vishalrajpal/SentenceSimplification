@@ -1,0 +1,66 @@
+{
+  "sQuestion": "At the beginning of a walk , Roberto and Juanita are 6.6 miles apart. If they leave at the same time and walk in the same direction , Roberto overtakes Juanita in 11 hours. If they walk towards each other , they meet in 1 hour. What are their speeds? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"6.6 miles apart"
+      ],
+      "action_verbs": [
+      	"are"
+      ],
+      "subj_entities": [
+      	"Roberto",
+      	"Juanita"
+      ],
+      "obj_entities": [],
+      "sentence": "At the beginning of a walk , Roberto and Juanita are 6.6 miles apart."
+    },
+    {
+      "quantities": [
+      	"11 hours"
+      ],
+      "action_verbs": [
+      	"leave",
+      	"overtakes"
+      ],
+      "subj_entities": [
+      	"they",
+      	"Roberto"
+      ],
+      "obj_entities": [
+      	"Juanita"
+      ],
+      "sentence": "If they leave at the same time and walk in the same direction , Roberto overtakes Juanita in 11 hours."
+    },
+    {
+      "quantities": [
+      	"1 hour"
+      ],
+      "action_verbs": [
+      	"meet"
+      ],
+      "subj_entities": [
+      	"they"
+      ],
+      "obj_entities": [],
+      "sentence": "If they walk towards each other , they meet in 1 hour."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [],
+      "subj_entities": [
+      	"their"
+      ],
+      "obj_entities": [
+      	"speeds"
+      ],
+      "sentence": "What are their speeds?"
+    }
+  ],
+  "lSolutions": [
+    3.6,
+    3
+  ],
+  "NewIndex": 1409,
+  "iIndex": 1408
+}

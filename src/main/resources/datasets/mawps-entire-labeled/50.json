@@ -1,0 +1,61 @@
+{
+  "sQuestion": " A pet store had 38 siamese cats and 25 house cats. During a sale they sold 45 cats. How many cats do they have left? ",
+  "lSolutions": [
+    18
+  ],
+  "lAlignments": [
+    17,
+    37,
+    76
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"38 siamese cats",
+      	"25 house cats"
+      ],
+      "action_verbs": [
+      	"had"
+      ],
+      "subj_entities": [
+      	"pet store"
+      ],
+      "obj_entities": [
+      	"siamese cats",
+      	"house cats"
+      ],
+      "sentence": " A pet store had 38 siamese cats and 25 house cats."
+    },
+    {
+      "quantities": [
+      	"45 cats"
+      ],
+      "action_verbs": [
+      	"sold"
+      ],
+      "subj_entities": [
+      	"they"
+      ],
+      "obj_entities": [],
+      "sentence": "During a sale they sold 45 cats."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"left"
+      ],
+      "subj_entities": [
+      	"they"
+      ],
+      "obj_entities": [
+      	"cats"
+      ],
+      "sentence": "How many cats do they have left?"
+    }
+  ],
+  "lEquations": [
+    "X=((38.0+25.0)-45.0)"
+  ],
+  "iIndex": 2275,
+  "NewIndex": 2276
+}

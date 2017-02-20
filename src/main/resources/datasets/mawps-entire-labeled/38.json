@@ -1,0 +1,67 @@
+{
+  "sQuestion": "There are 22 chickens and cows on a farm. Together they have 60 legs. How many chickens are there? How many cows?",
+  "lSolutions": [
+    14,
+    8
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"22 chickens and cows"
+      ],
+      "action_verbs": [
+      	"are"
+      ],
+      "subj_entities": [
+      	"farm"
+      ],
+      "obj_entities": [
+      	"chickens and cows"
+      ],
+      "sentence": "There are 22 chickens and cows on a farm."
+    },
+    {
+      "quantities": [
+      	"60 legs"
+      ],
+      "action_verbs": [
+      	"have"
+      ],
+      "subj_entities": [
+      	"they"
+      ],
+      "obj_entities": [
+      	"legs"
+      ],
+      "sentence": "Together they have 60 legs."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [],
+      "subj_entities": [
+      	"chickens"
+      ],
+      "obj_entities": [],
+      "sentence": "How many chickens are there?"
+    },
+    {
+      "quantities": [],
+      "action_verbs": [],
+      "subj_entities": [
+      	"cows"
+      ],
+      "obj_entities": [],
+      "sentence": "How many cows?"
+    }
+  ],
+  "lQueryVars": [
+    "chickens",
+    "cows"
+  ],
+  "lEquations": [
+    "(2.0*chickens)+(4.0*cows)=60.0",
+    "chickens+cows=22.0"
+  ],
+  "iIndex": 1788,
+  "NewIndex": 1789
+}

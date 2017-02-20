@@ -1,0 +1,61 @@
+{
+  "sQuestion": "The sum of the numerator and the denominator of a fraction is equal to 7. Four times the numerator is 8 less than 5 times the denominator. Find the fraction.",
+  "lSolutions": [
+    3
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"7"
+      ],
+      "action_verbs": [
+      	"is equal"
+      ],
+      "subj_entities": [
+      	"numerator",
+      	"denominator",
+      	"fraction"
+      ],
+      "obj_entities": [],
+      "sentence": "The sum of the numerator and the denominator of a fraction is equal to 7."
+    },
+    {
+      "quantities": [
+      	"Four times",
+      	"8 less",
+      	"5 times"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"numerator"
+      ],
+      "obj_entities": [
+      	"denominator"
+      ],
+      "sentence": "Four times the numerator is 8 less than 5 times the denominator."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"Find"
+      ],
+      "subj_entities": [
+      	"fraction"
+      ],
+      "obj_entities": [],
+      "sentence": "Find the fraction."
+    }
+  ],
+  "lQueryVars": [
+    "fraction"
+  ],
+  "lEquations": [
+    "(5.0*denominator)-(4.0*numerator)=8.0",
+    "numerator+denominator=7.0",
+    "fraction=numerator/denominator"
+  ],
+  "iIndex": 912,
+  "NewIndex": 913
+}

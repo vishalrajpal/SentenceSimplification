@@ -1,0 +1,58 @@
+{
+  "sQuestion": "A student has scores of 68 , 75 , and 69 on his first 3 tests. He needs an average of at least 70 to earn a grade of C. What is the minimum score that the student needs on the 4th test to ensure a C? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"68",
+      	"75",
+      	"69",
+      	"3 tests"
+      ],
+      "action_verbs": [
+      	"scores"
+      ],
+      "subj_entities": [
+      	"student"
+      ],
+      "obj_entities": [
+      	"tests"
+      ],
+      "sentence": "A student has scores of 68 , 75 , and 69 on his first 3 tests."
+    },
+    {
+      "quantities": [
+      	"average of at least 70"
+      ],
+      "action_verbs": [
+      	"earn"
+      ],
+      "subj_entities": [
+      	"He"
+      ],
+      "obj_entities": [
+      	"grade of C"
+      ],
+      "sentence": "He needs an average of at least 70 to earn a grade of C."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [],
+      "subj_entities": [
+      	"student",
+      	"needs",
+      	"ensure"
+      ],
+      "obj_entities": [
+      	"minimum score",
+      	"4th test",
+      	"C"
+      ],
+      "sentence": "What is the minimum score that the student needs on the 4th test to ensure a C?"
+    }
+  ],
+  "lSolutions": [
+    68
+  ],
+  "NewIndex": 2101,
+  "iIndex": 2100
+}

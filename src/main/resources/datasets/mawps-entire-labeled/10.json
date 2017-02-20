@@ -1,0 +1,64 @@
+{
+  "sQuestion": "One number is 4 less than 3 times a second number. If 3 more than twice the first number is decreased by the second , the result is 11. Find both numbers. ",
+  "bOrderUnclear": true,
+  "lSolutions": [
+    5.6,
+    3.2
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"4 less",
+      	"3 times"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"One number"
+      ],
+      "obj_entities": [
+      	"second number"
+      ],
+      "sentence": "One number is 4 less than 3 times a second number."
+    },
+    {
+      "quantities": [
+      	"3 more",
+      	"twice",
+      	"11"
+      ],
+      "action_verbs": [
+      	"is decreased"
+      ],
+      "subj_entities": [
+      	"first number"
+      ],
+      "obj_entities": [
+      	"second"
+      ],
+      "sentence": "If 3 more than twice the first number is decreased by the second , the result is 11."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"Find"
+      ],
+      "subj_entities": [],
+      "obj_entities": [
+      	"numbers"
+      ],
+      "sentence": "Find both numbers."
+    }
+  ],
+  "lQueryVars": [
+    "first_number",
+    "second_number"
+  ],
+  "lEquations": [
+    "((2.0*first_number)+3.0)-second_number=11.0",
+    "first_number=(3.0*second_number)-4.0"
+  ],
+  "iIndex": 562,
+  "NewIndex": 563
+}

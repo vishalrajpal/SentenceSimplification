@@ -1,0 +1,64 @@
+{
+  "sQuestion": "Benny received 79 dollars and 9 movie tickets for his birthday . He went to a sporting goods store and bought a baseball glove , baseball , and bat . He had 32 dollars over , how much did he spent on the baseball gear ? ",
+  "lSolutions": [
+    "47"
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"79 dollars",
+      	"9 movie tickets"
+      ],
+      "action_verbs": [
+      	"received"
+      ],
+      "subj_entities": [
+      	"Benny"
+      ],
+      "obj_entities": [
+      	"dollars",
+      	"movie tickets",
+      	"birthday"
+      ],
+      "sentence": "Benny received 79 dollars and 9 movie tickets for his birthday ."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"bought"
+      ],
+      "subj_entities": [
+      	"He"
+      ],
+      "obj_entities": [
+      	"sporting goods store",
+      	"baseball glove",
+      	"baseball",
+      	"bat"
+      ],
+      "sentence": "He went to a sporting goods store and bought a baseball glove , baseball , and bat ."
+    },
+    {
+      "quantities": [
+      	"32 dollars"
+      ],
+      "action_verbs": [
+      	"had",
+      	"spent"
+      ],
+      "subj_entities": [
+      	"He"
+      ],
+      "obj_entities": [
+      	"dollars",
+      	"baseball gear"
+      ],
+      "sentence": "He had 32 dollars over , how much did he spent on the baseball gear ?"
+    }
+  ],
+  "lEquations": [
+    "X = 79 - 32"
+  ],
+  "iIndex": 374,
+  "NewIndex": 375
+}

@@ -1,0 +1,44 @@
+{
+  "sQuestion": "0.5 of a certain number is 10 more than 0.1667 of a number. Find the number.",
+  "lSolutions": [
+    30
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"0.5 of a certain number",
+      	"10",
+      	"0.1667 of a number"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"certain number"
+      ],
+      "obj_entities": [
+      	"number"
+      ],
+      "sentence": "0.5 of a certain number is 10 more than 0.1667 of a number."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"Find"
+      ],
+      "subj_entities": [
+      	"number"
+      ],
+      "obj_entities": [],
+      "sentence": "Find the number."
+    }
+  ],
+  "lQueryVars": [
+    "number"
+  ],
+  "lEquations": [
+    "0.5*number=(0.1667*number)+10.0"
+  ],
+  "iIndex": 1977,
+  "NewIndex": 1978
+}

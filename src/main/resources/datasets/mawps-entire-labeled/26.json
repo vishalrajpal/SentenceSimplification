@@ -1,0 +1,43 @@
+{
+  "sQuestion": "Abner has 4 liters of a 40 % solution of alcohol. How much pure alcohol must he add to have an 80 % solution? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"4 litres",
+      	"40 % solution"
+      ],
+      "action_verbs": [
+      	"has",
+      	"of"
+      ],
+      "subj_entities": [
+      	"Abner"
+      ],
+      "obj_entities": [
+      	"alcohol"
+      ],
+      "sentence": "Abner has 4 liters of a 40 % solution of alcohol."
+    },
+    {
+      "quantities": [
+      	"80 % solution"
+      ],
+      "action_verbs": [
+      	"add"
+      ],
+      "subj_entities": [
+      	"he"
+      ],
+      "obj_entities": [
+      	"pure alcohol",
+      	"solution"
+      ],
+      "sentence": "How much pure alcohol must he add to have an 80 % solution?"
+    }
+  ],
+  "lSolutions": [
+    8
+  ],
+  "NewIndex": 1350,
+  "iIndex": 1349
+}

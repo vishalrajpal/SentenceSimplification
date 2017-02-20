@@ -1,0 +1,74 @@
+{
+  "sQuestion": "A refinery tank has 1 fill pipe and 2 drain pipes. Pipe 1 can fill the tank in 3 hours. Pipe 2 takes 6 hr longer to drain the tank pipe than pipe 3 does. If it takes 12 hr to fill the tank when the valves of all three pipes are open , how long does it take pipe 3 , alone , to drain the tank? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"1 fill pipe",
+      	"2 drain pipe"
+      ],
+      "action_verbs": [
+      	"has"
+      ],
+      "subj_entities": [
+      	"refinery tank"
+      ],
+      "obj_entities": [
+      	"fill pipe",
+      	"drain pipe"
+      ],
+      "sentence": "A refinery tank has 1 fill pipe and 2 drain pipes."
+    },
+    {
+      "quantities": [
+      	"3 hours"
+      ],
+      "action_verbs": [
+      	"fill"
+      ],
+      "subj_entities": [
+      	"Pipe 1"
+      ],
+      "obj_entities": [
+      	"tank"
+      ],
+      "sentence": "Pipe 1 can fill the tank in 3 hours."
+    },
+    {
+      "quantities": [
+      	"6 hr"
+      ],
+      "action_verbs": [
+      	"takes"
+      ],
+      "subj_entities": [
+      	"Pipe 2"
+      ],
+      "obj_entities": [
+      	"pipe 3"
+      ],
+      "sentence": "Pipe 2 takes 6 hr longer to drain the tank pipe than pipe 3 does."
+    },
+    {
+      "quantities": [
+      	"12 hr"
+      ],
+      "action_verbs": [
+      	"takes",
+      	"take"
+      ],
+      "subj_entities": [
+      	"three pipes",
+      	"pipe 3"
+      ],
+      "obj_entities": [
+      	"tank"
+      ],
+      "sentence": "If it takes 12 hr to fill the tank when the valves of all three pipes are open , how long does it take pipe 3 , alone , to drain the tank?"
+    }
+  ],
+  "lSolutions": [
+    4
+  ],
+  "NewIndex": 631,
+  "iIndex": 630
+}

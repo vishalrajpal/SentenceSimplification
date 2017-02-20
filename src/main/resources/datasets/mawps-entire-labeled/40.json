@@ -1,0 +1,64 @@
+{
+  "sQuestion": "A carpenter gave an estimate of 980 dollars to build a cover over a patio. His hourly rate is 28 dollars and he expects to need 560 dollars in materials. How many hours will the job take?",
+  "lSolutions": [
+    15
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"980 dollars"
+      ],
+      "action_verbs": [
+      	"build"
+      ],
+      "subj_entities": [
+      	"carpenter"
+      ],
+      "obj_entities": [
+      	"cover over a patio"
+      ],
+      "sentence": "A carpenter gave an estimate of 980 dollars to build a cover over a patio."
+    },
+    {
+      "quantities": [
+      	"hourly rate",
+      	"28 dollars",
+      	"560 dollars"
+      ],
+      "action_verbs": [
+      	"is",
+      	"expects",
+      	"need"
+      ],
+      "subj_entities": [
+      	"His",
+      	"he"
+      ],
+      "obj_entities": [
+      	"materials"
+      ],
+      "sentence": "His hourly rate is 28 dollars and he expects to need 560 dollars in materials."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"take"
+      ],
+      "subj_entities": [
+      	"job"
+      ],
+      "obj_entities": [
+      	"hours"
+      ],
+      "sentence": "How many hours will the job take?"
+    }
+  ],
+  "lQueryVars": [
+    "hours"
+  ],
+  "lEquations": [
+    "(28.0*hours)+560.0=980.0"
+  ],
+  "iIndex": 1798,
+  "NewIndex": 1799
+}

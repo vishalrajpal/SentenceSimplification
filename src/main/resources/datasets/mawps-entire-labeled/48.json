@@ -1,0 +1,26 @@
+{
+  "sQuestion": "Find the number whose sixth part exceeds it 's eighth part by 3. ",
+  "sentences": [
+    {
+      "quantities": [
+      	"3"
+      ],
+      "action_verbs": [
+      	"Find"
+      ],
+      "subj_entities": [
+      	"number"
+      ],
+      "obj_entities": [
+      	"sixth part",
+      	"eighth part"
+      ],
+      "sentence": "Find the number whose sixth part exceeds it 's eighth part by 3."
+    }
+  ],
+  "lSolutions": [
+    72
+  ],
+  "NewIndex": 2243,
+  "iIndex": 2242
+}

@@ -1,0 +1,58 @@
+{
+  "sQuestion": "Jason joined his school 's band . He bought a flute for $ 142.46 , a music tool for $ 8.89 , and a song book for $ 7 . How much did Jason spend at the music store ? ",
+  "lSolutions": [
+    "158.35"
+  ],
+  "sentences": [
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"joined"
+      ],
+      "subj_entities": [
+      	"Jason"
+      ],
+      "obj_entities": [
+      	"school's band"
+      ],
+      "sentence": "Jason joined his school 's band ."
+    },
+    {
+      "quantities": [
+      	"$142.46",
+      	"$8.89",
+      	"$7"
+      ],
+      "action_verbs": [
+      	"bought"
+      ],
+      "subj_entities": [
+      	"He"
+      ],
+      "obj_entities": [
+      	"flute",
+      	"music tool",
+      	"song book"
+      ],
+      "sentence": "He bought a flute for $ 142.46 , a music tool for $ 8.89 , and a song book for $ 7 ."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"spend"
+      ],
+      "subj_entities": [
+      	"Jason"
+      ],
+      "obj_entities": [
+      	"music store"
+      ],
+      "sentence": "How much did Jason spend at the music store ?"
+    }
+  ],
+  "lEquations": [
+    "X = 142.46 + 8.89 + 7"
+  ],
+  "iIndex": 131,
+  "NewIndex": 132
+}

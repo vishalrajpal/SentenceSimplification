@@ -1,0 +1,66 @@
+{
+  "sQuestion": "The Kings won two less than three times as many games as they lost. They played 82 games. How many wins and losses did the team have? ",
+  "lSolutions": [
+    61,
+    21
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"two",
+      	"three times"
+      ],
+      "action_verbs": [
+      	"won",
+      	"lost"
+      ],
+      "subj_entities": [
+      	"Kings",
+      	"they"
+      ],
+      "obj_entities": [
+      	"games"
+      ],
+      "sentence": "The Kings won two less than three times as many games as they lost."
+    },
+    {
+      "quantities": [
+      	"82 games"
+      ],
+      "action_verbs": [
+      	"played"
+      ],
+      "subj_entities": [
+      	"They"
+      ],
+      "obj_entities": [
+      	"games"
+      ],
+      "sentence": "They played 82 games."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"have"
+      ],
+      "subj_entities": [
+      	"team"
+      ],
+      "obj_entities": [
+      	"wins",
+      	"losses"
+      ],
+      "sentence": "How many wins and losses did the team have?"
+    }
+  ],
+  "lQueryVars": [
+    "won",
+    "lost"
+  ],
+  "lEquations": [
+    "won+lost=82.0",
+    "won=(3.0*lost)-2.0"
+  ],
+  "iIndex": 432,
+  "NewIndex": 433
+}

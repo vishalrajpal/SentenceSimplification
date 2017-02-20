@@ -1,0 +1,56 @@
+{
+  "sQuestion": "A junior college awarded 26 varsity letters in crew , 15 in swimming , and 16 in soccer. If awards went to 46 students and only 2 lettered in all sports , how many students lettered in two of the three sports? ",
+  "lSolutions": [
+    7
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"26 varsity letters",
+      	"15",
+      	"16"
+      ],
+      "action_verbs": [
+      	"awarded"
+      ],
+      "subj_entities": [
+      	"junior college"
+      ],
+      "obj_entities": [
+      	"crew",
+      	"swimming",
+      	"soccer"
+      ],
+      "sentence": "A junior college awarded 26 varsity letters in crew , 15 in swimming , and 16 in soccer."
+    },
+    {
+      "quantities": [
+      	"46 students",
+      	"2"
+      ],
+      "action_verbs": [
+      	"went",
+      	"lettered"
+      ],
+      "subj_entities": [
+      	"students"
+      ],
+      "obj_entities": [
+      	"all sports",
+      	"two of the three sports"
+      ],
+      "sentence": "If awards went to 46 students and only 2 lettered in all sports , how many students lettered in two of the three sports?"
+    }
+  ],
+  "lQueryVars": [
+    "double"
+  ],
+  "lEquations": [
+    "(26.0+15.0)+16.0=letters",
+    "(single+(2.0*double))+(3.0*triple)=letters",
+    "(single+double)+triple=46.0",
+    "triple=2.0"
+  ],
+  "iIndex": 914,
+  "NewIndex": 915
+}

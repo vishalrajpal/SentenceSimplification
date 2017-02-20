@@ -1,0 +1,56 @@
+{
+  "sQuestion": "Kenji and his classmates placed colored blocks on a scale during a science lab . The yellow block weighed 0.6 pounds and the green block weighed 0.4 pounds . How much more did the yellow block weigh than the green block ? ",
+  "lSolutions": [
+    "0.2"
+  ],
+  "sentences": [
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"placed"
+      ],
+      "subj_entities": [
+      	"Kenji",
+      	"his classmates"
+      ],
+      "obj_entities": [
+      	"colored blocks",
+      	"scale",
+      	"science lab"
+      ],
+      "sentence": "Kenji and his classmates placed colored blocks on a scale during a science lab ."
+    },
+    {
+      "quantities": [
+      	"0.6 pounds",
+      	"0.4 pounds"
+      ],
+      "action_verbs": [
+      	"weighed"
+      ],
+      "subj_entities": [
+      	"yellow block",
+      	"green block"
+      ],
+      "obj_entities": [],
+      "sentence": "The yellow block weighed 0.6 pounds and the green block weighed 0.4 pounds ."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"weigh"
+      ],
+      "subj_entities": [],
+      "obj_entities": [
+      	"yello block",
+      	"green block"
+      ],
+      "sentence": "How much more did the yellow block weigh than the green block ?"
+    }
+  ],
+  "lEquations": [
+    "X = 0.6 - 0.4"
+  ],
+  "iIndex": 254,
+  "NewIndex": 255
+}

@@ -1,0 +1,74 @@
+{
+  "sQuestion": "Twice one number added to another number is 18. 4 times the first number minus the other number is 12. What is the smaller number? What is the larger number?",
+  "lSolutions": [
+    5,
+    8
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"Twice",
+      	"18"
+      ],
+      "action_verbs": [
+      	"added"
+      ],
+      "subj_entities": [
+      	"one number"
+      ],
+      "obj_entities": [
+      	"another number"
+      ],
+      "sentence": "Twice one number added to another number is 18."
+    },
+    {
+      "quantities": [
+      	"4 times",
+      	"12"
+      ],
+      "action_verbs": [
+      	"minus",
+      	"is"
+      ],
+      "subj_entities": [
+      	"first number"
+      ],
+      "obj_entities": [
+      	"other number"
+      ],
+      "sentence": "4 times the first number minus the other number is 12."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"smaller number"
+      ],
+      "obj_entities": [],
+      "sentence": "What is the smaller number?"
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"larger number"
+      ],
+      "obj_entities": [],
+      "sentence": "What is the larger number?"
+    }
+  ],
+  "lQueryVars": [
+    "first",
+    "second"
+  ],
+  "lEquations": [
+    "(2.0*first)+second=18.0",
+    "(4.0*first)-second=12.0"
+  ],
+  "iIndex": 1087,
+  "NewIndex": 1088
+}

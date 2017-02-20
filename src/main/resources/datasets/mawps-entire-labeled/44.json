@@ -1,0 +1,53 @@
+{
+  "sQuestion": "A mathematician turned farmer has cows and chicken. There are 148 legs and 60 heads. How many cows and chickens are on his farm? ",
+  "sentences": [
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"turned"
+      ],
+      "subj_entities": [
+      	"mathematician",
+      	"farmer"
+      ],
+      "obj_entities": [
+      	"cows",
+      	"chicken"
+      ],
+      "sentence": "A mathematician turned farmer has cows and chicken."
+    },
+    {
+      "quantities": [
+      	"148 legs",
+      	"60 heads"
+      ],
+      "action_verbs": [
+      	"are"
+      ],
+      "subj_entities": [],
+      "obj_entities": [],
+      "sentence": "There are 148 legs and 60 heads."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"are"
+      ],
+      "subj_entities": [
+      	"farm",
+      	"his"
+      ],
+      "obj_entities": [
+      	"cows",
+      	"chicken"
+      ],
+      "sentence": "How many cows and chickens are on his farm?"
+    }
+  ],
+  "lSolutions": [
+    14,
+    46
+  ],
+  "NewIndex": 2103,
+  "iIndex": 2102
+}

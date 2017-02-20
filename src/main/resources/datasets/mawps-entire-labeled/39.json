@@ -1,0 +1,75 @@
+{
+  "sQuestion": "A manufacturing company makes two sizes of gizmos , the large size and the small size. It takes 25 minutes of machine time and an hour and 10 minutes of labor to make the small size , and 42 minutes of machine time and 1 hour and 17 minutes of labor to make the large size. Each day the company has 56 hours of labor time and 24.5 hours of machine time available. If all the available time is used , how many gizmos of each size can be made per day? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"two sizes of gizmos"
+      ],
+      "action_verbs": [
+      	"makes"
+      ],
+      "subj_entities": [
+      	"manufacturing company"
+      ],
+      "obj_entities": [
+      	"gizmos",
+      	"large size",
+      	"small size"
+      ],
+      "sentence": "A manufacturing company makes two sizes of gizmos , the large size and the small size."
+    },
+    {
+      "quantities": [
+      	"25 minute of machine time",
+      	"an hour and 10 minutes of labor",
+      	"42 minutes of machine time",
+      	"1 hour and 17 minutes of labor"
+
+      ],
+      "action_verbs": [
+      	"takes"
+      ],
+      "subj_entities": [
+      	"small size",
+      	"large size"
+      ],
+      "obj_entities": [],
+      "sentence": "It takes 25 minutes of machine time and an hour and 10 minutes of labor to make the small size , and 42 minutes of machine time and 1 hour and 17 minutes of labor to make the large size."
+    },
+    {
+      "quantities": [
+      	"Each day",
+      	"56 hours of labor time",
+      	"24.5 hours of machine time"
+      ],
+      "action_verbs": [
+      	"has"
+      ],
+      "subj_entities": [
+      	"company"
+      ],
+      "obj_entities": [],
+      "sentence": "Each day the company has 56 hours of labor time and 24.5 hours of machine time available."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"used"
+      ],
+      "subj_entities": [
+      	"gizmos"
+      ],
+      "obj_entities": [
+      	"available time",
+      	"per day"
+      ],
+      "sentence": "If all the available time is used , how many gizmos of each size can be made per day?"
+    }
+  ],
+  "lSolutions": [
+    28,
+    18
+  ],
+  "NewIndex": 1797,
+  "iIndex": 1796
+}

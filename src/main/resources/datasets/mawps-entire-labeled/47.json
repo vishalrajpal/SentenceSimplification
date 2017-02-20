@@ -1,0 +1,54 @@
+{
+  "sQuestion": "Internet Company A charges a 25 dollars fee plus an additional 0.35 dollars per hour. Internet Company B charges a 10 dollars fee plus an additional 0.50 dollars per hour. For what number of hours are the charges for both companies the same? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"25 dollars",
+      	"0.35 dollars per hour"
+      ],
+      "action_verbs": [
+      	"charges",
+      	"plus"
+      ],
+      "subj_entities": [
+      	"Internet Company A"
+      ],
+      "obj_entities": [],
+      "sentence": "Internet Company A charges a 25 dollars fee plus an additional 0.35 dollars per hour."
+    },
+    {
+      "quantities": [
+      	"10 dollars",
+      	"0.5 dollars per hour"
+      ],
+      "action_verbs": [
+      	"charges",
+      	"plus"
+      ],
+      "subj_entities": [
+      	"Internet Company B"
+      ],
+      "obj_entities": [],
+      "sentence": "Internet Company B charges a 10 dollars fee plus an additional 0.50 dollars per hour."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"are"
+      ],
+      "subj_entities": [
+      	"both companies"
+      ],
+      "obj_entities": [
+      	"charges",
+      	"number of hours"
+      ],
+      "sentence": "For what number of hours are the charges for both companies the same?"
+    }
+  ],
+  "lSolutions": [
+    100
+  ],
+  "NewIndex": 2178,
+  "iIndex": 2177
+}

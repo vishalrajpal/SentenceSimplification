@@ -1,0 +1,48 @@
+{
+  "sQuestion": "Two times the first number is one more than the second number. If their sum is -64 , what are the two numbers? ",
+  "lSolutions": [
+    -21,
+    -43
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"Two times",
+      	"one more"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"first number"
+      ],
+      "obj_entities": [
+      	"second number"
+      ],
+      "sentence": "Two times the first number is one more than the second number."
+    },
+    {
+      "quantities": [
+      	"-64"
+      ],
+      "action_verbs": [
+      	"sum"
+      ],
+      "subj_entities": [
+      	"two numbers"
+      ],
+      "obj_entities": [],
+      "sentence": "If their sum is -64 , what are the two numbers?"
+    }
+  ],
+  "lQueryVars": [
+    "first_number",
+    "second_number"
+  ],
+  "lEquations": [
+    "2.0*first_number=1.0+second_number",
+    "first_number+second_number=(-64.0)"
+  ],
+  "iIndex": 1881,
+  "NewIndex": 1882
+}

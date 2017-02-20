@@ -1,0 +1,78 @@
+{
+  "sQuestion": "Zelma is eighteen years older than her son. She was three times as old as he was one year ago. How old is Zelma now? How old is her son? ",
+  "lSolutions": [
+    28,
+    10
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"eighteen years"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"Zelma"
+      ],
+      "obj_entities": [
+      	"her son",
+      	"older"
+      ],
+      "sentence": "Zelma is eighteen years older than her son."
+    },
+    {
+      "quantities": [
+      	"three times",
+      	"one year"
+      ],
+      "action_verbs": [
+      	"was"
+      ],
+      "subj_entities": [
+      	"She",
+      	"he"
+      ],
+      "obj_entities": [
+      	"old"
+      ],
+      "sentence": "She was three times as old as he was one year ago."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"Zelma"
+      ],
+      "obj_entities": [
+      	"old"
+      ],
+      "sentence": "How old is Zelma now?"
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"her son"
+      ],
+      "obj_entities": [
+      	"old"
+      ],
+      "sentence": "How old is her son?"
+    }
+  ],
+  "lQueryVars": [
+    "zelma",
+    "son"
+  ],
+  "lEquations": [
+    "zelma-1.0=3.0*(son-1.0)",
+    "zelma=18.0+son"
+  ],
+  "iIndex": 502,
+  "NewIndex": 503
+}

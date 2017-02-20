@@ -1,0 +1,57 @@
+{
+  "sQuestion": "A garden table and a bench cost 450 dollars combined. The price of the garden table is 2 times the price of the bench. What is the cost of the bench , in dollars? ",
+  "lSolutions": [
+    150
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"450 dollars"
+      ],
+      "action_verbs": [
+      	"cost"
+      ],
+      "subj_entities": [
+      	"garden table",
+      	"bench"
+      ],
+      "obj_entities": [],
+      "sentence": "A garden table and a bench cost 450 dollars combined."
+    },
+    {
+      "quantities": [
+      	"2 times"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"garden table"
+      ],
+      "obj_entities": [
+      	"bench"
+      ],
+      "sentence": "The price of the garden table is 2 times the price of the bench."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"bench"
+      ],
+      "obj_entities": [],
+      "sentence": "What is the cost of the bench , in dollars?"
+    }
+  ],
+  "lQueryVars": [
+    "bench"
+  ],
+  "lEquations": [
+    "garden_table+bench=450.0",
+    "garden_table=2.0*bench"
+  ],
+  "iIndex": 833,
+  "NewIndex": 834
+}

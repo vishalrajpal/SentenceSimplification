@@ -1,0 +1,80 @@
+{
+  "sQuestion": "Joelle walks to a store at 4.5 miles per hour. She meets her friend and walks back at 3 miles per hour. Total walking time is 1 hour. How long did it take to walk to the store? What is the distance to the store? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"4.5 miles per hour"
+      ],
+      "action_verbs": [
+      	"walks"
+      ],
+      "subj_entities": [
+      	"Joelle"
+      ],
+      "obj_entities": [
+      	"store"
+      ],
+      "sentence": "Joelle walks to a store at 4.5 miles per hour."
+    },
+    {
+      "quantities": [
+      	"3 miles per hour"
+      ],
+      "action_verbs": [
+      	"meets",
+      	"walks back"
+      ],
+      "subj_entities": [
+      	"She"
+      ],
+      "obj_entities": [
+      	"her friend"
+      ],
+      "sentence": "She meets her friend and walks back at 3 miles per hour."
+    },
+    {
+      "quantities": [
+      	"1 hour"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"walking time"
+      ],
+      "obj_entities": [],
+      "sentence": "Total walking time is 1 hour."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"take",
+      	"walk"
+      ],
+      "subj_entities": [],
+      "obj_entities": [
+      	"store"
+      ],
+      "sentence": "How long did it take to walk to the store?"
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"store"
+      ],
+      "obj_entities": [
+      	"distance"
+      ],
+      "sentence": "What is the distance to the store?"
+    }
+  ],
+  "lSolutions": [
+    24,
+    1.8
+  ],
+  "NewIndex": 1320,
+  "iIndex": 1319
+}

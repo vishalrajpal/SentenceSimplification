@@ -1,0 +1,45 @@
+{
+  "sQuestion": "He charges 2.60 dollars per pound for peanuts and 5.40 dollars per pound for cashews. If the mix is to sell for 3.40 dollars per pound , how many pounds each of peanuts and cashews should be used to make 70 pounds of the mix? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"2.60 dollars per pound",
+      	"5.40 dollars per pound"
+      ],
+      "action_verbs": [
+      	"charges"
+      ],
+      "subj_entities": [
+      	"He"
+      ],
+      "obj_entities": [
+      	"peanuts",
+      	"cashews"
+      ],
+      "sentence": "He charges 2.60 dollars per pound for peanuts and 5.40 dollars per pound for cashews."
+    },
+    {
+      "quantities": [
+      	"3.40 dollars per pound",
+      	"70 pounds of the mix"
+      ],
+      "action_verbs": [
+      	"sell",
+      	"used"
+      ],
+      "subj_entities": [
+      	"mix",
+      	"peanuts",
+      	"cashews"
+      ],
+      "obj_entities": [],
+      "sentence": "If the mix is to sell for 3.40 dollars per pound , how many pounds each of peanuts and cashews should be used to make 70 pounds of the mix?"
+    }
+  ],
+  "lSolutions": [
+    50,
+    20
+  ],
+  "NewIndex": 2150,
+  "iIndex": 2149
+}

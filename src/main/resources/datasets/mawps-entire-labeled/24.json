@@ -1,0 +1,74 @@
+{
+  "sQuestion": "You need to choose between 2 telephone plans for local calls. Plan A charges 25 dollars per month for unlimited calls. Plan B charges a monthly fee of 13 dollars with a charge of 0.06 dollars per local call. How many local telephone calls in a month make Plan A the better deal? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"2 telephone plans"
+      ],
+      "action_verbs": [
+      	"need",
+      	"choose"
+      ],
+      "subj_entities": [
+		"You"
+      ],
+      "obj_entities": [
+      	"telephone plans",
+      	"local calls"
+      ],
+      "sentence": "You need to choose between 2 telephone plans for local calls."
+    },
+    {
+      "quantities": [
+      	"25 dollars per month"
+      ],
+      "action_verbs": [
+      	"charges"
+      ],
+      "subj_entities": [
+      	"Plan A"
+      ],
+      "obj_entities": [
+      	"unlimited calls"
+      ],
+      "sentence": "Plan A charges 25 dollars per month for unlimited calls."
+    },
+    {
+      "quantities": [
+      	"13 dollars",
+      	"0.06 dollars per local call"
+      ],
+      "action_verbs": [
+      	"charges",
+      	"charge",
+      	"with"
+      ],
+      "subj_entities": [
+      	"Plan B"
+      ],
+      "obj_entities": [
+      	"a monthly fee",
+      	"local call"
+      ],
+      "sentence": "Plan B charges a monthly fee of 13 dollars with a charge of 0.06 dollars per local call."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [],
+      "subj_entities": [
+      	"local telephone calls",
+      	"Plan A"
+      ],
+      "obj_entities": [
+      	"month",
+      	"better deal"
+      ],
+      "sentence": "How many local telephone calls in a month make Plan A the better deal?"
+    }
+  ],
+  "lSolutions": [
+    200
+  ],
+  "NewIndex": 1247,
+  "iIndex": 1246
+}

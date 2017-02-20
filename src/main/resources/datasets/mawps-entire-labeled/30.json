@@ -1,0 +1,79 @@
+{
+  "sQuestion": "Roger studied for x hours. His sister studied 5 more hours than Roger. Between both of them , they studied 30 hours. For how many hours did Roger study? For how many hours did his sister study? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"x hours"
+      ],
+      "action_verbs": [
+      	"studied"
+      ],
+      "subj_entities": [
+      	"Roger"
+      ],
+      "obj_entities": [],
+      "sentence": "Roger studied for x hours."
+    },
+    {
+      "quantities": [
+      	"5 more hours"
+      ],
+      "action_verbs": [
+      	"studied"
+      ],
+      "subj_entities": [
+      	"His sister"
+      ],
+      "obj_entities": [
+      	"Roger"
+      ],
+      "sentence": "His sister studied 5 more hours than Roger."
+    },
+    {
+      "quantities": [
+      	"30 hours"
+      ],
+      "action_verbs": [
+      	"studied"
+      ],
+      "subj_entities": [
+      	"them",
+      	"they"
+      ],
+      "obj_entities": [],
+      "sentence": "Between both of them , they studied 30 hours."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"study"
+      ],
+      "subj_entities": [
+      	"Roger"
+      ],
+      "obj_entities": [
+      	"hours"
+      ],
+      "sentence": "For how many hours did Roger study?"
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"study"
+      ],
+      "subj_entities": [
+      	"his sister"
+      ],
+      "obj_entities": [
+      	"hours"
+      ],
+      "sentence": "For how many hours did his sister study?"
+    }
+  ],
+  "lSolutions": [
+    12.5,
+    17.5
+  ],
+  "NewIndex": 1424,
+  "iIndex": 1423
+}

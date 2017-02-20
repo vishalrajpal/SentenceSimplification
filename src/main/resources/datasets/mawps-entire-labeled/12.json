@@ -1,0 +1,76 @@
+{
+  "sQuestion": "A bicyclist rode into the country for 5 hours. In returning , her speed was 5 miles per hour faster and the trip took 4 hours. What was her speed heading into the country in miles per hour? What was her speed on the return trip? ",
+  "lSolutions": [
+    20,
+    25
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"5 hours"
+      ],
+      "action_verbs": [
+      	"rode"
+      ],
+      "subj_entities": [
+      	"bicyclist"
+      ],
+      "obj_entities": [
+      	"country"
+      ],
+      "sentence": "A bicyclist rode into the country for 5 hours."
+    },
+    {
+      "quantities": [
+      	"5 miles per hour",
+      	"4 hours"
+      ],
+      "action_verbs": [
+      	"returning",
+      	"faster",
+      	"took"
+      ],
+      "subj_entities": [
+      	"her"
+      ],
+      "obj_entities": [],
+      "sentence": "In returning , her speed was 5 miles per hour faster and the trip took 4 hours."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"heading"
+      ],
+      "subj_entities": [
+      	"her"
+      ],
+      "obj_entities": [
+      	"speed",
+      	"country",
+      	"miles per hour"
+      ],
+      "sentence": "What was her speed heading into the country in miles per hour?"
+    },
+    {
+      "quantities": [],
+      "action_verbs": [],
+      "subj_entities": [
+      	"her"
+      ],
+      "obj_entities": [
+      	"return trip"
+      ],
+      "sentence": "What was her speed on the return trip?"
+    }
+  ],
+  "lQueryVars": [
+    "speed_going",
+    "speed_returning"
+  ],
+  "lEquations": [
+    "5.0*speed_going=4.0*speed_returning",
+    "speed_returning=5.0+speed_going"
+  ],
+  "iIndex": 617,
+  "NewIndex": 618
+}

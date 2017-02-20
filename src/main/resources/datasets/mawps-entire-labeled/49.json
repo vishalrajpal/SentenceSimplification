@@ -1,0 +1,67 @@
+{
+  "sQuestion": " For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left? ",
+  "lSolutions": [
+    39
+  ],
+  "lAlignments": [
+    80,
+    120,
+    136
+  ],
+  "sentences": [
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"combined",
+      	"received"
+      ],
+      "subj_entities": [
+      	"Debby and her sister"
+      ],
+      "obj_entities": [
+      	"candy"
+      ],
+      "sentence": " For Halloween Debby and her sister combined the candy they received."
+    },
+    {
+      "quantities": [
+      	"32 pieces of candy",
+      	"42"
+      ],
+      "action_verbs": [
+      	"had",
+      	"had"
+      ],
+      "subj_entities": [
+      	"Debby",
+      	"sister"
+      ],
+      "obj_entities": [
+      	"candy"
+      ],
+      "sentence": "Debby had 32 pieces of candy while her sister had 42."
+    },
+    {
+      "quantities": [
+      	"35 pieces"
+      ],
+      "action_verbs": [
+      	"ate",
+      	"have"
+      ],
+      "subj_entities": [
+      	"they",
+      	"they"
+      ],
+      "obj_entities": [
+      	"pieces"
+      ],
+      "sentence": "If they ate 35 pieces the first night, how many pieces do they have left?"
+    }
+  ],
+  "lEquations": [
+    "X=((32.0+42.0)-35.0)"
+  ],
+  "iIndex": 2245,
+  "NewIndex": 2246
+}

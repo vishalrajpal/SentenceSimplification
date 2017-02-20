@@ -1,0 +1,41 @@
+{
+  "sQuestion": ".833 of a number is -60. What is the number?",
+  "lSolutions": [
+    -72
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	".833",
+      	"-60"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"number"
+      ],
+      "obj_entities": [],
+      "sentence": ".833 of a number is -60."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"number"
+      ],
+      "obj_entities": [],
+      "sentence": "What is the number?"
+    }
+  ],
+  "lQueryVars": [
+    "number"
+  ],
+  "lEquations": [
+    "0.833*number=(-60.0)"
+  ],
+  "iIndex": 1716,
+  "NewIndex": 1717
+}

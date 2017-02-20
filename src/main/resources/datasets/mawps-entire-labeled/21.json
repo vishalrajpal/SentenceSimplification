@@ -1,0 +1,52 @@
+{
+  "sQuestion": "A person wishes to invest 2,400.00 dollars , part at 9 % and part at 6 %. If the total interest desired at the end of the year is 189.00 dollars , how much should be invested at each rate? ",
+  "bOrderUnclear": true,
+  "lSolutions": [
+    1500,
+    900
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"2400.00 dollars",
+      	"9 %",
+      	"6 %"
+      ],
+      "action_verbs": [
+      	"wishes",
+      	"invest"
+      ],
+      "subj_entities": [
+      	"person"
+      ],
+      "obj_entities": [
+      	"part"
+      ],
+      "sentence": "A person wishes to invest 2,400.00 dollars , part at 9 % and part at 6 %."
+    },
+    {
+      "quantities": [
+      	"189.00 dollars"
+      ],
+      "action_verbs": [
+      	"desired",
+      	"invested"
+      ],
+      "subj_entities": [
+      	"total interest"
+      ],
+      "obj_entities": [],
+      "sentence": "If the total interest desired at the end of the year is 189.00 dollars , how much should be invested at each rate?"
+    }
+  ],
+  "lQueryVars": [
+    "six_interest",
+    "nine_interest"
+  ],
+  "lEquations": [
+    "((6.0*0.01)*six_interest)+((9.0*0.01)*nine_interest)=189.0",
+    "six_interest+nine_interest=2400.0"
+  ],
+  "iIndex": 927,
+  "NewIndex": 928
+}

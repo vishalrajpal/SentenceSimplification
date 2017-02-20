@@ -1,0 +1,73 @@
+{
+  "sQuestion": "Mary had 18 baseball cards , and 8 were torn . Fred gave Mary 26 new baseball cards . Mary bought 40 baseball cards . How many baseball cards does Mary have now ? ",
+  "lSolutions": [
+    "84"
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"18 baseball cards",
+      	"8 baseball cards"
+      ],
+      "action_verbs": [
+      	"had"
+      ],
+      "subj_entities": [
+      	"Mary"
+      ],
+      "obj_entities": [
+      	"baseball cards"
+      ],
+      "sentence": "Mary had 18 baseball cards , and 8 were torn ."
+    },
+    {
+      "quantities": [
+      	"26 baseball cards"
+      ],
+      "action_verbs": [
+      	"gave"
+      ],
+      "subj_entities": [
+      	"Fred"
+      ],
+      "obj_entities": [
+      	"Mary",
+      	"baseball cards"
+      ],
+      "sentence": "Fred gave Mary 26 new baseball cards ."
+    },
+    {
+      "quantities": [
+      	"40 baseball cards"
+      ],
+      "action_verbs": [
+      	"bought"
+      ],
+      "subj_entities": [
+      	"Mary"
+      ],
+      "obj_entities": [
+      	"baseball cards"
+      ],
+      "sentence": "Mary bought 40 baseball cards ."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"have"
+      ],
+      "subj_entities": [
+      	"Mary"
+      ],
+      "obj_entities": [
+      	"baseball cards"
+      ],
+      "sentence": "How many baseball cards does Mary have now ?"
+    }
+  ],
+  "lEquations": [
+    "X = 18 + 26 + 40"
+  ],
+  "iIndex": 367,
+  "NewIndex": 368
+}

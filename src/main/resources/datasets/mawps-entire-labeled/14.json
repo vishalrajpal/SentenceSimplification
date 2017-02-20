@@ -1,0 +1,45 @@
+{
+  "sQuestion": "The product of 10 and a number is the same as 36 less twice that same number. Find the number.",
+  "lSolutions": [
+    -4.5
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"10",
+      	"a number",
+      	"36",
+      	"twice"
+      ],
+      "action_verbs": [
+      	"is",
+      	"less",
+      	"product"
+      ],
+      "subj_entities": [
+      	"a number"
+      ],
+      "obj_entities": [],
+      "sentence": "The product of 10 and a number is the same as 36 less twice that same number."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"Fine"
+      ],
+      "subj_entities": [
+      	"number"
+      ],
+      "obj_entities": [],
+      "sentence": "Find the number."
+    }
+  ],
+  "lQueryVars": [
+    "number"
+  ],
+  "lEquations": [
+    "10.0*number=(2.0*number)-36.0"
+  ],
+  "iIndex": 690,
+  "NewIndex": 691
+}

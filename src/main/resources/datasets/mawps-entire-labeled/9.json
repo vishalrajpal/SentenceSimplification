@@ -1,0 +1,78 @@
+{
+  "sQuestion": "Michael rented a truck for one day. There was a rental fee of 20.99 dollars , and there also was a charge of 25 cents for each mile. Michael paid 95.74 dollars when he returned the truck. For how many miles did he drive the truck? ",
+  "lSolutions": [
+    299
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"one day"
+      ],
+      "action_verbs": [
+      	"rented"
+      ],
+      "subj_entities": [
+      	"Michael"
+      ],
+      "obj_entities": [
+      	"truck"
+      ],
+      "sentence": "Michael rented a truck for one day."
+    },
+    {
+      "quantities": [
+      	"20.99 dollars",
+      	"20 cents"
+      ],
+      "action_verbs": [
+      	"was"
+      ],
+      "subj_entities": [],
+      "obj_entities": [
+      	"rental fee",
+      	"charge",
+      	"each mile"
+      ],
+      "sentence": "There was a rental fee of 20.99 dollars , and there also was a charge of 25 cents for each mile."
+    },
+    {
+      "quantities": [
+      	"95.74 dollars"
+      ],
+      "action_verbs": [
+      	"paid",
+      	"returned"
+      ],
+      "subj_entities": [
+      	"Michael",
+      	"he"
+      ],
+      "obj_entities": [
+      	"truck"
+      ],
+      "sentence": "Michael paid 95.74 dollars when he returned the truck."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"drive"
+      ],
+      "subj_entities": [
+      	"he"
+      ],
+      "obj_entities": [
+      	"miles",
+      	"truck"
+      ],
+      "sentence": "For how many miles did he drive the truck?"
+    }
+  ],
+  "lQueryVars": [
+    "miles"
+  ],
+  "lEquations": [
+    "20.99+((25.0*0.01)*miles)=95.74"
+  ],
+  "iIndex": 533,
+  "NewIndex": 534
+}

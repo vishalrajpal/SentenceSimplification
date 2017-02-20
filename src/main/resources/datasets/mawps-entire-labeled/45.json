@@ -1,0 +1,39 @@
+{
+  "sQuestion": "Including a 8 % sales tax , an inn charges 194.40 dollars. Find the inn 's nightly cost before tax is added. ",
+  "sentences": [
+    {
+      "quantities": [
+      	"8 % sales tax",
+      	"194.40 dollars"
+      ],
+      "action_verbs": [
+      	"charges"
+      ],
+      "subj_entities": [
+      	"an inn"
+      ],
+      "obj_entities": [],
+      "sentence": "Including a 8 % sales tax , an inn charges 194.40 dollars."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"Find",
+      	"added"
+      ],
+      "subj_entities": [
+      	"inn's"
+      ],
+      "obj_entities": [
+      	"nightly cost",
+      	"tax"
+      ],
+      "sentence": "Find the inn 's nightly cost before tax is added."
+    }
+  ],
+  "lSolutions": [
+    180
+  ],
+  "NewIndex": 2112,
+  "iIndex": 2111
+}

@@ -1,0 +1,72 @@
+{
+  "sQuestion": "A person invested 10,000 dollars. The greater part is invested at 6 % and the remainder at 5 %. The annual income from the greater part is 160 dollars more than the annual income from the smaller part. What is the smaller part of the investment? ",
+  "lSolutions": [
+    4000
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"10,000 dollars"
+      ],
+      "action_verbs": [
+      	"invested"
+      ],
+      "subj_entities": [
+      	"person"
+      ],
+      "obj_entities": [],
+      "sentence": "A person invested 10,000 dollars."
+    },
+    {
+      "quantities": [
+      	"6 %",
+      	"5 %"
+      ],
+      "action_verbs": [
+      	"invested"
+      ],
+      "subj_entities": [
+      	"greater part"
+      ],
+      "obj_entities": [
+      	"greater part",
+      	"remainder"
+      ],
+      "sentence": "The greater part is invested at 6 % and the remainder at 5 %."
+    },
+    {
+      "quantities": [
+      	"160 dollars more"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [],
+      "obj_entities": [
+      	"annual income from greater part",
+      	"annual income from smaller part"
+      ],
+      "sentence": "The annual income from the greater part is 160 dollars more than the annual income from the smaller part."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"smaller part of the investment"
+      ],
+      "obj_entities": [],
+      "sentence": "What is the smaller part of the investment?"
+    }
+  ],
+  "lQueryVars": [
+    "smaller_part"
+  ],
+  "lEquations": [
+    "(6.0*0.01)*greater_part=((5.0*0.01)*smaller_part)+160.0",
+    "greater_part+smaller_part=10000.0"
+  ],
+  "iIndex": 1644,
+  "NewIndex": 1645
+}

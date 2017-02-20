@@ -1,0 +1,53 @@
+{
+  "sQuestion": "Soybean meal is 18 % protein , cornmeal is 9 % protein. How many pounds of each Soybean meal and how many pounds of cornmeal should be mixed together in order to get 360-pound mixture that is 17 % protein? ",
+  "lSolutions": [
+    320,
+    40
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"18 % protein",
+      	"9 % protein"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"Soybean meal",
+      	"cornmeal"
+      ],
+      "obj_entities": [
+      	"protein"
+      ],
+      "sentence": "Soybean meal is 18 % protein , cornmeal is 9 % protein."
+    },
+    {
+      "quantities": [
+      	"360-pound mixture",
+      	"17 % protein"
+      ],
+      "action_verbs": [
+      	"mixed"
+      ],
+      "subj_entities": [
+      	"each Soybean meal",
+      	"cornmeal"
+      ],
+      "obj_entities": [
+      	"protein"
+      ],
+      "sentence": "How many pounds of each Soybean meal and how many pounds of cornmeal should be mixed together in order to get 360-pound mixture that is 17 % protein?"
+    }
+  ],
+  "lQueryVars": [
+    "soybean_meal",
+    "cornmeal"
+  ],
+  "lEquations": [
+    "((18.0*0.01)*soybean_meal)+((9.0*0.01)*cornmeal)=(360.0*17.0)*0.01",
+    "soybean_meal+cornmeal=360.0"
+  ],
+  "iIndex": 1732,
+  "NewIndex": 1733
+}

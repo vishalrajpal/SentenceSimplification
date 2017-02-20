@@ -1,0 +1,59 @@
+{
+  "sQuestion": "Martha can rake the leaves in her yard in 8 hours. Her brother can do the job in 2 hours. Working together , how many hours will it take them to do the job? ",
+  "lSolutions": [
+    1.6
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"8 hours"
+      ],
+      "action_verbs": [
+      	"rake"
+      ],
+      "subj_entities": [
+      	"Marths"
+      ],
+      "obj_entities": [
+      	"leaves",
+      	"yard"
+      ],
+      "sentence": "Martha can rake the leaves in her yard in 8 hours."
+    },
+    {
+      "quantities": [
+      	"2 hours"
+      ],
+      "action_verbs": [
+      	"can",
+      	"do"
+      ],
+      "subj_entities": [
+      	"Her brother"
+      ],
+      "obj_entities": [
+      	"job"
+      ],
+      "sentence": "Her brother can do the job in 2 hours."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [],
+      "subj_entities": [
+      	"them"
+      ],
+      "obj_entities": [
+      	"hours"
+      ],
+      "sentence": "Working together , how many hours will it take them to do the job?"
+    }
+  ],
+  "lQueryVars": [
+    "hours"
+  ],
+  "lEquations": [
+    "((1.0/8.0)*hours)+((1.0/2.0)*hours)=1.0"
+  ],
+  "iIndex": 886,
+  "NewIndex": 887
+}

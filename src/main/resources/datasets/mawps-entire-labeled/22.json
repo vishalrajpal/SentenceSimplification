@@ -1,0 +1,43 @@
+{
+  "sQuestion": "Soybean meal is 12 % protien ; cornmeal is 6 % protein. How many pounds of each should be mixed together in order to get 240-pound mixture that is 10 % protein? ",
+  "sentences": [
+    {
+      "quantities": [
+      	"12 % protein",
+      	"6 % protein"
+      ],
+      "action_verbs": [
+      	"is"
+      ],
+      "subj_entities": [
+      	"Soybean meal",
+      	"cornmeal"
+      ],
+      "obj_entities": [],
+      "sentence": "Soybean meal is 12 % protien ; cornmeal is 6 % protein."
+    },
+    {
+      "quantities": [
+      	"240-pound",
+      	"10% protein"
+      ],
+      "action_verbs": [
+      	"mixed",
+      	"is"
+      ],
+      "subj_entities": [
+      	"pounds of each"
+      ],
+      "obj_entities": [
+      	"240-pound mixture"
+      ],
+      "sentence": "How many pounds of each should be mixed together in order to get 240-pound mixture that is 10 % protein?"
+    }
+  ],
+  "lSolutions": [
+    160,
+    80
+  ],
+  "NewIndex": 1066,
+  "iIndex": 1065
+}

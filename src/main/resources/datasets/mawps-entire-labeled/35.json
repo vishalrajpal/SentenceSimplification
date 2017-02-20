@@ -1,0 +1,54 @@
+{
+  "sQuestion": "A motel in new orleans charges 90.00 dollars a day for a double occupacy , and they charge 80.00 dollars for a single occupacy. If 80 rooms are occupied for a total of 6930 dollars , how many single occupancy rooms are sold and how many double occupancy rooms are sold? ",
+  "lSolutions": [
+    27,
+    53
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"90.00 dollars a day",
+      	"80.00 dollars"
+      ],
+      "action_verbs": [
+      	"charges",
+      	"charge"
+      ],
+      "subj_entities": [
+      	"motel"
+      ],
+      "obj_entities": [
+      	"double occupacy",
+      	"single occupacy"
+      ],
+      "sentence": "A motel in new orleans charges 90.00 dollars a day for a double occupacy , and they charge 80.00 dollars for a single occupacy."
+    },
+    {
+      "quantities": [
+      	"80 rooms",
+      	"total of 6930 dollars"
+      ],
+      "action_verbs": [
+      	"occupied",
+      	"sold",
+      	"sold"
+      ],
+      "subj_entities": [
+      	"single occupancy rooms",
+      	"double occupancy rooms"
+      ],
+      "obj_entities": [],
+      "sentence": "If 80 rooms are occupied for a total of 6930 dollars , how many single occupancy rooms are sold and how many double occupancy rooms are sold?"
+    }
+  ],
+  "lQueryVars": [
+    "single",
+    "double"
+  ],
+  "lEquations": [
+    "(80.0*single)+(90.0*double)=6930.0",
+    "single+double=80.0"
+  ],
+  "iIndex": 1707,
+  "NewIndex": 1708
+}

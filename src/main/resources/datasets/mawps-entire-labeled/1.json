@@ -1,0 +1,58 @@
+{
+  "sQuestion": "Tom found 5 seashells on the beach . he gave Jessica 2 of the seashells . How many seashells does he now have ? ",
+  "lSolutions": [
+    "3"
+  ],
+  "sentences": [
+    {
+      "quantities": [
+      	"5 seashells"
+      ],
+      "action_verbs": [
+      	"found"
+      ],
+      "subj_entities": [
+      	"Tom"
+      ],
+      "obj_entities": [
+      	"seashells",
+      	"beach"
+      ],
+      "sentence": "Tom found 5 seashells on the beach ."
+    },
+    {
+      "quantities": [
+      	"2 seashells"
+      ],
+      "action_verbs": [
+      	"gave"
+      ],
+      "subj_entities": [
+      	"he"
+      ],
+      "obj_entities": [
+      	"Jessica",
+      	"seashells"
+      ],
+      "sentence": "he gave Jessica 2 of the seashells ."
+    },
+    {
+      "quantities": [],
+      "action_verbs": [
+      	"have"
+      ],
+      "subj_entities": [
+      	"he"
+      ],
+      "obj_entities": [
+      	"seashells"
+      ],
+      "sentence": "How many seashells does he now have ?"
+    }
+  ],
+  "lEquations": [
+    "X = 5 - 2"
+  ],
+  "iIndex": 105,
+  "NewIndex": 106
+}
